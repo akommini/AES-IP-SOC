@@ -1,0 +1,37 @@
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/Final/WGC_V.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/Final/WGC_V.syr" 
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/Final/WGC_V.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/Final/WGC_V.syr" 
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/Final/WGC_V.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/Final/WGC_V.syr" 
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/Final/WGC_V.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/Final/WGC_V.syr" 
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/Final/WGC_V.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/Final/WGC_V.syr" 
+vhdtdtfi -lib work WGC_V.vhd -prj Final -o WGC_V.spl -module WGC_V -template D:/XilinX/13.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex6l WGC_V.spl C:/Users/chinna/Desktop/Watermarking/Final/WGC_V.sym 
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/Final/WGC_V.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/Final/WGC_V.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc WGC_V.ucf -p xc6vlx130tl-ff484-1L WGC_V.ngc WGC_V.ngd  
+map -intstyle ise -p xc6vlx130tl-ff484-1L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WGC_V_map.ncd WGC_V.ngd WGC_V.pcf 
+par -w -intstyle ise -ol high -mt off WGC_V_map.ncd WGC_V.ncd WGC_V.pcf 
+trce -intstyle ise -v 3 -s 1L -n 3 -fastpaths -xml WGC_V.twx WGC_V.ncd -o WGC_V.twr WGC_V.pcf -ucf WGC_V.ucf 
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/Final/WGC_V.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/Final/WGC_V.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc WGC_V.ucf -p xc6vlx130tl-ff484-1L WGC_V.ngc WGC_V.ngd  
+map -intstyle ise -p xc6vlx130tl-ff484-1L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WGC_V_map.ncd WGC_V.ngd WGC_V.pcf 
+par -w -intstyle ise -ol high -mt off WGC_V_map.ncd WGC_V.ncd WGC_V.pcf 
+trce -intstyle ise -v 3 -s 1L -n 3 -fastpaths -xml WGC_V.twx WGC_V.ncd -o WGC_V.twr WGC_V.pcf -ucf WGC_V.ucf 
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/Final/WGC_V.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/Final/WGC_V.syr" 
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/Final/WGC_V.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/Final/WGC_V.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6vlx130tl-ff1156-1L WGC_V.ngc WGC_V.ngd  
+map -intstyle ise -p xc6vlx130tl-ff1156-1L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WGC_V_map.ncd WGC_V.ngd WGC_V.pcf 
+par -w -intstyle ise -ol high -mt off WGC_V_map.ncd WGC_V.ncd WGC_V.pcf 
+trce -intstyle ise -v 3 -s 1L -n 3 -fastpaths -xml WGC_V.twx WGC_V.ncd -o WGC_V.twr WGC_V.pcf 
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/Final/WGC_V.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/Final/WGC_V.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6vlx130tl-ff1156-1L WGC_V.ngc WGC_V.ngd  
+map -intstyle ise -p xc6vlx130tl-ff1156-1L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WGC_V_map.ncd WGC_V.ngd WGC_V.pcf 
+par -w -intstyle ise -ol high -mt off WGC_V_map.ncd WGC_V.ncd WGC_V.pcf 
+trce -intstyle ise -v 3 -s 1L -n 3 -fastpaths -xml WGC_V.twx WGC_V.ncd -o WGC_V.twr WGC_V.pcf 
+bitgen -intstyle ise -f WGC_V.ut WGC_V.ncd 
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/Final/WGC_V.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/Final/WGC_V.syr" 
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/Final/WGC_V.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/Final/WGC_V.syr" 
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/Final/WGC_V.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/Final/WGC_V.syr" 
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/Final/WGC_V.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/Final/WGC_V.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6vlx130tl-ff1156-1L WGC_V.ngc WGC_V.ngd  
+map -intstyle ise -p xc6vlx130tl-ff1156-1L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o WGC_V_map.ncd WGC_V.ngd WGC_V.pcf 
+par -w -intstyle ise -ol high -mt off WGC_V_map.ncd WGC_V.ncd WGC_V.pcf 
+par -w -intstyle ise -ol high -mt off WGC_V_map.ncd WGC_V.ncd WGC_V.pcf 

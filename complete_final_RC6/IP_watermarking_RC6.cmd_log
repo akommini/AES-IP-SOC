@@ -1,0 +1,10 @@
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/complete_final_RC6/IP_watermarking_RC6.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/complete_final_RC6/IP_watermarking_RC6.syr" 
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/complete_final_RC6/IP_watermarking_RC6.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/complete_final_RC6/IP_watermarking_RC6.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../complete_final_MARS128/ipcore_dir -nt timestamp -i -p xc6vlx75tl-ff784-1L IP_watermarking_RC6.ngc IP_watermarking_RC6.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ../complete_final_MARS128/ipcore_dir -nt timestamp -uc IP_watermarking_RC6.ucf -p xc6vlx75tl-ff784-1L IP_watermarking_RC6.ngc IP_watermarking_RC6.ngd  
+map -intstyle ise -p xc6vlx75tl-ff784-1L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o IP_watermarking_RC6_map.ncd IP_watermarking_RC6.ngd IP_watermarking_RC6.pcf 
+par -w -intstyle ise -ol high -mt off IP_watermarking_RC6_map.ncd IP_watermarking_RC6.ncd IP_watermarking_RC6.pcf 
+trce -intstyle ise -v 3 -s 1L -n 3 -fastpaths -xml IP_watermarking_RC6.twx IP_watermarking_RC6.ncd -o IP_watermarking_RC6.twr IP_watermarking_RC6.pcf -ucf IP_watermarking_RC6.ucf 
+trce -intstyle ise -v 3 -s 1L -n 3 -fastpaths -xml IP_watermarking_RC6_preroute.twx IP_watermarking_RC6_map.ncd -o IP_watermarking_RC6_preroute.twr IP_watermarking_RC6.pcf -ucf IP_watermarking_RC6.ucf 
+netgen -intstyle ise -s 1L  -pcf IP_watermarking_RC6.pcf -rpw 100 -tpw 0 -ar Structure -tm IP_watermarking_RC6 -w -dir netgen/map -ofmt vhdl -sim IP_watermarking_RC6_map.ncd IP_watermarking_RC6_map.vhd 
+xpwr -intstyle ise -ol std IP_watermarking_RC6.ncd IP_watermarking_RC6.pcf -o IP_watermarking_RC6.pwr 

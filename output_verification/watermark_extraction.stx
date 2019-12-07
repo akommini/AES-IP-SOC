@@ -1,0 +1,69 @@
+Release 13.2 - xst O.61xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/s/Desktop/Watermarking/output_verification/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/s/Desktop/Watermarking/output_verification/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> Reading design: watermark_extraction.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\s\Desktop\Watermarking\test\total.vhd" into library work
+Parsing entity <WGC>.
+Parsing architecture <Behavioral> of entity <wgc>.
+Parsing VHDL file "C:\Users\s\Desktop\Watermarking\test\LFSR.vhd" into library work
+Parsing entity <LFSR>.
+Parsing architecture <Behavioral> of entity <lfsr>.
+Parsing VHDL file "C:\Users\s\Desktop\Watermarking\test\ipcore_dir\ipcore.vhd" into library work
+Parsing entity <ipcore>.
+Parsing architecture <ipcore_a> of entity <ipcore>.
+Parsing VHDL file "C:\Users\s\Desktop\Watermarking\test\h_watermark.vhd" into library work
+Parsing entity <IP_watermark>.
+Parsing architecture <Behavioral> of entity <ip_watermark>.
+Parsing VHDL file "C:\Users\s\Desktop\Watermarking\output_verification\watermark_extraction.vhd" into library work
+Parsing entity <watermark_extraction>.
+Parsing architecture <Behavioral> of entity <watermark_extraction>.
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.11 secs
+ 
+--> 
+
+Total memory usage is 189632 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

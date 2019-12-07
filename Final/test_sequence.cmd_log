@@ -1,0 +1,19 @@
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/Final/test_sequence.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/Final/test_sequence.syr" 
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/Final/test_sequence.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/Final/test_sequence.syr" 
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/Final/test_sequence.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/Final/test_sequence.syr" 
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/Final/test_sequence.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/Final/test_sequence.syr" 
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/Final/test_sequence.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/Final/test_sequence.syr" 
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/Final/test_sequence.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/Final/test_sequence.syr" 
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/Final/test_sequence.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/Final/test_sequence.syr" 
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/Final/test_sequence.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/Final/test_sequence.syr" 
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/Final/test_sequence.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/Final/test_sequence.syr" 
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/Final/test_sequence.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/Final/test_sequence.syr" 
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/Final/test_sequence.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/Final/test_sequence.syr" 
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/Final/test_sequence.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/Final/test_sequence.syr" 
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/Final/test_sequence.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/Final/test_sequence.syr" 
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/Final/test_sequence.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/Final/test_sequence.syr" 
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/Final/test_sequence.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/Final/test_sequence.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6vlx130tl-ff1156-1L test_sequence.ngc test_sequence.ngd  
+map -intstyle ise -p xc6vlx130tl-ff1156-1L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o test_sequence_map.ncd test_sequence.ngd test_sequence.pcf 
+par -w -intstyle ise -ol high -mt off test_sequence_map.ncd test_sequence.ncd test_sequence.pcf 
+trce -intstyle ise -v 3 -s 1L -n 3 -fastpaths -xml test_sequence.twx test_sequence.ncd -o test_sequence.twr test_sequence.pcf 

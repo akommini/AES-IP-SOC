@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="6">
+	<Run Id="impl_1" Type="Ft2:EntireDesign" SrcSet="sources_1" Part="xc6vlx75tlff784-1L" ConstrsSet="constrs_1" State="current" Dir="$PRUNDIR/impl_1" LaunchTime="1367434114">
+		<File Type="MAP-PSR" Name="IP_watermarking_MARS128.psr"/>
+		<File Type="PA-EDIF" Name="IP_watermarking_MARS128.edf"/>
+		<File Type="PAR-NCD" Name="IP_watermarking_MARS128_routed.ncd"/>
+		<File Type="PA-UCF" Name="IP_watermarking_MARS128.ucf"/>
+		<File Type="PAR-PAD" Name="IP_watermarking_MARS128_routed_pad.txt"/>
+		<File Type="PAR-PAR" Name="IP_watermarking_MARS128_routed.par"/>
+		<File Type="PAR-UNR" Name="IP_watermarking_MARS128_routed.unroutes"/>
+		<File Type="BG-BIT" Name="IP_watermarking_MARS128.bit"/>
+		<File Type="BG-DRC" Name="IP_watermarking_MARS128.drc"/>
+		<File Type="PA-CONSTRSDIR" Name=".constrs"/>
+		<File Type="BG-BGN" Name="IP_watermarking_MARS128.bgn"/>
+		<File Type="TRCE-TWR" Name="IP_watermarking_MARS128.twr"/>
+		<File Type="TRCE-TWX" Name="IP_watermarking_MARS128.twx"/>
+		<File Type="XDL-XDL" Name="IP_watermarking_MARS128_routed.xdl"/>
+		<File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+		<File Type="WBT-LOG" Name="webtalk.log"/>
+		<File Type="RUN-SRCS" Name="$PDATADIR/runs/impl_1/sources.xml"/>
+		<File Type="RUN-CONSTRS" Name="$PDATADIR/runs/impl_1/constrs_in.xml"/>
+		<File Type="NGDB-NGD" Name="IP_watermarking_MARS128.ngd"/>
+		<File Type="NGDB-BLD" Name="IP_watermarking_MARS128.bld"/>
+		<File Type="MAP-NCD" Name="IP_watermarking_MARS128.ncd"/>
+		<File Type="MAP-PCF" Name="IP_watermarking_MARS128.pcf"/>
+		<File Type="MAP-MRP" Name="IP_watermarking_MARS128.mrp"/>
+		<File Type="MAP-MAP" Name="IP_watermarking_MARS128.map"/>
+	</Run>
+</Runs>
+

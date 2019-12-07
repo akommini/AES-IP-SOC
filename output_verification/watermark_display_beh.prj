@@ -1,0 +1,6 @@
+vhdl work "../test/total.vhd"
+vhdl work "../test/LFSR.vhd"
+vhdl work "../test/ipcore_dir/ipcore.vhd"
+vhdl work "../test/h_watermark.vhd"
+vhdl work "watermark_extraction.vhd"
+vhdl work "watermark_display.vhd"

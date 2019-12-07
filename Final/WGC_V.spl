@@ -1,0 +1,8 @@
+[Inputs]
+clk
+rst
+test_mode
+[Outputs]
+ready
+WGC_output
+[BiDir]

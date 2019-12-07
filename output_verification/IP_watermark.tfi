@@ -1,0 +1,17 @@
+
+
+
+// Instantiate the module
+IP_watermark instance_name (
+    .clk(clk), 
+    .rst(rst), 
+    .test_mode(test_mode), 
+    .x(x), 
+    .Y(Y), 
+    .output_mark(output_mark), 
+    .read(read), 
+    .clk_en(clk_en), 
+    .output_dev(output_dev)
+    );
+
+

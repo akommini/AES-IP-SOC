@@ -1,0 +1,28 @@
+Command line:
+   watermark_display_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49369
+
+Sun Mar 03 02:12:43 2013
+
+
+ Elaboration Time: 0.187201 sec
+
+ Current Memory Usage: 499.753 Meg
+
+ Total Signals          : 165
+ Total Nets             : 1014
+ Total Signal Drivers   : 75
+ Total Blocks           : 35
+ Total Primitive Blocks : 27
+ Total Processes        : 23
+ Total Traceable Variables  : 161
+ Total Scalar Nets and Variables : 2508
+
+ Total Simulation Time: 0.296402 sec
+
+ Current Memory Usage: 499.753 Meg
+
+Sun Mar 03 02:15:25 2013
+

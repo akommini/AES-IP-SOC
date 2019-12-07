@@ -1,0 +1,454 @@
+Release 13.2 - xst O.61xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.25 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.25 secs
+ 
+--> Reading design: watermark_extraction.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "watermark_extraction.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "watermark_extraction"
+Output Format                      : NGC
+Target Device                      : xc6vlx130tl-1L-ff1156
+
+---- Source Options
+Top Module Name                    : watermark_extraction
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\s\Desktop\Watermarking\test\total.vhd" into library work
+Parsing entity <WGC>.
+Parsing architecture <Behavioral> of entity <wgc>.
+Parsing VHDL file "C:\Users\s\Desktop\Watermarking\test\LFSR.vhd" into library work
+Parsing entity <LFSR>.
+Parsing architecture <Behavioral> of entity <lfsr>.
+Parsing VHDL file "C:\Users\s\Desktop\Watermarking\test\ipcore_dir\ipcore.vhd" into library work
+Parsing entity <ipcore>.
+Parsing architecture <ipcore_a> of entity <ipcore>.
+Parsing VHDL file "C:\Users\s\Desktop\Watermarking\test\h_watermark.vhd" into library work
+Parsing entity <IP_watermark>.
+Parsing architecture <Behavioral> of entity <ip_watermark>.
+Parsing VHDL file "C:\Users\s\Desktop\Watermarking\output_verification\watermark_extraction.vhd" into library work
+Parsing entity <watermark_extraction>.
+Parsing architecture <Behavioral> of entity <watermark_extraction>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <watermark_extraction> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <IP_watermark> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <WGC> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:1127 - "C:\Users\s\Desktop\Watermarking\test\total.vhd" Line 38: Assignment to shift_reg ignored, since the identifier is never used
+
+Elaborating entity <LFSR> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "C:\Users\s\Desktop\Watermarking\test\LFSR.vhd" Line 47: shift should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\s\Desktop\Watermarking\test\LFSR.vhd" Line 48: shift should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\s\Desktop\Watermarking\test\LFSR.vhd" Line 49: u1 should be on the sensitivity list of the process
+
+Elaborating entity <ipcore> (architecture <ipcore_a>) from library <work>.
+WARNING:HDLCompiler:92 - "C:\Users\s\Desktop\Watermarking\test\h_watermark.vhd" Line 168: p should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\s\Desktop\Watermarking\output_verification\watermark_extraction.vhd" Line 94: switch should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\s\Desktop\Watermarking\output_verification\watermark_extraction.vhd" Line 104: switch should be on the sensitivity list of the process
+WARNING:HDLCompiler:634 - "C:\Users\s\Desktop\Watermarking\output_verification\watermark_extraction.vhd" Line 45: Net <test_mode> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\s\Desktop\Watermarking\output_verification\watermark_extraction.vhd" Line 48: Net <clk_en> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\s\Desktop\Watermarking\output_verification\watermark_extraction.vhd" Line 51: Net <X[17]> does not have a driver.
+WARNING:HDLCompiler:634 - "C:\Users\s\Desktop\Watermarking\output_verification\watermark_extraction.vhd" Line 52: Net <Y[17]> does not have a driver.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <watermark_extraction>.
+    Related source file is "c:/users/s/desktop/watermarking/output_verification/watermark_extraction.vhd".
+WARNING:Xst:647 - Input <output_mark> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+INFO:Xst:3210 - "c:/users/s/desktop/watermarking/output_verification/watermark_extraction.vhd" line 64: Output port <output_dev> of the instance <IP_w> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/s/desktop/watermarking/output_verification/watermark_extraction.vhd" line 64: Output port <output_mark> of the instance <IP_w> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "c:/users/s/desktop/watermarking/output_verification/watermark_extraction.vhd" line 64: Output port <read> of the instance <IP_w> is unconnected or connected to loadless signal.
+WARNING:Xst:653 - Signal <X> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <Y> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <test_mode> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+WARNING:Xst:653 - Signal <clk_en> is used but never assigned. This sourceless signal will be automatically connected to value GND.
+    Summary:
+	no macro.
+Unit <watermark_extraction> synthesized.
+WARNING:Xst:2972 - "c:/users/s/desktop/watermarking/test/h_watermark.vhd" line 137. All outputs of instance <PRSG> of block <LFSR> are unconnected in block <IP_watermark>. Underlying logic will be removed.
+
+Synthesizing Unit <IP_watermark>.
+    Related source file is "c:/users/s/desktop/watermarking/test/h_watermark.vhd".
+    Found 4-bit register for signal <count>.
+    Found 1-bit register for signal <switch>.
+    Found 1-bit register for signal <output_mark>.
+    Found 1-bit register for signal <counter<2>>.
+    Found 1-bit register for signal <counter<1>>.
+    Found 1-bit register for signal <counter<0>>.
+    Found 1-bit register for signal <pass<7>>.
+    Found 1-bit register for signal <pass<6>>.
+    Found 1-bit register for signal <pass<5>>.
+    Found 1-bit register for signal <pass<4>>.
+    Found 1-bit register for signal <pass<3>>.
+    Found 1-bit register for signal <pass<2>>.
+    Found 1-bit register for signal <pass<1>>.
+    Found 1-bit register for signal <pass<0>>.
+    Summary:
+	no macro.
+Unit <IP_watermark> synthesized.
+
+Synthesizing Unit <WGC>.
+    Related source file is "c:/users/s/desktop/watermarking/test/total.vhd".
+    Found 8-bit register for signal <symbol>.
+    Found 1-bit register for signal <load>.
+    Found 1-bit register for signal <WGC_output>.
+    Summary:
+	inferred  10 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <WGC> synthesized.
+
+Synthesizing Unit <LFSR>.
+    Related source file is "c:/users/s/desktop/watermarking/test/lfsr.vhd".
+    Found 4-bit register for signal <shift>.
+    Found 1-bit register for signal <u3>.
+    Found 1-bit register for signal <u1>.
+    Found 1-bit register for signal <u2>.
+    Found 1-bit register for signal <x0>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <LFSR> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 24
+ 1-bit register                                        : 16
+ 8-bit register                                        : 8
+# Multiplexers                                         : 8
+ 8-bit 2-to-1 multiplexer                              : 8
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1290 - Hierarchical block <GC_1> is unconnected in block <IP_w>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <GC_2> is unconnected in block <IP_w>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <GC_3> is unconnected in block <IP_w>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <GC_4> is unconnected in block <IP_w>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <GC_5> is unconnected in block <IP_w>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <GC_6> is unconnected in block <IP_w>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <GC_7> is unconnected in block <IP_w>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <GC_8> is unconnected in block <IP_w>.
+   It will be removed from the design.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 80
+ Flip-Flops                                            : 80
+# Multiplexers                                         : 64
+ 1-bit 2-to-1 multiplexer                              : 64
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1989 - Unit <IP_watermark>: instances <GC_3>, <GC_6> of unit <WGC> are equivalent, second instance is removed
+WARNING:Xst:1989 - Unit <IP_watermark>: instances <GC_3>, <GC_8> of unit <WGC> are equivalent, second instance is removed
+WARNING:Xst:2677 - Node <IP_w/GC_7/WGC_output> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_7/load> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_7/symbol_7> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_7/symbol_6> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_7/symbol_5> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_7/symbol_4> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_7/symbol_3> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_7/symbol_2> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_7/symbol_1> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_7/symbol_0> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_5/WGC_output> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_5/load> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_5/symbol_7> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_5/symbol_6> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_5/symbol_5> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_5/symbol_4> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_5/symbol_3> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_5/symbol_2> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_5/symbol_1> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_5/symbol_0> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_4/WGC_output> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_4/load> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_4/symbol_7> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_4/symbol_6> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_4/symbol_5> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_4/symbol_4> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_4/symbol_3> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_4/symbol_2> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_4/symbol_1> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_4/symbol_0> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_3/WGC_output> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_3/load> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_3/symbol_7> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_3/symbol_6> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_3/symbol_5> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_3/symbol_4> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_3/symbol_3> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_3/symbol_2> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_3/symbol_1> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_3/symbol_0> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_2/WGC_output> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_2/load> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_2/symbol_7> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_2/symbol_6> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_2/symbol_5> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_2/symbol_4> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_2/symbol_3> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_2/symbol_2> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_2/symbol_1> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_2/symbol_0> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_1/WGC_output> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_1/load> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_1/symbol_7> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_1/symbol_6> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_1/symbol_5> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_1/symbol_4> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_1/symbol_3> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_1/symbol_2> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_1/symbol_1> of sequential type is unconnected in block <watermark_extraction>.
+WARNING:Xst:2677 - Node <IP_w/GC_1/symbol_0> of sequential type is unconnected in block <watermark_extraction>.
+
+Optimizing unit <watermark_extraction> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block watermark_extraction, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : watermark_extraction.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 1
+#      GND                         : 1
+# IO Buffers                       : 1
+#      IBUF                        : 1
+# Others                           : 1
+#      ipcore                      : 1
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6vlx130tlff1156-1l 
+
+
+Slice Logic Utilization: 
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:      0
+   Number with an unused Flip Flop:       0  out of      0         
+   Number with an unused LUT:             0  out of      0         
+   Number of fully used LUT-FF pairs:     0  out of      0         
+   Number of unique control sets:         0
+
+IO Utilization: 
+ Number of IOs:                           4
+ Number of bonded IOBs:                   1  out of    600     0%  
+
+Specific Feature Utilization:
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 0.003ns
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               0.003ns (Levels of Logic = 1)
+  Source:            clk (PAD)
+  Destination:       IP_w/general:clk (PAD)
+
+  Data Path: clk to IP_w/general:clk
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             0   0.003   0.000  clk_IBUF (clk_IBUF)
+    ipcore:clk                 0.000          IP_w/general
+    ----------------------------------------
+    Total                      0.003ns (0.003ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 7.96 secs
+ 
+--> 
+
+Total memory usage is 269928 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   87 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

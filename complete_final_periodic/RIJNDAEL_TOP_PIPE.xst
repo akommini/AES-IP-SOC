@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/xst"
+elaborate
+-ifn RIJNDAEL_TOP_PIPE.prj
+-ifmt mixed

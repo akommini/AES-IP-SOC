@@ -1,0 +1,14 @@
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/complete_final_serpent/IP_watermarking_serpent.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/complete_final_serpent/IP_watermarking_serpent.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../complete_final_periodic/ipcore_dir -nt timestamp -uc IP_watermarking_serpent.ucf -p xc6vlx75tl-ff784-1L IP_watermarking_serpent.ngc IP_watermarking_serpent.ngd  
+map -intstyle ise -p xc6vlx75tl-ff784-1L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o IP_watermarking_serpent_map.ncd IP_watermarking_serpent.ngd IP_watermarking_serpent.pcf 
+ngdbuild -intstyle ise -dd _ngo -sd ../complete_final_periodic/ipcore_dir -nt timestamp -uc IP_watermarking_serpent.ucf -p xc6vlx75tl-ff784-1L IP_watermarking_serpent.ngc IP_watermarking_serpent.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ../complete_final_periodic/ipcore_dir -nt timestamp -uc IP_watermarking_serpent.ucf -p xc6vlx75tl-ff784-1L IP_watermarking_serpent.ngc IP_watermarking_serpent.ngd  
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/complete_final_serpent/IP_watermarking_serpent.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/complete_final_serpent/IP_watermarking_serpent.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../complete_final_periodic/ipcore_dir -nt timestamp -uc IP_watermarking_serpent.ucf -p xc6vlx75tl-ff784-1L IP_watermarking_serpent.ngc IP_watermarking_serpent.ngd  
+map -intstyle ise -p xc6vlx75tl-ff784-1L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o IP_watermarking_serpent_map.ncd IP_watermarking_serpent.ngd IP_watermarking_serpent.pcf 
+par -w -intstyle ise -ol high -mt off IP_watermarking_serpent_map.ncd IP_watermarking_serpent.ncd IP_watermarking_serpent.pcf 
+trce -intstyle ise -v 3 -s 1L -n 3 -fastpaths -xml IP_watermarking_serpent.twx IP_watermarking_serpent.ncd -o IP_watermarking_serpent.twr IP_watermarking_serpent.pcf -ucf IP_watermarking_serpent.ucf 
+trce -intstyle ise -v 3 -s 1L -n 3 -fastpaths -xml IP_watermarking_serpent_preroute.twx IP_watermarking_serpent_map.ncd -o IP_watermarking_serpent_preroute.twr IP_watermarking_serpent.pcf -ucf IP_watermarking_serpent.ucf 
+netgen -intstyle ise -s 1L  -pcf IP_watermarking_serpent.pcf -rpw 100 -tpw 0 -ar Structure -tm IP_watermarking_serpent -w -dir netgen/map -ofmt vhdl -sim IP_watermarking_serpent_map.ncd IP_watermarking_serpent_map.vhd 
+netgen -intstyle ise -s 1L  -pcf IP_watermarking_serpent.pcf -rpw 100 -tpw 0 -ar Structure -tm IP_watermarking_serpent -w -dir netgen/map -ofmt vhdl -sim IP_watermarking_serpent_map.ncd IP_watermarking_serpent_map.vhd 
+xpwr -intstyle ise -ol std IP_watermarking_serpent.ncd IP_watermarking_serpent.pcf -o IP_watermarking_serpent.pwr 

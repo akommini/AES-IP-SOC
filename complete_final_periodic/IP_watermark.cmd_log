@@ -1,0 +1,25 @@
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/IP_watermark.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/IP_watermark.syr" 
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/IP_watermark.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/IP_watermark.syr" 
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/IP_watermark.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/IP_watermark.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../test/ipcore_dir -nt timestamp -i -p xc3s100e-vq100-5 IP_watermark.ngc IP_watermark.ngd  
+map -intstyle ise -p xc3s100e-vq100-5 -cm area -ir off -pr off -c 100 -o IP_watermark_map.ncd IP_watermark.ngd IP_watermark.pcf 
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/IP_watermark.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/IP_watermark.syr" 
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/IP_watermark.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/IP_watermark.syr" 
+netgen -intstyle ise -ar Structure -tm IP_watermark -w -dir netgen/synthesis -ofmt vhdl -sim IP_watermark.ngc IP_watermark_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -sd ../test/ipcore_dir -nt timestamp -i -p xc7vx330t-ffg1157-3 IP_watermark.ngc IP_watermark.ngd  
+vhdtdtfi -lib work {../../AES algorigtms/RIJNDAEL128/vhdl/rijndael_pkg.vhdl} -lib work {../../AES algorigtms/RIJNDAEL128/vhdl/key_sched_iterative.vhdl} -lib work {../../AES algorigtms/RIJNDAEL128/vhdl/interface.vhdl} -lib work {../../AES algorigtms/RIJNDAEL128/vhdl/controller_iter.vhdl} -lib work {../../AES algorigtms/RIJNDAEL128/vhdl/alg_iterative.vhdl} -lib work ../test/total.vhd -lib work ../test/LFSR.vhd -lib work {../../AES algorigtms/RIJNDAEL128/vhdl/RIJNDAEL_Top_Iterative.vhdl} -lib work ../test/h_watermark.vhd -prj complete_final_periodic -o IP_watermark.spl -module IP_watermark -template D:/XilinX/13.2/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family virtex7 IP_watermark.spl C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/IP_watermark.sym 
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/IP_watermark.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/IP_watermark.syr" 
+netgen -intstyle ise -ar Structure -tm IP_watermark -w -dir netgen/synthesis -ofmt vhdl -sim IP_watermark.ngc IP_watermark_synthesis.vhd 
+ngdbuild -intstyle ise -dd _ngo -sd ../test/ipcore_dir -nt timestamp -uc IP_watermark.ucf -p xc7vx330t-ffg1157-3 IP_watermark.ngc IP_watermark.ngd  
+map -intstyle ise -p xc7vx330t-ffg1157-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -mt off -ir off -pr off -lc off -power off -o IP_watermark_map.ncd IP_watermark.ngd IP_watermark.pcf 
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/IP_watermark.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/IP_watermark.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../test/ipcore_dir -nt timestamp -uc IP_watermark.ucf -p xc6vlx75tl-ff784-1L IP_watermark.ngc IP_watermark.ngd  
+map -intstyle ise -p xc6vlx75tl-ff784-1L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o IP_watermark_map.ncd IP_watermark.ngd IP_watermark.pcf 
+par -w -intstyle ise -ol high -mt off IP_watermark_map.ncd IP_watermark.ncd IP_watermark.pcf 
+trce -intstyle ise -v 3 -s 1L -n 3 -fastpaths -xml IP_watermark.twx IP_watermark.ncd -o IP_watermark.twr IP_watermark.pcf -ucf IP_watermark.ucf 
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/IP_watermark.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/IP_watermark.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../test/ipcore_dir -nt timestamp -uc IP_watermark.ucf -p xc6vlx75tl-ff784-1L IP_watermark.ngc IP_watermark.ngd  
+map -intstyle ise -p xc6vlx75tl-ff784-1L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o IP_watermark_map.ncd IP_watermark.ngd IP_watermark.pcf 
+par -w -intstyle ise -ol high -mt off IP_watermark_map.ncd IP_watermark.ncd IP_watermark.pcf 
+trce -intstyle ise -v 3 -s 1L -n 3 -fastpaths -xml IP_watermark.twx IP_watermark.ncd -o IP_watermark.twr IP_watermark.pcf -ucf IP_watermark.ucf 

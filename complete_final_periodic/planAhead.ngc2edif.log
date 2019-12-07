@@ -1,0 +1,49 @@
+Release 13.2 - ngc2edif O.61xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design IP_watermarking_rijandal.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   IP_watermarking_rijandal.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus crypto_RIJNDAEL/top_round_key1[7 : 0] on
+   block IP_watermarking_rijandal is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/RUNUP_STATE[1]_RUNUP_STATE[1]_mux_86_OUT[31 : 0] on
+   block IP_watermarking_rijandal is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/RUNUP_STATE[1]_RUNUP_STATE[1]_mux_85_OUT[31 : 0] on
+   block IP_watermarking_rijandal is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus crypto_RIJNDAEL/KEYSCH/n0195[4 : 0] on
+   block IP_watermarking_rijandal is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/RUNUP_STATE[1]_CV_MAPPED128[-3][31]_wide_mux_59_OUT[31
+   : 24] on block IP_watermarking_rijandal is not reconstructed, because there
+   are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/RUNUP_STATE[1]_CV_MAPPED128[-2][31]_wide_mux_60_OUT[31
+   : 24] on block IP_watermarking_rijandal is not reconstructed, because there
+   are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/RUNUP_STATE[1]_CV_MAPPED128[-4][31]_wide_mux_58_OUT[31
+   : 24] on block IP_watermarking_rijandal is not reconstructed, because there
+   are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file IP_watermarking_rijandal.edif ...
+ngc2edif: Total memory usage is 58804 kilobytes
+
+Release 13.2 - ngc2edif O.61xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design ipcore.ngc ...
+WARNING:NetListWriters:298 - No output is written to ipcore.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file ipcore.edif ...
+ngc2edif: Total memory usage is 54708 kilobytes
+

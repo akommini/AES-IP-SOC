@@ -1,0 +1,2 @@
+vhdl work "../output_verification/watermark_extraction.vhd"
+vhdl work "../output_verification/watermark_display.vhd"

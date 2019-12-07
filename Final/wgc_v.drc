@@ -1,0 +1,8 @@
+Release 13.2 Drc O.61xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Fri Jan 18 23:12:13 2013
+
+drc -z WGC_V.ncd WGC_V.pcf
+
+DRC detected 0 errors and 0 warnings.

@@ -1,0 +1,1878 @@
+Release 13.2 - xst O.61xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.18 secs
+ 
+--> Reading design: IP_watermarking_serpent.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "IP_watermarking_serpent.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "IP_watermarking_serpent"
+Output Format                      : NGC
+Target Device                      : xc6vlx75tl-1L-ff784
+
+---- Source Options
+Top Module Name                    : IP_watermarking_serpent
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"../complete_final_periodic/ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\chinna\Desktop\AES algorigtms\SERPENT\vhdl\serpent_pkg.vhdl" into library work
+Parsing package <serpent_pack>.
+Parsing package body <serpent_pack>.
+WARNING:HDLCompiler:466 - "C:\Users\chinna\Desktop\AES algorigtms\SERPENT\vhdl\serpent_pkg.vhdl" Line 267: Ignoring unknown pragma value SBOX_LOOKUP_dw_op
+WARNING:HDLCompiler:466 - "C:\Users\chinna\Desktop\AES algorigtms\SERPENT\vhdl\serpent_pkg.vhdl" Line 301: Ignoring unknown pragma value LINEAR_TRANSFORM_dw_op
+WARNING:HDLCompiler:466 - "C:\Users\chinna\Desktop\AES algorigtms\SERPENT\vhdl\serpent_pkg.vhdl" Line 355: Ignoring unknown pragma value INVERSE_LINEAR_TRANSFORM_dw_op
+WARNING:HDLCompiler:466 - "C:\Users\chinna\Desktop\AES algorigtms\SERPENT\vhdl\serpent_pkg.vhdl" Line 416: Ignoring unknown pragma value SERPENT_ROUND_FUNCT_dw_op
+WARNING:HDLCompiler:466 - "C:\Users\chinna\Desktop\AES algorigtms\SERPENT\vhdl\serpent_pkg.vhdl" Line 535: Ignoring unknown pragma value UPDATE_W_ENCRYPT_dw_op
+WARNING:HDLCompiler:466 - "C:\Users\chinna\Desktop\AES algorigtms\SERPENT\vhdl\serpent_pkg.vhdl" Line 575: Ignoring unknown pragma value UPDATE_W_DECRYPT_dw_op
+WARNING:HDLCompiler:466 - "C:\Users\chinna\Desktop\AES algorigtms\SERPENT\vhdl\serpent_pkg.vhdl" Line 625: Ignoring unknown pragma value CREATE_ROUNDKEY_dw_op
+WARNING:HDLCompiler:466 - "C:\Users\chinna\Desktop\AES algorigtms\SERPENT\vhdl\serpent_pkg.vhdl" Line 723: Ignoring unknown pragma value INITIAL_EXPAND_FUNCT_dw_op
+WARNING:HDLCompiler:466 - "C:\Users\chinna\Desktop\AES algorigtms\SERPENT\vhdl\serpent_pkg.vhdl" Line 788: Ignoring unknown pragma value IP_FUNCT_dw_op
+WARNING:HDLCompiler:466 - "C:\Users\chinna\Desktop\AES algorigtms\SERPENT\vhdl\serpent_pkg.vhdl" Line 836: Ignoring unknown pragma value FP_FUNCT_dw_op
+Parsing VHDL file "C:\Users\chinna\Desktop\AES algorigtms\SERPENT\vhdl\runup_roundkeys.vhdl" into library work
+Parsing entity <RUNUP_ROUNDKEYS>.
+Parsing architecture <RUNUP_ROUNDKEYS_RTL> of entity <runup_roundkeys>.
+Parsing VHDL file "C:\Users\chinna\Desktop\AES algorigtms\SERPENT\vhdl\key_sched_iterative.vhdl" into library work
+Parsing entity <KEY_SCHEDULE_ITERATIVE>.
+Parsing architecture <KEY_SCHEDULE_ITERATIVE_RTL> of entity <key_schedule_iterative>.
+Parsing VHDL file "C:\Users\chinna\Desktop\AES algorigtms\SERPENT\vhdl\interface.vhdl" into library work
+Parsing entity <INTERFACE>.
+Parsing architecture <INTERFACE_RTL> of entity <interface>.
+Parsing VHDL file "C:\Users\chinna\Desktop\AES algorigtms\SERPENT\vhdl\controller_iter.vhdl" into library work
+Parsing entity <CONTROL_ITER>.
+Parsing architecture <CONTROL_ITER_RTL> of entity <control_iter>.
+Parsing VHDL file "C:\Users\chinna\Desktop\AES algorigtms\SERPENT\vhdl\alg_iterative.vhdl" into library work
+Parsing entity <ALG_ITERATIVE>.
+Parsing architecture <ALG_ITERATIVE_RTL> of entity <alg_iterative>.
+Parsing VHDL file "C:\Users\chinna\Desktop\Watermarking\complete_final_serpent\WGC_Watermark.vhd" into library work
+Parsing entity <WGC>.
+Parsing architecture <Behavioral> of entity <wgc>.
+Parsing VHDL file "C:\Users\chinna\Desktop\Watermarking\complete_final_serpent\PSRG_watermark.vhd" into library work
+Parsing entity <LFSR>.
+Parsing architecture <Behavioral> of entity <lfsr>.
+Parsing VHDL file "C:\Users\chinna\Desktop\Watermarking\complete_final_periodic\ipcore_dir\multiplier.vhd" into library work
+Parsing entity <multiplier>.
+Parsing architecture <multiplier_a> of entity <multiplier>.
+Parsing VHDL file "C:\Users\chinna\Desktop\AES algorigtms\SERPENT\vhdl\SERPENT_Top_Iterative.vhdl" into library work
+Parsing entity <SERPENT_TOP_ITER>.
+Parsing architecture <STRUCTURAL> of entity <serpent_top_iter>.
+Parsing configuration <conf_SERPENT_TOP_ITER>.
+Parsing VHDL file "C:\Users\chinna\Desktop\Watermarking\complete_final_serpent\IP_Watermarking_serpent.vhd" into library work
+Parsing entity <IP_watermarking_serpent>.
+Parsing architecture <Behavioral> of entity <ip_watermarking_serpent>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <IP_watermarking_serpent> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:871 - "C:\Users\chinna\Desktop\Watermarking\complete_final_serpent\IP_Watermarking_serpent.vhd" Line 45: Using initial value '0' for enc_dec since it is never assigned
+
+Elaborating entity <WGC> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:1127 - "C:\Users\chinna\Desktop\Watermarking\complete_final_serpent\WGC_Watermark.vhd" Line 38: Assignment to shift_reg ignored, since the identifier is never used
+
+Elaborating entity <LFSR> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "C:\Users\chinna\Desktop\Watermarking\complete_final_serpent\PSRG_watermark.vhd" Line 47: shift should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\chinna\Desktop\Watermarking\complete_final_serpent\PSRG_watermark.vhd" Line 48: shift should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\chinna\Desktop\Watermarking\complete_final_serpent\PSRG_watermark.vhd" Line 49: u1 should be on the sensitivity list of the process
+
+Elaborating entity <multiplier> (architecture <multiplier_a>) from library <work>.
+
+Elaborating entity <SERPENT_TOP_ITER> (architecture <STRUCTURAL>) from library <work>.
+
+Elaborating entity <CONTROL_ITER> (architecture <CONTROL_ITER_RTL>) from library <work>.
+INFO:HDLCompiler:679 - "C:\Users\chinna\Desktop\AES algorigtms\SERPENT\vhdl\controller_iter.vhdl" Line 161. Case statement is complete. others clause is never selected
+
+Elaborating entity <ALG_ITERATIVE> (architecture <ALG_ITERATIVE_RTL>) from library <work>.
+
+Elaborating entity <KEY_SCHEDULE_ITERATIVE> (architecture <KEY_SCHEDULE_ITERATIVE_RTL>) from library <work>.
+
+Elaborating entity <RUNUP_ROUNDKEYS> (architecture <RUNUP_ROUNDKEYS_RTL>) from library <work>.
+WARNING:HDLCompiler:92 - "C:\Users\chinna\Desktop\AES algorigtms\SERPENT\vhdl\runup_roundkeys.vhdl" Line 91: ks_cv should be on the sensitivity list of the process
+INFO:HDLCompiler:679 - "C:\Users\chinna\Desktop\AES algorigtms\SERPENT\vhdl\runup_roundkeys.vhdl" Line 191. Case statement is complete. others clause is never selected
+
+Elaborating entity <INTERFACE> (architecture <INTERFACE_RTL>) from library <work>.
+WARNING:HDLCompiler:92 - "C:\Users\chinna\Desktop\Watermarking\complete_final_serpent\IP_Watermarking_serpent.vhd" Line 205: p should be on the sensitivity list of the process
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <IP_watermarking_serpent>.
+    Related source file is "c:/users/chinna/desktop/watermarking/complete_final_serpent/ip_watermarking_serpent.vhd".
+    Found 4-bit register for signal <count>.
+    Found 1-bit register for signal <switch>.
+    Found 1-bit register for signal <output_mark>.
+    Found 8-bit register for signal <pass>.
+    Found 128-bit register for signal <crypto_buffer>.
+    Found 3-bit register for signal <counter>.
+    Found 128-bit register for signal <DATAIN>.
+    Found 4-bit adder for signal <count[3]_GND_4_o_add_0_OUT> created at line 1241.
+    Found 3-bit adder for signal <counter[2]_GND_4_o_add_11_OUT> created at line 1241.
+    Found 1-bit 8-to-1 multiplexer for signal <counter[2]_output[7]_Mux_6_o> created at line 218.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<35>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<34>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<33>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<32>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<27>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<26>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<25>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<24>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred 273 D-type flip-flop(s).
+	inferred  36 Latch(s).
+	inferred  56 Multiplexer(s).
+Unit <IP_watermarking_serpent> synthesized.
+
+Synthesizing Unit <WGC>.
+    Related source file is "c:/users/chinna/desktop/watermarking/complete_final_serpent/wgc_watermark.vhd".
+    Found 5-bit register for signal <symbol>.
+    Found 1-bit register for signal <load>.
+    Found 1-bit register for signal <WGC_output>.
+    Summary:
+	inferred   7 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <WGC> synthesized.
+
+Synthesizing Unit <LFSR>.
+    Related source file is "c:/users/chinna/desktop/watermarking/complete_final_serpent/psrg_watermark.vhd".
+    Found 4-bit register for signal <shift>.
+    Found 1-bit register for signal <u3>.
+    Found 1-bit register for signal <u1>.
+    Found 1-bit register for signal <u2>.
+    Found 1-bit register for signal <x0>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <LFSR> synthesized.
+
+Synthesizing Unit <SERPENT_TOP_ITER>.
+    Related source file is "c:/users/chinna/desktop/aes algorigtms/serpent/vhdl/serpent_top_iterative.vhdl".
+    Summary:
+	no macro.
+Unit <SERPENT_TOP_ITER> synthesized.
+
+Synthesizing Unit <CONTROL_ITER>.
+    Related source file is "c:/users/chinna/desktop/aes algorigtms/serpent/vhdl/controller_iter.vhdl".
+    Found 2-bit register for signal <STATE>.
+    Found 1-bit register for signal <CTRL_ALG_START>.
+    Found finite state machine <FSM_0> for signal <STATE>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 12                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 2                                              |
+    | Clock              | clock (rising_edge)                            |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | nop                                            |
+    | Power Up State     | nop                                            |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <CONTROL_ITER> synthesized.
+
+Synthesizing Unit <ALG_ITERATIVE>.
+    Related source file is "c:/users/chinna/desktop/aes algorigtms/serpent/vhdl/alg_iterative.vhdl".
+    Found 32-bit register for signal <ROUND>.
+    Found 128-bit register for signal <BI_REG>.
+    Found 1-bit register for signal <ALG_DONE>.
+    Found 1-bit register for signal <STATE_FLOW.active>.
+    Found 32-bit adder for signal <ROUND[31]_GND_44_o_add_235_OUT> created at line 150.
+    Found 3-bit subtractor for signal <GND_44_o_GND_44_o_sub_115_OUT<2:0>> created at line 467.
+    Found 8x64-bit Read Only RAM for signal <_n0375>
+    Found 4-bit 16-to-1 multiplexer for signal <n0195[3:0]> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <n0196[3:0]> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <n0197[3:0]> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <n0198[3:0]> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <n0199[3:0]> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <n0200[3:0]> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <n0201[3:0]> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <n0202[3:0]> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <n0203[3:0]> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <n0204[3:0]> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <n0205[3:0]> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <n0206[3:0]> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <n0207[3:0]> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <n0208[3:0]> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <n0209[3:0]> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <n0210[3:0]> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <n0211[3:0]> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <n0212[3:0]> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <n0213[3:0]> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <n0214[3:0]> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <n0215[3:0]> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <n0216[3:0]> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <n0217[3:0]> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <n0218[3:0]> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <n0219[3:0]> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <n0220[3:0]> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <n0221[3:0]> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <n0222[3:0]> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <n0223[3:0]> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <n0224[3:0]> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <n0225[3:0]> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <n0226[3:0]> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_131_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_132_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_133_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_134_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_135_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_136_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_137_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_138_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_139_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_140_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_141_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_142_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_143_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_144_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_145_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_146_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_147_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_148_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_149_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_150_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_151_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_152_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_153_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_154_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_155_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_156_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_157_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_158_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_159_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_160_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_161_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_162_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_189_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_190_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_191_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_192_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_193_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_194_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_195_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_196_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_197_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_198_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_199_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_200_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_201_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_202_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_203_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_204_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_205_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_206_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_207_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_208_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_209_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_210_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_211_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_212_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_213_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_214_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_215_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_216_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_217_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_218_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_219_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <BI_REG[0]_GND_44_o_wide_mux_220_OUT> created at line 278.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred 162 D-type flip-flop(s).
+	inferred 100 Multiplexer(s).
+Unit <ALG_ITERATIVE> synthesized.
+
+Synthesizing Unit <KEY_SCHEDULE_ITERATIVE>.
+    Related source file is "c:/users/chinna/desktop/aes algorigtms/serpent/vhdl/key_sched_iterative.vhdl".
+    Found 32-bit register for signal <W<-7>>.
+    Found 32-bit register for signal <W<-6>>.
+    Found 32-bit register for signal <W<-5>>.
+    Found 32-bit register for signal <W<-4>>.
+    Found 32-bit register for signal <W<-3>>.
+    Found 32-bit register for signal <W<-2>>.
+    Found 32-bit register for signal <W<-1>>.
+    Found 32-bit register for signal <CV_EXPAND_STEP>.
+    Found 32-bit register for signal <W<-8>>.
+    Found 128-bit register for signal <KS_ROUND_KEY>.
+    Found 1-bit register for signal <EXPAND_STATE>.
+    Found 9-bit adder for signal <n0886[8:0]> created at line 555.
+    Found 9-bit adder for signal <n0888[8:0]> created at line 555.
+    Found 9-bit adder for signal <n0890[8:0]> created at line 555.
+    Found 10-bit adder for signal <n0892> created at line 597.
+    Found 11-bit adder for signal <n0894> created at line 597.
+    Found 12-bit adder for signal <n0896> created at line 597.
+    Found 10-bit adder for signal <n0898> created at line 597.
+    Found 11-bit adder for signal <n0900> created at line 597.
+    Found 12-bit adder for signal <n0902> created at line 597.
+    Found 10-bit adder for signal <n0904> created at line 597.
+    Found 11-bit adder for signal <n0906> created at line 597.
+    Found 12-bit adder for signal <n0908> created at line 597.
+    Found 10-bit adder for signal <n0910> created at line 597.
+    Found 11-bit adder for signal <n0912> created at line 597.
+    Found 12-bit adder for signal <n0914> created at line 597.
+    Found 6-bit adder for signal <n0727> created at line 652.
+    Found 32-bit adder for signal <CV_EXPAND_STEP[31]_GND_45_o_add_474_OUT> created at line 182.
+    Found 6-bit subtractor for signal <GND_45_o_GND_45_o_sub_298_OUT<5:0>> created at line 695.
+    Found 3-bit subtractor for signal <GND_45_o_GND_45_o_sub_339_OUT<2:0>> created at line 641.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][0]_GND_45_o_wide_mux_41_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][0]_GND_45_o_wide_mux_42_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][0]_GND_45_o_wide_mux_43_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][0]_GND_45_o_wide_mux_44_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][0]_GND_45_o_wide_mux_45_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][0]_GND_45_o_wide_mux_46_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][0]_GND_45_o_wide_mux_47_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][0]_GND_45_o_wide_mux_48_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][0]_GND_45_o_wide_mux_49_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][0]_GND_45_o_wide_mux_50_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][0]_GND_45_o_wide_mux_51_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][0]_GND_45_o_wide_mux_52_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][0]_GND_45_o_wide_mux_53_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][0]_GND_45_o_wide_mux_54_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][0]_GND_45_o_wide_mux_55_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][0]_GND_45_o_wide_mux_56_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][0]_GND_45_o_wide_mux_57_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][0]_GND_45_o_wide_mux_58_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][0]_GND_45_o_wide_mux_59_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][0]_GND_45_o_wide_mux_60_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][0]_GND_45_o_wide_mux_61_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][0]_GND_45_o_wide_mux_62_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][0]_GND_45_o_wide_mux_63_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][0]_GND_45_o_wide_mux_64_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][0]_GND_45_o_wide_mux_65_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][0]_GND_45_o_wide_mux_66_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][0]_GND_45_o_wide_mux_67_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][0]_GND_45_o_wide_mux_68_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][0]_GND_45_o_wide_mux_69_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][0]_GND_45_o_wide_mux_70_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][0]_GND_45_o_wide_mux_71_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][0]_GND_45_o_wide_mux_72_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-5][0]_GND_45_o_wide_mux_132_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-5][0]_GND_45_o_wide_mux_133_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-5][0]_GND_45_o_wide_mux_134_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-5][0]_GND_45_o_wide_mux_135_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-5][0]_GND_45_o_wide_mux_136_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-5][0]_GND_45_o_wide_mux_137_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-5][0]_GND_45_o_wide_mux_138_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-5][0]_GND_45_o_wide_mux_139_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-5][0]_GND_45_o_wide_mux_140_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-5][0]_GND_45_o_wide_mux_141_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-5][0]_GND_45_o_wide_mux_142_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-5][0]_GND_45_o_wide_mux_143_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-5][0]_GND_45_o_wide_mux_144_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-5][0]_GND_45_o_wide_mux_145_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-5][0]_GND_45_o_wide_mux_146_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-5][0]_GND_45_o_wide_mux_147_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-5][0]_GND_45_o_wide_mux_148_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-5][0]_GND_45_o_wide_mux_149_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-5][0]_GND_45_o_wide_mux_150_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-5][0]_GND_45_o_wide_mux_151_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-5][0]_GND_45_o_wide_mux_152_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-5][0]_GND_45_o_wide_mux_153_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-5][0]_GND_45_o_wide_mux_154_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-5][0]_GND_45_o_wide_mux_155_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-5][0]_GND_45_o_wide_mux_156_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-5][0]_GND_45_o_wide_mux_157_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-5][0]_GND_45_o_wide_mux_158_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-5][0]_GND_45_o_wide_mux_159_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-5][0]_GND_45_o_wide_mux_160_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-5][0]_GND_45_o_wide_mux_161_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-5][0]_GND_45_o_wide_mux_162_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-5][0]_GND_45_o_wide_mux_163_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][21]_GND_45_o_wide_mux_181_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][21]_GND_45_o_wide_mux_182_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][21]_GND_45_o_wide_mux_183_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][21]_GND_45_o_wide_mux_184_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][21]_GND_45_o_wide_mux_185_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][21]_GND_45_o_wide_mux_186_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][21]_GND_45_o_wide_mux_187_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][21]_GND_45_o_wide_mux_188_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][21]_GND_45_o_wide_mux_189_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][21]_GND_45_o_wide_mux_190_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][21]_GND_45_o_wide_mux_191_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][21]_GND_45_o_wide_mux_192_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][21]_GND_45_o_wide_mux_193_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][21]_GND_45_o_wide_mux_194_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][21]_GND_45_o_wide_mux_195_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][21]_GND_45_o_wide_mux_196_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][21]_GND_45_o_wide_mux_197_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][21]_GND_45_o_wide_mux_198_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][21]_GND_45_o_wide_mux_199_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][21]_GND_45_o_wide_mux_200_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][21]_GND_45_o_wide_mux_201_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][21]_GND_45_o_wide_mux_202_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][21]_GND_45_o_wide_mux_203_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][21]_GND_45_o_wide_mux_204_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][21]_GND_45_o_wide_mux_205_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][21]_GND_45_o_wide_mux_206_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][21]_GND_45_o_wide_mux_207_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][21]_GND_45_o_wide_mux_208_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][21]_GND_45_o_wide_mux_209_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][21]_GND_45_o_wide_mux_210_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][21]_GND_45_o_wide_mux_211_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <KS_W_INITIAL[-1][21]_GND_45_o_wide_mux_212_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][0]_GND_45_o_wide_mux_264_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][0]_GND_45_o_wide_mux_265_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][0]_GND_45_o_wide_mux_266_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][0]_GND_45_o_wide_mux_267_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][0]_GND_45_o_wide_mux_268_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][0]_GND_45_o_wide_mux_269_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][0]_GND_45_o_wide_mux_270_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][0]_GND_45_o_wide_mux_271_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][0]_GND_45_o_wide_mux_272_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][0]_GND_45_o_wide_mux_273_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][0]_GND_45_o_wide_mux_274_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][0]_GND_45_o_wide_mux_275_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][0]_GND_45_o_wide_mux_276_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][0]_GND_45_o_wide_mux_277_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][0]_GND_45_o_wide_mux_278_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][0]_GND_45_o_wide_mux_279_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][0]_GND_45_o_wide_mux_280_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][0]_GND_45_o_wide_mux_281_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][0]_GND_45_o_wide_mux_282_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][0]_GND_45_o_wide_mux_283_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][0]_GND_45_o_wide_mux_284_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][0]_GND_45_o_wide_mux_285_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][0]_GND_45_o_wide_mux_286_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][0]_GND_45_o_wide_mux_287_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][0]_GND_45_o_wide_mux_288_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][0]_GND_45_o_wide_mux_289_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][0]_GND_45_o_wide_mux_290_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][0]_GND_45_o_wide_mux_291_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][0]_GND_45_o_wide_mux_292_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][0]_GND_45_o_wide_mux_293_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][0]_GND_45_o_wide_mux_294_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][0]_GND_45_o_wide_mux_295_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-5][0]_GND_45_o_wide_mux_355_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-5][0]_GND_45_o_wide_mux_356_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-5][0]_GND_45_o_wide_mux_357_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-5][0]_GND_45_o_wide_mux_358_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-5][0]_GND_45_o_wide_mux_359_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-5][0]_GND_45_o_wide_mux_360_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-5][0]_GND_45_o_wide_mux_361_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-5][0]_GND_45_o_wide_mux_362_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-5][0]_GND_45_o_wide_mux_363_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-5][0]_GND_45_o_wide_mux_364_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-5][0]_GND_45_o_wide_mux_365_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-5][0]_GND_45_o_wide_mux_366_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-5][0]_GND_45_o_wide_mux_367_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-5][0]_GND_45_o_wide_mux_368_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-5][0]_GND_45_o_wide_mux_369_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-5][0]_GND_45_o_wide_mux_370_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-5][0]_GND_45_o_wide_mux_371_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-5][0]_GND_45_o_wide_mux_372_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-5][0]_GND_45_o_wide_mux_373_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-5][0]_GND_45_o_wide_mux_374_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-5][0]_GND_45_o_wide_mux_375_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-5][0]_GND_45_o_wide_mux_376_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-5][0]_GND_45_o_wide_mux_377_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-5][0]_GND_45_o_wide_mux_378_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-5][0]_GND_45_o_wide_mux_379_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-5][0]_GND_45_o_wide_mux_380_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-5][0]_GND_45_o_wide_mux_381_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-5][0]_GND_45_o_wide_mux_382_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-5][0]_GND_45_o_wide_mux_383_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-5][0]_GND_45_o_wide_mux_384_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-5][0]_GND_45_o_wide_mux_385_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-5][0]_GND_45_o_wide_mux_386_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][21]_GND_45_o_wide_mux_404_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][21]_GND_45_o_wide_mux_405_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][21]_GND_45_o_wide_mux_406_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][21]_GND_45_o_wide_mux_407_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][21]_GND_45_o_wide_mux_408_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][21]_GND_45_o_wide_mux_409_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][21]_GND_45_o_wide_mux_410_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][21]_GND_45_o_wide_mux_411_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][21]_GND_45_o_wide_mux_412_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][21]_GND_45_o_wide_mux_413_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][21]_GND_45_o_wide_mux_414_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][21]_GND_45_o_wide_mux_415_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][21]_GND_45_o_wide_mux_416_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][21]_GND_45_o_wide_mux_417_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][21]_GND_45_o_wide_mux_418_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][21]_GND_45_o_wide_mux_419_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][21]_GND_45_o_wide_mux_420_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][21]_GND_45_o_wide_mux_421_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][21]_GND_45_o_wide_mux_422_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][21]_GND_45_o_wide_mux_423_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][21]_GND_45_o_wide_mux_424_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][21]_GND_45_o_wide_mux_425_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][21]_GND_45_o_wide_mux_426_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][21]_GND_45_o_wide_mux_427_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][21]_GND_45_o_wide_mux_428_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][21]_GND_45_o_wide_mux_429_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][21]_GND_45_o_wide_mux_430_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][21]_GND_45_o_wide_mux_431_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][21]_GND_45_o_wide_mux_432_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][21]_GND_45_o_wide_mux_433_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][21]_GND_45_o_wide_mux_434_OUT> created at line 278.
+    Found 4-bit 16-to-1 multiplexer for signal <W[-1][21]_GND_45_o_wide_mux_435_OUT> created at line 278.
+    Summary:
+	inferred  19 Adder/Subtractor(s).
+	inferred 417 D-type flip-flop(s).
+	inferred 241 Multiplexer(s).
+Unit <KEY_SCHEDULE_ITERATIVE> synthesized.
+
+Synthesizing Unit <RUNUP_ROUNDKEYS>.
+    Related source file is "c:/users/chinna/desktop/aes algorigtms/serpent/vhdl/runup_roundkeys.vhdl".
+    Found 32-bit register for signal <KS_W_INITIAL_INT<-8>>.
+    Found 32-bit register for signal <KS_W_INITIAL_INT<-7>>.
+    Found 32-bit register for signal <KS_W_INITIAL_INT<-6>>.
+    Found 32-bit register for signal <KS_W_INITIAL_INT<-5>>.
+    Found 32-bit register for signal <KS_W_INITIAL_INT<-4>>.
+    Found 32-bit register for signal <KS_W_INITIAL_INT<-3>>.
+    Found 32-bit register for signal <KS_W_INITIAL_INT<-2>>.
+    Found 32-bit register for signal <KS_W_INITIAL_INT<-1>>.
+    Found 2-bit register for signal <RUNUP_STATE>.
+    Found 8-bit register for signal <CV_RUNUP_STEP>.
+    Found 1-bit register for signal <w_-8<31>>.
+    Found 1-bit register for signal <w_-8<30>>.
+    Found 1-bit register for signal <w_-8<29>>.
+    Found 1-bit register for signal <w_-8<28>>.
+    Found 1-bit register for signal <w_-8<27>>.
+    Found 1-bit register for signal <w_-8<26>>.
+    Found 1-bit register for signal <w_-8<25>>.
+    Found 1-bit register for signal <w_-8<24>>.
+    Found 1-bit register for signal <w_-8<23>>.
+    Found 1-bit register for signal <w_-8<22>>.
+    Found 1-bit register for signal <w_-8<21>>.
+    Found 1-bit register for signal <w_-8<20>>.
+    Found 1-bit register for signal <w_-8<19>>.
+    Found 1-bit register for signal <w_-8<18>>.
+    Found 1-bit register for signal <w_-8<17>>.
+    Found 1-bit register for signal <w_-8<16>>.
+    Found 1-bit register for signal <w_-8<15>>.
+    Found 1-bit register for signal <w_-8<14>>.
+    Found 1-bit register for signal <w_-8<13>>.
+    Found 1-bit register for signal <w_-8<12>>.
+    Found 1-bit register for signal <w_-8<11>>.
+    Found 1-bit register for signal <w_-8<10>>.
+    Found 1-bit register for signal <w_-8<9>>.
+    Found 1-bit register for signal <w_-8<8>>.
+    Found 1-bit register for signal <w_-8<7>>.
+    Found 1-bit register for signal <w_-8<6>>.
+    Found 1-bit register for signal <w_-8<5>>.
+    Found 1-bit register for signal <w_-8<4>>.
+    Found 1-bit register for signal <w_-8<3>>.
+    Found 1-bit register for signal <w_-8<2>>.
+    Found 1-bit register for signal <w_-8<1>>.
+    Found 1-bit register for signal <w_-8<0>>.
+    Found 1-bit register for signal <w_-7<31>>.
+    Found 1-bit register for signal <w_-7<30>>.
+    Found 1-bit register for signal <w_-7<29>>.
+    Found 1-bit register for signal <w_-7<28>>.
+    Found 1-bit register for signal <w_-7<27>>.
+    Found 1-bit register for signal <w_-7<26>>.
+    Found 1-bit register for signal <w_-7<25>>.
+    Found 1-bit register for signal <w_-7<24>>.
+    Found 1-bit register for signal <w_-7<23>>.
+    Found 1-bit register for signal <w_-7<22>>.
+    Found 1-bit register for signal <w_-7<21>>.
+    Found 1-bit register for signal <w_-7<20>>.
+    Found 1-bit register for signal <w_-7<19>>.
+    Found 1-bit register for signal <w_-7<18>>.
+    Found 1-bit register for signal <w_-7<17>>.
+    Found 1-bit register for signal <w_-7<16>>.
+    Found 1-bit register for signal <w_-7<15>>.
+    Found 1-bit register for signal <w_-7<14>>.
+    Found 1-bit register for signal <w_-7<13>>.
+    Found 1-bit register for signal <w_-7<12>>.
+    Found 1-bit register for signal <w_-7<11>>.
+    Found 1-bit register for signal <w_-7<10>>.
+    Found 1-bit register for signal <w_-7<9>>.
+    Found 1-bit register for signal <w_-7<8>>.
+    Found 1-bit register for signal <w_-7<7>>.
+    Found 1-bit register for signal <w_-7<6>>.
+    Found 1-bit register for signal <w_-7<5>>.
+    Found 1-bit register for signal <w_-7<4>>.
+    Found 1-bit register for signal <w_-7<3>>.
+    Found 1-bit register for signal <w_-7<2>>.
+    Found 1-bit register for signal <w_-7<1>>.
+    Found 1-bit register for signal <w_-7<0>>.
+    Found 1-bit register for signal <w_-6<31>>.
+    Found 1-bit register for signal <w_-6<30>>.
+    Found 1-bit register for signal <w_-6<29>>.
+    Found 1-bit register for signal <w_-6<28>>.
+    Found 1-bit register for signal <w_-6<27>>.
+    Found 1-bit register for signal <w_-6<26>>.
+    Found 1-bit register for signal <w_-6<25>>.
+    Found 1-bit register for signal <w_-6<24>>.
+    Found 1-bit register for signal <w_-6<23>>.
+    Found 1-bit register for signal <w_-6<22>>.
+    Found 1-bit register for signal <w_-6<21>>.
+    Found 1-bit register for signal <w_-6<20>>.
+    Found 1-bit register for signal <w_-6<19>>.
+    Found 1-bit register for signal <w_-6<18>>.
+    Found 1-bit register for signal <w_-6<17>>.
+    Found 1-bit register for signal <w_-6<16>>.
+    Found 1-bit register for signal <w_-6<15>>.
+    Found 1-bit register for signal <w_-6<14>>.
+    Found 1-bit register for signal <w_-6<13>>.
+    Found 1-bit register for signal <w_-6<12>>.
+    Found 1-bit register for signal <w_-6<11>>.
+    Found 1-bit register for signal <w_-6<10>>.
+    Found 1-bit register for signal <w_-6<9>>.
+    Found 1-bit register for signal <w_-6<8>>.
+    Found 1-bit register for signal <w_-6<7>>.
+    Found 1-bit register for signal <w_-6<6>>.
+    Found 1-bit register for signal <w_-6<5>>.
+    Found 1-bit register for signal <w_-6<4>>.
+    Found 1-bit register for signal <w_-6<3>>.
+    Found 1-bit register for signal <w_-6<2>>.
+    Found 1-bit register for signal <w_-6<1>>.
+    Found 1-bit register for signal <w_-6<0>>.
+    Found 1-bit register for signal <w_-5<31>>.
+    Found 1-bit register for signal <w_-5<30>>.
+    Found 1-bit register for signal <w_-5<29>>.
+    Found 1-bit register for signal <w_-5<28>>.
+    Found 1-bit register for signal <w_-5<27>>.
+    Found 1-bit register for signal <w_-5<26>>.
+    Found 1-bit register for signal <w_-5<25>>.
+    Found 1-bit register for signal <w_-5<24>>.
+    Found 1-bit register for signal <w_-5<23>>.
+    Found 1-bit register for signal <w_-5<22>>.
+    Found 1-bit register for signal <w_-5<21>>.
+    Found 1-bit register for signal <w_-5<20>>.
+    Found 1-bit register for signal <w_-5<19>>.
+    Found 1-bit register for signal <w_-5<18>>.
+    Found 1-bit register for signal <w_-5<17>>.
+    Found 1-bit register for signal <w_-5<16>>.
+    Found 1-bit register for signal <w_-5<15>>.
+    Found 1-bit register for signal <w_-5<14>>.
+    Found 1-bit register for signal <w_-5<13>>.
+    Found 1-bit register for signal <w_-5<12>>.
+    Found 1-bit register for signal <w_-5<11>>.
+    Found 1-bit register for signal <w_-5<10>>.
+    Found 1-bit register for signal <w_-5<9>>.
+    Found 1-bit register for signal <w_-5<8>>.
+    Found 1-bit register for signal <w_-5<7>>.
+    Found 1-bit register for signal <w_-5<6>>.
+    Found 1-bit register for signal <w_-5<5>>.
+    Found 1-bit register for signal <w_-5<4>>.
+    Found 1-bit register for signal <w_-5<3>>.
+    Found 1-bit register for signal <w_-5<2>>.
+    Found 1-bit register for signal <w_-5<1>>.
+    Found 1-bit register for signal <w_-5<0>>.
+    Found 1-bit register for signal <w_-4<31>>.
+    Found 1-bit register for signal <w_-4<30>>.
+    Found 1-bit register for signal <w_-4<29>>.
+    Found 1-bit register for signal <w_-4<28>>.
+    Found 1-bit register for signal <w_-4<27>>.
+    Found 1-bit register for signal <w_-4<26>>.
+    Found 1-bit register for signal <w_-4<25>>.
+    Found 1-bit register for signal <w_-4<24>>.
+    Found 1-bit register for signal <w_-4<23>>.
+    Found 1-bit register for signal <w_-4<22>>.
+    Found 1-bit register for signal <w_-4<21>>.
+    Found 1-bit register for signal <w_-4<20>>.
+    Found 1-bit register for signal <w_-4<19>>.
+    Found 1-bit register for signal <w_-4<18>>.
+    Found 1-bit register for signal <w_-4<17>>.
+    Found 1-bit register for signal <w_-4<16>>.
+    Found 1-bit register for signal <w_-4<15>>.
+    Found 1-bit register for signal <w_-4<14>>.
+    Found 1-bit register for signal <w_-4<13>>.
+    Found 1-bit register for signal <w_-4<12>>.
+    Found 1-bit register for signal <w_-4<11>>.
+    Found 1-bit register for signal <w_-4<10>>.
+    Found 1-bit register for signal <w_-4<9>>.
+    Found 1-bit register for signal <w_-4<8>>.
+    Found 1-bit register for signal <w_-4<7>>.
+    Found 1-bit register for signal <w_-4<6>>.
+    Found 1-bit register for signal <w_-4<5>>.
+    Found 1-bit register for signal <w_-4<4>>.
+    Found 1-bit register for signal <w_-4<3>>.
+    Found 1-bit register for signal <w_-4<2>>.
+    Found 1-bit register for signal <w_-4<1>>.
+    Found 1-bit register for signal <w_-4<0>>.
+    Found 1-bit register for signal <w_-3<31>>.
+    Found 1-bit register for signal <w_-3<30>>.
+    Found 1-bit register for signal <w_-3<29>>.
+    Found 1-bit register for signal <w_-3<28>>.
+    Found 1-bit register for signal <w_-3<27>>.
+    Found 1-bit register for signal <w_-3<26>>.
+    Found 1-bit register for signal <w_-3<25>>.
+    Found 1-bit register for signal <w_-3<24>>.
+    Found 1-bit register for signal <w_-3<23>>.
+    Found 1-bit register for signal <w_-3<22>>.
+    Found 1-bit register for signal <w_-3<21>>.
+    Found 1-bit register for signal <w_-3<20>>.
+    Found 1-bit register for signal <w_-3<19>>.
+    Found 1-bit register for signal <w_-3<18>>.
+    Found 1-bit register for signal <w_-3<17>>.
+    Found 1-bit register for signal <w_-3<16>>.
+    Found 1-bit register for signal <w_-3<15>>.
+    Found 1-bit register for signal <w_-3<14>>.
+    Found 1-bit register for signal <w_-3<13>>.
+    Found 1-bit register for signal <w_-3<12>>.
+    Found 1-bit register for signal <w_-3<11>>.
+    Found 1-bit register for signal <w_-3<10>>.
+    Found 1-bit register for signal <w_-3<9>>.
+    Found 1-bit register for signal <w_-3<8>>.
+    Found 1-bit register for signal <w_-3<7>>.
+    Found 1-bit register for signal <w_-3<6>>.
+    Found 1-bit register for signal <w_-3<5>>.
+    Found 1-bit register for signal <w_-3<4>>.
+    Found 1-bit register for signal <w_-3<3>>.
+    Found 1-bit register for signal <w_-3<2>>.
+    Found 1-bit register for signal <w_-3<1>>.
+    Found 1-bit register for signal <w_-3<0>>.
+    Found 1-bit register for signal <w_-2<31>>.
+    Found 1-bit register for signal <w_-2<30>>.
+    Found 1-bit register for signal <w_-2<29>>.
+    Found 1-bit register for signal <w_-2<28>>.
+    Found 1-bit register for signal <w_-2<27>>.
+    Found 1-bit register for signal <w_-2<26>>.
+    Found 1-bit register for signal <w_-2<25>>.
+    Found 1-bit register for signal <w_-2<24>>.
+    Found 1-bit register for signal <w_-2<23>>.
+    Found 1-bit register for signal <w_-2<22>>.
+    Found 1-bit register for signal <w_-2<21>>.
+    Found 1-bit register for signal <w_-2<20>>.
+    Found 1-bit register for signal <w_-2<19>>.
+    Found 1-bit register for signal <w_-2<18>>.
+    Found 1-bit register for signal <w_-2<17>>.
+    Found 1-bit register for signal <w_-2<16>>.
+    Found 1-bit register for signal <w_-2<15>>.
+    Found 1-bit register for signal <w_-2<14>>.
+    Found 1-bit register for signal <w_-2<13>>.
+    Found 1-bit register for signal <w_-2<12>>.
+    Found 1-bit register for signal <w_-2<11>>.
+    Found 1-bit register for signal <w_-2<10>>.
+    Found 1-bit register for signal <w_-2<9>>.
+    Found 1-bit register for signal <w_-2<8>>.
+    Found 1-bit register for signal <w_-2<7>>.
+    Found 1-bit register for signal <w_-2<6>>.
+    Found 1-bit register for signal <w_-2<5>>.
+    Found 1-bit register for signal <w_-2<4>>.
+    Found 1-bit register for signal <w_-2<3>>.
+    Found 1-bit register for signal <w_-2<2>>.
+    Found 1-bit register for signal <w_-2<1>>.
+    Found 1-bit register for signal <w_-2<0>>.
+    Found 1-bit register for signal <w_-1<31>>.
+    Found 1-bit register for signal <w_-1<30>>.
+    Found 1-bit register for signal <w_-1<29>>.
+    Found 1-bit register for signal <w_-1<28>>.
+    Found 1-bit register for signal <w_-1<27>>.
+    Found 1-bit register for signal <w_-1<26>>.
+    Found 1-bit register for signal <w_-1<25>>.
+    Found 1-bit register for signal <w_-1<24>>.
+    Found 1-bit register for signal <w_-1<23>>.
+    Found 1-bit register for signal <w_-1<22>>.
+    Found 1-bit register for signal <w_-1<21>>.
+    Found 1-bit register for signal <w_-1<20>>.
+    Found 1-bit register for signal <w_-1<19>>.
+    Found 1-bit register for signal <w_-1<18>>.
+    Found 1-bit register for signal <w_-1<17>>.
+    Found 1-bit register for signal <w_-1<16>>.
+    Found 1-bit register for signal <w_-1<15>>.
+    Found 1-bit register for signal <w_-1<14>>.
+    Found 1-bit register for signal <w_-1<13>>.
+    Found 1-bit register for signal <w_-1<12>>.
+    Found 1-bit register for signal <w_-1<11>>.
+    Found 1-bit register for signal <w_-1<10>>.
+    Found 1-bit register for signal <w_-1<9>>.
+    Found 1-bit register for signal <w_-1<8>>.
+    Found 1-bit register for signal <w_-1<7>>.
+    Found 1-bit register for signal <w_-1<6>>.
+    Found 1-bit register for signal <w_-1<5>>.
+    Found 1-bit register for signal <w_-1<4>>.
+    Found 1-bit register for signal <w_-1<3>>.
+    Found 1-bit register for signal <w_-1<2>>.
+    Found 1-bit register for signal <w_-1<1>>.
+    Found 1-bit register for signal <w_-1<0>>.
+    Found finite state machine <FSM_1> for signal <RUNUP_STATE>.
+    -----------------------------------------------------------------------
+    | States             | 3                                              |
+    | Transitions        | 8                                              |
+    | Inputs             | 3                                              |
+    | Outputs            | 3                                              |
+    | Clock              | clock (rising_edge)                            |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | hold                                           |
+    | Power Up State     | hold                                           |
+    | Encoding           | auto                                           |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 9-bit adder for signal <n1143[8:0]> created at line 555.
+    Found 9-bit adder for signal <n1145[8:0]> created at line 555.
+    Found 9-bit adder for signal <n1147[8:0]> created at line 555.
+    Found 8-bit adder for signal <CV_RUNUP_STEP[7]_GND_46_o_add_219_OUT> created at line 241.
+    Found 32-bit 3-to-1 multiplexer for signal <RUNUP_STATE[1]_X_16_o_wide_mux_158_OUT> created at line 100.
+    Found 32-bit 3-to-1 multiplexer for signal <RUNUP_STATE[1]_X_16_o_wide_mux_159_OUT> created at line 100.
+    Found 32-bit 3-to-1 multiplexer for signal <RUNUP_STATE[1]_X_16_o_wide_mux_160_OUT> created at line 100.
+    Found 32-bit 3-to-1 multiplexer for signal <RUNUP_STATE[1]_X_16_o_wide_mux_161_OUT> created at line 100.
+    Found 32-bit 3-to-1 multiplexer for signal <RUNUP_STATE[1]_X_16_o_wide_mux_162_OUT> created at line 100.
+    Found 32-bit 3-to-1 multiplexer for signal <RUNUP_STATE[1]_X_16_o_wide_mux_163_OUT> created at line 100.
+    Found 32-bit 3-to-1 multiplexer for signal <RUNUP_STATE[1]_X_16_o_wide_mux_164_OUT> created at line 100.
+    Found 32-bit 3-to-1 multiplexer for signal <RUNUP_STATE[1]_X_16_o_wide_mux_165_OUT> created at line 100.
+    Found 8-bit 3-to-1 multiplexer for signal <RUNUP_STATE[1]_X_16_o_wide_mux_225_OUT> created at line 216.
+    Summary:
+	inferred   4 Adder/Subtractor(s).
+	inferred 520 D-type flip-flop(s).
+	inferred  59 Multiplexer(s).
+	inferred   1 Finite State Machine(s).
+Unit <RUNUP_ROUNDKEYS> synthesized.
+
+Synthesizing Unit <INTERFACE>.
+    Related source file is "c:/users/chinna/desktop/aes algorigtms/serpent/vhdl/interface.vhdl".
+    Found 128-bit register for signal <DATA_INT>.
+    Found 256-bit register for signal <CV_INT>.
+    Found 1-bit register for signal <CTRL_DATA_LOAD>.
+    Found 1-bit register for signal <KS_CVLOAD>.
+    WARNING:Xst:2404 -  FFs/Latches <CTRL_ENC_DEC_B<0:0>> (without init value) have a constant value of 0 in block <INTERFACE>.
+    Summary:
+	inferred 386 D-type flip-flop(s).
+Unit <INTERFACE> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 8x64-bit single-port Read Only RAM                    : 1
+# Adders/Subtractors                                   : 27
+ 10-bit adder                                          : 4
+ 11-bit adder                                          : 4
+ 12-bit adder                                          : 4
+ 3-bit adder                                           : 1
+ 3-bit subtractor                                      : 2
+ 32-bit adder                                          : 2
+ 4-bit adder                                           : 1
+ 6-bit adder                                           : 1
+ 6-bit subtractor                                      : 1
+ 8-bit adder                                           : 1
+ 9-bit adder                                           : 6
+# Registers                                            : 321
+ 1-bit register                                        : 284
+ 128-bit register                                      : 5
+ 256-bit register                                      : 1
+ 3-bit register                                        : 1
+ 32-bit register                                       : 18
+ 4-bit register                                        : 2
+ 5-bit register                                        : 8
+ 8-bit register                                        : 2
+# Latches                                              : 36
+ 1-bit latch                                           : 36
+# Multiplexers                                         : 465
+ 1-bit 2-to-1 multiplexer                              : 55
+ 1-bit 8-to-1 multiplexer                              : 1
+ 128-bit 2-to-1 multiplexer                            : 9
+ 32-bit 2-to-1 multiplexer                             : 91
+ 32-bit 3-to-1 multiplexer                             : 8
+ 4-bit 16-to-1 multiplexer                             : 288
+ 4-bit 2-to-1 multiplexer                              : 1
+ 5-bit 2-to-1 multiplexer                              : 8
+ 8-bit 2-to-1 multiplexer                              : 3
+ 8-bit 3-to-1 multiplexer                              : 1
+# FSMs                                                 : 2
+# Xors                                                 : 64
+ 1-bit xor2                                            : 10
+ 128-bit xor2                                          : 3
+ 32-bit xor2                                           : 23
+ 32-bit xor3                                           : 2
+ 32-bit xor4                                           : 2
+ 32-bit xor5                                           : 18
+ 32-bit xor6                                           : 6
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <../complete_final_periodic/ipcore_dir/multiplier.ngc>.
+Loading core <multiplier> for timing and area information for instance <general>.
+INFO:Xst:2261 - The FF/Latch <CV_INT_255> in Unit <INTER> is equivalent to the following 254 FFs/Latches, which will be removed : <CV_INT_254> <CV_INT_253> <CV_INT_252> <CV_INT_251> <CV_INT_250> <CV_INT_249> <CV_INT_248> <CV_INT_247> <CV_INT_246> <CV_INT_245> <CV_INT_244> <CV_INT_243> <CV_INT_242> <CV_INT_241> <CV_INT_240> <CV_INT_239> <CV_INT_238> <CV_INT_237> <CV_INT_236> <CV_INT_235> <CV_INT_234> <CV_INT_233> <CV_INT_232> <CV_INT_231> <CV_INT_230> <CV_INT_229> <CV_INT_228> <CV_INT_227> <CV_INT_226> <CV_INT_225> <CV_INT_224> <CV_INT_223> <CV_INT_222> <CV_INT_221> <CV_INT_220> <CV_INT_219> <CV_INT_218> <CV_INT_217> <CV_INT_216> <CV_INT_215> <CV_INT_214> <CV_INT_213> <CV_INT_212> <CV_INT_211> <CV_INT_210> <CV_INT_209> <CV_INT_208> <CV_INT_207> <CV_INT_206> <CV_INT_205> <CV_INT_204> <CV_INT_203> <CV_INT_202> <CV_INT_201> <CV_INT_200> <CV_INT_199> <CV_INT_198> <CV_INT_197> <CV_INT_196> <CV_INT_195> <CV_INT_194> <CV_INT_193> <CV_INT_192> <CV_INT_191> <CV_INT_190> <CV_INT_189> <CV_INT_188> <CV_INT_187>
+   <CV_INT_186> <CV_INT_185> <CV_INT_184> <CV_INT_183> <CV_INT_182> <CV_INT_181> <CV_INT_180> <CV_INT_179> <CV_INT_178> <CV_INT_177> <CV_INT_176> <CV_INT_175> <CV_INT_174> <CV_INT_173> <CV_INT_172> <CV_INT_171> <CV_INT_170> <CV_INT_169> <CV_INT_168> <CV_INT_167> <CV_INT_166> <CV_INT_165> <CV_INT_164> <CV_INT_163> <CV_INT_162> <CV_INT_161> <CV_INT_160> <CV_INT_159> <CV_INT_158> <CV_INT_157> <CV_INT_156> <CV_INT_155> <CV_INT_154> <CV_INT_153> <CV_INT_152> <CV_INT_151> <CV_INT_150> <CV_INT_149> <CV_INT_148> <CV_INT_147> <CV_INT_146> <CV_INT_145> <CV_INT_144> <CV_INT_143> <CV_INT_142> <CV_INT_141> <CV_INT_140> <CV_INT_139> <CV_INT_138> <CV_INT_137> <CV_INT_136> <CV_INT_135> <CV_INT_134> <CV_INT_133> <CV_INT_132> <CV_INT_131> <CV_INT_130> <CV_INT_129> <CV_INT_128> <CV_INT_126> <CV_INT_125> <CV_INT_124> <CV_INT_123> <CV_INT_122> <CV_INT_121> <CV_INT_120> <CV_INT_119> <CV_INT_118> <CV_INT_117> <CV_INT_116> <CV_INT_115> <CV_INT_114> <CV_INT_113> <CV_INT_112> <CV_INT_111> <CV_INT_110> <CV_INT_109> <CV_INT_108>
+   <CV_INT_107> <CV_INT_106> <CV_INT_105> <CV_INT_104> <CV_INT_103> <CV_INT_102> <CV_INT_101> <CV_INT_100> <CV_INT_99> <CV_INT_98> <CV_INT_97> <CV_INT_96> <CV_INT_95> <CV_INT_94> <CV_INT_93> <CV_INT_92> <CV_INT_91> <CV_INT_90> <CV_INT_89> <CV_INT_88> <CV_INT_87> <CV_INT_86> <CV_INT_85> <CV_INT_84> <CV_INT_83> <CV_INT_82> <CV_INT_81> <CV_INT_80> <CV_INT_79> <CV_INT_78> <CV_INT_77> <CV_INT_76> <CV_INT_75> <CV_INT_74> <CV_INT_73> <CV_INT_72> <CV_INT_71> <CV_INT_70> <CV_INT_69> <CV_INT_68> <CV_INT_67> <CV_INT_66> <CV_INT_65> <CV_INT_64> <CV_INT_63> <CV_INT_62> <CV_INT_61> <CV_INT_60> <CV_INT_59> <CV_INT_58> <CV_INT_57> <CV_INT_56> <CV_INT_55> <CV_INT_54> <CV_INT_53> <CV_INT_52> <CV_INT_51> <CV_INT_50> <CV_INT_49> <CV_INT_48> <CV_INT_47> <CV_INT_46> <CV_INT_45> <CV_INT_44> <CV_INT_43> <CV_INT_42> <CV_INT_41> <CV_INT_40> <CV_INT_39> <CV_INT_38> <CV_INT_37> <CV_INT_36> <CV_INT_35> <CV_INT_34> <CV_INT_33> <CV_INT_32> <CV_INT_31> <CV_INT_30> <CV_INT_29> <CV_INT_28> <CV_INT_27> <CV_INT_26> <CV_INT_25> <CV_INT_24>
+   <CV_INT_23> <CV_INT_22> <CV_INT_21> <CV_INT_20> <CV_INT_19> <CV_INT_18> <CV_INT_17> <CV_INT_16> <CV_INT_15> <CV_INT_14> <CV_INT_13> <CV_INT_12> <CV_INT_11> <CV_INT_10> <CV_INT_9> <CV_INT_8> <CV_INT_7> <CV_INT_6> <CV_INT_5> <CV_INT_4> <CV_INT_3> <CV_INT_2> <CV_INT_1> <CV_INT_0> 
+WARNING:Xst:1710 - FF/Latch <CV_INT_255> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <ALG_ITERATIVE>.
+INFO:Xst:3218 - HDL ADVISOR - The RAM <Mram__n0375> will be implemented on LUTs either because you have described an asynchronous read or because of currently unsupported block RAM features. If you have described an asynchronous read, making it synchronous would allow you to take advantage of available block RAM resources, for optimized device usage and improved timings. Please refer to your documentation for coding guidelines.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 8-word x 64-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <ROUND<2:0>>    |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <ALG_ITERATIVE> synthesized (advanced).
+
+Synthesizing (advanced) Unit <IP_watermarking_serpent>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <IP_watermarking_serpent> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 1
+ 8x64-bit single-port distributed Read Only RAM        : 1
+# Adders/Subtractors                                   : 25
+ 10-bit adder                                          : 4
+ 11-bit adder                                          : 4
+ 12-bit adder                                          : 4
+ 3-bit adder                                           : 1
+ 3-bit subtractor                                      : 2
+ 32-bit adder                                          : 2
+ 6-bit subtractor                                      : 1
+ 8-bit adder                                           : 1
+ 9-bit adder                                           : 6
+# Counters                                             : 2
+ 3-bit up counter                                      : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 1816
+ Flip-Flops                                            : 1816
+# Multiplexers                                         : 871
+ 1-bit 2-to-1 multiplexer                              : 479
+ 1-bit 8-to-1 multiplexer                              : 1
+ 128-bit 2-to-1 multiplexer                            : 8
+ 32-bit 2-to-1 multiplexer                             : 83
+ 32-bit 3-to-1 multiplexer                             : 8
+ 4-bit 16-to-1 multiplexer                             : 288
+ 8-bit 2-to-1 multiplexer                              : 3
+ 8-bit 3-to-1 multiplexer                              : 1
+# FSMs                                                 : 2
+# Xors                                                 : 64
+ 1-bit xor2                                            : 10
+ 128-bit xor2                                          : 3
+ 32-bit xor2                                           : 23
+ 32-bit xor3                                           : 2
+ 32-bit xor4                                           : 2
+ 32-bit xor5                                           : 18
+ 32-bit xor6                                           : 6
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <CV_INT_62> in Unit <INTERFACE> is equivalent to the following 62 FFs/Latches, which will be removed : <CV_INT_61> <CV_INT_60> <CV_INT_59> <CV_INT_58> <CV_INT_57> <CV_INT_56> <CV_INT_55> <CV_INT_54> <CV_INT_53> <CV_INT_52> <CV_INT_51> <CV_INT_50> <CV_INT_49> <CV_INT_48> <CV_INT_47> <CV_INT_46> <CV_INT_45> <CV_INT_44> <CV_INT_43> <CV_INT_42> <CV_INT_41> <CV_INT_40> <CV_INT_39> <CV_INT_38> <CV_INT_37> <CV_INT_36> <CV_INT_35> <CV_INT_34> <CV_INT_33> <CV_INT_32> <CV_INT_31> <CV_INT_30> <CV_INT_29> <CV_INT_28> <CV_INT_27> <CV_INT_26> <CV_INT_25> <CV_INT_24> <CV_INT_23> <CV_INT_22> <CV_INT_21> <CV_INT_20> <CV_INT_19> <CV_INT_18> <CV_INT_17> <CV_INT_16> <CV_INT_15> <CV_INT_14> <CV_INT_13> <CV_INT_12> <CV_INT_11> <CV_INT_10> <CV_INT_9> <CV_INT_8> <CV_INT_7> <CV_INT_6> <CV_INT_5> <CV_INT_4> <CV_INT_3> <CV_INT_2> <CV_INT_1> <CV_INT_0> 
+INFO:Xst:2261 - The FF/Latch <CV_INT_254> in Unit <INTERFACE> is equivalent to the following 69 FFs/Latches, which will be removed : <CV_INT_252> <CV_INT_251> <CV_INT_250> <CV_INT_248> <CV_INT_245> <CV_INT_243> <CV_INT_241> <CV_INT_236> <CV_INT_235> <CV_INT_232> <CV_INT_230> <CV_INT_227> <CV_INT_226> <CV_INT_220> <CV_INT_219> <CV_INT_216> <CV_INT_214> <CV_INT_212> <CV_INT_211> <CV_INT_210> <CV_INT_208> <CV_INT_205> <CV_INT_203> <CV_INT_201> <CV_INT_196> <CV_INT_195> <CV_INT_192> <CV_INT_190> <CV_INT_188> <CV_INT_187> <CV_INT_186> <CV_INT_184> <CV_INT_181> <CV_INT_180> <CV_INT_179> <CV_INT_177> <CV_INT_176> <CV_INT_174> <CV_INT_173> <CV_INT_172> <CV_INT_171> <CV_INT_170> <CV_INT_169> <CV_INT_168> <CV_INT_166> <CV_INT_165> <CV_INT_163> <CV_INT_162> <CV_INT_161> <CV_INT_156> <CV_INT_155> <CV_INT_152> <CV_INT_150> <CV_INT_148> <CV_INT_147> <CV_INT_146> <CV_INT_144> <CV_INT_141> <CV_INT_140> <CV_INT_139> <CV_INT_137> <CV_INT_136> <CV_INT_134> <CV_INT_133> <CV_INT_132> <CV_INT_131> <CV_INT_130> <CV_INT_129>
+   <CV_INT_128> 
+INFO:Xst:2261 - The FF/Latch <CV_INT_126> in Unit <INTERFACE> is equivalent to the following 62 FFs/Latches, which will be removed : <CV_INT_125> <CV_INT_124> <CV_INT_123> <CV_INT_122> <CV_INT_121> <CV_INT_120> <CV_INT_119> <CV_INT_118> <CV_INT_117> <CV_INT_116> <CV_INT_115> <CV_INT_114> <CV_INT_113> <CV_INT_112> <CV_INT_111> <CV_INT_110> <CV_INT_109> <CV_INT_108> <CV_INT_107> <CV_INT_106> <CV_INT_105> <CV_INT_104> <CV_INT_103> <CV_INT_102> <CV_INT_101> <CV_INT_100> <CV_INT_99> <CV_INT_98> <CV_INT_97> <CV_INT_96> <CV_INT_95> <CV_INT_94> <CV_INT_93> <CV_INT_92> <CV_INT_91> <CV_INT_90> <CV_INT_89> <CV_INT_88> <CV_INT_87> <CV_INT_86> <CV_INT_85> <CV_INT_84> <CV_INT_83> <CV_INT_82> <CV_INT_81> <CV_INT_80> <CV_INT_79> <CV_INT_78> <CV_INT_77> <CV_INT_76> <CV_INT_75> <CV_INT_74> <CV_INT_73> <CV_INT_72> <CV_INT_71> <CV_INT_70> <CV_INT_69> <CV_INT_68> <CV_INT_67> <CV_INT_66> <CV_INT_65> <CV_INT_64> 
+INFO:Xst:2261 - The FF/Latch <CTRL_DATA_LOAD> in Unit <INTERFACE> is equivalent to the following FF/Latch, which will be removed : <KS_CVLOAD> 
+INFO:Xst:2261 - The FF/Latch <CV_INT_244> in Unit <INTERFACE> is equivalent to the following 35 FFs/Latches, which will be removed : <CV_INT_240> <CV_INT_238> <CV_INT_237> <CV_INT_234> <CV_INT_233> <CV_INT_229> <CV_INT_225> <CV_INT_204> <CV_INT_200> <CV_INT_198> <CV_INT_197> <CV_INT_194> <CV_INT_193> <CV_INT_191> <CV_INT_189> <CV_INT_185> <CV_INT_183> <CV_INT_182> <CV_INT_178> <CV_INT_175> <CV_INT_167> <CV_INT_164> <CV_INT_160> <CV_INT_159> <CV_INT_158> <CV_INT_157> <CV_INT_154> <CV_INT_153> <CV_INT_151> <CV_INT_149> <CV_INT_145> <CV_INT_143> <CV_INT_142> <CV_INT_138> <CV_INT_135> 
+WARNING:Xst:1710 - FF/Latch <CV_INT_62> (without init value) has a constant value of 0 in block <INTERFACE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CV_INT_63> (without init value) has a constant value of 0 in block <INTERFACE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CV_INT_126> (without init value) has a constant value of 0 in block <INTERFACE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CV_INT_199> (without init value) has a constant value of 0 in block <INTERFACE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CV_INT_202> (without init value) has a constant value of 0 in block <INTERFACE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CV_INT_206> (without init value) has a constant value of 0 in block <INTERFACE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CV_INT_207> (without init value) has a constant value of 0 in block <INTERFACE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CV_INT_209> (without init value) has a constant value of 0 in block <INTERFACE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CV_INT_213> (without init value) has a constant value of 0 in block <INTERFACE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CV_INT_215> (without init value) has a constant value of 0 in block <INTERFACE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CV_INT_217> (without init value) has a constant value of 0 in block <INTERFACE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CV_INT_218> (without init value) has a constant value of 0 in block <INTERFACE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CV_INT_221> (without init value) has a constant value of 0 in block <INTERFACE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CV_INT_222> (without init value) has a constant value of 0 in block <INTERFACE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CV_INT_223> (without init value) has a constant value of 0 in block <INTERFACE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CV_INT_224> (without init value) has a constant value of 0 in block <INTERFACE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CV_INT_228> (without init value) has a constant value of 0 in block <INTERFACE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CV_INT_231> (without init value) has a constant value of 0 in block <INTERFACE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CV_INT_239> (without init value) has a constant value of 0 in block <INTERFACE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CV_INT_242> (without init value) has a constant value of 0 in block <INTERFACE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CV_INT_244> (without init value) has a constant value of 0 in block <INTERFACE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CV_INT_246> (without init value) has a constant value of 0 in block <INTERFACE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CV_INT_247> (without init value) has a constant value of 0 in block <INTERFACE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CV_INT_249> (without init value) has a constant value of 0 in block <INTERFACE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CV_INT_253> (without init value) has a constant value of 0 in block <INTERFACE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CV_INT_254> (without init value) has a constant value of 0 in block <INTERFACE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <CV_INT_255> (without init value) has a constant value of 0 in block <INTERFACE>. This FF/Latch will be trimmed during the optimization process.
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <FSM_0> on signal <STATE[1:2]> with user encoding.
+---------------------
+ State   | Encoding
+---------------------
+ nop     | 00
+ wait4ks | 01
+ ready   | 10
+ busy    | 11
+---------------------
+Analyzing FSM <MFsm> for best encoding.
+Optimizing FSM <crypto_RIJNDAEL/KEYSCH/GEN_NEXT_KEYS/FSM_1> on signal <RUNUP_STATE[1:2]> with gray encoding.
+----------------------
+ State    | Encoding
+----------------------
+ hold     | 00
+ cv_runup | 11
+ done     | 01
+----------------------
+WARNING:Xst:3001 - This design contains one or more registers or latches with an active
+   asynchronous set and asynchronous reset. While this circuit can be built,
+   it creates a sub-optimal implementation in terms of area, power and
+   performance. For a more optimal implementation Xilinx highly recommends
+   one of the following:
+
+          1) Remove either the set or reset from all registers and latches if
+             not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Virtex6 Lower Power asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    w_-4_0 in unit <RUNUP_ROUNDKEYS>
+    w_-5_0 in unit <RUNUP_ROUNDKEYS>
+    w_-1_0 in unit <RUNUP_ROUNDKEYS>
+    w_-6_0 in unit <RUNUP_ROUNDKEYS>
+    w_-7_0 in unit <RUNUP_ROUNDKEYS>
+    w_-2_0 in unit <RUNUP_ROUNDKEYS>
+    w_-3_0 in unit <RUNUP_ROUNDKEYS>
+    w_-8_0 in unit <RUNUP_ROUNDKEYS>
+    w_-1_2 in unit <RUNUP_ROUNDKEYS>
+    w_-1_3 in unit <RUNUP_ROUNDKEYS>
+    w_-1_1 in unit <RUNUP_ROUNDKEYS>
+    w_-1_5 in unit <RUNUP_ROUNDKEYS>
+    w_-1_6 in unit <RUNUP_ROUNDKEYS>
+    w_-1_4 in unit <RUNUP_ROUNDKEYS>
+    w_-1_7 in unit <RUNUP_ROUNDKEYS>
+    w_-1_8 in unit <RUNUP_ROUNDKEYS>
+    w_-1_10 in unit <RUNUP_ROUNDKEYS>
+    w_-1_11 in unit <RUNUP_ROUNDKEYS>
+    w_-1_9 in unit <RUNUP_ROUNDKEYS>
+    w_-1_12 in unit <RUNUP_ROUNDKEYS>
+    w_-1_13 in unit <RUNUP_ROUNDKEYS>
+    w_-1_15 in unit <RUNUP_ROUNDKEYS>
+    w_-1_16 in unit <RUNUP_ROUNDKEYS>
+    w_-1_14 in unit <RUNUP_ROUNDKEYS>
+    w_-1_17 in unit <RUNUP_ROUNDKEYS>
+    w_-1_18 in unit <RUNUP_ROUNDKEYS>
+    w_-1_20 in unit <RUNUP_ROUNDKEYS>
+    w_-1_21 in unit <RUNUP_ROUNDKEYS>
+    w_-1_19 in unit <RUNUP_ROUNDKEYS>
+    w_-1_23 in unit <RUNUP_ROUNDKEYS>
+    w_-1_24 in unit <RUNUP_ROUNDKEYS>
+    w_-1_22 in unit <RUNUP_ROUNDKEYS>
+    w_-1_26 in unit <RUNUP_ROUNDKEYS>
+    w_-1_27 in unit <RUNUP_ROUNDKEYS>
+    w_-1_25 in unit <RUNUP_ROUNDKEYS>
+    w_-1_28 in unit <RUNUP_ROUNDKEYS>
+    w_-1_29 in unit <RUNUP_ROUNDKEYS>
+    w_-1_31 in unit <RUNUP_ROUNDKEYS>
+    w_-1_30 in unit <RUNUP_ROUNDKEYS>
+    w_-2_2 in unit <RUNUP_ROUNDKEYS>
+    w_-2_3 in unit <RUNUP_ROUNDKEYS>
+    w_-2_1 in unit <RUNUP_ROUNDKEYS>
+    w_-2_5 in unit <RUNUP_ROUNDKEYS>
+    w_-2_6 in unit <RUNUP_ROUNDKEYS>
+    w_-2_4 in unit <RUNUP_ROUNDKEYS>
+    w_-2_7 in unit <RUNUP_ROUNDKEYS>
+    w_-2_8 in unit <RUNUP_ROUNDKEYS>
+    w_-2_10 in unit <RUNUP_ROUNDKEYS>
+    w_-2_11 in unit <RUNUP_ROUNDKEYS>
+    w_-2_9 in unit <RUNUP_ROUNDKEYS>
+    w_-2_13 in unit <RUNUP_ROUNDKEYS>
+    w_-2_14 in unit <RUNUP_ROUNDKEYS>
+    w_-2_12 in unit <RUNUP_ROUNDKEYS>
+    w_-2_16 in unit <RUNUP_ROUNDKEYS>
+    w_-2_17 in unit <RUNUP_ROUNDKEYS>
+    w_-2_15 in unit <RUNUP_ROUNDKEYS>
+    w_-2_18 in unit <RUNUP_ROUNDKEYS>
+    w_-2_19 in unit <RUNUP_ROUNDKEYS>
+    w_-2_21 in unit <RUNUP_ROUNDKEYS>
+    w_-2_22 in unit <RUNUP_ROUNDKEYS>
+    w_-2_20 in unit <RUNUP_ROUNDKEYS>
+    w_-2_23 in unit <RUNUP_ROUNDKEYS>
+    w_-2_24 in unit <RUNUP_ROUNDKEYS>
+    w_-2_26 in unit <RUNUP_ROUNDKEYS>
+    w_-2_27 in unit <RUNUP_ROUNDKEYS>
+    w_-2_25 in unit <RUNUP_ROUNDKEYS>
+    w_-2_28 in unit <RUNUP_ROUNDKEYS>
+    w_-2_29 in unit <RUNUP_ROUNDKEYS>
+    w_-2_31 in unit <RUNUP_ROUNDKEYS>
+    w_-2_30 in unit <RUNUP_ROUNDKEYS>
+    w_-3_2 in unit <RUNUP_ROUNDKEYS>
+    w_-3_3 in unit <RUNUP_ROUNDKEYS>
+    w_-3_1 in unit <RUNUP_ROUNDKEYS>
+    w_-3_5 in unit <RUNUP_ROUNDKEYS>
+    w_-3_6 in unit <RUNUP_ROUNDKEYS>
+    w_-3_4 in unit <RUNUP_ROUNDKEYS>
+    w_-3_7 in unit <RUNUP_ROUNDKEYS>
+    w_-3_8 in unit <RUNUP_ROUNDKEYS>
+    w_-3_10 in unit <RUNUP_ROUNDKEYS>
+    w_-3_11 in unit <RUNUP_ROUNDKEYS>
+    w_-3_9 in unit <RUNUP_ROUNDKEYS>
+    w_-3_13 in unit <RUNUP_ROUNDKEYS>
+    w_-3_14 in unit <RUNUP_ROUNDKEYS>
+    w_-3_12 in unit <RUNUP_ROUNDKEYS>
+    w_-3_16 in unit <RUNUP_ROUNDKEYS>
+    w_-3_17 in unit <RUNUP_ROUNDKEYS>
+    w_-3_15 in unit <RUNUP_ROUNDKEYS>
+    w_-3_18 in unit <RUNUP_ROUNDKEYS>
+    w_-3_19 in unit <RUNUP_ROUNDKEYS>
+    w_-3_21 in unit <RUNUP_ROUNDKEYS>
+    w_-3_22 in unit <RUNUP_ROUNDKEYS>
+    w_-3_20 in unit <RUNUP_ROUNDKEYS>
+    w_-3_24 in unit <RUNUP_ROUNDKEYS>
+    w_-3_25 in unit <RUNUP_ROUNDKEYS>
+    w_-3_23 in unit <RUNUP_ROUNDKEYS>
+    w_-3_27 in unit <RUNUP_ROUNDKEYS>
+    w_-3_28 in unit <RUNUP_ROUNDKEYS>
+    w_-3_26 in unit <RUNUP_ROUNDKEYS>
+    w_-3_29 in unit <RUNUP_ROUNDKEYS>
+    w_-3_30 in unit <RUNUP_ROUNDKEYS>
+    w_-4_1 in unit <RUNUP_ROUNDKEYS>
+    w_-3_31 in unit <RUNUP_ROUNDKEYS>
+    w_-4_2 in unit <RUNUP_ROUNDKEYS>
+    w_-4_3 in unit <RUNUP_ROUNDKEYS>
+    w_-4_5 in unit <RUNUP_ROUNDKEYS>
+    w_-4_6 in unit <RUNUP_ROUNDKEYS>
+    w_-4_4 in unit <RUNUP_ROUNDKEYS>
+    w_-4_7 in unit <RUNUP_ROUNDKEYS>
+    w_-4_8 in unit <RUNUP_ROUNDKEYS>
+    w_-4_10 in unit <RUNUP_ROUNDKEYS>
+    w_-4_11 in unit <RUNUP_ROUNDKEYS>
+    w_-4_9 in unit <RUNUP_ROUNDKEYS>
+    w_-4_13 in unit <RUNUP_ROUNDKEYS>
+    w_-4_14 in unit <RUNUP_ROUNDKEYS>
+    w_-4_12 in unit <RUNUP_ROUNDKEYS>
+    w_-4_16 in unit <RUNUP_ROUNDKEYS>
+    w_-4_17 in unit <RUNUP_ROUNDKEYS>
+    w_-4_15 in unit <RUNUP_ROUNDKEYS>
+    w_-4_18 in unit <RUNUP_ROUNDKEYS>
+    w_-4_19 in unit <RUNUP_ROUNDKEYS>
+    w_-4_21 in unit <RUNUP_ROUNDKEYS>
+    w_-4_22 in unit <RUNUP_ROUNDKEYS>
+    w_-4_20 in unit <RUNUP_ROUNDKEYS>
+    w_-4_24 in unit <RUNUP_ROUNDKEYS>
+    w_-4_25 in unit <RUNUP_ROUNDKEYS>
+    w_-4_23 in unit <RUNUP_ROUNDKEYS>
+    w_-4_27 in unit <RUNUP_ROUNDKEYS>
+    w_-4_28 in unit <RUNUP_ROUNDKEYS>
+    w_-4_26 in unit <RUNUP_ROUNDKEYS>
+    w_-4_29 in unit <RUNUP_ROUNDKEYS>
+    w_-4_30 in unit <RUNUP_ROUNDKEYS>
+    w_-5_1 in unit <RUNUP_ROUNDKEYS>
+    w_-4_31 in unit <RUNUP_ROUNDKEYS>
+    w_-5_3 in unit <RUNUP_ROUNDKEYS>
+    w_-5_4 in unit <RUNUP_ROUNDKEYS>
+    w_-5_2 in unit <RUNUP_ROUNDKEYS>
+    w_-5_6 in unit <RUNUP_ROUNDKEYS>
+    w_-5_7 in unit <RUNUP_ROUNDKEYS>
+    w_-5_5 in unit <RUNUP_ROUNDKEYS>
+    w_-5_8 in unit <RUNUP_ROUNDKEYS>
+    w_-5_9 in unit <RUNUP_ROUNDKEYS>
+    w_-5_11 in unit <RUNUP_ROUNDKEYS>
+    w_-5_12 in unit <RUNUP_ROUNDKEYS>
+    w_-5_10 in unit <RUNUP_ROUNDKEYS>
+    w_-5_13 in unit <RUNUP_ROUNDKEYS>
+    w_-5_14 in unit <RUNUP_ROUNDKEYS>
+    w_-5_16 in unit <RUNUP_ROUNDKEYS>
+    w_-5_17 in unit <RUNUP_ROUNDKEYS>
+    w_-5_15 in unit <RUNUP_ROUNDKEYS>
+    w_-5_18 in unit <RUNUP_ROUNDKEYS>
+    w_-5_19 in unit <RUNUP_ROUNDKEYS>
+    w_-5_21 in unit <RUNUP_ROUNDKEYS>
+    w_-5_22 in unit <RUNUP_ROUNDKEYS>
+    w_-5_20 in unit <RUNUP_ROUNDKEYS>
+    w_-5_24 in unit <RUNUP_ROUNDKEYS>
+    w_-5_25 in unit <RUNUP_ROUNDKEYS>
+    w_-5_23 in unit <RUNUP_ROUNDKEYS>
+    w_-5_27 in unit <RUNUP_ROUNDKEYS>
+    w_-5_28 in unit <RUNUP_ROUNDKEYS>
+    w_-5_26 in unit <RUNUP_ROUNDKEYS>
+    w_-5_29 in unit <RUNUP_ROUNDKEYS>
+    w_-5_30 in unit <RUNUP_ROUNDKEYS>
+    w_-6_1 in unit <RUNUP_ROUNDKEYS>
+    w_-5_31 in unit <RUNUP_ROUNDKEYS>
+    w_-6_3 in unit <RUNUP_ROUNDKEYS>
+    w_-6_4 in unit <RUNUP_ROUNDKEYS>
+    w_-6_2 in unit <RUNUP_ROUNDKEYS>
+    w_-6_6 in unit <RUNUP_ROUNDKEYS>
+    w_-6_7 in unit <RUNUP_ROUNDKEYS>
+    w_-6_5 in unit <RUNUP_ROUNDKEYS>
+    w_-6_8 in unit <RUNUP_ROUNDKEYS>
+    w_-6_9 in unit <RUNUP_ROUNDKEYS>
+    w_-6_11 in unit <RUNUP_ROUNDKEYS>
+    w_-6_12 in unit <RUNUP_ROUNDKEYS>
+    w_-6_10 in unit <RUNUP_ROUNDKEYS>
+    w_-6_14 in unit <RUNUP_ROUNDKEYS>
+    w_-6_15 in unit <RUNUP_ROUNDKEYS>
+    w_-6_13 in unit <RUNUP_ROUNDKEYS>
+    w_-6_17 in unit <RUNUP_ROUNDKEYS>
+    w_-6_18 in unit <RUNUP_ROUNDKEYS>
+    w_-6_16 in unit <RUNUP_ROUNDKEYS>
+    w_-6_19 in unit <RUNUP_ROUNDKEYS>
+    w_-6_20 in unit <RUNUP_ROUNDKEYS>
+    w_-6_22 in unit <RUNUP_ROUNDKEYS>
+    w_-6_23 in unit <RUNUP_ROUNDKEYS>
+    w_-6_21 in unit <RUNUP_ROUNDKEYS>
+    w_-6_24 in unit <RUNUP_ROUNDKEYS>
+    w_-6_25 in unit <RUNUP_ROUNDKEYS>
+    w_-6_27 in unit <RUNUP_ROUNDKEYS>
+    w_-6_28 in unit <RUNUP_ROUNDKEYS>
+    w_-6_26 in unit <RUNUP_ROUNDKEYS>
+    w_-6_29 in unit <RUNUP_ROUNDKEYS>
+    w_-6_30 in unit <RUNUP_ROUNDKEYS>
+    w_-7_1 in unit <RUNUP_ROUNDKEYS>
+    w_-6_31 in unit <RUNUP_ROUNDKEYS>
+    w_-7_3 in unit <RUNUP_ROUNDKEYS>
+    w_-7_4 in unit <RUNUP_ROUNDKEYS>
+    w_-7_2 in unit <RUNUP_ROUNDKEYS>
+    w_-7_6 in unit <RUNUP_ROUNDKEYS>
+    w_-7_7 in unit <RUNUP_ROUNDKEYS>
+    w_-7_5 in unit <RUNUP_ROUNDKEYS>
+    w_-7_8 in unit <RUNUP_ROUNDKEYS>
+    w_-7_9 in unit <RUNUP_ROUNDKEYS>
+    w_-7_11 in unit <RUNUP_ROUNDKEYS>
+    w_-7_12 in unit <RUNUP_ROUNDKEYS>
+    w_-7_10 in unit <RUNUP_ROUNDKEYS>
+    w_-7_14 in unit <RUNUP_ROUNDKEYS>
+    w_-7_15 in unit <RUNUP_ROUNDKEYS>
+    w_-7_13 in unit <RUNUP_ROUNDKEYS>
+    w_-7_17 in unit <RUNUP_ROUNDKEYS>
+    w_-7_18 in unit <RUNUP_ROUNDKEYS>
+    w_-7_16 in unit <RUNUP_ROUNDKEYS>
+    w_-7_19 in unit <RUNUP_ROUNDKEYS>
+    w_-7_20 in unit <RUNUP_ROUNDKEYS>
+    w_-7_22 in unit <RUNUP_ROUNDKEYS>
+    w_-7_23 in unit <RUNUP_ROUNDKEYS>
+    w_-7_21 in unit <RUNUP_ROUNDKEYS>
+    w_-7_25 in unit <RUNUP_ROUNDKEYS>
+    w_-7_26 in unit <RUNUP_ROUNDKEYS>
+    w_-7_24 in unit <RUNUP_ROUNDKEYS>
+    w_-7_28 in unit <RUNUP_ROUNDKEYS>
+    w_-7_29 in unit <RUNUP_ROUNDKEYS>
+    w_-7_27 in unit <RUNUP_ROUNDKEYS>
+    w_-7_30 in unit <RUNUP_ROUNDKEYS>
+    w_-7_31 in unit <RUNUP_ROUNDKEYS>
+    w_-8_1 in unit <RUNUP_ROUNDKEYS>
+    w_-8_2 in unit <RUNUP_ROUNDKEYS>
+    w_-8_3 in unit <RUNUP_ROUNDKEYS>
+    w_-8_4 in unit <RUNUP_ROUNDKEYS>
+    w_-8_6 in unit <RUNUP_ROUNDKEYS>
+    w_-8_7 in unit <RUNUP_ROUNDKEYS>
+    w_-8_5 in unit <RUNUP_ROUNDKEYS>
+    w_-8_8 in unit <RUNUP_ROUNDKEYS>
+    w_-8_9 in unit <RUNUP_ROUNDKEYS>
+    w_-8_11 in unit <RUNUP_ROUNDKEYS>
+    w_-8_12 in unit <RUNUP_ROUNDKEYS>
+    w_-8_10 in unit <RUNUP_ROUNDKEYS>
+    w_-8_14 in unit <RUNUP_ROUNDKEYS>
+    w_-8_15 in unit <RUNUP_ROUNDKEYS>
+    w_-8_13 in unit <RUNUP_ROUNDKEYS>
+    w_-8_17 in unit <RUNUP_ROUNDKEYS>
+    w_-8_18 in unit <RUNUP_ROUNDKEYS>
+    w_-8_16 in unit <RUNUP_ROUNDKEYS>
+    w_-8_19 in unit <RUNUP_ROUNDKEYS>
+    w_-8_20 in unit <RUNUP_ROUNDKEYS>
+    w_-8_22 in unit <RUNUP_ROUNDKEYS>
+    w_-8_23 in unit <RUNUP_ROUNDKEYS>
+    w_-8_21 in unit <RUNUP_ROUNDKEYS>
+    w_-8_25 in unit <RUNUP_ROUNDKEYS>
+    w_-8_26 in unit <RUNUP_ROUNDKEYS>
+    w_-8_24 in unit <RUNUP_ROUNDKEYS>
+    w_-8_28 in unit <RUNUP_ROUNDKEYS>
+    w_-8_29 in unit <RUNUP_ROUNDKEYS>
+    w_-8_27 in unit <RUNUP_ROUNDKEYS>
+    w_-8_30 in unit <RUNUP_ROUNDKEYS>
+    w_-8_31 in unit <RUNUP_ROUNDKEYS>
+    x0 in unit <LFSR>
+    u2 in unit <LFSR>
+    u1 in unit <LFSR>
+
+WARNING:Xst:2016 - Found a loop when searching source clock on port 'test_mode_rst_OR_106_o:test_mode_rst_OR_106_o'
+Last warning will be issued only once.
+
+Optimizing unit <INTERFACE> ...
+
+Optimizing unit <IP_watermarking_serpent> ...
+WARNING:Xst:1710 - FF/Latch <count_3> (without init value) has a constant value of 0 in block <IP_watermarking_serpent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <count_3> (without init value) has a constant value of 0 in block <IP_watermarking_serpent>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <WGC> ...
+
+Optimizing unit <LFSR> ...
+
+Optimizing unit <ALG_ITERATIVE> ...
+
+Optimizing unit <KEY_SCHEDULE_ITERATIVE> ...
+
+Optimizing unit <RUNUP_ROUNDKEYS> ...
+WARNING:Xst:1710 - FF/Latch <count_3> (without init value) has a constant value of 0 in block <IP_watermarking_serpent>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <crypto_RIJNDAEL/INTER/CTRL_DATA_LOAD> in Unit <IP_watermarking_serpent> is equivalent to the following FF/Latch, which will be removed : <crypto_RIJNDAEL/INTER/CV_INT_127> 
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block IP_watermarking_serpent, actual ratio is 17.
+FlipFlop crypto_RIJNDAEL/KEYSCH/CV_EXPAND_STEP_2 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 1574
+ Flip-Flops                                            : 1574
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : IP_watermarking_serpent.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 8047
+#      GND                         : 2
+#      INV                         : 6
+#      LUT1                        : 82
+#      LUT2                        : 332
+#      LUT3                        : 546
+#      LUT4                        : 431
+#      LUT5                        : 1468
+#      LUT6                        : 2903
+#      MULT_AND                    : 171
+#      MUXCY                       : 399
+#      MUXF7                       : 879
+#      MUXF8                       : 412
+#      VCC                         : 1
+#      XORCY                       : 415
+# FlipFlops/Latches                : 1650
+#      FDC                         : 986
+#      FDCE                        : 313
+#      FDE                         : 296
+#      FDP                         : 7
+#      FDPE                        : 8
+#      LD                          : 36
+#      LDC                         : 4
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 204
+#      IBUF                        : 39
+#      OBUF                        : 165
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6vlx75tlff784-1l 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:            1614  out of  93120     1%  
+ Number of Slice LUTs:                 5768  out of  46560    12%  
+    Number used as Logic:              5768  out of  46560    12%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   6084
+   Number with an unused Flip Flop:    4470  out of   6084    73%  
+   Number with an unused LUT:           316  out of   6084     5%  
+   Number of fully used LUT-FF pairs:  1298  out of   6084    21%  
+   Number of unique control sets:        47
+
+IO Utilization: 
+ Number of IOs:                         205
+ Number of bonded IOBs:                 205  out of    360    56%  
+    IOB Flip Flops/Latches:              36
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     32     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------+-------+
+Clock Signal                                                                                                                       | Clock buffer(FF name)                                   | Load  |
+-----------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------+-------+
+clk                                                                                                                                | BUFGP                                                   | 1610  |
+test_mode_rst_OR_106_o(test_mode_rst_OR_106_o1:O)                                                                                  | BUFG(*)(output_dev_33)                                  | 36    |
+PRSG/reset_u1_AND_13_o(PRSG/reset_u1_AND_13_o1:O)                                                                                  | NONE(*)(PRSG/x0_LDC)                                    | 1     |
+PRSG/reset_shift[0]_AND_11_o(PRSG/reset_shift[0]_AND_11_o1:O)                                                                      | NONE(*)(PRSG/u2_LDC)                                    | 1     |
+PRSG/reset_shift[3]_AND_9_o(PRSG/reset_shift[3]_AND_9_o1:O)                                                                        | NONE(*)(PRSG/u1_LDC)                                    | 1     |
+crypto_RIJNDAEL/KEYSCH/GEN_NEXT_KEYS/reset_KS_CV[127]_AND_340_o(crypto_RIJNDAEL/KEYSCH/GEN_NEXT_KEYS/reset_KS_CV[127]_AND_340_o1:O)| NONE(*)(crypto_RIJNDAEL/KEYSCH/GEN_NEXT_KEYS/w_-4_0_LDC)| 1     |
+-----------------------------------------------------------------------------------------------------------------------------------+---------------------------------------------------------+-------+
+(*) These 5 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 3.308ns (Maximum Frequency: 302.298MHz)
+   Minimum input arrival time before clock: 5.319ns
+   Maximum output required time after clock: 2.933ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 3.308ns (frequency: 302.298MHz)
+  Total number of paths / destination ports: 109644 / 2033
+-------------------------------------------------------------------------
+Delay:               3.308ns (Levels of Logic = 6)
+  Source:            crypto_RIJNDAEL/CTRL/CTRL_ALG_START (FF)
+  Destination:       crypto_RIJNDAEL/ALG/BI_REG_88 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: crypto_RIJNDAEL/CTRL/CTRL_ALG_START to crypto_RIJNDAEL/ALG/BI_REG_88
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q            299   0.280   0.627  crypto_RIJNDAEL/CTRL/CTRL_ALG_START (crypto_RIJNDAEL/CTRL/CTRL_ALG_START)
+     LUT3:I2->O           19   0.053   0.535  crypto_RIJNDAEL/ALG/mux12711 (crypto_RIJNDAEL/ALG/BI_REG[0]_ALG_DATAIN_INT[0]_mux_0_OUT<9>)
+     LUT6:I5->O           10   0.053   0.536  crypto_RIJNDAEL/ALG/Mxor_BI_REG[0]_BI_REG[0]_xor_165_OUT_9_xo<0>1 (crypto_RIJNDAEL/ALG/BI_REG[0]_BI_REG[0]_xor_165_OUT<9>)
+     LUT5:I3->O            8   0.053   0.462  crypto_RIJNDAEL/ALG/Mxor_BI_REG[0]_BI_REG[0]_xor_171_OUT_9_xo<0>1 (crypto_RIJNDAEL/ALG/BI_REG[0]_BI_REG[0]_xor_171_OUT<9>)
+     LUT6:I5->O            1   0.053   0.416  crypto_RIJNDAEL/ALG/Mmux_BI_REG[0]_GND_44_o_wide_mux_211_OUT_3_f7_2 (crypto_RIJNDAEL/ALG/Mmux_BI_REG[0]_GND_44_o_wide_mux_211_OUT_3_f73)
+     LUT6:I5->O            1   0.053   0.000  crypto_RIJNDAEL/ALG/Mmux_GND_44_o_GND_44_o_mux_228_OUT612_G (N1791)
+     MUXF7:I1->O           1   0.187   0.000  crypto_RIJNDAEL/ALG/Mmux_GND_44_o_GND_44_o_mux_228_OUT612 (crypto_RIJNDAEL/ALG/GND_44_o_GND_44_o_mux_228_OUT<39>)
+     FDC:D                    -0.012          crypto_RIJNDAEL/ALG/BI_REG_88
+    ----------------------------------------
+    Total                      3.308ns (0.732ns logic, 2.576ns route)
+                                       (22.1% logic, 77.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 387546544 / 1750
+-------------------------------------------------------------------------
+Offset:              5.319ns (Levels of Logic = 46)
+  Source:            Y<0> (PAD)
+  Destination:       general/blk000003f0 (FF)
+  Destination Clock: clk rising
+
+  Data Path: Y<0> to general/blk000003f0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            18   0.003   0.713  Y_0_IBUF (Y_0_IBUF)
+     begin scope: 'general:b<0>'
+     LUT4:I0->O            1   0.053   0.000  blk000004bd (sig00000159)
+     MUXCY:S->O            1   0.219   0.000  blk00000207 (sig000002af)
+     MUXCY:CI->O           1   0.015   0.000  blk00000204 (sig000002b0)
+     MUXCY:CI->O           1   0.015   0.000  blk00000201 (sig000002b1)
+     MUXCY:CI->O           1   0.015   0.000  blk000001fe (sig000002b2)
+     MUXCY:CI->O           1   0.015   0.000  blk000001fb (sig000002b3)
+     MUXCY:CI->O           1   0.015   0.000  blk000001f8 (sig000002b4)
+     MUXCY:CI->O           1   0.015   0.000  blk000001f5 (sig000002b5)
+     MUXCY:CI->O           1   0.015   0.000  blk000001f2 (sig000002b6)
+     MUXCY:CI->O           1   0.015   0.000  blk000001ef (sig000002b7)
+     MUXCY:CI->O           1   0.015   0.000  blk000001ec (sig000002a6)
+     MUXCY:CI->O           1   0.015   0.000  blk000001e9 (sig000002a7)
+     MUXCY:CI->O           1   0.015   0.000  blk000001e6 (sig000002a8)
+     MUXCY:CI->O           1   0.015   0.000  blk000001e3 (sig000002a9)
+     MUXCY:CI->O           1   0.015   0.000  blk000001e0 (sig000002aa)
+     MUXCY:CI->O           1   0.015   0.000  blk000001dd (sig000002ab)
+     MUXCY:CI->O           1   0.015   0.000  blk000001da (sig000002ac)
+     MUXCY:CI->O           1   0.015   0.000  blk000001d7 (sig000002ad)
+     MUXCY:CI->O           0   0.015   0.000  blk000001d4 (sig000002ae)
+     XORCY:CI->O           1   0.180   0.477  blk000001d2 (sig0000035a)
+     LUT2:I0->O            1   0.053   0.000  blk00000383 (sig000000d3)
+     MUXCY:S->O            1   0.219   0.000  blk00000382 (sig000000bf)
+     MUXCY:CI->O           0   0.015   0.000  blk00000380 (sig000000c0)
+     XORCY:CI->O           1   0.180   0.477  blk0000037e (sig0000046a)
+     LUT2:I0->O            1   0.053   0.000  blk000002d8 (sig00000024)
+     MUXCY:S->O            1   0.219   0.000  blk000002d7 (sig0000000a)
+     MUXCY:CI->O           1   0.015   0.000  blk000002d5 (sig0000000b)
+     MUXCY:CI->O           1   0.015   0.000  blk000002d3 (sig0000000d)
+     MUXCY:CI->O           1   0.015   0.000  blk000002d1 (sig00000010)
+     XORCY:CI->O           1   0.180   0.477  blk000002ce (sig00000413)
+     LUT2:I0->O            1   0.053   0.000  blk0000025c (sig00000085)
+     MUXCY:S->O            1   0.219   0.000  blk0000025b (sig00000062)
+     MUXCY:CI->O           1   0.015   0.000  blk00000258 (sig00000063)
+     MUXCY:CI->O           1   0.015   0.000  blk00000256 (sig00000064)
+     MUXCY:CI->O           1   0.015   0.000  blk00000254 (sig00000067)
+     MUXCY:CI->O           1   0.015   0.000  blk00000252 (sig00000069)
+     MUXCY:CI->O           1   0.015   0.000  blk00000250 (sig0000006b)
+     MUXCY:CI->O           1   0.015   0.000  blk0000024e (sig0000006d)
+     MUXCY:CI->O           1   0.015   0.000  blk0000024c (sig0000006f)
+     MUXCY:CI->O           1   0.015   0.000  blk0000024a (sig00000071)
+     XORCY:CI->O           1   0.180   0.477  blk00000247 (sig00000448)
+     LUT2:I0->O            1   0.053   0.000  blk00000210 (sig000000ac)
+     MUXCY:S->O            0   0.219   0.000  blk0000020f (sig00000099)
+     XORCY:CI->O           1   0.180   0.000  blk0000020c (sig0000045e)
+     FDE:D                    -0.012          blk000003f0
+    ----------------------------------------
+    Total                      5.319ns (2.698ns logic, 2.621ns route)
+                                       (50.7% logic, 49.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'test_mode_rst_OR_106_o'
+  Total number of paths / destination ports: 36 / 36
+-------------------------------------------------------------------------
+Offset:              0.640ns (Levels of Logic = 2)
+  Source:            test_mode (PAD)
+  Destination:       output_dev_33 (LATCH)
+  Destination Clock: test_mode_rst_OR_106_o falling
+
+  Data Path: test_mode to output_dev_33
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           103   0.003   0.584  test_mode_IBUF (test_mode_IBUF)
+     LUT2:I1->O            1   0.053   0.000  Mmux_output_dev[35]_p[35]_MUX_532_o11 (output_dev[35]_p[35]_MUX_532_o)
+     LD:D                     -0.043          output_dev_35
+    ----------------------------------------
+    Total                      0.640ns (0.056ns logic, 0.584ns route)
+                                       (8.7% logic, 91.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'PRSG/reset_u1_AND_13_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.548ns (Levels of Logic = 2)
+  Source:            rst (PAD)
+  Destination:       PRSG/x0_LDC (LATCH)
+  Destination Clock: PRSG/reset_u1_AND_13_o falling
+
+  Data Path: rst to PRSG/x0_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1309   0.003   0.767  rst_IBUF (rst_IBUF)
+     LUT2:I0->O            2   0.053   0.405  PRSG/reset_u1_AND_14_o1 (PRSG/reset_u1_AND_14_o)
+     LDC:CLR                   0.320          PRSG/x0_LDC
+    ----------------------------------------
+    Total                      1.548ns (0.376ns logic, 1.172ns route)
+                                       (24.3% logic, 75.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'PRSG/reset_shift[0]_AND_11_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.783ns (Levels of Logic = 2)
+  Source:            rst (PAD)
+  Destination:       PRSG/u2_LDC (LATCH)
+  Destination Clock: PRSG/reset_shift[0]_AND_11_o falling
+
+  Data Path: rst to PRSG/u2_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1309   0.003   1.002  rst_IBUF (rst_IBUF)
+     LUT5:I0->O            2   0.053   0.405  PRSG/reset_shift[0]_AND_12_o1 (PRSG/reset_shift[0]_AND_12_o)
+     LDC:CLR                   0.320          PRSG/u2_LDC
+    ----------------------------------------
+    Total                      1.783ns (0.376ns logic, 1.407ns route)
+                                       (21.1% logic, 78.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'PRSG/reset_shift[3]_AND_9_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.624ns (Levels of Logic = 2)
+  Source:            rst (PAD)
+  Destination:       PRSG/u1_LDC (LATCH)
+  Destination Clock: PRSG/reset_shift[3]_AND_9_o falling
+
+  Data Path: rst to PRSG/u1_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1309   0.003   0.843  rst_IBUF (rst_IBUF)
+     LUT3:I0->O            2   0.053   0.405  PRSG/reset_shift[3]_AND_10_o1 (PRSG/reset_shift[3]_AND_10_o)
+     LDC:CLR                   0.320          PRSG/u1_LDC
+    ----------------------------------------
+    Total                      1.624ns (0.376ns logic, 1.248ns route)
+                                       (23.1% logic, 76.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'crypto_RIJNDAEL/KEYSCH/GEN_NEXT_KEYS/reset_KS_CV[127]_AND_340_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.548ns (Levels of Logic = 2)
+  Source:            rst (PAD)
+  Destination:       crypto_RIJNDAEL/KEYSCH/GEN_NEXT_KEYS/w_-4_0_LDC (LATCH)
+  Destination Clock: crypto_RIJNDAEL/KEYSCH/GEN_NEXT_KEYS/reset_KS_CV[127]_AND_340_o falling
+
+  Data Path: rst to crypto_RIJNDAEL/KEYSCH/GEN_NEXT_KEYS/w_-4_0_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O          1309   0.003   0.767  rst_IBUF (rst_IBUF)
+     LUT2:I0->O            2   0.053   0.405  crypto_RIJNDAEL/KEYSCH/GEN_NEXT_KEYS/reset_KS_CV[127]_AND_341_o1 (crypto_RIJNDAEL/KEYSCH/GEN_NEXT_KEYS/reset_KS_CV[127]_AND_341_o)
+     LDC:CLR                   0.320          crypto_RIJNDAEL/KEYSCH/GEN_NEXT_KEYS/w_-4_0_LDC
+    ----------------------------------------
+    Total                      1.548ns (0.376ns logic, 1.172ns route)
+                                       (24.3% logic, 75.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 4225 / 129
+-------------------------------------------------------------------------
+Offset:              2.933ns (Levels of Logic = 4)
+  Source:            crypto_RIJNDAEL/ALG/ROUND_21 (FF)
+  Destination:       watermark_output<127> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: crypto_RIJNDAEL/ALG/ROUND_21 to watermark_output<127>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              2   0.280   0.720  crypto_RIJNDAEL/ALG/ROUND_21 (crypto_RIJNDAEL/ALG/ROUND_21)
+     LUT6:I0->O            1   0.053   0.714  crypto_RIJNDAEL/ALG/GND_44_o_ROUND[31]_equal_231_o<31>14 (crypto_RIJNDAEL/ALG/GND_44_o_ROUND[31]_equal_231_o<31>14)
+     LUT6:I0->O          162   0.053   0.658  crypto_RIJNDAEL/ALG/GND_44_o_ROUND[31]_equal_231_o<31>16 (crypto_RIJNDAEL/ALG/GND_44_o_ROUND[31]_equal_231_o<31>1)
+     LUT3:I1->O            1   0.053   0.399  crypto_RIJNDAEL/ALG/Mmux_ALG_DATAOUT129 (watermark_output_127_OBUF)
+     OBUF:I->O                 0.003          watermark_output_127_OBUF (watermark_output<127>)
+    ----------------------------------------
+    Total                      2.933ns (0.442ns logic, 2.491ns route)
+                                       (15.1% logic, 84.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'test_mode_rst_OR_106_o'
+  Total number of paths / destination ports: 36 / 36
+-------------------------------------------------------------------------
+Offset:              0.684ns (Levels of Logic = 1)
+  Source:            output_dev_35 (LATCH)
+  Destination:       output_dev<35> (PAD)
+  Source Clock:      test_mode_rst_OR_106_o falling
+
+  Data Path: output_dev_35 to output_dev<35>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.282   0.399  output_dev_35 (output_dev_35)
+     OBUF:I->O                 0.003          output_dev_35_OBUF (output_dev<35>)
+    ----------------------------------------
+    Total                      0.684ns (0.285ns logic, 0.399ns route)
+                                       (41.7% logic, 58.3% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock PRSG/reset_shift[0]_AND_11_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    1.679|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock PRSG/reset_shift[3]_AND_9_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    1.575|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock PRSG/reset_u1_AND_13_o
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+PRSG/reset_shift[0]_AND_11_o|         |         |    2.263|         |
+PRSG/reset_shift[3]_AND_9_o |         |         |    2.102|         |
+clk                         |         |         |    2.259|         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+---------------------------------------------------------------+---------+---------+---------+---------+
+                                                               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                                                   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------------------------------------------------------+---------+---------+---------+---------+
+PRSG/reset_shift[0]_AND_11_o                                   |         |    2.263|         |         |
+PRSG/reset_shift[3]_AND_9_o                                    |         |    2.102|         |         |
+PRSG/reset_u1_AND_13_o                                         |         |    0.888|         |         |
+clk                                                            |    3.308|         |         |         |
+crypto_RIJNDAEL/KEYSCH/GEN_NEXT_KEYS/reset_KS_CV[127]_AND_340_o|         |    2.019|         |         |
+---------------------------------------------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock crypto_RIJNDAEL/KEYSCH/GEN_NEXT_KEYS/reset_KS_CV[127]_AND_340_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    1.707|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock test_mode_rst_OR_106_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    0.810|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 129.00 secs
+Total CPU time to Xst completion: 128.50 secs
+ 
+--> 
+
+Total memory usage is 235100 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   86 (   0 filtered)
+Number of infos    :    9 (   0 filtered)
+

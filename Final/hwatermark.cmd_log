@@ -1,0 +1,8 @@
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/Final/hwatermark.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/Final/hwatermark.syr" 
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/Final/hwatermark.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/Final/hwatermark.syr" 
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/Final/hwatermark.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/Final/hwatermark.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc6vlx130tl-ff1156-1L hwatermark.ngc hwatermark.ngd  
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/Final/hwatermark.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/Final/hwatermark.syr" 
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/Final/hwatermark.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/Final/hwatermark.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc hwatermark.ucf -p xc6vlx130tl-ff1156-1L hwatermark.ngc hwatermark.ngd  
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/Final/hwatermark.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/Final/hwatermark.syr" 

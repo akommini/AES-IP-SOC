@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v13.2
+# Build 131561 by hdbuild on Thu Jun 16 17:01:57 PDT 2011
+# Start of session at: Thu May 02 14:30:09 2013
+# Process ID: 1568
+# Log file: C:/Users/chinna/Desktop/Watermarking/complete_final_serpent/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/chinna/Desktop/Watermarking/complete_final_serpent/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/chinna/Desktop/Watermarking/complete_final_serpent/pa.fromNcd.tcl

@@ -1,0 +1,28 @@
+Command line:
+   WGC_V_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49166
+
+Sun Feb 17 10:05:53 2013
+
+
+ Elaboration Time: 0.1092 sec
+
+ Current Memory Usage: 495.215 Meg
+
+ Total Signals          : 10
+ Total Nets             : 22
+ Total Signal Drivers   : 7
+ Total Blocks           : 3
+ Total Primitive Blocks : 3
+ Total Processes        : 4
+ Total Traceable Variables  : 14
+ Total Scalar Nets and Variables : 510
+
+ Total Simulation Time: 0.546003 sec
+
+ Current Memory Usage: 495.215 Meg
+
+Sun Feb 17 10:46:02 2013
+

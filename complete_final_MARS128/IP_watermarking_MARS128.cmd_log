@@ -1,0 +1,18 @@
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/complete_final_MARS128/IP_watermarking_MARS128.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/complete_final_MARS128/IP_watermarking_MARS128.syr" 
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/complete_final_MARS128/IP_watermarking_MARS128.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/complete_final_MARS128/IP_watermarking_MARS128.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../complete_final_serpent/ipcore_dir -nt timestamp -i -p xc6vlx75tl-ff784-1L IP_watermarking_MARS128.ngc IP_watermarking_MARS128.ngd  
+ngdbuild -intstyle ise -dd _ngo -sd ../complete_final_serpent/ipcore_dir -nt timestamp -uc IP_watermarking_MARS128.ucf -p xc6vlx75tl-ff784-1L IP_watermarking_MARS128.ngc IP_watermarking_MARS128.ngd  
+map -intstyle ise -p xc6vlx75tl-ff784-1L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o IP_watermarking_MARS128_map.ncd IP_watermarking_MARS128.ngd IP_watermarking_MARS128.pcf 
+par -w -intstyle ise -ol high -mt off IP_watermarking_MARS128_map.ncd IP_watermarking_MARS128.ncd IP_watermarking_MARS128.pcf 
+trce -intstyle ise -v 3 -s 1L -n 3 -fastpaths -xml IP_watermarking_MARS128.twx IP_watermarking_MARS128.ncd -o IP_watermarking_MARS128.twr IP_watermarking_MARS128.pcf -ucf IP_watermarking_MARS128.ucf 
+trce -intstyle ise -v 3 -s 1L -n 3 -fastpaths -xml IP_watermarking_MARS128_preroute.twx IP_watermarking_MARS128_map.ncd -o IP_watermarking_MARS128_preroute.twr IP_watermarking_MARS128.pcf -ucf IP_watermarking_MARS128.ucf 
+netgen -intstyle ise -s 1L  -pcf IP_watermarking_MARS128.pcf -rpw 100 -tpw 0 -ar Structure -tm IP_watermarking_MARS128 -w -dir netgen/map -ofmt vhdl -sim IP_watermarking_MARS128_map.ncd IP_watermarking_MARS128_map.vhd 
+xpwr -intstyle ise -ol std IP_watermarking_MARS128.ncd IP_watermarking_MARS128.pcf -o IP_watermarking_MARS128.pwr 
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/complete_final_MARS128/IP_watermarking_MARS128.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/complete_final_MARS128/IP_watermarking_MARS128.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../complete_final_serpent/ipcore_dir -nt timestamp -uc IP_watermarking_MARS128.ucf -p xc6vlx75tl-ff784-1L IP_watermarking_MARS128.ngc IP_watermarking_MARS128.ngd  
+map -intstyle ise -p xc6vlx75tl-ff784-1L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o IP_watermarking_MARS128_map.ncd IP_watermarking_MARS128.ngd IP_watermarking_MARS128.pcf 
+par -w -intstyle ise -ol high -mt off IP_watermarking_MARS128_map.ncd IP_watermarking_MARS128.ncd IP_watermarking_MARS128.pcf 
+trce -intstyle ise -v 3 -s 1L -n 3 -fastpaths -xml IP_watermarking_MARS128.twx IP_watermarking_MARS128.ncd -o IP_watermarking_MARS128.twr IP_watermarking_MARS128.pcf -ucf IP_watermarking_MARS128.ucf 
+trce -intstyle ise -v 3 -s 1L -n 3 -fastpaths -xml IP_watermarking_MARS128_preroute.twx IP_watermarking_MARS128_map.ncd -o IP_watermarking_MARS128_preroute.twr IP_watermarking_MARS128.pcf -ucf IP_watermarking_MARS128.ucf 
+netgen -intstyle ise -s 1L  -pcf IP_watermarking_MARS128.pcf -rpw 100 -tpw 0 -ar Structure -tm IP_watermarking_MARS128 -w -dir netgen/map -ofmt vhdl -sim IP_watermarking_MARS128_map.ncd IP_watermarking_MARS128_map.vhd 
+xpwr -intstyle ise -ol std IP_watermarking_MARS128.ncd IP_watermarking_MARS128.pcf -o IP_watermarking_MARS128.pwr 

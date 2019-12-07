@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# PlanAhead v13.2 (64-bit)
+# Build 131561 by hdbuild on Thu Jun 16 17:14:12 PDT 2011
+# Start of session at: Sun Mar 03 17:13:08 2013
+# Process ID: 1616
+# Log file: C:/Users/s/Desktop/Watermarking/extraction_circuit/planAhead_run_2/planAhead.log
+# Journal file: C:/Users/s/Desktop/Watermarking/extraction_circuit/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/s/Desktop/Watermarking/extraction_circuit/pa.fromNetlist.tcl

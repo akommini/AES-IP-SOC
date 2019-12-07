@@ -1,0 +1,3 @@
+vhdl work "SISR.vhd"
+vhdl work "LFSR.vhd"
+vhdl work "test_sequence.vhd"

@@ -1,0 +1,134 @@
+#-----------------------------------------------------------
+# PlanAhead v13.2
+# Build 131561 by hdbuild on Thu Jun 16 17:01:57 PDT 2011
+# Start of session at: Thu May 02 15:18:19 2013
+# Process ID: 2832
+# Log file: C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common-78] Attempting to get a license: PlanAhead
+INFO: [Common-82] Got a license: PlanAhead
+INFO: [Common-86] Your PlanAhead license expires in -457 day(s)
+INFO: [ArchReader-0] Loading parts and site information from D:\XilinX\13.2\ISE_DS\PlanAhead\parts\arch.xml
+Parsing RTL primitives file [D:\XilinX\13.2\ISE_DS\PlanAhead\parts\xilinx\rtl\prims\rtl_prims.xml]
+Finished parsing RTL primitives file [D:\XilinX\13.2\ISE_DS\PlanAhead\parts\xilinx\rtl\prims\rtl_prims.xml]
+start_gui
+source C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/pa.fromNcd.tcl
+# create_project -name complete_final_periodic -dir "C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/planAhead_run_1" -part xc6vlx75tlff784-1L
+Parsing template File [D:\XilinX\13.2\ISE_DS\ISE\data\projnav\templates\verilog.xml].
+Finished parsing template File [D:\XilinX\13.2\ISE_DS\ISE\data\projnav\templates\verilog.xml].
+Parsing template File [D:\XilinX\13.2\ISE_DS\ISE\data\projnav\templates\vhdl.xml].
+Finished parsing template File [D:\XilinX\13.2\ISE_DS\ISE\data\projnav\templates\vhdl.xml].
+Parsing template File [D:\XilinX\13.2\ISE_DS\ISE\data\projnav\templates\ucf.xml].
+Finished parsing template File [D:\XilinX\13.2\ISE_DS\ISE\data\projnav\templates\ucf.xml].
+create_project: Time (s): 5.062w.  Memory (MB): 364.340p 20.418g
+# set srcset [get_property srcset [current_run -impl]]
+# set_property design_mode GateLvl $srcset
+# set_property edif_top_file "C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/IP_watermarking_rijandal.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {C:/Users/chinna/Desktop/Watermarking/complete_final_periodic} {../test/ipcore_dir} }
+# add_files "../test/ipcore_dir/ipcore.ncf" -fileset [get_property constrset [current_run]]
+# set_param project.paUcfFile  "IP_watermark.ucf"
+# add_files "IP_watermark.ucf" -fileset [get_property constrset [current_run]]
+# open_netlist_design
+INFO: Design is defaulting to active srcset 'sources_1'
+INFO: Design is defaulting to active constrset 'constrs_1'
+INFO: Design is defaulting to constrset part: xc6vlx75tlff784-1L
+Release 13.2 - ngc2edif O.61xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Release 13.2 - ngc2edif O.61xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design IP_watermarking_rijandal.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   IP_watermarking_rijandal.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus crypto_RIJNDAEL/top_round_key1[7 : 0] on
+   block IP_watermarking_rijandal is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/RUNUP_STATE[1]_RUNUP_STATE[1]_mux_86_OUT[31 : 0] on
+   block IP_watermarking_rijandal is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/RUNUP_STATE[1]_RUNUP_STATE[1]_mux_85_OUT[31 : 0] on
+   block IP_watermarking_rijandal is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus crypto_RIJNDAEL/KEYSCH/n0195[4 : 0] on
+   block IP_watermarking_rijandal is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/RUNUP_STATE[1]_CV_MAPPED128[-3][31]_wide_mux_59_OUT[31
+   : 24] on block IP_watermarking_rijandal is not reconstructed, because there
+   are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/RUNUP_STATE[1]_CV_MAPPED128[-2][31]_wide_mux_60_OUT[31
+   : 24] on block IP_watermarking_rijandal is not reconstructed, because there
+   are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/RUNUP_STATE[1]_CV_MAPPED128[-4][31]_wide_mux_58_OUT[31
+   : 24] on block IP_watermarking_rijandal is not reconstructed, because there
+   are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file IP_watermarking_rijandal.edif ...
+ngc2edif: Total memory usage is 58804 kilobytes
+
+Parsing EDIF File [.\.Xil-PlanAhead-2832-chinna-PC\ngc2edif\IP_watermarking_rijandal.edif]
+Finished Parsing EDIF File [.\.Xil-PlanAhead-2832-chinna-PC\ngc2edif\IP_watermarking_rijandal.edif]
+Release 13.2 - ngc2edif O.61xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Release 13.2 - ngc2edif O.61xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design ipcore.ngc ...
+WARNING:NetListWriters:298 - No output is written to ipcore.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file ipcore.edif ...
+ngc2edif: Total memory usage is 54708 kilobytes
+
+Reading core file 'C:\Users\chinna\Desktop\Watermarking\test\ipcore_dir\ipcore.ngc' for (cell view 'ipcore', library 'IP_watermarking_rijandal_lib', file 'IP_watermarking_rijandal.ngc')
+Parsing EDIF File [.\.Xil-PlanAhead-2832-chinna-PC\ngc2edif\ipcore.edif]
+Finished Parsing EDIF File [.\.Xil-PlanAhead-2832-chinna-PC\ngc2edif\ipcore.edif]
+INFO: [Netlist-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [ArchReader-7] Loading clock regions from D:\XilinX\13.2\ISE_DS\PlanAhead\parts/xilinx/virtex6/virtex6l/xc6vlx75tl/ClockRegion.xml
+INFO: [ArchReader-8] Loading clock buffers from D:\XilinX\13.2\ISE_DS\PlanAhead\parts/xilinx/virtex6/virtex6l/xc6vlx75tl/ClockBuffers.xml
+INFO: [ArchReader-9] Loading clock placement rules from D:\XilinX\13.2\ISE_DS\PlanAhead\parts\xilinx\virtex6\ClockPlacerRules.xml
+INFO: [ArchReader-10] Loading clock capable ios from D:\XilinX\13.2\ISE_DS\PlanAhead\parts\xilinx\virtex6\ClockCapableIOBs.xml
+INFO: [ArchReader-13] Loading package pin functions from D:\XilinX\13.2\ISE_DS\PlanAhead\parts\xilinx\virtex6/PinFunctions.xml...
+INFO: [ArchReader-3] Loading package from D:\XilinX\13.2\ISE_DS\PlanAhead\parts/xilinx/virtex6/virtex6l/xc6vlx75tl/ff784/Package.xml
+INFO: [ArchReader-4] Loading io standards from D:\XilinX\13.2\ISE_DS\PlanAhead\./parts/xilinx/virtex6/IOStandards.xml
+INFO: [ArchReader-12] Loading device configuration modes from 
+INFO: [GDRC-0] Loading list of drcs for the architecture : D:\XilinX\13.2\ISE_DS\PlanAhead\./parts/xilinx/virtex6/drc.xml
+Parsing UCF File [C:\Users\chinna\Desktop\Watermarking\test\ipcore_dir\ipcore.ncf]
+Finished Parsing UCF File [C:\Users\chinna\Desktop\Watermarking\test\ipcore_dir\ipcore.ncf]
+Parsing UCF File [C:\Users\chinna\Desktop\Watermarking\complete_final_periodic\IP_watermark.ucf]
+Finished Parsing UCF File [C:\Users\chinna\Desktop\Watermarking\complete_final_periodic\IP_watermark.ucf]
+INFO: [Project-5] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  BUFGP => BUFGP (IBUFG, BUFG): 1 instances
+
+open_netlist_design: Time (s): 34.834w.  Memory (MB): 488.652p 121.457g
+# read_xdl -file "C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/IP_watermarking_rijandal.ncd"
+Release 13.2 - xdl O.61xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+WARNING:XDL:213 - The resulting xdl output will not have LUT equation strings or RAM INIT strings.
+Loading device for application Rf_Device from file '6vlx75t.nph' in environment D:\XilinX\13.2\ISE_DS\ISE\.
+   "IP_watermarking_rijandal" is an NCD, version 3.2, device xc6vlx75tl, package ff784, speed -1l
+Successfully converted design 'C:\Users\chinna\Desktop\Watermarking\complete_final_periodic\IP_watermarking_rijandal.ncd' to 'C:\Users\chinna\Desktop\Watermarking\complete_final_periodic\IP_watermarking_rijandal.xdl'.
+INFO: [PAR-0] Parsing Placement File : C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/IP_watermarking_rijandal.ncd
+INFO: [PAR-1] Finished Parsing Placement File : C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/IP_watermarking_rijandal.ncd
+INFO: [PAR-2] Placed 5882 instances
+read_xdl: Time (s): 30.184w.  Memory (MB): 490.348p 1.379g
+# if {[catch {read_twx -name results_1 -file "C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/IP_watermarking_rijandal.twx"} eInfo]} {
+#    puts "WARNING: there was a problem importing \"C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/IP_watermarking_rijandal.twx\": $eInfo"
+# }
+exit
+stop_gui
+INFO: [PlanAhead-261] Exiting PlanAhead...
+INFO: [Common-83] Releasing license: PlanAhead

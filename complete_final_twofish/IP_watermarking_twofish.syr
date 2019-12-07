@@ -1,0 +1,1324 @@
+Release 13.2 - xst O.61xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.71 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.72 secs
+ 
+--> Reading design: IP_watermarking_twofish.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "IP_watermarking_twofish.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "IP_watermarking_twofish"
+Output Format                      : NGC
+Target Device                      : xc6vlx75tl-1L-ff784
+
+---- Source Options
+Top Module Name                    : IP_watermarking_twofish
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 32
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"../complete_final_MARS128/ipcore_dir"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "C:\Users\chinna\Desktop\Watermarking\complete_final_MARS128\ipcore_dir\ip_core.vhd" into library work
+Parsing entity <ip_core>.
+Parsing architecture <ip_core_a> of entity <ip_core>.
+Parsing VHDL file "C:\Users\chinna\Desktop\AES algorigtms\TWOFISH3in1\vhdl\twofish_pkg.vhdl" into library work
+Parsing package <twofish_pack>.
+Parsing package body <twofish_pack>.
+WARNING:HDLCompiler:466 - "C:\Users\chinna\Desktop\AES algorigtms\TWOFISH3in1\vhdl\twofish_pkg.vhdl" Line 305: Ignoring unknown pragma value BYTESWAP32_FUNCT_dw_op
+WARNING:HDLCompiler:466 - "C:\Users\chinna\Desktop\AES algorigtms\TWOFISH3in1\vhdl\twofish_pkg.vhdl" Line 333: Ignoring unknown pragma value BYTESWAP128_FUNCT_dw_op
+WARNING:HDLCompiler:466 - "C:\Users\chinna\Desktop\AES algorigtms\TWOFISH3in1\vhdl\twofish_pkg.vhdl" Line 387: Ignoring unknown pragma value PRE_ADD_FUNCT_dw_op
+WARNING:HDLCompiler:466 - "C:\Users\chinna\Desktop\AES algorigtms\TWOFISH3in1\vhdl\twofish_pkg.vhdl" Line 463: Ignoring unknown pragma value POST_ADD_FUNCT_dw_op
+WARNING:HDLCompiler:466 - "C:\Users\chinna\Desktop\AES algorigtms\TWOFISH3in1\vhdl\twofish_pkg.vhdl" Line 525: Ignoring unknown pragma value F_FUNCT_dw_op
+WARNING:HDLCompiler:466 - "C:\Users\chinna\Desktop\AES algorigtms\TWOFISH3in1\vhdl\twofish_pkg.vhdl" Line 590: Ignoring unknown pragma value KS_ROUND_FUNCT_dw_op
+WARNING:HDLCompiler:466 - "C:\Users\chinna\Desktop\AES algorigtms\TWOFISH3in1\vhdl\twofish_pkg.vhdl" Line 645: Ignoring unknown pragma value PHT_FUNCT_dw_op
+WARNING:HDLCompiler:466 - "C:\Users\chinna\Desktop\AES algorigtms\TWOFISH3in1\vhdl\twofish_pkg.vhdl" Line 675: Ignoring unknown pragma value G_FUNCT_dw_op
+WARNING:HDLCompiler:466 - "C:\Users\chinna\Desktop\AES algorigtms\TWOFISH3in1\vhdl\twofish_pkg.vhdl" Line 804: Ignoring unknown pragma value S_VALUE_FUNCT_dw_op
+WARNING:HDLCompiler:466 - "C:\Users\chinna\Desktop\AES algorigtms\TWOFISH3in1\vhdl\twofish_pkg.vhdl" Line 850: Ignoring unknown pragma value M_PAIR_FUNCT_dw_op
+WARNING:HDLCompiler:466 - "C:\Users\chinna\Desktop\AES algorigtms\TWOFISH3in1\vhdl\twofish_pkg.vhdl" Line 907: Ignoring unknown pragma value H_FUNCT_dw_op
+WARNING:HDLCompiler:466 - "C:\Users\chinna\Desktop\AES algorigtms\TWOFISH3in1\vhdl\twofish_pkg.vhdl" Line 1011: Ignoring unknown pragma value Q0_FUNCT_dw_op
+WARNING:HDLCompiler:466 - "C:\Users\chinna\Desktop\AES algorigtms\TWOFISH3in1\vhdl\twofish_pkg.vhdl" Line 1045: Ignoring unknown pragma value Q1_FUNCT_dw_op
+WARNING:HDLCompiler:466 - "C:\Users\chinna\Desktop\AES algorigtms\TWOFISH3in1\vhdl\twofish_pkg.vhdl" Line 1080: Ignoring unknown pragma value RS_MULTPLY_FUNCT_dw_op
+WARNING:HDLCompiler:466 - "C:\Users\chinna\Desktop\AES algorigtms\TWOFISH3in1\vhdl\twofish_pkg.vhdl" Line 1116: Ignoring unknown pragma value RS_REM_FUNCT_dw_op
+WARNING:HDLCompiler:466 - "C:\Users\chinna\Desktop\AES algorigtms\TWOFISH3in1\vhdl\twofish_pkg.vhdl" Line 1165: Ignoring unknown pragma value MDS_MULTPLY_FUNCT_dw_op
+WARNING:HDLCompiler:466 - "C:\Users\chinna\Desktop\AES algorigtms\TWOFISH3in1\vhdl\twofish_pkg.vhdl" Line 1205: Ignoring unknown pragma value Mx_X_FUNCT_dw_op
+WARNING:HDLCompiler:466 - "C:\Users\chinna\Desktop\AES algorigtms\TWOFISH3in1\vhdl\twofish_pkg.vhdl" Line 1247: Ignoring unknown pragma value Mx_Y_FUNCT_dw_op
+WARNING:HDLCompiler:466 - "C:\Users\chinna\Desktop\AES algorigtms\TWOFISH3in1\vhdl\twofish_pkg.vhdl" Line 1302: Ignoring unknown pragma value TWOFISH_ROUND_FUNCT_dw_op
+Parsing VHDL file "C:\Users\chinna\Desktop\AES algorigtms\TWOFISH3in1\vhdl\key_sched_iterative.vhdl" into library work
+Parsing entity <KEY_SCHEDULE_ITERATIVE>.
+Parsing architecture <KEY_SCHEDULE_ITERATIVE_RTL> of entity <key_schedule_iterative>.
+Parsing VHDL file "C:\Users\chinna\Desktop\AES algorigtms\TWOFISH3in1\vhdl\interface_iterative.vhdl" into library work
+Parsing entity <INTERFACE_ITERATIVE>.
+Parsing architecture <INTERFACE_ITERATIVE_RTL> of entity <interface_iterative>.
+Parsing VHDL file "C:\Users\chinna\Desktop\AES algorigtms\TWOFISH3in1\vhdl\controller_iter.vhdl" into library work
+Parsing entity <CONTROL_ITER>.
+Parsing architecture <CONTROL_ITER_RTL> of entity <control_iter>.
+Parsing VHDL file "C:\Users\chinna\Desktop\AES algorigtms\TWOFISH3in1\vhdl\alg_iterative.vhdl" into library work
+Parsing entity <ALG_ITERATIVE>.
+Parsing architecture <ALG_ITERATIVE_RTL> of entity <alg_iterative>.
+Parsing VHDL file "C:\Users\chinna\Desktop\Watermarking\test\total.vhd" into library work
+Parsing entity <WGC>.
+Parsing architecture <Behavioral> of entity <wgc>.
+Parsing VHDL file "C:\Users\chinna\Desktop\Watermarking\test\LFSR.vhd" into library work
+Parsing entity <LFSR>.
+Parsing architecture <Behavioral> of entity <lfsr>.
+Parsing VHDL file "C:\Users\chinna\Desktop\AES algorigtms\TWOFISH3in1\vhdl\TWOFISH_Top_Iterative.vhdl" into library work
+Parsing entity <TWOFISH_TOP_ITER>.
+Parsing architecture <STRUCTURAL> of entity <twofish_top_iter>.
+Parsing configuration <CFG_TWOFISH_TOP_ITER>.
+Parsing VHDL file "C:\Users\chinna\Desktop\Watermarking\complete_final_twofish\IP_Watermarking_twofish.vhd" into library work
+Parsing entity <IP_watermarking_twofish>.
+Parsing architecture <Behavioral> of entity <ip_watermarking_twofish>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <IP_watermarking_twofish> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:871 - "C:\Users\chinna\Desktop\Watermarking\complete_final_twofish\IP_Watermarking_twofish.vhd" Line 45: Using initial value '0' for enc_dec since it is never assigned
+
+Elaborating entity <WGC> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:1127 - "C:\Users\chinna\Desktop\Watermarking\test\total.vhd" Line 38: Assignment to shift_reg ignored, since the identifier is never used
+
+Elaborating entity <LFSR> (architecture <Behavioral>) from library <work>.
+WARNING:HDLCompiler:92 - "C:\Users\chinna\Desktop\Watermarking\test\LFSR.vhd" Line 47: shift should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\chinna\Desktop\Watermarking\test\LFSR.vhd" Line 48: shift should be on the sensitivity list of the process
+WARNING:HDLCompiler:92 - "C:\Users\chinna\Desktop\Watermarking\test\LFSR.vhd" Line 49: u1 should be on the sensitivity list of the process
+
+Elaborating entity <ip_core> (architecture <ip_core_a>) from library <work>.
+
+Elaborating entity <TWOFISH_TOP_ITER> (architecture <STRUCTURAL>) from library <work>.
+
+Elaborating entity <INTERFACE_ITERATIVE> (architecture <INTERFACE_ITERATIVE_RTL>) from library <work>.
+
+Elaborating entity <CONTROL_ITER> (architecture <CONTROL_ITER_RTL>) from library <work>.
+
+Elaborating entity <ALG_ITERATIVE> (architecture <ALG_ITERATIVE_RTL>) from library <work>.
+
+Elaborating entity <KEY_SCHEDULE_ITERATIVE> (architecture <KEY_SCHEDULE_ITERATIVE_RTL>) from library <work>.
+INFO:HDLCompiler:679 - "C:\Users\chinna\Desktop\AES algorigtms\TWOFISH3in1\vhdl\key_sched_iterative.vhdl" Line 257. Case statement is complete. others clause is never selected
+WARNING:HDLCompiler:92 - "C:\Users\chinna\Desktop\Watermarking\complete_final_twofish\IP_Watermarking_twofish.vhd" Line 205: p should be on the sensitivity list of the process
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <IP_watermarking_twofish>.
+    Related source file is "c:/users/chinna/desktop/watermarking/complete_final_twofish/ip_watermarking_twofish.vhd".
+    Found 4-bit register for signal <count>.
+    Found 1-bit register for signal <switch>.
+    Found 1-bit register for signal <output_mark>.
+    Found 8-bit register for signal <pass>.
+    Found 128-bit register for signal <crypto_buffer>.
+    Found 3-bit register for signal <counter>.
+    Found 128-bit register for signal <DATAIN>.
+    Found 4-bit adder for signal <count[3]_GND_4_o_add_0_OUT> created at line 1241.
+    Found 3-bit adder for signal <counter[2]_GND_4_o_add_11_OUT> created at line 1241.
+    Found 1-bit 8-to-1 multiplexer for signal <counter[2]_output[7]_Mux_6_o> created at line 218.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<35>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<34>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<33>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<32>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<31>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<30>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<29>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<28>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<27>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<26>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<25>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<24>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<23>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<22>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<21>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<20>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<19>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<18>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<17>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<16>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<15>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<14>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<13>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<12>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<11>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<10>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<9>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<8>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<7>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<6>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<5>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<4>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<3>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<2>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<1>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <output_dev<0>>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Summary:
+	inferred   2 Adder/Subtractor(s).
+	inferred 273 D-type flip-flop(s).
+	inferred  36 Latch(s).
+	inferred  56 Multiplexer(s).
+Unit <IP_watermarking_twofish> synthesized.
+
+Synthesizing Unit <WGC>.
+    Related source file is "c:/users/chinna/desktop/watermarking/test/total.vhd".
+    Found 5-bit register for signal <symbol>.
+    Found 1-bit register for signal <load>.
+    Found 1-bit register for signal <WGC_output>.
+    Summary:
+	inferred   7 D-type flip-flop(s).
+	inferred   1 Multiplexer(s).
+Unit <WGC> synthesized.
+
+Synthesizing Unit <LFSR>.
+    Related source file is "c:/users/chinna/desktop/watermarking/test/lfsr.vhd".
+    Found 4-bit register for signal <shift>.
+    Found 1-bit register for signal <u3>.
+    Found 1-bit register for signal <u1>.
+    Found 1-bit register for signal <u2>.
+    Found 1-bit register for signal <x0>.
+    Summary:
+	inferred   8 D-type flip-flop(s).
+Unit <LFSR> synthesized.
+
+Synthesizing Unit <TWOFISH_TOP_ITER>.
+    Related source file is "c:/users/chinna/desktop/aes algorigtms/twofish3in1/vhdl/twofish_top_iterative.vhdl".
+    Summary:
+	no macro.
+Unit <TWOFISH_TOP_ITER> synthesized.
+
+Synthesizing Unit <INTERFACE_ITERATIVE>.
+    Related source file is "c:/users/chinna/desktop/aes algorigtms/twofish3in1/vhdl/interface_iterative.vhdl".
+    Found 256-bit register for signal <CV_INT>.
+    Found 128-bit register for signal <ALG_DATA_INT>.
+    Found 2-bit register for signal <KS_CVSIZE_INT>.
+    Found 1-bit register for signal <KS_CVLOAD>.
+    Found 1-bit register for signal <CTRL_DATA_LOAD>.
+    WARNING:Xst:2404 -  FFs/Latches <CTRL_ENC_DEC_B<0:0>> (without init value) have a constant value of 0 in block <INTERFACE_ITERATIVE>.
+    Summary:
+	inferred 388 D-type flip-flop(s).
+Unit <INTERFACE_ITERATIVE> synthesized.
+
+Synthesizing Unit <CONTROL_ITER>.
+    Related source file is "c:/users/chinna/desktop/aes algorigtms/twofish3in1/vhdl/controller_iter.vhdl".
+    Found 1-bit register for signal <CTRL_ALG_START>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <CONTROL_ITER> synthesized.
+
+Synthesizing Unit <ALG_ITERATIVE>.
+    Related source file is "c:/users/chinna/desktop/aes algorigtms/twofish3in1/vhdl/alg_iterative.vhdl".
+    Found 5-bit register for signal <ROUND>.
+    Found 128-bit register for signal <D_REG>.
+    Found 1-bit register for signal <ALG_DONE>.
+    Found 1-bit register for signal <STATE_FLOW.active>.
+    Found 1-bit register for signal <DONE>.
+    Found 32-bit adder for signal <n1355> created at line 654.
+    Found 32-bit adder for signal <n1357> created at line 655.
+    Found 32-bit adder for signal <D_REG[31]_ALG_ROUND_KEY[31]_add_644_OUT> created at line 547.
+    Found 32-bit adder for signal <D_REG[63]_ALG_ROUND_KEY[63]_add_645_OUT> created at line 550.
+    Found 5-bit adder for signal <ROUND[4]_GND_45_o_add_659_OUT> created at line 189.
+    Found 5-bit subtractor for signal <GND_45_o_GND_45_o_sub_5_OUT<4:0>> created at line 152.
+    Found 32x1-bit Read Only RAM for signal <ROUND[4]_GND_45_o_Mux_656_o>
+    Found 32-bit 4-to-1 multiplexer for signal <ALG_CV_LENGTH[1]_GND_45_o_wide_mux_15_OUT> created at line 689.
+    Found 32-bit 4-to-1 multiplexer for signal <ALG_CV_LENGTH[1]_GND_45_o_wide_mux_16_OUT> created at line 689.
+    Found 32-bit 4-to-1 multiplexer for signal <ALG_CV_LENGTH[1]_GND_45_o_wide_mux_17_OUT> created at line 689.
+    Summary:
+	inferred   1 RAM(s).
+	inferred   6 Adder/Subtractor(s).
+	inferred 136 D-type flip-flop(s).
+	inferred  40 Multiplexer(s).
+Unit <ALG_ITERATIVE> synthesized.
+
+Synthesizing Unit <KEY_SCHEDULE_ITERATIVE>.
+    Related source file is "c:/users/chinna/desktop/aes algorigtms/twofish3in1/vhdl/key_sched_iterative.vhdl".
+    Found 32-bit register for signal <S<1>>.
+    Found 32-bit register for signal <S<2>>.
+    Found 32-bit register for signal <S<3>>.
+    Found 32-bit register for signal <S<0>>.
+    Found 64-bit register for signal <KS_ROUND_KEY>.
+    Found 128-bit register for signal <KS_PREADD_KEY_INT>.
+    Found 128-bit register for signal <KS_POSTADD_KEY_INT>.
+    Found 5-bit register for signal <CV_EXPAND_STEP>.
+    Found 1-bit register for signal <EXPAND_STATE>.
+    Found 8-bit adder for signal <GND_46_o_GND_46_o_add_6_OUT> created at line 606.
+    Found 32-bit adder for signal <KS_ROUND_KEY_INT<63:32>> created at line 654.
+    Found 32-bit adder for signal <n0863> created at line 655.
+    Found 5-bit adder for signal <CV_EXPAND_STEP[4]_GND_46_o_add_973_OUT> created at line 229.
+    Found 5-bit subtractor for signal <GND_46_o_GND_46_o_sub_981_OUT<4:0>> created at line 252.
+    Found 32x1-bit Read Only RAM for signal <CV_EXPAND_STEP[4]_PWR_28_o_Mux_981_o>
+    Summary:
+	inferred   1 RAM(s).
+	inferred   5 Adder/Subtractor(s).
+	inferred 454 D-type flip-flop(s).
+	inferred  51 Multiplexer(s).
+Unit <KEY_SCHEDULE_ITERATIVE> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 32x1-bit single-port Read Only RAM                    : 2
+# Adders/Subtractors                                   : 13
+ 3-bit adder                                           : 1
+ 32-bit adder                                          : 6
+ 4-bit adder                                           : 1
+ 5-bit adder                                           : 2
+ 5-bit subtractor                                      : 2
+ 8-bit adder                                           : 1
+# Registers                                            : 56
+ 1-bit register                                        : 29
+ 128-bit register                                      : 6
+ 2-bit register                                        : 1
+ 256-bit register                                      : 1
+ 3-bit register                                        : 1
+ 32-bit register                                       : 4
+ 4-bit register                                        : 2
+ 5-bit register                                        : 10
+ 64-bit register                                       : 1
+ 8-bit register                                        : 1
+# Latches                                              : 36
+ 1-bit latch                                           : 36
+# Multiplexers                                         : 155
+ 1-bit 2-to-1 multiplexer                              : 55
+ 1-bit 8-to-1 multiplexer                              : 1
+ 128-bit 2-to-1 multiplexer                            : 29
+ 2-bit 2-to-1 multiplexer                              : 1
+ 32-bit 2-to-1 multiplexer                             : 9
+ 32-bit 4-to-1 multiplexer                             : 3
+ 4-bit 2-to-1 multiplexer                              : 1
+ 5-bit 2-to-1 multiplexer                              : 23
+ 8-bit 2-to-1 multiplexer                              : 33
+# Xors                                                 : 522
+ 1-bit xor2                                            : 2
+ 128-bit xor2                                          : 2
+ 32-bit xor2                                           : 24
+ 4-bit xor2                                            : 150
+ 4-bit xor3                                            : 150
+ 8-bit xor2                                            : 70
+ 8-bit xor3                                            : 10
+ 8-bit xor4                                            : 14
+ 8-bit xor5                                            : 16
+ 8-bit xor6                                            : 16
+ 8-bit xor8                                            : 4
+ 9-bit xor2                                            : 32
+ 9-bit xor3                                            : 32
+
+=========================================================================
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <../complete_final_MARS128/ipcore_dir/ip_core.ngc>.
+Loading core <ip_core> for timing and area information for instance <general>.
+WARNING:Xst:1710 - FF/Latch <CV_INT_179> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_180> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_181> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_182> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_183> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_184> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_185> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_186> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_187> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_188> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_189> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_190> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_191> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_192> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_193> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_194> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_195> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_196> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_197> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_198> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_199> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_200> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_201> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_202> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_203> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_204> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_152> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_153> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_154> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_155> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_156> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_157> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_158> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_159> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_160> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_161> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_162> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_163> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_164> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_165> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_166> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_167> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_168> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_169> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_170> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_171> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_172> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_173> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_174> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_175> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_176> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_177> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_178> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_232> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_233> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_234> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_235> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_236> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_237> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_238> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_239> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_240> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_241> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_242> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_243> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_244> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_245> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_246> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_247> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_248> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_249> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_250> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_251> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_252> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_253> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_254> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_255> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <KS_CVSIZE_INT_0> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <KS_CVSIZE_INT_1> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_205> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_206> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_207> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_208> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_209> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_210> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_211> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_212> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_213> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_214> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_215> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_216> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_217> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_218> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_219> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_220> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_221> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_222> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_223> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_224> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_225> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_226> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_227> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_228> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_229> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_230> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_231> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_43> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_44> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_45> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_46> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_47> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_49> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_50> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_52> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_53> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_54> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_59> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_60> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_63> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_65> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_67> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_68> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_69> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_71> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_74> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_75> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_76> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_78> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_79> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_81> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_82> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_83> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_1> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_2> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_3> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_4> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_5> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_6> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_7> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_9> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_10> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_12> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_13> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_14> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_19> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_20> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_23> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_25> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_27> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_28> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_29> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_31> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_34> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_35> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_36> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_38> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_39> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_41> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_42> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_126> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_127> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_128> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_129> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_130> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_131> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_132> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_133> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_134> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_135> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_136> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_137> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_138> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_139> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_140> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_141> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_142> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_143> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_144> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_145> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_146> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_147> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_148> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_149> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_150> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_151> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_84> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_85> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_86> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_87> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_89> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_90> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_92> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_93> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_94> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_99> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_100> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_103> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_105> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_107> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_108> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_109> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_111> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_114> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_115> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_116> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_118> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_119> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_121> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_122> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_123> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_124> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <CV_INT_125> (without init value) has a constant value of 0 in block <INTER>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <ALG_ITERATIVE>.
+The following registers are absorbed into counter <ROUND>: 1 register on signal <ROUND>.
+INFO:Xst:3217 - HDL ADVISOR - Register <ALG_DONE> currently described with an asynchronous reset, could be combined with distributed RAM <Mram_ROUND[4]_GND_45_o_Mux_656_o> for implementation on block RAM resources if you made this reset synchronous instead.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 1-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <ROUND>         |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <ALG_ITERATIVE> synthesized (advanced).
+
+Synthesizing (advanced) Unit <IP_watermarking_twofish>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+The following registers are absorbed into counter <counter>: 1 register on signal <counter>.
+Unit <IP_watermarking_twofish> synthesized (advanced).
+
+Synthesizing (advanced) Unit <KEY_SCHEDULE_ITERATIVE>.
+INFO:Xst:3217 - HDL ADVISOR - Register <EXPAND_STATE> currently described with an asynchronous reset, could be combined with distributed RAM <Mram_CV_EXPAND_STEP[4]_PWR_28_o_Mux_981_o> for implementation on block RAM resources if you made this reset synchronous instead.
+    -----------------------------------------------------------------------
+    | ram_type           | Distributed                         |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 32-word x 1-bit                     |          |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to signal <CV_EXPAND_STEP> |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+Unit <KEY_SCHEDULE_ITERATIVE> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 32x1-bit single-port distributed Read Only RAM        : 2
+# Adders/Subtractors                                   : 10
+ 32-bit adder                                          : 6
+ 5-bit adder                                           : 1
+ 5-bit subtractor                                      : 2
+ 8-bit adder                                           : 1
+# Counters                                             : 3
+ 3-bit up counter                                      : 1
+ 4-bit up counter                                      : 1
+ 5-bit up counter                                      : 1
+# Registers                                            : 1304
+ Flip-Flops                                            : 1304
+# Multiplexers                                         : 184
+ 1-bit 2-to-1 multiplexer                              : 94
+ 1-bit 8-to-1 multiplexer                              : 1
+ 128-bit 2-to-1 multiplexer                            : 29
+ 2-bit 2-to-1 multiplexer                              : 1
+ 32-bit 2-to-1 multiplexer                             : 9
+ 32-bit 4-to-1 multiplexer                             : 3
+ 5-bit 2-to-1 multiplexer                              : 14
+ 8-bit 2-to-1 multiplexer                              : 33
+# Xors                                                 : 522
+ 1-bit xor2                                            : 2
+ 128-bit xor2                                          : 2
+ 32-bit xor2                                           : 24
+ 4-bit xor2                                            : 150
+ 4-bit xor3                                            : 150
+ 8-bit xor2                                            : 70
+ 8-bit xor3                                            : 10
+ 8-bit xor4                                            : 14
+ 8-bit xor5                                            : 16
+ 8-bit xor6                                            : 16
+ 8-bit xor8                                            : 4
+ 9-bit xor2                                            : 32
+ 9-bit xor3                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2261 - The FF/Latch <CV_INT_0> in Unit <INTERFACE_ITERATIVE> is equivalent to the following 45 FFs/Latches, which will be removed : <CV_INT_8> <CV_INT_11> <CV_INT_15> <CV_INT_16> <CV_INT_17> <CV_INT_18> <CV_INT_21> <CV_INT_22> <CV_INT_24> <CV_INT_26> <CV_INT_30> <CV_INT_32> <CV_INT_33> <CV_INT_37> <CV_INT_40> <CV_INT_48> <CV_INT_51> <CV_INT_55> <CV_INT_56> <CV_INT_57> <CV_INT_58> <CV_INT_61> <CV_INT_62> <CV_INT_64> <CV_INT_66> <CV_INT_70> <CV_INT_72> <CV_INT_73> <CV_INT_77> <CV_INT_80> <CV_INT_88> <CV_INT_91> <CV_INT_95> <CV_INT_96> <CV_INT_97> <CV_INT_98> <CV_INT_101> <CV_INT_102> <CV_INT_104> <CV_INT_106> <CV_INT_110> <CV_INT_112> <CV_INT_113> <CV_INT_117> <CV_INT_120> 
+INFO:Xst:2261 - The FF/Latch <CV_INT_1> in Unit <INTERFACE_ITERATIVE> is equivalent to the following 211 FFs/Latches, which will be removed : <CV_INT_2> <CV_INT_3> <CV_INT_4> <CV_INT_5> <CV_INT_6> <CV_INT_7> <CV_INT_9> <CV_INT_10> <CV_INT_12> <CV_INT_13> <CV_INT_14> <CV_INT_19> <CV_INT_20> <CV_INT_23> <CV_INT_25> <CV_INT_27> <CV_INT_28> <CV_INT_29> <CV_INT_31> <CV_INT_34> <CV_INT_35> <CV_INT_36> <CV_INT_38> <CV_INT_39> <CV_INT_41> <CV_INT_42> <CV_INT_43> <CV_INT_44> <CV_INT_45> <CV_INT_46> <CV_INT_47> <CV_INT_49> <CV_INT_50> <CV_INT_52> <CV_INT_53> <CV_INT_54> <CV_INT_59> <CV_INT_60> <CV_INT_63> <CV_INT_65> <CV_INT_67> <CV_INT_68> <CV_INT_69> <CV_INT_71> <CV_INT_74> <CV_INT_75> <CV_INT_76> <CV_INT_78> <CV_INT_79> <CV_INT_81> <CV_INT_82> <CV_INT_83> <CV_INT_84> <CV_INT_85> <CV_INT_86> <CV_INT_87> <CV_INT_89> <CV_INT_90> <CV_INT_92> <CV_INT_93> <CV_INT_94> <CV_INT_99> <CV_INT_100> <CV_INT_103> <CV_INT_105> <CV_INT_107> <CV_INT_108> <CV_INT_109> <CV_INT_111> <CV_INT_114> <CV_INT_115> <CV_INT_116> <CV_INT_118>
+   <CV_INT_119> <CV_INT_121> <CV_INT_122> <CV_INT_123> <CV_INT_124> <CV_INT_125> <CV_INT_126> <CV_INT_127> <CV_INT_128> <CV_INT_129> <CV_INT_130> <CV_INT_131> <CV_INT_132> <CV_INT_133> <CV_INT_134> <CV_INT_135> <CV_INT_136> <CV_INT_137> <CV_INT_138> <CV_INT_139> <CV_INT_140> <CV_INT_141> <CV_INT_142> <CV_INT_143> <CV_INT_144> <CV_INT_145> <CV_INT_146> <CV_INT_147> <CV_INT_148> <CV_INT_149> <CV_INT_150> <CV_INT_151> <CV_INT_152> <CV_INT_153> <CV_INT_154> <CV_INT_155> <CV_INT_156> <CV_INT_157> <CV_INT_158> <CV_INT_159> <CV_INT_160> <CV_INT_161> <CV_INT_162> <CV_INT_163> <CV_INT_164> <CV_INT_165> <CV_INT_166> <CV_INT_167> <CV_INT_168> <CV_INT_169> <CV_INT_170> <CV_INT_171> <CV_INT_172> <CV_INT_173> <CV_INT_174> <CV_INT_175> <CV_INT_176> <CV_INT_177> <CV_INT_178> <CV_INT_179> <CV_INT_180> <CV_INT_181> <CV_INT_182> <CV_INT_183> <CV_INT_184> <CV_INT_185> <CV_INT_186> <CV_INT_187> <CV_INT_188> <CV_INT_189> <CV_INT_190> <CV_INT_191> <CV_INT_192> <CV_INT_193> <CV_INT_194> <CV_INT_195> <CV_INT_196> <CV_INT_197>
+   <CV_INT_198> <CV_INT_199> <CV_INT_200> <CV_INT_201> <CV_INT_202> <CV_INT_203> <CV_INT_204> <CV_INT_205> <CV_INT_206> <CV_INT_207> <CV_INT_208> <CV_INT_209> <CV_INT_210> <CV_INT_211> <CV_INT_212> <CV_INT_213> <CV_INT_214> <CV_INT_215> <CV_INT_216> <CV_INT_217> <CV_INT_218> <CV_INT_219> <CV_INT_220> <CV_INT_221> <CV_INT_222> <CV_INT_223> <CV_INT_224> <CV_INT_225> <CV_INT_226> <CV_INT_227> <CV_INT_228> <CV_INT_229> <CV_INT_230> <CV_INT_231> <CV_INT_232> <CV_INT_233> <CV_INT_234> <CV_INT_235> <CV_INT_236> <CV_INT_237> <CV_INT_238> <CV_INT_239> <CV_INT_240> <CV_INT_241> <CV_INT_242> <CV_INT_243> <CV_INT_244> <CV_INT_245> <CV_INT_246> <CV_INT_247> <CV_INT_248> <CV_INT_249> <CV_INT_250> <CV_INT_251> <CV_INT_252> <CV_INT_253> <CV_INT_254> <CV_INT_255> <KS_CVSIZE_INT_0> <KS_CVSIZE_INT_1> 
+INFO:Xst:2261 - The FF/Latch <KS_CVLOAD> in Unit <INTERFACE_ITERATIVE> is equivalent to the following FF/Latch, which will be removed : <CTRL_DATA_LOAD> 
+WARNING:Xst:1710 - FF/Latch <CV_INT_1> (without init value) has a constant value of 0 in block <INTERFACE_ITERATIVE>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:3001 - This design contains one or more registers or latches with an active
+   asynchronous set and asynchronous reset. While this circuit can be built,
+   it creates a sub-optimal implementation in terms of area, power and
+   performance. For a more optimal implementation Xilinx highly recommends
+   one of the following:
+
+          1) Remove either the set or reset from all registers and latches if
+             not needed for required functionality
+          2) Modify the code in order to produce a synchronous set
+             and/or reset (both is preferred)
+          3) Use the -async_to_sync option to transform the asynchronous
+             set/reset to synchronous operation
+             (timing simulation highly recommended when using this option)
+
+  Please refer to http://www.xilinx.com search string "Virtex6 Lower Power asynchronous set/reset" for more details.
+
+  List of register instances with asynchronous set and reset:
+    x0 in unit <LFSR>
+    u2 in unit <LFSR>
+    u1 in unit <LFSR>
+
+WARNING:Xst:2016 - Found a loop when searching source clock on port 'test_mode_rst_OR_36_o:test_mode_rst_OR_36_o'
+Last warning will be issued only once.
+
+Optimizing unit <INTERFACE_ITERATIVE> ...
+
+Optimizing unit <IP_watermarking_twofish> ...
+WARNING:Xst:1710 - FF/Latch <count_3> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <count_3> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <WGC> ...
+
+Optimizing unit <LFSR> ...
+
+Optimizing unit <ALG_ITERATIVE> ...
+
+Optimizing unit <KEY_SCHEDULE_ITERATIVE> ...
+WARNING:Xst:1710 - FF/Latch <crypto_RIJNDAEL/KEYSCH/S_1_13> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_1_14> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_1_15> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_1_16> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_1_17> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_1_18> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_1_19> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_1_20> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_1_21> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_1_22> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_1_23> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_1_24> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_1_25> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_1_26> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_1_27> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_1_28> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_1_29> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_3_4> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_3_15> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_3_28> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_3_29> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_1_0> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_1_1> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_1_2> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_1_3> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_1_4> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_1_5> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_1_6> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_1_7> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_1_8> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_1_9> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_1_10> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_1_11> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_1_12> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_0_15> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_0_16> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_0_17> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_0_18> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_0_19> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_0_20> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_0_21> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_0_22> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_0_23> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_0_24> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_0_25> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_0_26> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_0_27> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_0_28> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_0_29> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_0_30> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_0_31> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_1_30> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_1_31> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_0_0> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_0_1> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_0_2> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_0_3> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_0_4> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_0_5> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_0_6> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_0_7> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_0_8> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_0_9> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_0_10> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_0_11> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_0_12> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_0_13> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_0_14> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_3_0> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_3_10> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_3_11> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_3_12> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_3_13> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_3_14> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_3_16> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_3_17> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_3_18> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_3_19> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_3_1> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_3_20> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_3_21> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_3_22> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_3_23> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_3_24> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_3_25> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_3_26> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_3_27> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_3_2> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_3_30> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_3_31> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_3_3> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_3_5> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_3_6> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_3_7> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_3_8> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_3_9> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_2_0> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_2_10> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_2_11> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_2_12> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_2_13> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_2_14> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_2_15> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_2_16> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_2_17> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_2_18> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_2_19> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_2_1> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_2_20> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_2_21> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_2_22> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_2_23> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_2_24> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_2_25> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_2_26> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_2_27> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_2_28> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_2_29> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_2_2> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_2_30> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_2_31> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_2_3> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_2_4> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_2_5> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_2_6> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_2_7> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_2_8> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/KEYSCH/S_2_9> is unconnected in block <IP_watermarking_twofish>.
+WARNING:Xst:1710 - FF/Latch <count_3> (without init value) has a constant value of 0 in block <IP_watermarking_twofish>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+WARNING:Xst:1898 - Due to constant pushing, FF/Latch <crypto_RIJNDAEL/INTER/CV_INT_0> is unconnected in block <IP_watermarking_twofish>.
+Found area constraint ratio of 100 (+ 5) on block IP_watermarking_twofish, actual ratio is 8.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 931
+ Flip-Flops                                            : 931
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : IP_watermarking_twofish.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 3883
+#      GND                         : 2
+#      INV                         : 4
+#      LUT1                        : 12
+#      LUT2                        : 475
+#      LUT3                        : 125
+#      LUT4                        : 328
+#      LUT5                        : 589
+#      LUT6                        : 1169
+#      MULT_AND                    : 171
+#      MUXCY                       : 492
+#      MUXF7                       : 2
+#      VCC                         : 2
+#      XORCY                       : 512
+# FlipFlops/Latches                : 1006
+#      FDC                         : 216
+#      FDCE                        : 441
+#      FDE                         : 296
+#      FDP                         : 5
+#      FDPE                        : 8
+#      FDRE                        : 1
+#      LD                          : 36
+#      LDC                         : 3
+# Clock Buffers                    : 2
+#      BUFG                        : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 204
+#      IBUF                        : 39
+#      OBUF                        : 165
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6vlx75tlff784-1l 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:             970  out of  93120     1%  
+ Number of Slice LUTs:                 2702  out of  46560     5%  
+    Number used as Logic:              2702  out of  46560     5%  
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:   3084
+   Number with an unused Flip Flop:    2114  out of   3084    68%  
+   Number with an unused LUT:           382  out of   3084    12%  
+   Number of fully used LUT-FF pairs:   588  out of   3084    19%  
+   Number of unique control sets:        47
+
+IO Utilization: 
+ Number of IOs:                         205
+ Number of bonded IOBs:                 205  out of    360    56%  
+    IOB Flip Flops/Latches:              36
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                2  out of     32     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-------------------------------------------------------------+------------------------+-------+
+Clock Signal                                                 | Clock buffer(FF name)  | Load  |
+-------------------------------------------------------------+------------------------+-------+
+clk                                                          | BUFGP                  | 967   |
+test_mode_rst_OR_36_o(test_mode_rst_OR_36_o1:O)              | BUFG(*)(output_dev_33) | 36    |
+PRSG/reset_u1_AND_13_o(PRSG/reset_u1_AND_13_o1:O)            | NONE(*)(PRSG/x0_LDC)   | 1     |
+PRSG/reset_shift[0]_AND_11_o(PRSG/reset_shift[0]_AND_11_o1:O)| NONE(*)(PRSG/u2_LDC)   | 1     |
+PRSG/reset_shift[3]_AND_9_o(PRSG/reset_shift[3]_AND_9_o1:O)  | NONE(*)(PRSG/u1_LDC)   | 1     |
+-------------------------------------------------------------+------------------------+-------+
+(*) These 4 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -1
+
+   Minimum period: 12.482ns (Maximum Frequency: 80.118MHz)
+   Minimum input arrival time before clock: 5.352ns
+   Maximum output required time after clock: 1.386ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 12.482ns (frequency: 80.118MHz)
+  Total number of paths / destination ports: 1049823078851 / 1517
+-------------------------------------------------------------------------
+Delay:               12.482ns (Levels of Logic = 47)
+  Source:            crypto_RIJNDAEL/ALG/ROUND_0 (FF)
+  Destination:       crypto_RIJNDAEL/ALG/D_REG_30 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: crypto_RIJNDAEL/ALG/ROUND_0 to crypto_RIJNDAEL/ALG/D_REG_30
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q             10   0.280   0.771  crypto_RIJNDAEL/ALG/ROUND_0 (crypto_RIJNDAEL/ALG/ROUND_0)
+     LUT5:I0->O          192   0.053   0.604  crypto_RIJNDAEL/ALG/GND_45_o_GND_45_o_equal_6_o<4>1 (crypto_RIJNDAEL/ALG/Mmux_D_REG[127]_D_REG[63]_mux_12_OUT110)
+     LUT5:I4->O            6   0.053   0.634  crypto_RIJNDAEL/ALG/Mxor_D_REG[63]_D_REG[63]_xor_87_OUT_2_xo<0>1 (crypto_RIJNDAEL/ALG/D_REG[63]_D_REG[63]_xor_87_OUT<2>)
+     LUT4:I0->O            9   0.053   0.469  crypto_RIJNDAEL/ALG/Mxor_D_REG[63]_D_REG[63]_xor_138_OUT_0_xo<0>11 (crypto_RIJNDAEL/ALG/Mxor_D_REG[63]_D_REG[63]_xor_138_OUT_0_xo<0>1)
+     LUT6:I5->O            5   0.053   0.580  crypto_RIJNDAEL/ALG/Mxor_D_REG[63]_D_REG[63]_xor_140_OUT_0_xo<0>1 (crypto_RIJNDAEL/ALG/D_REG[63]_D_REG[63]_xor_140_OUT<0>)
+     LUT5:I2->O            6   0.053   0.449  crypto_RIJNDAEL/ALG/D_REG[63]_PWR_26_o_wide_mux_142_OUT<2>1 (crypto_RIJNDAEL/ALG/D_REG[63]_PWR_26_o_wide_mux_142_OUT<2>)
+     LUT6:I5->O            4   0.053   0.497  crypto_RIJNDAEL/ALG/Mxor_D_REG[63]_D_REG[63]_xor_176_OUT_2_xo<0>11 (crypto_RIJNDAEL/ALG/D_REG[63]_D_REG[63]_xor_176_OUT<2>)
+     LUT6:I4->O            2   0.053   0.422  crypto_RIJNDAEL/ALG/D_REG[63]_PWR_26_o_wide_mux_178_OUT<3>1 (crypto_RIJNDAEL/ALG/D_REG[63]_PWR_26_o_wide_mux_178_OUT<1>)
+     LUT6:I5->O            5   0.053   0.628  crypto_RIJNDAEL/ALG/Mxor_D_REG[63]_D_REG[63]_xor_181_OUT_0_xo<0>1 (crypto_RIJNDAEL/ALG/D_REG[63]_D_REG[63]_xor_181_OUT<0>)
+     LUT4:I0->O            3   0.053   0.430  crypto_RIJNDAEL/ALG/D_REG[63]_PWR_26_o_wide_mux_183_OUT<3>1 (crypto_RIJNDAEL/ALG/D_REG[63]_PWR_26_o_wide_mux_183_OUT<1>)
+     LUT5:I4->O            4   0.053   0.497  crypto_RIJNDAEL/ALG/Mxor_D_REG[63]_D_REG[63]_xor_217_OUT_1_xo<0>11 (crypto_RIJNDAEL/ALG/D_REG[63]_D_REG[63]_xor_217_OUT<1>)
+     LUT6:I4->O            2   0.053   0.422  crypto_RIJNDAEL/ALG/D_REG[63]_PWR_26_o_wide_mux_219_OUT<4>1 (crypto_RIJNDAEL/ALG/D_REG[63]_PWR_26_o_wide_mux_219_OUT<0>)
+     LUT6:I5->O           10   0.053   0.660  crypto_RIJNDAEL/ALG/Mxor_D_REG[63]_D_REG[63]_xor_222_OUT_3_xo<0>1 (crypto_RIJNDAEL/ALG/D_REG[63]_D_REG[63]_xor_222_OUT<3>)
+     LUT4:I0->O            8   0.053   0.758  crypto_RIJNDAEL/ALG/D_REG[63]_PWR_26_o_wide_mux_224_OUT<4>1 (crypto_RIJNDAEL/ALG/D_REG[63]_PWR_26_o_wide_mux_224_OUT<0>)
+     LUT5:I0->O            1   0.053   0.416  crypto_RIJNDAEL/ALG/Mxor_D_REG[63]_D_REG[63]_xor_255_OUT_4_xo<0>_SW0_SW0 (N69)
+     LUT6:I5->O            1   0.053   0.477  crypto_RIJNDAEL/ALG/Mxor_D_REG[63]_D_REG[63]_xor_255_OUT_4_xo<0> (crypto_RIJNDAEL/ALG/D_REG[63]_D_REG[63]_xor_255_OUT<4>)
+     LUT2:I0->O            1   0.053   0.000  crypto_RIJNDAEL/ALG/Madd_n1355_lut<4> (crypto_RIJNDAEL/ALG/Madd_n1355_lut<4>)
+     MUXCY:S->O            1   0.219   0.000  crypto_RIJNDAEL/ALG/Madd_n1355_cy<4> (crypto_RIJNDAEL/ALG/Madd_n1355_cy<4>)
+     MUXCY:CI->O           1   0.015   0.000  crypto_RIJNDAEL/ALG/Madd_n1355_cy<5> (crypto_RIJNDAEL/ALG/Madd_n1355_cy<5>)
+     MUXCY:CI->O           1   0.015   0.000  crypto_RIJNDAEL/ALG/Madd_n1355_cy<6> (crypto_RIJNDAEL/ALG/Madd_n1355_cy<6>)
+     MUXCY:CI->O           1   0.015   0.000  crypto_RIJNDAEL/ALG/Madd_n1355_cy<7> (crypto_RIJNDAEL/ALG/Madd_n1355_cy<7>)
+     MUXCY:CI->O           1   0.015   0.000  crypto_RIJNDAEL/ALG/Madd_n1355_cy<8> (crypto_RIJNDAEL/ALG/Madd_n1355_cy<8>)
+     MUXCY:CI->O           1   0.015   0.000  crypto_RIJNDAEL/ALG/Madd_n1355_cy<9> (crypto_RIJNDAEL/ALG/Madd_n1355_cy<9>)
+     MUXCY:CI->O           1   0.015   0.000  crypto_RIJNDAEL/ALG/Madd_n1355_cy<10> (crypto_RIJNDAEL/ALG/Madd_n1355_cy<10>)
+     MUXCY:CI->O           1   0.015   0.000  crypto_RIJNDAEL/ALG/Madd_n1355_cy<11> (crypto_RIJNDAEL/ALG/Madd_n1355_cy<11>)
+     MUXCY:CI->O           1   0.015   0.000  crypto_RIJNDAEL/ALG/Madd_n1355_cy<12> (crypto_RIJNDAEL/ALG/Madd_n1355_cy<12>)
+     MUXCY:CI->O           1   0.015   0.000  crypto_RIJNDAEL/ALG/Madd_n1355_cy<13> (crypto_RIJNDAEL/ALG/Madd_n1355_cy<13>)
+     MUXCY:CI->O           1   0.015   0.000  crypto_RIJNDAEL/ALG/Madd_n1355_cy<14> (crypto_RIJNDAEL/ALG/Madd_n1355_cy<14>)
+     MUXCY:CI->O           1   0.015   0.000  crypto_RIJNDAEL/ALG/Madd_n1355_cy<15> (crypto_RIJNDAEL/ALG/Madd_n1355_cy<15>)
+     MUXCY:CI->O           1   0.015   0.000  crypto_RIJNDAEL/ALG/Madd_n1355_cy<16> (crypto_RIJNDAEL/ALG/Madd_n1355_cy<16>)
+     MUXCY:CI->O           1   0.015   0.000  crypto_RIJNDAEL/ALG/Madd_n1355_cy<17> (crypto_RIJNDAEL/ALG/Madd_n1355_cy<17>)
+     MUXCY:CI->O           1   0.015   0.000  crypto_RIJNDAEL/ALG/Madd_n1355_cy<18> (crypto_RIJNDAEL/ALG/Madd_n1355_cy<18>)
+     MUXCY:CI->O           1   0.015   0.000  crypto_RIJNDAEL/ALG/Madd_n1355_cy<19> (crypto_RIJNDAEL/ALG/Madd_n1355_cy<19>)
+     MUXCY:CI->O           1   0.015   0.000  crypto_RIJNDAEL/ALG/Madd_n1355_cy<20> (crypto_RIJNDAEL/ALG/Madd_n1355_cy<20>)
+     MUXCY:CI->O           1   0.015   0.000  crypto_RIJNDAEL/ALG/Madd_n1355_cy<21> (crypto_RIJNDAEL/ALG/Madd_n1355_cy<21>)
+     MUXCY:CI->O           1   0.015   0.000  crypto_RIJNDAEL/ALG/Madd_n1355_cy<22> (crypto_RIJNDAEL/ALG/Madd_n1355_cy<22>)
+     MUXCY:CI->O           1   0.015   0.000  crypto_RIJNDAEL/ALG/Madd_n1355_cy<23> (crypto_RIJNDAEL/ALG/Madd_n1355_cy<23>)
+     MUXCY:CI->O           1   0.015   0.000  crypto_RIJNDAEL/ALG/Madd_n1355_cy<24> (crypto_RIJNDAEL/ALG/Madd_n1355_cy<24>)
+     MUXCY:CI->O           1   0.015   0.000  crypto_RIJNDAEL/ALG/Madd_n1355_cy<25> (crypto_RIJNDAEL/ALG/Madd_n1355_cy<25>)
+     MUXCY:CI->O           1   0.015   0.000  crypto_RIJNDAEL/ALG/Madd_n1355_cy<26> (crypto_RIJNDAEL/ALG/Madd_n1355_cy<26>)
+     MUXCY:CI->O           1   0.015   0.000  crypto_RIJNDAEL/ALG/Madd_n1355_cy<27> (crypto_RIJNDAEL/ALG/Madd_n1355_cy<27>)
+     MUXCY:CI->O           1   0.015   0.000  crypto_RIJNDAEL/ALG/Madd_n1355_cy<28> (crypto_RIJNDAEL/ALG/Madd_n1355_cy<28>)
+     XORCY:CI->O           3   0.180   0.491  crypto_RIJNDAEL/ALG/Madd_n1355_xor<29> (crypto_RIJNDAEL/ALG/n1355<29>)
+     LUT3:I1->O            1   0.053   0.416  crypto_RIJNDAEL/ALG/Madd_D_REG[31]_ALG_ROUND_KEY[31]_add_644_OUT29 (crypto_RIJNDAEL/ALG/Madd_D_REG[31]_ALG_ROUND_KEY[31]_add_644_OUT29)
+     LUT4:I3->O            1   0.053   0.000  crypto_RIJNDAEL/ALG/Madd_D_REG[31]_ALG_ROUND_KEY[31]_add_644_OUT_lut<0>30 (crypto_RIJNDAEL/ALG/Madd_D_REG[31]_ALG_ROUND_KEY[31]_add_644_OUT_lut<0>30)
+     MUXCY:S->O            0   0.219   0.000  crypto_RIJNDAEL/ALG/Madd_D_REG[31]_ALG_ROUND_KEY[31]_add_644_OUT_cy<0>_29 (crypto_RIJNDAEL/ALG/Madd_D_REG[31]_ALG_ROUND_KEY[31]_add_644_OUT_cy<0>30)
+     XORCY:CI->O           1   0.180   0.416  crypto_RIJNDAEL/ALG/Madd_D_REG[31]_ALG_ROUND_KEY[31]_add_644_OUT_xor<0>_30 (crypto_RIJNDAEL/ALG/D_REG[31]_ALG_ROUND_KEY[31]_add_644_OUT<31>)
+     LUT6:I5->O            1   0.053   0.000  crypto_RIJNDAEL/ALG/Mmux_ROUND[4]_D_REG[63]_wide_mux_655_OUT1045 (crypto_RIJNDAEL/ALG/ROUND[4]_D_REG[63]_wide_mux_655_OUT<30>)
+     FDCE:D                   -0.012          crypto_RIJNDAEL/ALG/D_REG_30
+    ----------------------------------------
+    Total                     12.482ns (2.445ns logic, 10.037ns route)
+                                       (19.6% logic, 80.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 429038121 / 1108
+-------------------------------------------------------------------------
+Offset:              5.352ns (Levels of Logic = 45)
+  Source:            x<0> (PAD)
+  Destination:       general/blk000003fb (FF)
+  Destination Clock: clk rising
+
+  Data Path: x<0> to general/blk000003fb
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            18   0.003   0.713  x_0_IBUF (x_0_IBUF)
+     begin scope: 'general:a<0>'
+     LUT4:I0->O            1   0.053   0.000  blk000004af (sig0000033d)
+     MUXCY:S->O            1   0.219   0.000  blk0000015f (sig000003f0)
+     MUXCY:CI->O           1   0.015   0.000  blk00000148 (sig000003d8)
+     MUXCY:CI->O           1   0.015   0.000  blk0000013f (sig000003cf)
+     MUXCY:CI->O           1   0.015   0.000  blk00000136 (sig000003c6)
+     MUXCY:CI->O           1   0.015   0.000  blk0000012d (sig000003bd)
+     MUXCY:CI->O           1   0.015   0.000  blk00000124 (sig000003b4)
+     MUXCY:CI->O           1   0.015   0.000  blk0000011b (sig000003ab)
+     MUXCY:CI->O           1   0.015   0.000  blk00000112 (sig000003a2)
+     MUXCY:CI->O           1   0.015   0.000  blk00000109 (sig00000399)
+     MUXCY:CI->O           1   0.015   0.000  blk00000100 (sig00000390)
+     MUXCY:CI->O           1   0.015   0.000  blk000000f7 (sig00000387)
+     MUXCY:CI->O           1   0.015   0.000  blk000000ee (sig0000037e)
+     MUXCY:CI->O           1   0.015   0.000  blk000000e5 (sig00000375)
+     MUXCY:CI->O           1   0.015   0.000  blk000000dc (sig0000036c)
+     MUXCY:CI->O           1   0.015   0.000  blk000000d3 (sig00000363)
+     MUXCY:CI->O           1   0.015   0.000  blk000000ca (sig0000035a)
+     MUXCY:CI->O           1   0.015   0.000  blk000000c1 (sig00000351)
+     MUXCY:CI->O           0   0.015   0.000  blk000000b8 (sig00000348)
+     XORCY:CI->O           1   0.180   0.477  blk0000000c (sig00000213)
+     LUT2:I0->O            1   0.053   0.000  blk000003c7 (sig00000122)
+     MUXCY:S->O            1   0.219   0.000  blk000003c6 (sig00000121)
+     MUXCY:CI->O           0   0.015   0.000  blk000003c4 (sig00000120)
+     XORCY:CI->O           1   0.180   0.477  blk000003c2 (sig000001f0)
+     LUT2:I0->O            1   0.053   0.000  blk000002e3 (sig0000008e)
+     MUXCY:S->O            1   0.219   0.000  blk000002e2 (sig0000008d)
+     MUXCY:CI->O           1   0.015   0.000  blk000002e0 (sig0000008c)
+     MUXCY:CI->O           1   0.015   0.000  blk000002de (sig0000008b)
+     MUXCY:CI->O           1   0.015   0.000  blk000002dc (sig0000008a)
+     MUXCY:CI->O          10   0.169   0.536  blk000002da (sig00000089)
+     LUT2:I0->O            1   0.053   0.000  blk00000264 (sig0000003c)
+     MUXCY:S->O            1   0.219   0.000  blk00000263 (sig0000003b)
+     MUXCY:CI->O           1   0.015   0.000  blk00000260 (sig00000039)
+     MUXCY:CI->O           1   0.015   0.000  blk0000025d (sig00000037)
+     MUXCY:CI->O           1   0.015   0.000  blk0000025a (sig00000035)
+     MUXCY:CI->O           1   0.015   0.000  blk00000257 (sig00000033)
+     MUXCY:CI->O           1   0.015   0.000  blk00000254 (sig00000031)
+     MUXCY:CI->O           1   0.015   0.000  blk00000251 (sig0000002f)
+     MUXCY:CI->O           1   0.015   0.000  blk0000024e (sig0000002d)
+     XORCY:CI->O           1   0.180   0.477  blk0000024a (sig000001b1)
+     LUT2:I0->O            1   0.053   0.000  blk00000211 (sig00000005)
+     MUXCY:S->O            0   0.219   0.000  blk00000210 (sig00000004)
+     XORCY:CI->O           1   0.180   0.000  blk0000020d (sig00000158)
+     FDE:D                    -0.012          blk000003fb
+    ----------------------------------------
+    Total                      5.352ns (2.672ns logic, 2.680ns route)
+                                       (49.9% logic, 50.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'test_mode_rst_OR_36_o'
+  Total number of paths / destination ports: 36 / 36
+-------------------------------------------------------------------------
+Offset:              0.640ns (Levels of Logic = 2)
+  Source:            test_mode (PAD)
+  Destination:       output_dev_33 (LATCH)
+  Destination Clock: test_mode_rst_OR_36_o falling
+
+  Data Path: test_mode to output_dev_33
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           103   0.003   0.584  test_mode_IBUF (test_mode_IBUF)
+     LUT2:I1->O            1   0.053   0.000  Mmux_output_dev[35]_p[35]_MUX_575_o11 (output_dev[35]_p[35]_MUX_575_o)
+     LD:D                     -0.043          output_dev_35
+    ----------------------------------------
+    Total                      0.640ns (0.056ns logic, 0.584ns route)
+                                       (8.7% logic, 91.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'PRSG/reset_u1_AND_13_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.520ns (Levels of Logic = 2)
+  Source:            rst (PAD)
+  Destination:       PRSG/x0_LDC (LATCH)
+  Destination Clock: PRSG/reset_u1_AND_13_o falling
+
+  Data Path: rst to PRSG/x0_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           666   0.003   0.739  rst_IBUF (rst_IBUF)
+     LUT2:I0->O            2   0.053   0.405  PRSG/reset_u1_AND_14_o1 (PRSG/reset_u1_AND_14_o)
+     LDC:CLR                   0.320          PRSG/x0_LDC
+    ----------------------------------------
+    Total                      1.520ns (0.376ns logic, 1.144ns route)
+                                       (24.7% logic, 75.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'PRSG/reset_shift[0]_AND_11_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.755ns (Levels of Logic = 2)
+  Source:            rst (PAD)
+  Destination:       PRSG/u2_LDC (LATCH)
+  Destination Clock: PRSG/reset_shift[0]_AND_11_o falling
+
+  Data Path: rst to PRSG/u2_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           666   0.003   0.974  rst_IBUF (rst_IBUF)
+     LUT5:I0->O            2   0.053   0.405  PRSG/reset_shift[0]_AND_12_o1 (PRSG/reset_shift[0]_AND_12_o)
+     LDC:CLR                   0.320          PRSG/u2_LDC
+    ----------------------------------------
+    Total                      1.755ns (0.376ns logic, 1.379ns route)
+                                       (21.4% logic, 78.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'PRSG/reset_shift[3]_AND_9_o'
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Offset:              1.596ns (Levels of Logic = 2)
+  Source:            rst (PAD)
+  Destination:       PRSG/u1_LDC (LATCH)
+  Destination Clock: PRSG/reset_shift[3]_AND_9_o falling
+
+  Data Path: rst to PRSG/u1_LDC
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           666   0.003   0.815  rst_IBUF (rst_IBUF)
+     LUT3:I0->O            2   0.053   0.405  PRSG/reset_shift[3]_AND_10_o1 (PRSG/reset_shift[3]_AND_10_o)
+     LDC:CLR                   0.320          PRSG/u1_LDC
+    ----------------------------------------
+    Total                      1.596ns (0.376ns logic, 1.220ns route)
+                                       (23.6% logic, 76.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 257 / 129
+-------------------------------------------------------------------------
+Offset:              1.386ns (Levels of Logic = 2)
+  Source:            crypto_RIJNDAEL/ALG/DONE (FF)
+  Destination:       watermark_output<127> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: crypto_RIJNDAEL/ALG/DONE to watermark_output<127>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q           128   0.280   0.651  crypto_RIJNDAEL/ALG/DONE (crypto_RIJNDAEL/ALG/DONE)
+     LUT2:I0->O            1   0.053   0.399  crypto_RIJNDAEL/ALG/Mmux_ALG_DATAOUT1281 (watermark_output_9_OBUF)
+     OBUF:I->O                 0.003          watermark_output_9_OBUF (watermark_output<9>)
+    ----------------------------------------
+    Total                      1.386ns (0.336ns logic, 1.050ns route)
+                                       (24.3% logic, 75.7% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'test_mode_rst_OR_36_o'
+  Total number of paths / destination ports: 36 / 36
+-------------------------------------------------------------------------
+Offset:              0.684ns (Levels of Logic = 1)
+  Source:            output_dev_35 (LATCH)
+  Destination:       output_dev<35> (PAD)
+  Source Clock:      test_mode_rst_OR_36_o falling
+
+  Data Path: output_dev_35 to output_dev<35>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LD:G->Q               1   0.282   0.399  output_dev_35 (output_dev_35)
+     OBUF:I->O                 0.003          output_dev_35_OBUF (output_dev<35>)
+    ----------------------------------------
+    Total                      0.684ns (0.285ns logic, 0.399ns route)
+                                       (41.7% logic, 58.3% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock PRSG/reset_shift[0]_AND_11_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    1.679|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock PRSG/reset_shift[3]_AND_9_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    1.575|         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock PRSG/reset_u1_AND_13_o
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+PRSG/reset_shift[0]_AND_11_o|         |         |    2.261|         |
+PRSG/reset_shift[3]_AND_9_o |         |         |    2.263|         |
+clk                         |         |         |    2.148|         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock clk
+----------------------------+---------+---------+---------+---------+
+                            | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock                |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+----------------------------+---------+---------+---------+---------+
+PRSG/reset_shift[0]_AND_11_o|         |    2.261|         |         |
+PRSG/reset_shift[3]_AND_9_o |         |    2.263|         |         |
+PRSG/reset_u1_AND_13_o      |         |    0.888|         |         |
+clk                         |   12.482|         |         |         |
+----------------------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock test_mode_rst_OR_36_o
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk            |         |         |    0.810|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 207.00 secs
+Total CPU time to Xst completion: 206.96 secs
+ 
+--> 
+
+Total memory usage is 248156 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  408 (   0 filtered)
+Number of infos    :    7 (   0 filtered)
+

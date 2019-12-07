@@ -1,0 +1,4 @@
+vhdl work "../../nfhc/trunk/sha256/romk.vhdl"
+vhdl work "../../nfhc/trunk/sha256/c6b.vhdl"
+vhdl work "../../nfhc/trunk/sha256/c4b.vhdl"
+vhdl work "../../nfhc/trunk/sha256/sha256.vhdl"

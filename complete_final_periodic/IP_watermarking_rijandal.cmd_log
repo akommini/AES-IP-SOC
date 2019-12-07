@@ -1,0 +1,9 @@
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/IP_watermarking_rijandal.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/IP_watermarking_rijandal.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ../test/ipcore_dir -nt timestamp -uc IP_watermark.ucf -p xc6vlx75tl-ff784-1L IP_watermarking_rijandal.ngc IP_watermarking_rijandal.ngd  
+map -intstyle ise -p xc6vlx75tl-ff784-1L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o IP_watermarking_rijandal_map.ncd IP_watermarking_rijandal.ngd IP_watermarking_rijandal.pcf 
+par -w -intstyle ise -ol high -mt off IP_watermarking_rijandal_map.ncd IP_watermarking_rijandal.ncd IP_watermarking_rijandal.pcf 
+trce -intstyle ise -v 3 -s 1L -n 3 -fastpaths -xml IP_watermarking_rijandal.twx IP_watermarking_rijandal.ncd -o IP_watermarking_rijandal.twr IP_watermarking_rijandal.pcf -ucf IP_watermark.ucf 
+trce -intstyle ise -v 3 -s 1L -n 3 -fastpaths -xml IP_watermarking_rijandal_preroute.twx IP_watermarking_rijandal_map.ncd -o IP_watermarking_rijandal_preroute.twr IP_watermarking_rijandal.pcf -ucf IP_watermark.ucf 
+netgen -intstyle ise -s 1L  -pcf IP_watermarking_rijandal.pcf -rpw 100 -tpw 0 -ar Structure -tm IP_watermark -w -dir netgen/map -ofmt vhdl -sim IP_watermarking_rijandal_map.ncd IP_watermark_map.vhd 
+netgen -intstyle ise -s 1L  -pcf IP_watermarking_rijandal.pcf -rpw 100 -tpw 0 -ar Structure -tm IP_watermark -w -dir netgen/map -ofmt vhdl -sim IP_watermarking_rijandal_map.ncd IP_watermark_map.vhd 
+xpwr -intstyle ise -ol std IP_watermarking_rijandal.ncd IP_watermarking_rijandal.pcf -o IP_watermarking_rijandal.pwr 

@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<DARoots Version="1" Minor="16">
+	<FileSet Name="constrs_1" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+		<Filter Type="Constrs"/>
+		<File Path="$PPRDIR/../../test/ipcore_dir/ipcore.ncf">
+		</File>
+		<File Path="$PPRDIR/../IP_watermark.ucf">
+		</File>
+		<Config>
+			<Option Name="TargetPart" Val="xc6vlx75tlff784-1L"/>
+			<Option Name="ConstrsType" Val="UCF"/>
+			<Option Name="SrcSet" Val="sources_1"/>
+		</Config>
+	</FileSet>
+</DARoots>
+

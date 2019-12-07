@@ -1,0 +1,28 @@
+Command line:
+   sha256_isim_beh.exe
+     -simmode  gui
+     -simrunnum  1
+     -socket  51449
+
+Sun Apr 28 22:52:11 2013
+
+
+ Elaboration Time: 0.09375 sec
+
+ Current Memory Usage: 503.763 Meg
+
+ Total Signals          : 55
+ Total Nets             : 1481
+ Total Signal Drivers   : 44
+ Total Blocks           : 6
+ Total Primitive Blocks : 5
+ Total Processes        : 27
+ Total Traceable Variables  : 13
+ Total Scalar Nets and Variables : 1964
+
+ Total Simulation Time: 0.125 sec
+
+ Current Memory Usage: 504.812 Meg
+
+Mon Apr 29 00:49:05 2013
+

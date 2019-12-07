@@ -1,0 +1,28 @@
+Command line:
+   RIJNDAEL_TOP_PIPE_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  49417
+
+Mon Apr 29 15:21:41 2013
+
+
+ Elaboration Time: 0.421875 sec
+
+ Current Memory Usage: 532.57 Meg
+
+ Total Signals          : 1211
+ Total Nets             : 53953
+ Total Signal Drivers   : 1029
+ Total Blocks           : 954
+ Total Primitive Blocks : 641
+ Total Processes        : 1022
+ Total Traceable Variables  : 683
+ Total Scalar Nets and Variables : 56933
+
+ Total Simulation Time: 14.9375 sec
+
+ Current Memory Usage: 533.619 Meg
+
+Mon Apr 29 15:27:41 2013
+

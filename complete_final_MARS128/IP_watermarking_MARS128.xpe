@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<POWERDATA author="XPower Analyzer" dataVersion="SoftwareVersion:O.61xd" date="Thu May 02 00:36:20 2013&#xA;" design="IP_watermarking_MARS128.ncd">
+
+  <ENVIRONMENT>
+    <DEVICE grade="Commercial" package="ff784" part="xc6vlx75tl" process="Typical" speed="-1L"/>
+    <VOLTAGESOURCES>
+      <SOURCE icc="39.795" iccq="434.774" name="Vccint" power="427.112" voltage="0.900"/>
+      <SOURCE icc="0.012" iccq="45.000" name="Vccaux" power="112.531" voltage="2.500"/>
+      <SOURCE icc="0.228" iccq="1.000" name="Vcco25" power="3.070" voltage="2.500"/>
+      <SOURCE icc="0.000" iccq="454.914" name="MGTAVcc" power="454.914" voltage="1.000"/>
+      <SOURCE icc="0.000" iccq="319.164" name="MGTAVtt" power="382.997" voltage="1.200"/>
+    </VOLTAGESOURCES>
+    <THERMAL>
+      <AMBIENT value="50.0"/>
+      <AIRFLOW value="250"/>
+      <HEATSINK value="Medium Profile"/>
+      <BOARDSELECTION value="Medium (10&quot;x10&quot;)"/>
+      <BOARDLAYERS value="8 to 11"/>
+      <TJA value="2.1"/>
+      <JUNCTIONTEMP value="52.8"/>
+    </THERMAL>
+  </ENVIRONMENT>
+
+  <BLOCKDETAILS>
+    <BYTYPE>
+      <BLOCKTYPE name="CLOCK">
+        <CLOCK belFanout="2426" bufType="BUFG" freq="16.00" hrows="6" leafs="104" name="clk_BUFGP" power="3.457365" sliceFanout="894"/>
+        <CLOCK belFanout="1" bufType="IOB" freq="16.00" hrows="0" leafs="0" name="clk_BUFGP/IBUFG" power="0.004938" sliceFanout="1"/>
+        <CLOCK belFanout="36" bufType="BUFG" freq="16.00" hrows="1" leafs="0" name="test_mode_rst_OR_75_o_BUFG" power="0.141984" sliceFanout="36"/>
+        <CLOCK belFanout="11" bufType="LUT6" freq="16.00" hrows="0" leafs="0" name="test_mode_rst_OR_75_o" power="0.020606" sliceFanout="5"/>
+      </BLOCKTYPE>
+      <BLOCKTYPE name="LOGIC">
+        <LOGIC SELMUX2_1="4291" STARTUP_STARTUP="1" carry4s="378" clock="" clockFreq="6.133782" enableRate="1.000000" extNets="6739" fanout="8.155661" ffs="1" latches="3" logicCap="5151670" luts="12918" name="IP_watermarking_MARS128/Combinatorial" numNets="19049" power="16.725124" signalCap="7668503" toggleRate="36.817274" writeRate="0.000000"/>
+        <LOGIC clock="clk_BUFGP" clockFreq="16.000000" enableRate="0.358702" extNets="2426" fanout="6.884584" ffs="2426" logicCap="133430" name="clk_BUFGP" numNets="2426" power="0.016514" signalCap="3369511" toggleRate="1.909948" writeRate="0.000000"/>
+      </BLOCKTYPE>
+      <BLOCKTYPE name="DSP">
+        <MODULE count="6" name="crypto_RIJNDAEL/ALG - asynchronous">
+          <GROUPSUMMARY>
+            <DSP48E1 clock="" clockFreq="16.000000" mregUsed="No" multUsed="Yes" name="crypto_RIJNDAEL/ALG - asynchronous" power="0.000000" preAdderUsed="No" toggleRate="0.000000"/>
+          </GROUPSUMMARY>
+        </MODULE>
+      </BLOCKTYPE>
+      <BLOCKTYPE name="IO">
+        <MODULE count="1" name="DONE">
+          <GROUPSUMMARY>
+            <IO clock="clk_BUFGP" clockFreq="16.000000" dataRate="SDR" ibufLowPower="No" ioDelay="No" ioStandard="LVCMOS25_12_SLOW" name="DONE" outputEnableRate="1.000000" outputLoad="5" outputs="1" serdes="No" signalRate="0.014435" toggleRate="0.090220" vccAux="0.000061" vccInt="0.000010" vcco="0.001120" vccoCurrent="0.000448"/>
+          </GROUPSUMMARY>
+        </MODULE>
+        <MODULE count="18" name="Y&lt;0:17>">
+          <GROUPSUMMARY>
+            <IO clock="" clockFreq="0.000000" dataRate="SDR" ibufLowPower="No" inputs="18" ioDelay="No" ioStandard="LVCMOS25" name="Y&lt;0:17>" serdes="No" signalRate="2.000000" toggleRate="12.500000" vccAux="0.000000" vccInt="0.059426" vcco="0.000000" vccoCurrent="0.000000"/>
+          </GROUPSUMMARY>
+        </MODULE>
+        <MODULE count="1" name="clk">
+          <GROUPSUMMARY>
+            <IO clock="" clockFreq="0.000000" dataRate="SDR" ibufLowPower="No" inputs="1" ioDelay="No" ioStandard="LVCMOS25" name="clk" serdes="No" signalRate="16.000000" toggleRate="200.000000" vccAux="0.000000" vccInt="0.052823" vcco="0.000000" vccoCurrent="0.000000"/>
+          </GROUPSUMMARY>
+        </MODULE>
+        <MODULE count="1" name="clk_en">
+          <GROUPSUMMARY>
+            <IO clock="" clockFreq="0.000000" dataRate="SDR" ibufLowPower="No" inputs="1" ioDelay="No" ioStandard="LVCMOS25" name="clk_en" serdes="No" signalRate="0.160000" toggleRate="1.000000" vccAux="0.000000" vccInt="0.000264" vcco="0.000000" vccoCurrent="0.000000"/>
+          </GROUPSUMMARY>
+        </MODULE>
+        <MODULE count="36" name="output_dev&lt;0:35>">
+          <GROUPSUMMARY>
+            <IO clock="test_mode_rst_OR_75_o_BUFG" clockFreq="16.000000" dataRate="SDR" ibufLowPower="No" ioDelay="No" ioStandard="LVCMOS25_12_SLOW" name="output_dev&lt;0:35>" outputEnableRate="1.000000" outputLoad="5" outputs="36" serdes="Yes" signalRate="0.203592" toggleRate="1.272450" vccAux="0.031062" vccInt="0.010054" vcco="0.568755" vccoCurrent="0.227502"/>
+          </GROUPSUMMARY>
+        </MODULE>
+        <MODULE count="1" name="rst">
+          <GROUPSUMMARY>
+            <IO clock="" clockFreq="0.000000" dataRate="SDR" ibufLowPower="No" inputs="1" ioDelay="No" ioStandard="LVCMOS25" name="rst" serdes="No" signalRate="2.000000" toggleRate="12.500000" vccAux="0.000000" vccInt="0.003301" vcco="0.000000" vccoCurrent="0.000000"/>
+          </GROUPSUMMARY>
+        </MODULE>
+        <MODULE count="1" name="test_mode">
+          <GROUPSUMMARY>
+            <IO clock="" clockFreq="0.000000" dataRate="SDR" ibufLowPower="No" inputs="1" ioDelay="No" ioStandard="LVCMOS25" name="test_mode" serdes="No" signalRate="2.000000" toggleRate="12.500000" vccAux="0.000000" vccInt="0.003301" vcco="0.000000" vccoCurrent="0.000000"/>
+          </GROUPSUMMARY>
+        </MODULE>
+        <MODULE count="128" name="watermark_output&lt;0:127>">
+          <GROUPSUMMARY>
+            <IO clock="" clockFreq="0.000000" dataRate="SDR" ibufLowPower="No" ioDelay="No" ioStandard="LVCMOS25_12_SLOW" name="watermark_output&lt;0:127>" outputEnableRate="1.000000" outputLoad="5" outputs="128" serdes="No" signalRate="0.000000" toggleRate="0.000000" vccAux="0.000000" vccInt="0.000000" vcco="0.000000" vccoCurrent="0.000000"/>
+          </GROUPSUMMARY>
+        </MODULE>
+        <MODULE count="18" name="x&lt;0:17>">
+          <GROUPSUMMARY>
+            <IO clock="" clockFreq="0.000000" dataRate="SDR" ibufLowPower="No" inputs="18" ioDelay="No" ioStandard="LVCMOS25" name="x&lt;0:17>" serdes="No" signalRate="2.000000" toggleRate="12.500000" vccAux="0.000000" vccInt="0.059426" vcco="0.000000" vccoCurrent="0.000000"/>
+          </GROUPSUMMARY>
+        </MODULE>
+      </BLOCKTYPE>
+      <BLOCKTYPE name="GTXE1">
+        <MODULE count="1" name="GTXE1_ML_REPLICATED_0_STARTUP_V6_PWRUP_GTXE1_ML_INSERTED_MapLib_replicate0">
+          <GROUPSUMMARY>
+            <GTXE1 channels="1" gtSide="SouthNorth" gtSite="X0Y2" keepAlive="Yes" name="GTXE1_ML_REPLICATED_0_STARTUP_V6_PWRUP_GTXE1_ML_INSERTED_MapLib_replicate0" opMode="Transmitter" power="0.000000" rx8b10bDecoder="No" rxDataPath="20" rxDataRate="0.000000" rxInternalDataWidth="20" rxPowerMode="Low Power" tx8b10bDecoder="No" txAmplitude="130" txDataPath="20" txDataRate="0.000000" txInternalDataWidth="20" txPowerMode="Low Power"/>
+          </GROUPSUMMARY>
+        </MODULE>
+        <MODULE count="1" name="GTXE1_ML_REPLICATED_10_STARTUP_V6_PWRUP_GTXE1_ML_INSERTED_MapLib_replicate10">
+          <GROUPSUMMARY>
+            <GTXE1 channels="1" gtSide="SouthNorth" gtSite="X0Y0" keepAlive="Yes" name="GTXE1_ML_REPLICATED_10_STARTUP_V6_PWRUP_GTXE1_ML_INSERTED_MapLib_replicate10" opMode="Transmitter" power="0.000000" rx8b10bDecoder="No" rxDataPath="20" rxDataRate="0.000000" rxInternalDataWidth="20" rxPowerMode="Low Power" tx8b10bDecoder="No" txAmplitude="130" txDataPath="20" txDataRate="0.000000" txInternalDataWidth="20" txPowerMode="Low Power"/>
+          </GROUPSUMMARY>
+        </MODULE>
+        <MODULE count="1" name="GTXE1_ML_REPLICATED_11_STARTUP_V6_PWRUP_GTXE1_ML_INSERTED_MapLib_replicate11">
+          <GROUPSUMMARY>
+            <GTXE1 channels="1" gtSide="SouthNorth" gtSite="X0Y1" keepAlive="Yes" name="GTXE1_ML_REPLICATED_11_STARTUP_V6_PWRUP_GTXE1_ML_INSERTED_MapLib_replicate11" opMode="Transmitter" power="0.000000" rx8b10bDecoder="No" rxDataPath="20" rxDataRate="0.000000" rxInternalDataWidth="20" rxPowerMode="Low Power" tx8b10bDecoder="No" txAmplitude="130" txDataPath="20" txDataRate="0.000000" txInternalDataWidth="20" txPowerMode="Low Power"/>
+          </GROUPSUMMARY>
+        </MODULE>
+        <MODULE count="1" name="GTXE1_ML_REPLICATED_1_STARTUP_V6_PWRUP_GTXE1_ML_INSERTED_MapLib_replicate1">
+          <GROUPSUMMARY>
+            <GTXE1 channels="1" gtSide="SouthNorth" gtSite="X0Y3" keepAlive="Yes" name="GTXE1_ML_REPLICATED_1_STARTUP_V6_PWRUP_GTXE1_ML_INSERTED_MapLib_replicate1" opMode="Transmitter" power="0.000000" rx8b10bDecoder="No" rxDataPath="20" rxDataRate="0.000000" rxInternalDataWidth="20" rxPowerMode="Low Power" tx8b10bDecoder="No" txAmplitude="130" txDataPath="20" txDataRate="0.000000" txInternalDataWidth="20" txPowerMode="Low Power"/>
+          </GROUPSUMMARY>
+        </MODULE>
+        <MODULE count="1" name="GTXE1_ML_REPLICATED_2_STARTUP_V6_PWRUP_GTXE1_ML_INSERTED_MapLib_replicate2">
+          <GROUPSUMMARY>
+            <GTXE1 channels="1" gtSide="SouthNorth" gtSite="X0Y4" keepAlive="Yes" name="GTXE1_ML_REPLICATED_2_STARTUP_V6_PWRUP_GTXE1_ML_INSERTED_MapLib_replicate2" opMode="Transmitter" power="0.000000" rx8b10bDecoder="No" rxDataPath="20" rxDataRate="0.000000" rxInternalDataWidth="20" rxPowerMode="Low Power" tx8b10bDecoder="No" txAmplitude="130" txDataPath="20" txDataRate="0.000000" txInternalDataWidth="20" txPowerMode="Low Power"/>
+          </GROUPSUMMARY>
+        </MODULE>
+        <MODULE count="1" name="GTXE1_ML_REPLICATED_3_STARTUP_V6_PWRUP_GTXE1_ML_INSERTED_MapLib_replicate3">
+          <GROUPSUMMARY>
+            <GTXE1 channels="1" gtSide="SouthNorth" gtSite="X0Y5" keepAlive="Yes" name="GTXE1_ML_REPLICATED_3_STARTUP_V6_PWRUP_GTXE1_ML_INSERTED_MapLib_replicate3" opMode="Transmitter" power="0.000000" rx8b10bDecoder="No" rxDataPath="20" rxDataRate="0.000000" rxInternalDataWidth="20" rxPowerMode="Low Power" tx8b10bDecoder="No" txAmplitude="130" txDataPath="20" txDataRate="0.000000" txInternalDataWidth="20" txPowerMode="Low Power"/>
+          </GROUPSUMMARY>
+        </MODULE>
+        <MODULE count="1" name="GTXE1_ML_REPLICATED_4_STARTUP_V6_PWRUP_GTXE1_ML_INSERTED_MapLib_replicate4">
+          <GROUPSUMMARY>
+            <GTXE1 channels="1" gtSide="SouthNorth" gtSite="X0Y6" keepAlive="Yes" name="GTXE1_ML_REPLICATED_4_STARTUP_V6_PWRUP_GTXE1_ML_INSERTED_MapLib_replicate4" opMode="Transmitter" power="0.000000" rx8b10bDecoder="No" rxDataPath="20" rxDataRate="0.000000" rxInternalDataWidth="20" rxPowerMode="Low Power" tx8b10bDecoder="No" txAmplitude="130" txDataPath="20" txDataRate="0.000000" txInternalDataWidth="20" txPowerMode="Low Power"/>
+          </GROUPSUMMARY>
+        </MODULE>
+        <MODULE count="1" name="GTXE1_ML_REPLICATED_5_STARTUP_V6_PWRUP_GTXE1_ML_INSERTED_MapLib_replicate5">
+          <GROUPSUMMARY>
+            <GTXE1 channels="1" gtSide="SouthNorth" gtSite="X0Y7" keepAlive="Yes" name="GTXE1_ML_REPLICATED_5_STARTUP_V6_PWRUP_GTXE1_ML_INSERTED_MapLib_replicate5" opMode="Transmitter" power="0.000000" rx8b10bDecoder="No" rxDataPath="20" rxDataRate="0.000000" rxInternalDataWidth="20" rxPowerMode="Low Power" tx8b10bDecoder="No" txAmplitude="130" txDataPath="20" txDataRate="0.000000" txInternalDataWidth="20" txPowerMode="Low Power"/>
+          </GROUPSUMMARY>
+        </MODULE>
+        <MODULE count="1" name="GTXE1_ML_REPLICATED_6_STARTUP_V6_PWRUP_GTXE1_ML_INSERTED_MapLib_replicate6">
+          <GROUPSUMMARY>
+            <GTXE1 channels="1" gtSide="SouthNorth" gtSite="X0Y8" keepAlive="Yes" name="GTXE1_ML_REPLICATED_6_STARTUP_V6_PWRUP_GTXE1_ML_INSERTED_MapLib_replicate6" opMode="Transmitter" power="0.000000" rx8b10bDecoder="No" rxDataPath="20" rxDataRate="0.000000" rxInternalDataWidth="20" rxPowerMode="Low Power" tx8b10bDecoder="No" txAmplitude="130" txDataPath="20" txDataRate="0.000000" txInternalDataWidth="20" txPowerMode="Low Power"/>
+          </GROUPSUMMARY>
+        </MODULE>
+        <MODULE count="1" name="GTXE1_ML_REPLICATED_7_STARTUP_V6_PWRUP_GTXE1_ML_INSERTED_MapLib_replicate7">
+          <GROUPSUMMARY>
+            <GTXE1 channels="1" gtSide="SouthNorth" gtSite="X0Y9" keepAlive="Yes" name="GTXE1_ML_REPLICATED_7_STARTUP_V6_PWRUP_GTXE1_ML_INSERTED_MapLib_replicate7" opMode="Transmitter" power="0.000000" rx8b10bDecoder="No" rxDataPath="20" rxDataRate="0.000000" rxInternalDataWidth="20" rxPowerMode="Low Power" tx8b10bDecoder="No" txAmplitude="130" txDataPath="20" txDataRate="0.000000" txInternalDataWidth="20" txPowerMode="Low Power"/>
+          </GROUPSUMMARY>
+        </MODULE>
+        <MODULE count="1" name="GTXE1_ML_REPLICATED_8_STARTUP_V6_PWRUP_GTXE1_ML_INSERTED_MapLib_replicate8">
+          <GROUPSUMMARY>
+            <GTXE1 channels="1" gtSide="SouthNorth" gtSite="X0Y10" keepAlive="Yes" name="GTXE1_ML_REPLICATED_8_STARTUP_V6_PWRUP_GTXE1_ML_INSERTED_MapLib_replicate8" opMode="Transmitter" power="0.000000" rx8b10bDecoder="No" rxDataPath="20" rxDataRate="0.000000" rxInternalDataWidth="20" rxPowerMode="Low Power" tx8b10bDecoder="No" txAmplitude="130" txDataPath="20" txDataRate="0.000000" txInternalDataWidth="20" txPowerMode="Low Power"/>
+          </GROUPSUMMARY>
+        </MODULE>
+        <MODULE count="1" name="GTXE1_ML_REPLICATED_9_STARTUP_V6_PWRUP_GTXE1_ML_INSERTED_MapLib_replicate9">
+          <GROUPSUMMARY>
+            <GTXE1 channels="1" gtSide="SouthNorth" gtSite="X0Y11" keepAlive="Yes" name="GTXE1_ML_REPLICATED_9_STARTUP_V6_PWRUP_GTXE1_ML_INSERTED_MapLib_replicate9" opMode="Transmitter" power="0.000000" rx8b10bDecoder="No" rxDataPath="20" rxDataRate="0.000000" rxInternalDataWidth="20" rxPowerMode="Low Power" tx8b10bDecoder="No" txAmplitude="130" txDataPath="20" txDataRate="0.000000" txInternalDataWidth="20" txPowerMode="Low Power"/>
+          </GROUPSUMMARY>
+        </MODULE>
+      </BLOCKTYPE>
+    </BYTYPE>
+  </BLOCKDETAILS>
+
+</POWERDATA>

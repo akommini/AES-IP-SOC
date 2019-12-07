@@ -1,0 +1,60 @@
+Release 13.2 - xst O.61xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.23 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.23 secs
+ 
+--> WARNING:Xst:3164 - Option "-debug" found multiple times in the command line. Only the first occurence is considered.
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/chinna/Desktop/AES algorigtms/RIJNDAEL128/vhdl/rijndael_pkg.vhdl" in Library work.
+Package <rijndael_pack> compiled.
+Package body <rijndael_pack> compiled.
+Compiling vhdl file "C:/Users/chinna/Desktop/AES algorigtms/RIJNDAEL128/vhdl/nobox_dec_slice.vhdl" in Library work.
+Entity <NOBOX_DEC_SLICE> compiled.
+Entity <NOBOX_DEC_SLICE> (Architecture <rtl>) compiled.
+Compiling vhdl file "C:/Users/chinna/Desktop/AES algorigtms/RIJNDAEL128/vhdl/nobox_enc_slice.vhdl" in Library work.
+Entity <NOBOX_ENC_SLICE> compiled.
+Entity <NOBOX_ENC_SLICE> (Architecture <rtl>) compiled.
+Compiling vhdl file "C:/Users/chinna/Desktop/AES algorigtms/RIJNDAEL128/vhdl/array_reg128.vhdl" in Library work.
+Entity <ARRAY_REG128> compiled.
+Entity <ARRAY_REG128> (Architecture <ARRAY_REG128_RTL>) compiled.
+Compiling vhdl file "C:/Users/chinna/Desktop/AES algorigtms/RIJNDAEL128/vhdl/initial_round_block.vhdl" in Library work.
+ERROR:HDLParsers:3317 - "C:/Users/chinna/Desktop/AES algorigtms/RIJNDAEL128/vhdl/initial_round_block.vhdl" Line 32.  Library DWDL cannot be found.
+ERROR:HDLParsers:3010 - "C:/Users/chinna/Desktop/AES algorigtms/RIJNDAEL128/vhdl/initial_round_block.vhdl" Line 47. Entity INITIAL_ROUND_BLOCK does not exist.
+ERROR:HDLParsers:3312 - "C:/Users/chinna/Desktop/AES algorigtms/RIJNDAEL128/vhdl/initial_round_block.vhdl" Line 49. Undefined symbol 'STATE_TYPE'.
+ERROR:HDLParsers:1209 - "C:/Users/chinna/Desktop/AES algorigtms/RIJNDAEL128/vhdl/initial_round_block.vhdl" Line 49. STATE_TYPE: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/chinna/Desktop/AES algorigtms/RIJNDAEL128/vhdl/initial_round_block.vhdl" Line 53. Undefined symbol 'INITIAL_ROUND_FUNCT_out_tmp_created_by_csl'.
+ERROR:HDLParsers:3312 - "C:/Users/chinna/Desktop/AES algorigtms/RIJNDAEL128/vhdl/initial_round_block.vhdl" Line 54. Undefined symbol 'INITIAL_ROUND_FUNCT'.
+ERROR:HDLParsers:1209 - "C:/Users/chinna/Desktop/AES algorigtms/RIJNDAEL128/vhdl/initial_round_block.vhdl" Line 54. INITIAL_ROUND_FUNCT: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/chinna/Desktop/AES algorigtms/RIJNDAEL128/vhdl/initial_round_block.vhdl" Line 55. Undefined symbol 'encrypt'.
+ERROR:HDLParsers:1209 - "C:/Users/chinna/Desktop/AES algorigtms/RIJNDAEL128/vhdl/initial_round_block.vhdl" Line 55. encrypt: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/chinna/Desktop/AES algorigtms/RIJNDAEL128/vhdl/initial_round_block.vhdl" Line 56. Undefined symbol 'roundkey'.
+ERROR:HDLParsers:1209 - "C:/Users/chinna/Desktop/AES algorigtms/RIJNDAEL128/vhdl/initial_round_block.vhdl" Line 56. roundkey: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/chinna/Desktop/AES algorigtms/RIJNDAEL128/vhdl/initial_round_block.vhdl" Line 57. Undefined symbol 'state'.
+ERROR:HDLParsers:1209 - "C:/Users/chinna/Desktop/AES algorigtms/RIJNDAEL128/vhdl/initial_round_block.vhdl" Line 57. state: Undefined symbol (last report in this block)
+ERROR:HDLParsers:3312 - "C:/Users/chinna/Desktop/AES algorigtms/RIJNDAEL128/vhdl/initial_round_block.vhdl" Line 58. Undefined symbol 'INITIAL_ROUND_FUNCT_out'.
+ERROR:HDLParsers:1209 - "C:/Users/chinna/Desktop/AES algorigtms/RIJNDAEL128/vhdl/initial_round_block.vhdl" Line 58. INITIAL_ROUND_FUNCT_out_tmp_created_by_csl: Undefined symbol (last report in this block)
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.66 secs
+ 
+--> 
+
+Total memory usage is 160716 kilobytes
+
+Number of errors   :   15 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

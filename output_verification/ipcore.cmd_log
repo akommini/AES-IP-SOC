@@ -1,0 +1,1 @@
+vhdtdtfi -prj output_verification -o C:/Users/s/Desktop/Watermarking/output_verification/ipcore.tfi -module ipcore -template C:/Xilinx/13.2/ISE_DS/ISE//data/tfi.tft -deleteonerror -lib work ../test/ipcore_dir/ipcore.vhd 

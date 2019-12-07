@@ -1,0 +1,2 @@
+xst -intstyle ise -ifn "C:/Users/s/Desktop/Watermarking/output_verification/watermark_extraction.xst" -ofn "C:/Users/s/Desktop/Watermarking/output_verification/watermark_extraction.syr" 
+vhdtdtfi -prj output_verification -o C:/Users/s/Desktop/Watermarking/output_verification/watermark_extraction.tfi -module watermark_extraction -template C:/Xilinx/13.2/ISE_DS/ISE//data/tfi.tft -deleteonerror -lib work ../test/total.vhd -lib work ../test/LFSR.vhd -lib work ../test/ipcore_dir/ipcore.vhd -lib work ../test/h_watermark.vhd -lib work watermark_extraction.vhd 

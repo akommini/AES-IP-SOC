@@ -1,0 +1,424 @@
+#-----------------------------------------------------------
+# PlanAhead v13.2
+# Build 131561 by hdbuild on Thu Jun 16 17:01:57 PDT 2011
+# Start of session at: Fri May 03 00:32:00 2013
+# Process ID: 5532
+# Log file: C:/Users/chinna/Desktop/Watermarking/complete_final_twofish/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/chinna/Desktop/Watermarking/complete_final_twofish/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common-78] Attempting to get a license: PlanAhead
+INFO: [Common-82] Got a license: PlanAhead
+INFO: [Common-86] Your PlanAhead license expires in -458 day(s)
+INFO: [ArchReader-0] Loading parts and site information from D:\XilinX\13.2\ISE_DS\PlanAhead\parts\arch.xml
+Parsing RTL primitives file [D:\XilinX\13.2\ISE_DS\PlanAhead\parts\xilinx\rtl\prims\rtl_prims.xml]
+Finished parsing RTL primitives file [D:\XilinX\13.2\ISE_DS\PlanAhead\parts\xilinx\rtl\prims\rtl_prims.xml]
+start_gui
+source C:/Users/chinna/Desktop/Watermarking/complete_final_twofish/pa.fromNcd.tcl
+# create_project -name complete_final_twofish -dir "C:/Users/chinna/Desktop/Watermarking/complete_final_twofish/planAhead_run_1" -part xc6vlx75tlff784-1L
+Parsing template File [D:\XilinX\13.2\ISE_DS\ISE\data\projnav\templates\verilog.xml].
+Finished parsing template File [D:\XilinX\13.2\ISE_DS\ISE\data\projnav\templates\verilog.xml].
+Parsing template File [D:\XilinX\13.2\ISE_DS\ISE\data\projnav\templates\vhdl.xml].
+Finished parsing template File [D:\XilinX\13.2\ISE_DS\ISE\data\projnav\templates\vhdl.xml].
+Parsing template File [D:\XilinX\13.2\ISE_DS\ISE\data\projnav\templates\ucf.xml].
+Finished parsing template File [D:\XilinX\13.2\ISE_DS\ISE\data\projnav\templates\ucf.xml].
+create_project: Time (s): 12.131w.  Memory (MB): 378.480p 35.480g
+# set srcset [get_property srcset [current_run -impl]]
+# set_property design_mode GateLvl $srcset
+# set_property edif_top_file "C:/Users/chinna/Desktop/Watermarking/complete_final_twofish/IP_watermarking_twofish.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {C:/Users/chinna/Desktop/Watermarking/complete_final_twofish} {../complete_final_MARS128/ipcore_dir} }
+# add_files "../complete_final_MARS128/ipcore_dir/ip_core.ncf" -fileset [get_property constrset [current_run]]
+# set_param project.paUcfFile  "IP_watermarking_twofish.ucf"
+# add_files "IP_watermarking_twofish.ucf" -fileset [get_property constrset [current_run]]
+# open_netlist_design
+INFO: Design is defaulting to active srcset 'sources_1'
+INFO: Design is defaulting to active constrset 'constrs_1'
+INFO: Design is defaulting to constrset part: xc6vlx75tlff784-1L
+Release 13.2 - ngc2edif O.61xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Release 13.2 - ngc2edif O.61xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design IP_watermarking_twofish.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   IP_watermarking_twofish.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/GND_45_o_GND_45_o_xor_318_OUT<3 : 1> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/GND_45_o_GND_45_o_xor_325_OUT<3 : 1> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/GND_45_o_GND_45_o_xor_632_OUT<3 : 1> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/GND_45_o_GND_45_o_xor_639_OUT<3 : 1> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[31]_D_REG[31]_xor_454_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[31]_D_REG[31]_xor_444_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[31]_D_REG[31]_xor_434_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[63]_D_REG[63]_xor_140_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[63]_D_REG[63]_xor_130_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[63]_D_REG[63]_xor_120_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[31]_D_REG[31]_xor_546_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[31]_D_REG[31]_xor_526_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[63]_D_REG[63]_xor_232_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[63]_D_REG[63]_xor_212_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[31]_D_REG[31]_xor_485_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[31]_D_REG[31]_xor_475_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[63]_D_REG[63]_xor_171_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[63]_D_REG[63]_xor_161_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[31]_PWR_26_o_wide_mux_451_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[31]_PWR_26_o_wide_mux_441_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[31]_PWR_26_o_wide_mux_431_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[63]_PWR_26_o_wide_mux_127_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[63]_PWR_26_o_wide_mux_117_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[31]_PWR_26_o_wide_mux_543_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[31]_PWR_26_o_wide_mux_523_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[63]_PWR_26_o_wide_mux_229_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[63]_PWR_26_o_wide_mux_209_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[31]_PWR_26_o_wide_mux_482_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[31]_PWR_26_o_wide_mux_472_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[63]_PWR_26_o_wide_mux_168_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[63]_PWR_26_o_wide_mux_158_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[63]_PWR_26_o_wide_mux_91_OUT<2 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[31]_D_REG[31]_mux_374_OUT<7 : 3> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[63]_D_REG[63]_mux_60_OUT<7 : 3> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_576_OUT<3 : 1> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_300_OUT<5 : 2> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_257_OUT<5 : 2> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_602_OUT<7 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_578_OUT<7 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_531_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_521_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_511_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_501_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_490_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_480_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_470_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_460_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_221_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_211_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_201_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_191_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_180_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_170_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_160_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_150_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_PWR_28_o_wide_mux_528_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_PWR_28_o_wide_mux_518_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_PWR_28_o_wide_mux_508_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_PWR_28_o_wide_mux_498_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_PWR_28_o_wide_mux_487_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_PWR_28_o_wide_mux_477_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_PWR_28_o_wide_mux_467_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_PWR_28_o_wide_mux_457_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_PWR_28_o_wide_mux_218_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_PWR_28_o_wide_mux_208_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_PWR_28_o_wide_mux_198_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_PWR_28_o_wide_mux_188_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_PWR_28_o_wide_mux_177_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_PWR_28_o_wide_mux_167_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_PWR_28_o_wide_mux_157_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_PWR_28_o_wide_mux_147_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_514_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_494_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_473_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_463_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_204_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_184_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_163_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_153_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+  finished :Prep
+Writing EDIF netlist file IP_watermarking_twofish.edif ...
+ngc2edif: Total memory usage is 57908 kilobytes
+
+Parsing EDIF File [.\.Xil-PlanAhead-5532-chinna-PC\ngc2edif\IP_watermarking_twofish.edif]
+Finished Parsing EDIF File [.\.Xil-PlanAhead-5532-chinna-PC\ngc2edif\IP_watermarking_twofish.edif]
+Release 13.2 - ngc2edif O.61xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Release 13.2 - ngc2edif O.61xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design ip_core.ngc ...
+WARNING:NetListWriters:298 - No output is written to ip_core.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file ip_core.edif ...
+ngc2edif: Total memory usage is 54772 kilobytes
+
+Reading core file 'C:\Users\chinna\Desktop\Watermarking\complete_final_MARS128\ipcore_dir\ip_core.ngc' for (cell view 'ip_core', library 'IP_watermarking_twofish_lib', file 'IP_watermarking_twofish.ngc')
+Parsing EDIF File [.\.Xil-PlanAhead-5532-chinna-PC\ngc2edif\ip_core.edif]
+Finished Parsing EDIF File [.\.Xil-PlanAhead-5532-chinna-PC\ngc2edif\ip_core.edif]
+INFO: [Netlist-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [ArchReader-7] Loading clock regions from D:\XilinX\13.2\ISE_DS\PlanAhead\parts/xilinx/virtex6/virtex6l/xc6vlx75tl/ClockRegion.xml
+INFO: [ArchReader-8] Loading clock buffers from D:\XilinX\13.2\ISE_DS\PlanAhead\parts/xilinx/virtex6/virtex6l/xc6vlx75tl/ClockBuffers.xml
+INFO: [ArchReader-9] Loading clock placement rules from D:\XilinX\13.2\ISE_DS\PlanAhead\parts\xilinx\virtex6\ClockPlacerRules.xml
+INFO: [ArchReader-10] Loading clock capable ios from D:\XilinX\13.2\ISE_DS\PlanAhead\parts\xilinx\virtex6\ClockCapableIOBs.xml
+INFO: [ArchReader-13] Loading package pin functions from D:\XilinX\13.2\ISE_DS\PlanAhead\parts\xilinx\virtex6/PinFunctions.xml...
+INFO: [ArchReader-3] Loading package from D:\XilinX\13.2\ISE_DS\PlanAhead\parts/xilinx/virtex6/virtex6l/xc6vlx75tl/ff784/Package.xml
+INFO: [ArchReader-4] Loading io standards from D:\XilinX\13.2\ISE_DS\PlanAhead\./parts/xilinx/virtex6/IOStandards.xml
+INFO: [ArchReader-12] Loading device configuration modes from 
+INFO: [GDRC-0] Loading list of drcs for the architecture : D:\XilinX\13.2\ISE_DS\PlanAhead\./parts/xilinx/virtex6/drc.xml
+Parsing UCF File [C:\Users\chinna\Desktop\Watermarking\complete_final_MARS128\ipcore_dir\ip_core.ncf]
+Finished Parsing UCF File [C:\Users\chinna\Desktop\Watermarking\complete_final_MARS128\ipcore_dir\ip_core.ncf]
+Parsing UCF File [C:\Users\chinna\Desktop\Watermarking\complete_final_twofish\IP_watermarking_twofish.ucf]
+Finished Parsing UCF File [C:\Users\chinna\Desktop\Watermarking\complete_final_twofish\IP_watermarking_twofish.ucf]
+INFO: [Project-5] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  BUFGP => BUFGP (IBUFG, BUFG): 1 instances
+
+open_netlist_design: Time (s): 51.729w.  Memory (MB): 500.926p 118.270g
+# read_xdl -file "C:/Users/chinna/Desktop/Watermarking/complete_final_twofish/IP_watermarking_twofish.ncd"
+Release 13.2 - xdl O.61xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+WARNING:XDL:213 - The resulting xdl output will not have LUT equation strings or RAM INIT strings.
+Loading device for application Rf_Device from file '6vlx75t.nph' in environment D:\XilinX\13.2\ISE_DS\ISE\.
+   "IP_watermarking_twofish" is an NCD, version 3.2, device xc6vlx75tl, package ff784, speed -1l
+Successfully converted design 'C:\Users\chinna\Desktop\Watermarking\complete_final_twofish\IP_watermarking_twofish.ncd' to 'C:\Users\chinna\Desktop\Watermarking\complete_final_twofish\IP_watermarking_twofish.xdl'.
+INFO: [PAR-0] Parsing Placement File : C:/Users/chinna/Desktop/Watermarking/complete_final_twofish/IP_watermarking_twofish.ncd
+INFO: [PAR-1] Finished Parsing Placement File : C:/Users/chinna/Desktop/Watermarking/complete_final_twofish/IP_watermarking_twofish.ncd
+INFO: [PAR-2] Placed 5077 instances
+read_xdl: Time (s): 34.400w.  Memory (MB): 502.340p 1.133g
+# if {[catch {read_twx -name results_1 -file "C:/Users/chinna/Desktop/Watermarking/complete_final_twofish/IP_watermarking_twofish.twx"} eInfo]} {
+#    puts "WARNING: there was a problem importing \"C:/Users/chinna/Desktop/Watermarking/complete_final_twofish/IP_watermarking_twofish.twx\": $eInfo"
+# }
+exit
+stop_gui
+INFO: [PlanAhead-261] Exiting PlanAhead...
+INFO: [Common-83] Releasing license: PlanAhead

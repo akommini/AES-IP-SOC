@@ -1,0 +1,11 @@
+CoreGen has not been configured with any user repositories.
+CoreGen has been configured with the following Xilinx repositories:
+ - 'D:\XilinX\13.2\ISE_DS\ISE\coregen\' [reloaded]
+INFO:sim - Generating component instance 'multiplier' of
+   'xilinx.com:ip:mult_gen:11.2' from
+   'D:\XilinX\13.2\ISE_DS\ISE\coregen\ip\xilinx\dsp\com\xilinx\ip\mult_gen_v11_2
+   \component.xml'.
+Applying current project options...
+Finished applying current project options.
+Cancelled executing Tcl generator.
+Wrote CGP file for project 'multiplier'.

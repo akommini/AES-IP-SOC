@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "secureip" -o "C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/IP_watermark_isim_beh.exe" -prj "C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/IP_watermark_beh.prj" "work.IP_watermark" 

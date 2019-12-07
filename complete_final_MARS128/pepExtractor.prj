@@ -1,0 +1,6 @@
+work	"../../AES algorigtms/MARS128/vhdl/MARS_Top_Iterative.vhdl"
+work	"../../AES algorigtms/MARS128/vhdl/alg_iterative.vhdl"
+work	"../../AES algorigtms/MARS128/vhdl/controller_iter.vhdl"
+work	"../../AES algorigtms/MARS128/vhdl/interface.vhdl"
+work	"../../AES algorigtms/MARS128/vhdl/key_sched_iterative.vhdl"
+work	"../../AES algorigtms/MARS128/vhdl/mars_pkg.vhdl"

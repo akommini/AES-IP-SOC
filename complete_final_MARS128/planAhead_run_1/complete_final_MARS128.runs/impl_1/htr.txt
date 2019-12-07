@@ -1,0 +1,13 @@
+//
+// PlanAhead(TM)
+// htr.txt: a PlanAhead-generated description of how-to-repeat the
+//          the basic ISE steps of an ExploreAhead run.  Note that 
+//          runme.bat/sh needs to be invoked for EA to track run status.
+// Copyright 1986-1999, 2001-2011 Xilinx, Inc. All Rights Reserved.
+//
+
+ngdbuild -intstyle ise -p xc6vlx75tlff784-1L -uc "IP_watermarking_MARS128.ucf" "IP_watermarking_MARS128.edf"
+map -intstyle pa -w "IP_watermarking_MARS128.ngd"
+par -intstyle pa "IP_watermarking_MARS128.ncd" -w "IP_watermarking_MARS128_routed.ncd"
+trce -intstyle ise -o "IP_watermarking_MARS128.twr" -v 30 -l 30 "IP_watermarking_MARS128_routed.ncd" "IP_watermarking_MARS128.pcf"
+xdl -secure -ncd2xdl -nopips "IP_watermarking_MARS128_routed.ncd" "IP_watermarking_MARS128_routed.xdl"

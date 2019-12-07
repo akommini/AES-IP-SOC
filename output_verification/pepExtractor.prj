@@ -1,0 +1,5 @@
+work	"../test/LFSR.vhd"
+work	"../test/h_watermark.vhd"
+work	"../test/ipcore_dir/ipcore.vhd"
+work	"../test/total.vhd"
+work	"watermark_extraction.vhd"

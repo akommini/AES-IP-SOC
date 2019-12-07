@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="extraction_circuit.xise"/>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="netgen"/>
+    <file xil_pn:branch="PostMapSimulation" xil_pn:fileType="FILE_NETGEN_REPORT" xil_pn:name="netgen/map/watermark_display_map.nlf"/>
+    <file xil_pn:branch="PostMapSimulation" xil_pn:fileType="FILE_SDF" xil_pn:name="netgen/map/watermark_display_map.sdf"/>
+    <file xil_pn:branch="PostMapSimulation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="netgen/map/watermark_display_map.v"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_1"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_2"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_3"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_4"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="watermark_display.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="watermark_display.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="watermark_display.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="watermark_display.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="watermark_display.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_IBS" xil_pn:name="watermark_display.ibs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LOCKEDPIN_CONSTRAINTS" xil_pn:name="watermark_display.lpc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="watermark_display.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="watermark_display.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="watermark_display.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="watermark_display.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="watermark_display.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="watermark_display.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="watermark_display.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="watermark_display.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="watermark_display.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="watermark_display.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="watermark_display.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="watermark_display.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="watermark_display.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="watermark_display.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="watermark_display.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="watermark_display.ut" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="watermark_display.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="watermark_display.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="watermark_display_envsettings.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="watermark_display_fpga_editor.log"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="watermark_display_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="watermark_display_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="watermark_display_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="watermark_display_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="watermark_display_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="watermark_display_map.xrpt"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="watermark_display_map_fpga_editor.log"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="watermark_display_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="watermark_display_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="watermark_display_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="watermark_display_par.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="watermark_display_preroute.twr" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="watermark_display_preroute.twx" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="watermark_display_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="watermark_display_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="watermark_display_usage.xml"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="watermark_display_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="watermark_extraction.prj"/>
+    <file xil_pn:fileType="FILE_XST_STX" xil_pn:name="watermark_extraction.stx"/>
+    <file xil_pn:fileType="FILE_XST" xil_pn:name="watermark_extraction.xst"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1362310821" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1362310821">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1362310821" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-4804434876469085854" xil_pn:start_ts="1362310821">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1362313482" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-7797793101733114886" xil_pn:start_ts="1362313482">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1362310821" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1362310821">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1362310821" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="487192836744342608" xil_pn:start_ts="1362310821">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1362313482" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="-1635127114390559481" xil_pn:start_ts="1362313482">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1362313482" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-6238651821884466172" xil_pn:start_ts="1362313482">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1362313506" xil_pn:in_ck="-7690841328499064661" xil_pn:name="TRANEXT_xstsynthesize_virtex6" xil_pn:prop_ck="-8926566550803481338" xil_pn:start_ts="1362313482">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="watermark_display.lso"/>
+      <outfile xil_pn:name="watermark_display.ngc"/>
+      <outfile xil_pn:name="watermark_display.ngr"/>
+      <outfile xil_pn:name="watermark_display.prj"/>
+      <outfile xil_pn:name="watermark_display.stx"/>
+      <outfile xil_pn:name="watermark_display.syr"/>
+      <outfile xil_pn:name="watermark_display.xst"/>
+      <outfile xil_pn:name="watermark_display_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1362311788" xil_pn:in_ck="-1040432050002426961" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="2991252085177726203" xil_pn:start_ts="1362311787">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1362313540" xil_pn:in_ck="-5972062213844810312" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-4072763767195958246" xil_pn:start_ts="1362313526">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="watermark_display.bld"/>
+      <outfile xil_pn:name="watermark_display.ngd"/>
+      <outfile xil_pn:name="watermark_display_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1362313610" xil_pn:in_ck="5547733721759322201" xil_pn:name="TRANEXT_map_virtex6" xil_pn:prop_ck="-1189445572711404281" xil_pn:start_ts="1362313540">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="watermark_display.pcf"/>
+      <outfile xil_pn:name="watermark_display_map.map"/>
+      <outfile xil_pn:name="watermark_display_map.mrp"/>
+      <outfile xil_pn:name="watermark_display_map.ncd"/>
+      <outfile xil_pn:name="watermark_display_map.ngm"/>
+      <outfile xil_pn:name="watermark_display_map.xrpt"/>
+      <outfile xil_pn:name="watermark_display_summary.xml"/>
+      <outfile xil_pn:name="watermark_display_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1362313657" xil_pn:in_ck="6412405263572185362" xil_pn:name="TRANEXT_par_virtex5" xil_pn:prop_ck="-3820223975579514579" xil_pn:start_ts="1362313610">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="watermark_display.ncd"/>
+      <outfile xil_pn:name="watermark_display.pad"/>
+      <outfile xil_pn:name="watermark_display.par"/>
+      <outfile xil_pn:name="watermark_display.ptwx"/>
+      <outfile xil_pn:name="watermark_display.unroutes"/>
+      <outfile xil_pn:name="watermark_display.xpi"/>
+      <outfile xil_pn:name="watermark_display_pad.csv"/>
+      <outfile xil_pn:name="watermark_display_pad.txt"/>
+      <outfile xil_pn:name="watermark_display_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1362312683" xil_pn:in_ck="-1040432050002434586" xil_pn:name="TRANEXT_bitFile_virtex6" xil_pn:prop_ck="8328903189747982775" xil_pn:start_ts="1362312593">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="watermark_display.bgn"/>
+      <outfile xil_pn:name="watermark_display.bit"/>
+      <outfile xil_pn:name="watermark_display.drc"/>
+      <outfile xil_pn:name="watermark_display.ut"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1362313081" xil_pn:in_ck="-1040432050002447440" xil_pn:name="TRAN_genImpactFile" xil_pn:prop_ck="-5792519553440212383" xil_pn:start_ts="1362313078">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+    <transform xil_pn:end_ts="1362313319" xil_pn:in_ck="-1040432050002447440" xil_pn:name="TRAN_analyzeDesignUsingChipscope" xil_pn:prop_ck="-1848255909343717745" xil_pn:start_ts="1362313318">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+    <transform xil_pn:end_ts="1362312872" xil_pn:in_ck="-1040432050002434586" xil_pn:name="TRANEXT_createIBISModel_virtex5" xil_pn:prop_ck="-6889143478617189747" xil_pn:start_ts="1362312838">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="watermark_display.ibs"/>
+    </transform>
+    <transform xil_pn:end_ts="1362312854" xil_pn:in_ck="-1040432050002434586" xil_pn:name="TRAN_genLockedPinConstraints" xil_pn:start_ts="1362312844">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <outfile xil_pn:name="watermark_display.lpc"/>
+    </transform>
+    <transform xil_pn:end_ts="1362313777" xil_pn:in_ck="-1040432050002434586" xil_pn:name="TRAN_XPower_virtex6" xil_pn:prop_ck="-1744831436291036481" xil_pn:start_ts="1362313776">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1362313657" xil_pn:in_ck="-2432315733802937003" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="-3742689831323817501" xil_pn:start_ts="1362313635">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="watermark_display.twr"/>
+      <outfile xil_pn:name="watermark_display.twx"/>
+    </transform>
+    <transform xil_pn:end_ts="1362313731" xil_pn:in_ck="-4399566565788198269" xil_pn:name="TRAN_postMapSimModel" xil_pn:prop_ck="-8439487101695501328" xil_pn:start_ts="1362313697">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="netgen"/>
+      <outfile xil_pn:name="netgen/map/watermark_display_map.nlf"/>
+      <outfile xil_pn:name="netgen/map/watermark_display_map.sdf"/>
+      <outfile xil_pn:name="netgen/map/watermark_display_map.v"/>
+    </transform>
+    <transform xil_pn:end_ts="1362313691" xil_pn:in_ck="6412405263572185362" xil_pn:name="TRAN_preRouteTrce" xil_pn:prop_ck="5407622972496563043" xil_pn:start_ts="1362313666">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="watermark_display_preroute.twr"/>
+      <outfile xil_pn:name="watermark_display_preroute.twx"/>
+    </transform>
+  </transforms>
+
+</generated_project>

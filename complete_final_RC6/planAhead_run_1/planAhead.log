@@ -1,0 +1,1053 @@
+#-----------------------------------------------------------
+# PlanAhead v13.2
+# Build 131561 by hdbuild on Thu Jun 16 17:01:57 PDT 2011
+# Start of session at: Thu May 02 20:31:32 2013
+# Process ID: 4672
+# Log file: C:/Users/chinna/Desktop/Watermarking/complete_final_RC6/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/chinna/Desktop/Watermarking/complete_final_RC6/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common-78] Attempting to get a license: PlanAhead
+INFO: [Common-82] Got a license: PlanAhead
+INFO: [Common-86] Your PlanAhead license expires in -457 day(s)
+INFO: [ArchReader-0] Loading parts and site information from D:\XilinX\13.2\ISE_DS\PlanAhead\parts\arch.xml
+Parsing RTL primitives file [D:\XilinX\13.2\ISE_DS\PlanAhead\parts\xilinx\rtl\prims\rtl_prims.xml]
+Finished parsing RTL primitives file [D:\XilinX\13.2\ISE_DS\PlanAhead\parts\xilinx\rtl\prims\rtl_prims.xml]
+start_gui
+source C:/Users/chinna/Desktop/Watermarking/complete_final_RC6/pa.fromNcd.tcl
+# create_project -name complete_final_RC6 -dir "C:/Users/chinna/Desktop/Watermarking/complete_final_RC6/planAhead_run_1" -part xc6vlx75tlff784-1L
+Parsing template File [D:\XilinX\13.2\ISE_DS\ISE\data\projnav\templates\verilog.xml].
+Finished parsing template File [D:\XilinX\13.2\ISE_DS\ISE\data\projnav\templates\verilog.xml].
+Parsing template File [D:\XilinX\13.2\ISE_DS\ISE\data\projnav\templates\vhdl.xml].
+Finished parsing template File [D:\XilinX\13.2\ISE_DS\ISE\data\projnav\templates\vhdl.xml].
+Parsing template File [D:\XilinX\13.2\ISE_DS\ISE\data\projnav\templates\ucf.xml].
+Finished parsing template File [D:\XilinX\13.2\ISE_DS\ISE\data\projnav\templates\ucf.xml].
+create_project: Time (s): 9.298w.  Memory (MB): 368.379p 22.227g
+# set srcset [get_property srcset [current_run -impl]]
+# set_property design_mode GateLvl $srcset
+# set_property edif_top_file "C:/Users/chinna/Desktop/Watermarking/complete_final_RC6/IP_watermarking_RC6.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {C:/Users/chinna/Desktop/Watermarking/complete_final_RC6} {../complete_final_MARS128/ipcore_dir} }
+# add_files "../complete_final_MARS128/ipcore_dir/ip_core.ncf" -fileset [get_property constrset [current_run]]
+# set_param project.paUcfFile  "IP_watermarking_RC6.ucf"
+# add_files "IP_watermarking_RC6.ucf" -fileset [get_property constrset [current_run]]
+# open_netlist_design
+INFO: Design is defaulting to active srcset 'sources_1'
+INFO: Design is defaulting to active constrset 'constrs_1'
+INFO: Design is defaulting to constrset part: xc6vlx75tlff784-1L
+Release 13.2 - ngc2edif O.61xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Release 13.2 - ngc2edif O.61xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design IP_watermarking_RC6.ngc ...
+WARNING:NetListWriters:298 - No output is written to IP_watermarking_RC6.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/GND_44_o_GND_44_o_mux_41_OUT<127 : 32> on block
+   IP_watermarking_RC6 is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file IP_watermarking_RC6.edif ...
+ngc2edif: Total memory usage is 62004 kilobytes
+
+Parsing EDIF File [.\.Xil-PlanAhead-4672-chinna-PC\ngc2edif\IP_watermarking_RC6.edif]
+Finished Parsing EDIF File [.\.Xil-PlanAhead-4672-chinna-PC\ngc2edif\IP_watermarking_RC6.edif]
+Release 13.2 - ngc2edif O.61xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Release 13.2 - ngc2edif O.61xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design ip_core.ngc ...
+WARNING:NetListWriters:298 - No output is written to ip_core.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file ip_core.edif ...
+ngc2edif: Total memory usage is 54836 kilobytes
+
+Reading core file 'C:\Users\chinna\Desktop\Watermarking\complete_final_MARS128\ipcore_dir\ip_core.ngc' for (cell view 'ip_core', library 'IP_watermarking_RC6_lib', file 'IP_watermarking_RC6.ngc')
+Parsing EDIF File [.\.Xil-PlanAhead-4672-chinna-PC\ngc2edif\ip_core.edif]
+Finished Parsing EDIF File [.\.Xil-PlanAhead-4672-chinna-PC\ngc2edif\ip_core.edif]
+INFO: [Netlist-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist-3] Netlist 'IP_watermarking_RC6' is not ideal for floorplanning, since the cellview 'IP_watermarking_RC6' defined in file 'IP_watermarking_RC6.ngc' contains large number of primitives. Please consider enabling hierarchy in synthesis before floorplan. You can enable hierarchy in XST by setting '-keep_hierarchy=yes' or '-netlist_hierarchy=rebuilt' flags.
+INFO: [ArchReader-7] Loading clock regions from D:\XilinX\13.2\ISE_DS\PlanAhead\parts/xilinx/virtex6/virtex6l/xc6vlx75tl/ClockRegion.xml
+INFO: [ArchReader-8] Loading clock buffers from D:\XilinX\13.2\ISE_DS\PlanAhead\parts/xilinx/virtex6/virtex6l/xc6vlx75tl/ClockBuffers.xml
+INFO: [ArchReader-9] Loading clock placement rules from D:\XilinX\13.2\ISE_DS\PlanAhead\parts\xilinx\virtex6\ClockPlacerRules.xml
+INFO: [ArchReader-10] Loading clock capable ios from D:\XilinX\13.2\ISE_DS\PlanAhead\parts\xilinx\virtex6\ClockCapableIOBs.xml
+INFO: [ArchReader-13] Loading package pin functions from D:\XilinX\13.2\ISE_DS\PlanAhead\parts\xilinx\virtex6/PinFunctions.xml...
+INFO: [ArchReader-3] Loading package from D:\XilinX\13.2\ISE_DS\PlanAhead\parts/xilinx/virtex6/virtex6l/xc6vlx75tl/ff784/Package.xml
+INFO: [ArchReader-4] Loading io standards from D:\XilinX\13.2\ISE_DS\PlanAhead\./parts/xilinx/virtex6/IOStandards.xml
+INFO: [ArchReader-12] Loading device configuration modes from 
+INFO: [GDRC-0] Loading list of drcs for the architecture : D:\XilinX\13.2\ISE_DS\PlanAhead\./parts/xilinx/virtex6/drc.xml
+Parsing UCF File [C:\Users\chinna\Desktop\Watermarking\complete_final_MARS128\ipcore_dir\ip_core.ncf]
+Finished Parsing UCF File [C:\Users\chinna\Desktop\Watermarking\complete_final_MARS128\ipcore_dir\ip_core.ncf]
+Parsing UCF File [C:\Users\chinna\Desktop\Watermarking\complete_final_RC6\IP_watermarking_RC6.ucf]
+Finished Parsing UCF File [C:\Users\chinna\Desktop\Watermarking\complete_final_RC6\IP_watermarking_RC6.ucf]
+INFO: [Project-5] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  BUFGP => BUFGP (IBUFG, BUFG): 1 instances
+
+open_netlist_design: Time (s): 53.361w.  Memory (MB): 504.586p 128.715g
+# read_xdl -file "C:/Users/chinna/Desktop/Watermarking/complete_final_RC6/IP_watermarking_RC6.ncd"
+Release 13.2 - xdl O.61xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+WARNING:XDL:213 - The resulting xdl output will not have LUT equation strings or RAM INIT strings.
+Loading device for application Rf_Device from file '6vlx75t.nph' in environment D:\XilinX\13.2\ISE_DS\ISE\.
+   "IP_watermarking_RC6" is an NCD, version 3.2, device xc6vlx75tl, package ff784, speed -1l
+Successfully converted design 'C:\Users\chinna\Desktop\Watermarking\complete_final_RC6\IP_watermarking_RC6.ncd' to 'C:\Users\chinna\Desktop\Watermarking\complete_final_RC6\IP_watermarking_RC6.xdl'.
+INFO: [PAR-0] Parsing Placement File : C:/Users/chinna/Desktop/Watermarking/complete_final_RC6/IP_watermarking_RC6.ncd
+INFO: [PAR-1] Finished Parsing Placement File : C:/Users/chinna/Desktop/Watermarking/complete_final_RC6/IP_watermarking_RC6.ncd
+INFO: [PAR-2] Placed 8639 instances
+read_xdl: Time (s): 35.957w.  Memory (MB): 508.918p 4.008g
+# if {[catch {read_twx -name results_1 -file "C:/Users/chinna/Desktop/Watermarking/complete_final_RC6/IP_watermarking_RC6.twx"} eInfo]} {
+#    puts "WARNING: there was a problem importing \"C:/Users/chinna/Desktop/Watermarking/complete_final_RC6/IP_watermarking_RC6.twx\": $eInfo"
+# }
+report_timing -delay_type max -path_type full_clock_expanded -max_paths 10 -nworst 1 -sort_by slack -significant_digits 3 -input_pins -nets -name {results_1}
+INFO: [STA-16] UpdateTimingParams: Estimated, Speed grade: -1L, Delay Type: max, Timing mode: TRACE, Constraints type: UCF .
+INFO: [STA-16] Going to infer timing constraints .
+INFO: [STA-16] Done inferring timing constraints .
+INFO: [STA-16] Going to set timing constraints .
+INFO: [STA-16] Done setting timing constraints .
+INFO: [STA-6] Timing analysis in global mode.
+INFO: [STA-16] ReportTimingParams: -max_paths 10 -nworst 1 -transition rf -delay_type max -sort_by slack .
+------------------------------------------------------------------------------------
+| Report  : timing 
+| Design  : IP_watermarking_RC6
+| Part    : Device=6vlx75tl  Package=ff784  Speed=-1L  
+| Version : PlanAhead v13.2  Build 131561 by hdbuild on Thu Jun 16 17:01:57 PDT 2011
+| Date    : Thu May 02 20:41:40 2013
+------------------------------------------------------------------------------------
+
+Slack:                  inf
+  Source:               crypto_RIJNDAEL/ALG/ROUND_0_1/C
+                            (rising edge-triggered flip-flop)
+  Destination:          crypto_RIJNDAEL/ALG/BI_REG_53/D
+  Path Group:           (none)
+  Path Type:            Max at Slow Process Corner
+  Data Path Delay:      16.481ns  (logic 9.532ns (57.836%)  route 6.949ns (42.164%))
+  Logic Levels:         10  (DSP48E1=3 FDC=1 LUT2=1 LUT3=1 LUT6=3 MUXF7=1)
+  Clock Pessimism:      0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y45         FDC                          0.000     0.000 r  crypto_RIJNDAEL/ALG/ROUND_0_1/C
+    SLICE_X43Y45         FDC                          0.379     0.379 r  crypto_RIJNDAEL/ALG/ROUND_0_1/Q
+                         net (fo=1)                   0.560     0.939    crypto_RIJNDAEL/ALG/ROUND_0_1
+    SLICE_X42Y45                                                      r  crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>11/I0
+    SLICE_X42Y45         LUT3                         0.081     1.020 r  crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>11/O
+                         net (fo=128)                 1.106     2.126    crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>1
+    SLICE_X56Y46                                                      r  crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT<98>1/I5
+    SLICE_X56Y46         LUT6                         0.081     2.207 r  crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT<98>1/O
+                         net (fo=5)                   1.229     3.436    crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT[98]
+    DSP48_X3Y17                                                       r  crypto_RIJNDAEL/ALG/Mmult_n0085/A[2]
+    DSP48_X3Y17          DSP48E1                      4.550     7.986 r  crypto_RIJNDAEL/ALG/Mmult_n0085/PCOUT[47]
+                         net (fo=1)                   0.000     7.986    crypto_RIJNDAEL/ALG/Mmult_n0085_PCOUT_to_Mmult_n00851_PCIN_47
+    DSP48_X3Y18                                                       r  crypto_RIJNDAEL/ALG/Mmult_n00851/PCIN[47]
+    DSP48_X3Y18          DSP48E1                      2.007     9.993 r  crypto_RIJNDAEL/ALG/Mmult_n00851/PCOUT[47]
+                         net (fo=1)                   0.000     9.993    crypto_RIJNDAEL/ALG/Mmult_n00851_PCOUT_to_Mmult_n00852_PCIN_47
+    DSP48_X3Y19                                                       r  crypto_RIJNDAEL/ALG/Mmult_n00852/PCIN[47]
+    DSP48_X3Y19          DSP48E1                      1.870    11.863 r  crypto_RIJNDAEL/ALG/Mmult_n00852/P[10]
+                         net (fo=65)                  2.949    14.812    crypto_RIJNDAEL/ALG/n0085<27>1
+    SLICE_X30Y49                                                      r  crypto_RIJNDAEL/ALG/Sh13311_G/I0
+    SLICE_X30Y49         LUT6                         0.081    14.893 r  crypto_RIJNDAEL/ALG/Sh13311_G/O
+                         net (fo=1)                   0.000    14.893    N310
+    SLICE_X30Y49                                                      r  crypto_RIJNDAEL/ALG/Sh13311/I1
+    SLICE_X30Y49         MUXF7                        0.199    15.092 r  crypto_RIJNDAEL/ALG/Sh13311/O
+                         net (fo=4)                   0.763    15.855    crypto_RIJNDAEL/ALG/Sh1331
+    SLICE_X35Y50                                                      r  crypto_RIJNDAEL/ALG/Sh1811/I3
+    SLICE_X35Y50         LUT6                         0.203    16.058 r  crypto_RIJNDAEL/ALG/Sh1811/O
+                         net (fo=1)                   0.342    16.400    crypto_RIJNDAEL/ALG/Sh181
+    SLICE_X35Y50                                                      r  crypto_RIJNDAEL/ALG/Mmux_GND_44_o_GND_44_o_mux_16_OUT11051/I1
+    SLICE_X35Y50         LUT2                         0.081    16.481 r  crypto_RIJNDAEL/ALG/Mmux_GND_44_o_GND_44_o_mux_16_OUT11051/O
+                         net (fo=1)                   0.000    16.481    crypto_RIJNDAEL/ALG/GND_44_o_GND_44_o_mux_41_OUT[53]
+    SLICE_X35Y50                                                      r  crypto_RIJNDAEL/ALG/BI_REG_53/D
+    SLICE_X35Y50         FDC                          0.000    16.481    crypto_RIJNDAEL/ALG/BI_REG_53
+  -------------------------------------------------------------------    -------------------
+
+Slack:                  inf
+  Source:               crypto_RIJNDAEL/ALG/ROUND_0_1/C
+                            (rising edge-triggered flip-flop)
+  Destination:          crypto_RIJNDAEL/ALG/BI_REG_37/D
+  Path Group:           (none)
+  Path Type:            Max at Slow Process Corner
+  Data Path Delay:      16.447ns  (logic 9.532ns (57.956%)  route 6.915ns (42.044%))
+  Logic Levels:         10  (DSP48E1=3 FDC=1 LUT2=1 LUT3=1 LUT6=3 MUXF7=1)
+  Clock Pessimism:      0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y45         FDC                          0.000     0.000 r  crypto_RIJNDAEL/ALG/ROUND_0_1/C
+    SLICE_X43Y45         FDC                          0.379     0.379 r  crypto_RIJNDAEL/ALG/ROUND_0_1/Q
+                         net (fo=1)                   0.560     0.939    crypto_RIJNDAEL/ALG/ROUND_0_1
+    SLICE_X42Y45                                                      r  crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>11/I0
+    SLICE_X42Y45         LUT3                         0.081     1.020 r  crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>11/O
+                         net (fo=128)                 1.106     2.126    crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>1
+    SLICE_X56Y46                                                      r  crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT<98>1/I5
+    SLICE_X56Y46         LUT6                         0.081     2.207 r  crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT<98>1/O
+                         net (fo=5)                   1.229     3.436    crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT[98]
+    DSP48_X3Y17                                                       r  crypto_RIJNDAEL/ALG/Mmult_n0085/A[2]
+    DSP48_X3Y17          DSP48E1                      4.550     7.986 r  crypto_RIJNDAEL/ALG/Mmult_n0085/PCOUT[47]
+                         net (fo=1)                   0.000     7.986    crypto_RIJNDAEL/ALG/Mmult_n0085_PCOUT_to_Mmult_n00851_PCIN_47
+    DSP48_X3Y18                                                       r  crypto_RIJNDAEL/ALG/Mmult_n00851/PCIN[47]
+    DSP48_X3Y18          DSP48E1                      2.007     9.993 r  crypto_RIJNDAEL/ALG/Mmult_n00851/PCOUT[47]
+                         net (fo=1)                   0.000     9.993    crypto_RIJNDAEL/ALG/Mmult_n00851_PCOUT_to_Mmult_n00852_PCIN_47
+    DSP48_X3Y19                                                       r  crypto_RIJNDAEL/ALG/Mmult_n00852/PCIN[47]
+    DSP48_X3Y19          DSP48E1                      1.870    11.863 r  crypto_RIJNDAEL/ALG/Mmult_n00852/P[10]
+                         net (fo=65)                  2.949    14.812    crypto_RIJNDAEL/ALG/n0085<27>1
+    SLICE_X30Y49                                                      r  crypto_RIJNDAEL/ALG/Sh13311_G/I0
+    SLICE_X30Y49         LUT6                         0.081    14.893 r  crypto_RIJNDAEL/ALG/Sh13311_G/O
+                         net (fo=1)                   0.000    14.893    N310
+    SLICE_X30Y49                                                      r  crypto_RIJNDAEL/ALG/Sh13311/I1
+    SLICE_X30Y49         MUXF7                        0.199    15.092 r  crypto_RIJNDAEL/ALG/Sh13311/O
+                         net (fo=4)                   0.729    15.821    crypto_RIJNDAEL/ALG/Sh1331
+    SLICE_X33Y50                                                      r  crypto_RIJNDAEL/ALG/Sh1651/I2
+    SLICE_X33Y50         LUT6                         0.203    16.024 r  crypto_RIJNDAEL/ALG/Sh1651/O
+                         net (fo=1)                   0.342    16.366    crypto_RIJNDAEL/ALG/Sh165
+    SLICE_X33Y50                                                      r  crypto_RIJNDAEL/ALG/Mmux_GND_44_o_GND_44_o_mux_16_OUT1871/I1
+    SLICE_X33Y50         LUT2                         0.081    16.447 r  crypto_RIJNDAEL/ALG/Mmux_GND_44_o_GND_44_o_mux_16_OUT1871/O
+                         net (fo=1)                   0.000    16.447    crypto_RIJNDAEL/ALG/GND_44_o_GND_44_o_mux_41_OUT[37]
+    SLICE_X33Y50                                                      r  crypto_RIJNDAEL/ALG/BI_REG_37/D
+    SLICE_X33Y50         FDC                          0.000    16.447    crypto_RIJNDAEL/ALG/BI_REG_37
+  -------------------------------------------------------------------    -------------------
+
+Slack:                  inf
+  Source:               crypto_RIJNDAEL/ALG/ROUND_0_1/C
+                            (rising edge-triggered flip-flop)
+  Destination:          crypto_RIJNDAEL/ALG/BI_REG_36/D
+  Path Group:           (none)
+  Path Type:            Max at Slow Process Corner
+  Data Path Delay:      16.438ns  (logic 9.530ns (57.975%)  route 6.908ns (42.025%))
+  Logic Levels:         10  (DSP48E1=3 FDC=1 LUT2=1 LUT3=1 LUT6=3 MUXF7=1)
+  Clock Pessimism:      0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y45         FDC                          0.000     0.000 r  crypto_RIJNDAEL/ALG/ROUND_0_1/C
+    SLICE_X43Y45         FDC                          0.379     0.379 r  crypto_RIJNDAEL/ALG/ROUND_0_1/Q
+                         net (fo=1)                   0.560     0.939    crypto_RIJNDAEL/ALG/ROUND_0_1
+    SLICE_X42Y45                                                      r  crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>11/I0
+    SLICE_X42Y45         LUT3                         0.081     1.020 r  crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>11/O
+                         net (fo=128)                 1.106     2.126    crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>1
+    SLICE_X56Y46                                                      r  crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT<98>1/I5
+    SLICE_X56Y46         LUT6                         0.081     2.207 r  crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT<98>1/O
+                         net (fo=5)                   1.229     3.436    crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT[98]
+    DSP48_X3Y17                                                       r  crypto_RIJNDAEL/ALG/Mmult_n0085/A[2]
+    DSP48_X3Y17          DSP48E1                      4.550     7.986 r  crypto_RIJNDAEL/ALG/Mmult_n0085/PCOUT[47]
+                         net (fo=1)                   0.000     7.986    crypto_RIJNDAEL/ALG/Mmult_n0085_PCOUT_to_Mmult_n00851_PCIN_47
+    DSP48_X3Y18                                                       r  crypto_RIJNDAEL/ALG/Mmult_n00851/PCIN[47]
+    DSP48_X3Y18          DSP48E1                      2.007     9.993 r  crypto_RIJNDAEL/ALG/Mmult_n00851/PCOUT[47]
+                         net (fo=1)                   0.000     9.993    crypto_RIJNDAEL/ALG/Mmult_n00851_PCOUT_to_Mmult_n00852_PCIN_47
+    DSP48_X3Y19                                                       r  crypto_RIJNDAEL/ALG/Mmult_n00852/PCIN[47]
+    DSP48_X3Y19          DSP48E1                      1.870    11.863 r  crypto_RIJNDAEL/ALG/Mmult_n00852/P[10]
+                         net (fo=65)                  2.846    14.709    crypto_RIJNDAEL/ALG/n0085<27>1
+    SLICE_X31Y49                                                      r  crypto_RIJNDAEL/ALG/Sh13211_G/I0
+    SLICE_X31Y49         LUT6                         0.081    14.790 r  crypto_RIJNDAEL/ALG/Sh13211_G/O
+                         net (fo=1)                   0.000    14.790    N312
+    SLICE_X31Y49                                                      r  crypto_RIJNDAEL/ALG/Sh13211/I1
+    SLICE_X31Y49         MUXF7                        0.205    14.995 r  crypto_RIJNDAEL/ALG/Sh13211/O
+                         net (fo=4)                   0.825    15.820    crypto_RIJNDAEL/ALG/Sh1321
+    SLICE_X33Y50                                                      r  crypto_RIJNDAEL/ALG/Sh1641/I2
+    SLICE_X33Y50         LUT6                         0.195    16.015 r  crypto_RIJNDAEL/ALG/Sh1641/O
+                         net (fo=1)                   0.342    16.357    crypto_RIJNDAEL/ALG/Sh164
+    SLICE_X33Y50                                                      r  crypto_RIJNDAEL/ALG/Mmux_GND_44_o_GND_44_o_mux_16_OUT1861/I1
+    SLICE_X33Y50         LUT2                         0.081    16.438 r  crypto_RIJNDAEL/ALG/Mmux_GND_44_o_GND_44_o_mux_16_OUT1861/O
+                         net (fo=1)                   0.000    16.438    crypto_RIJNDAEL/ALG/GND_44_o_GND_44_o_mux_41_OUT[36]
+    SLICE_X33Y50                                                      r  crypto_RIJNDAEL/ALG/BI_REG_36/D
+    SLICE_X33Y50         FDC                          0.000    16.438    crypto_RIJNDAEL/ALG/BI_REG_36
+  -------------------------------------------------------------------    -------------------
+
+Slack:                  inf
+  Source:               crypto_RIJNDAEL/ALG/ROUND_0_1/C
+                            (rising edge-triggered flip-flop)
+  Destination:          crypto_RIJNDAEL/ALG/BI_REG_56/D
+  Path Group:           (none)
+  Path Type:            Max at Slow Process Corner
+  Data Path Delay:      16.416ns  (logic 9.532ns (58.065%)  route 6.884ns (41.935%))
+  Logic Levels:         10  (DSP48E1=3 FDC=1 LUT2=1 LUT3=1 LUT6=3 MUXF7=1)
+  Clock Pessimism:      0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y45         FDC                          0.000     0.000 r  crypto_RIJNDAEL/ALG/ROUND_0_1/C
+    SLICE_X43Y45         FDC                          0.379     0.379 r  crypto_RIJNDAEL/ALG/ROUND_0_1/Q
+                         net (fo=1)                   0.560     0.939    crypto_RIJNDAEL/ALG/ROUND_0_1
+    SLICE_X42Y45                                                      r  crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>11/I0
+    SLICE_X42Y45         LUT3                         0.081     1.020 r  crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>11/O
+                         net (fo=128)                 1.106     2.126    crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>1
+    SLICE_X56Y46                                                      r  crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT<98>1/I5
+    SLICE_X56Y46         LUT6                         0.081     2.207 r  crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT<98>1/O
+                         net (fo=5)                   1.229     3.436    crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT[98]
+    DSP48_X3Y17                                                       r  crypto_RIJNDAEL/ALG/Mmult_n0085/A[2]
+    DSP48_X3Y17          DSP48E1                      4.550     7.986 r  crypto_RIJNDAEL/ALG/Mmult_n0085/PCOUT[47]
+                         net (fo=1)                   0.000     7.986    crypto_RIJNDAEL/ALG/Mmult_n0085_PCOUT_to_Mmult_n00851_PCIN_47
+    DSP48_X3Y18                                                       r  crypto_RIJNDAEL/ALG/Mmult_n00851/PCIN[47]
+    DSP48_X3Y18          DSP48E1                      2.007     9.993 r  crypto_RIJNDAEL/ALG/Mmult_n00851/PCOUT[47]
+                         net (fo=1)                   0.000     9.993    crypto_RIJNDAEL/ALG/Mmult_n00851_PCOUT_to_Mmult_n00852_PCIN_47
+    DSP48_X3Y19                                                       r  crypto_RIJNDAEL/ALG/Mmult_n00852/PCIN[47]
+    DSP48_X3Y19          DSP48E1                      1.870    11.863 r  crypto_RIJNDAEL/ALG/Mmult_n00852/P[10]
+                         net (fo=65)                  2.957    14.820    crypto_RIJNDAEL/ALG/n0085<27>1
+    SLICE_X30Y50                                                      r  crypto_RIJNDAEL/ALG/Sh15211_G/I0
+    SLICE_X30Y50         LUT6                         0.081    14.901 r  crypto_RIJNDAEL/ALG/Sh15211_G/O
+                         net (fo=1)                   0.000    14.901    N288
+    SLICE_X30Y50                                                      r  crypto_RIJNDAEL/ALG/Sh15211/I1
+    SLICE_X30Y50         MUXF7                        0.199    15.100 r  crypto_RIJNDAEL/ALG/Sh15211/O
+                         net (fo=4)                   0.690    15.790    crypto_RIJNDAEL/ALG/Sh1521
+    SLICE_X27Y50                                                      r  crypto_RIJNDAEL/ALG/Sh1841/I2
+    SLICE_X27Y50         LUT6                         0.203    15.993 r  crypto_RIJNDAEL/ALG/Sh1841/O
+                         net (fo=1)                   0.342    16.335    crypto_RIJNDAEL/ALG/Sh184
+    SLICE_X27Y50                                                      r  crypto_RIJNDAEL/ALG/Mmux_GND_44_o_GND_44_o_mux_16_OUT11081/I1
+    SLICE_X27Y50         LUT2                         0.081    16.416 r  crypto_RIJNDAEL/ALG/Mmux_GND_44_o_GND_44_o_mux_16_OUT11081/O
+                         net (fo=1)                   0.000    16.416    crypto_RIJNDAEL/ALG/GND_44_o_GND_44_o_mux_41_OUT[56]
+    SLICE_X27Y50                                                      r  crypto_RIJNDAEL/ALG/BI_REG_56/D
+    SLICE_X27Y50         FDC                          0.000    16.416    crypto_RIJNDAEL/ALG/BI_REG_56
+  -------------------------------------------------------------------    -------------------
+
+Slack:                  inf
+  Source:               crypto_RIJNDAEL/ALG/ROUND_0_1/C
+                            (rising edge-triggered flip-flop)
+  Destination:          crypto_RIJNDAEL/ALG/BI_REG_52/D
+  Path Group:           (none)
+  Path Type:            Max at Slow Process Corner
+  Data Path Delay:      16.383ns  (logic 9.530ns (58.170%)  route 6.853ns (41.830%))
+  Logic Levels:         10  (DSP48E1=3 FDC=1 LUT2=1 LUT3=1 LUT6=3 MUXF7=1)
+  Clock Pessimism:      0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y45         FDC                          0.000     0.000 r  crypto_RIJNDAEL/ALG/ROUND_0_1/C
+    SLICE_X43Y45         FDC                          0.379     0.379 r  crypto_RIJNDAEL/ALG/ROUND_0_1/Q
+                         net (fo=1)                   0.560     0.939    crypto_RIJNDAEL/ALG/ROUND_0_1
+    SLICE_X42Y45                                                      r  crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>11/I0
+    SLICE_X42Y45         LUT3                         0.081     1.020 r  crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>11/O
+                         net (fo=128)                 1.106     2.126    crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>1
+    SLICE_X56Y46                                                      r  crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT<98>1/I5
+    SLICE_X56Y46         LUT6                         0.081     2.207 r  crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT<98>1/O
+                         net (fo=5)                   1.229     3.436    crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT[98]
+    DSP48_X3Y17                                                       r  crypto_RIJNDAEL/ALG/Mmult_n0085/A[2]
+    DSP48_X3Y17          DSP48E1                      4.550     7.986 r  crypto_RIJNDAEL/ALG/Mmult_n0085/PCOUT[47]
+                         net (fo=1)                   0.000     7.986    crypto_RIJNDAEL/ALG/Mmult_n0085_PCOUT_to_Mmult_n00851_PCIN_47
+    DSP48_X3Y18                                                       r  crypto_RIJNDAEL/ALG/Mmult_n00851/PCIN[47]
+    DSP48_X3Y18          DSP48E1                      2.007     9.993 r  crypto_RIJNDAEL/ALG/Mmult_n00851/PCOUT[47]
+                         net (fo=1)                   0.000     9.993    crypto_RIJNDAEL/ALG/Mmult_n00851_PCOUT_to_Mmult_n00852_PCIN_47
+    DSP48_X3Y19                                                       r  crypto_RIJNDAEL/ALG/Mmult_n00852/PCIN[47]
+    DSP48_X3Y19          DSP48E1                      1.870    11.863 r  crypto_RIJNDAEL/ALG/Mmult_n00852/P[10]
+                         net (fo=65)                  2.846    14.709    crypto_RIJNDAEL/ALG/n0085<27>1
+    SLICE_X31Y49                                                      r  crypto_RIJNDAEL/ALG/Sh13211_G/I0
+    SLICE_X31Y49         LUT6                         0.081    14.790 r  crypto_RIJNDAEL/ALG/Sh13211_G/O
+                         net (fo=1)                   0.000    14.790    N312
+    SLICE_X31Y49                                                      r  crypto_RIJNDAEL/ALG/Sh13211/I1
+    SLICE_X31Y49         MUXF7                        0.205    14.995 r  crypto_RIJNDAEL/ALG/Sh13211/O
+                         net (fo=4)                   0.770    15.765    crypto_RIJNDAEL/ALG/Sh1321
+    SLICE_X33Y52                                                      r  crypto_RIJNDAEL/ALG/Sh1801/I3
+    SLICE_X33Y52         LUT6                         0.195    15.960 r  crypto_RIJNDAEL/ALG/Sh1801/O
+                         net (fo=1)                   0.342    16.302    crypto_RIJNDAEL/ALG/Sh180
+    SLICE_X33Y52                                                      r  crypto_RIJNDAEL/ALG/Mmux_GND_44_o_GND_44_o_mux_16_OUT11041/I1
+    SLICE_X33Y52         LUT2                         0.081    16.383 r  crypto_RIJNDAEL/ALG/Mmux_GND_44_o_GND_44_o_mux_16_OUT11041/O
+                         net (fo=1)                   0.000    16.383    crypto_RIJNDAEL/ALG/GND_44_o_GND_44_o_mux_41_OUT[52]
+    SLICE_X33Y52                                                      r  crypto_RIJNDAEL/ALG/BI_REG_52/D
+    SLICE_X33Y52         FDC                          0.000    16.383    crypto_RIJNDAEL/ALG/BI_REG_52
+  -------------------------------------------------------------------    -------------------
+
+Slack:                  inf
+  Source:               crypto_RIJNDAEL/ALG/ROUND_0_1/C
+                            (rising edge-triggered flip-flop)
+  Destination:          crypto_RIJNDAEL/ALG/BI_REG_40/D
+  Path Group:           (none)
+  Path Type:            Max at Slow Process Corner
+  Data Path Delay:      16.380ns  (logic 9.530ns (58.181%)  route 6.850ns (41.819%))
+  Logic Levels:         10  (DSP48E1=3 FDC=1 LUT2=1 LUT3=1 LUT6=3 MUXF7=1)
+  Clock Pessimism:      0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y45         FDC                          0.000     0.000 r  crypto_RIJNDAEL/ALG/ROUND_0_1/C
+    SLICE_X43Y45         FDC                          0.379     0.379 r  crypto_RIJNDAEL/ALG/ROUND_0_1/Q
+                         net (fo=1)                   0.560     0.939    crypto_RIJNDAEL/ALG/ROUND_0_1
+    SLICE_X42Y45                                                      r  crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>11/I0
+    SLICE_X42Y45         LUT3                         0.081     1.020 r  crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>11/O
+                         net (fo=128)                 1.106     2.126    crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>1
+    SLICE_X56Y46                                                      r  crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT<98>1/I5
+    SLICE_X56Y46         LUT6                         0.081     2.207 r  crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT<98>1/O
+                         net (fo=5)                   1.229     3.436    crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT[98]
+    DSP48_X3Y17                                                       r  crypto_RIJNDAEL/ALG/Mmult_n0085/A[2]
+    DSP48_X3Y17          DSP48E1                      4.550     7.986 r  crypto_RIJNDAEL/ALG/Mmult_n0085/PCOUT[47]
+                         net (fo=1)                   0.000     7.986    crypto_RIJNDAEL/ALG/Mmult_n0085_PCOUT_to_Mmult_n00851_PCIN_47
+    DSP48_X3Y18                                                       r  crypto_RIJNDAEL/ALG/Mmult_n00851/PCIN[47]
+    DSP48_X3Y18          DSP48E1                      2.007     9.993 r  crypto_RIJNDAEL/ALG/Mmult_n00851/PCOUT[47]
+                         net (fo=1)                   0.000     9.993    crypto_RIJNDAEL/ALG/Mmult_n00851_PCOUT_to_Mmult_n00852_PCIN_47
+    DSP48_X3Y19                                                       r  crypto_RIJNDAEL/ALG/Mmult_n00852/PCIN[47]
+    DSP48_X3Y19          DSP48E1                      1.870    11.863 r  crypto_RIJNDAEL/ALG/Mmult_n00852/P[10]
+                         net (fo=65)                  2.988    14.851    crypto_RIJNDAEL/ALG/n0085<27>1
+    SLICE_X29Y50                                                      r  crypto_RIJNDAEL/ALG/Sh13611_G/I0
+    SLICE_X29Y50         LUT6                         0.081    14.932 r  crypto_RIJNDAEL/ALG/Sh13611_G/O
+                         net (fo=1)                   0.000    14.932    N304
+    SLICE_X29Y50                                                      r  crypto_RIJNDAEL/ALG/Sh13611/I1
+    SLICE_X29Y50         MUXF7                        0.205    15.137 r  crypto_RIJNDAEL/ALG/Sh13611/O
+                         net (fo=4)                   0.625    15.762    crypto_RIJNDAEL/ALG/Sh1361
+    SLICE_X29Y50                                                      r  crypto_RIJNDAEL/ALG/Sh1681/I2
+    SLICE_X29Y50         LUT6                         0.195    15.957 r  crypto_RIJNDAEL/ALG/Sh1681/O
+                         net (fo=1)                   0.342    16.299    crypto_RIJNDAEL/ALG/Sh168
+    SLICE_X29Y50                                                      r  crypto_RIJNDAEL/ALG/Mmux_GND_44_o_GND_44_o_mux_16_OUT1911/I1
+    SLICE_X29Y50         LUT2                         0.081    16.380 r  crypto_RIJNDAEL/ALG/Mmux_GND_44_o_GND_44_o_mux_16_OUT1911/O
+                         net (fo=1)                   0.000    16.380    crypto_RIJNDAEL/ALG/GND_44_o_GND_44_o_mux_41_OUT[40]
+    SLICE_X29Y50                                                      r  crypto_RIJNDAEL/ALG/BI_REG_40/D
+    SLICE_X29Y50         FDC                          0.000    16.380    crypto_RIJNDAEL/ALG/BI_REG_40
+  -------------------------------------------------------------------    -------------------
+
+Slack:                  inf
+  Source:               crypto_RIJNDAEL/ALG/ROUND_0_1/C
+                            (rising edge-triggered flip-flop)
+  Destination:          crypto_RIJNDAEL/ALG/BI_REG_45/D
+  Path Group:           (none)
+  Path Type:            Max at Slow Process Corner
+  Data Path Delay:      16.358ns  (logic 9.530ns (58.259%)  route 6.828ns (41.741%))
+  Logic Levels:         10  (DSP48E1=3 FDC=1 LUT2=1 LUT3=1 LUT6=3 MUXF7=1)
+  Clock Pessimism:      0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y45         FDC                          0.000     0.000 r  crypto_RIJNDAEL/ALG/ROUND_0_1/C
+    SLICE_X43Y45         FDC                          0.379     0.379 r  crypto_RIJNDAEL/ALG/ROUND_0_1/Q
+                         net (fo=1)                   0.560     0.939    crypto_RIJNDAEL/ALG/ROUND_0_1
+    SLICE_X42Y45                                                      r  crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>11/I0
+    SLICE_X42Y45         LUT3                         0.081     1.020 r  crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>11/O
+                         net (fo=128)                 1.106     2.126    crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>1
+    SLICE_X56Y46                                                      r  crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT<98>1/I5
+    SLICE_X56Y46         LUT6                         0.081     2.207 r  crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT<98>1/O
+                         net (fo=5)                   1.229     3.436    crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT[98]
+    DSP48_X3Y17                                                       r  crypto_RIJNDAEL/ALG/Mmult_n0085/A[2]
+    DSP48_X3Y17          DSP48E1                      4.550     7.986 r  crypto_RIJNDAEL/ALG/Mmult_n0085/PCOUT[47]
+                         net (fo=1)                   0.000     7.986    crypto_RIJNDAEL/ALG/Mmult_n0085_PCOUT_to_Mmult_n00851_PCIN_47
+    DSP48_X3Y18                                                       r  crypto_RIJNDAEL/ALG/Mmult_n00851/PCIN[47]
+    DSP48_X3Y18          DSP48E1                      2.007     9.993 r  crypto_RIJNDAEL/ALG/Mmult_n00851/PCOUT[47]
+                         net (fo=1)                   0.000     9.993    crypto_RIJNDAEL/ALG/Mmult_n00851_PCOUT_to_Mmult_n00852_PCIN_47
+    DSP48_X3Y19                                                       r  crypto_RIJNDAEL/ALG/Mmult_n00852/PCIN[47]
+    DSP48_X3Y19          DSP48E1                      1.870    11.863 r  crypto_RIJNDAEL/ALG/Mmult_n00852/P[10]
+                         net (fo=65)                  2.920    14.783    crypto_RIJNDAEL/ALG/n0085<27>1
+    SLICE_X31Y48                                                      r  crypto_RIJNDAEL/ALG/Sh15311_G/I0
+    SLICE_X31Y48         LUT6                         0.081    14.864 r  crypto_RIJNDAEL/ALG/Sh15311_G/O
+                         net (fo=1)                   0.000    14.864    N284
+    SLICE_X31Y48                                                      r  crypto_RIJNDAEL/ALG/Sh15311/I1
+    SLICE_X31Y48         MUXF7                        0.205    15.069 r  crypto_RIJNDAEL/ALG/Sh15311/O
+                         net (fo=4)                   0.653    15.722    crypto_RIJNDAEL/ALG/Sh1531
+    SLICE_X32Y49                                                      r  crypto_RIJNDAEL/ALG/Sh1731/I4
+    SLICE_X32Y49         LUT6                         0.195    15.917 r  crypto_RIJNDAEL/ALG/Sh1731/O
+                         net (fo=1)                   0.360    16.277    crypto_RIJNDAEL/ALG/Sh173
+    SLICE_X32Y49                                                      r  crypto_RIJNDAEL/ALG/Mmux_GND_44_o_GND_44_o_mux_16_OUT1961/I1
+    SLICE_X32Y49         LUT2                         0.081    16.358 r  crypto_RIJNDAEL/ALG/Mmux_GND_44_o_GND_44_o_mux_16_OUT1961/O
+                         net (fo=1)                   0.000    16.358    crypto_RIJNDAEL/ALG/GND_44_o_GND_44_o_mux_41_OUT[45]
+    SLICE_X32Y49                                                      r  crypto_RIJNDAEL/ALG/BI_REG_45/D
+    SLICE_X32Y49         FDC                          0.000    16.358    crypto_RIJNDAEL/ALG/BI_REG_45
+  -------------------------------------------------------------------    -------------------
+
+Slack:                  inf
+  Source:               crypto_RIJNDAEL/ALG/ROUND_0_1/C
+                            (rising edge-triggered flip-flop)
+  Destination:          crypto_RIJNDAEL/ALG/BI_REG_60/D
+  Path Group:           (none)
+  Path Type:            Max at Slow Process Corner
+  Data Path Delay:      16.287ns  (logic 9.530ns (58.513%)  route 6.757ns (41.487%))
+  Logic Levels:         10  (DSP48E1=3 FDC=1 LUT2=1 LUT3=1 LUT6=3 MUXF7=1)
+  Clock Pessimism:      0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y45         FDC                          0.000     0.000 r  crypto_RIJNDAEL/ALG/ROUND_0_1/C
+    SLICE_X43Y45         FDC                          0.379     0.379 r  crypto_RIJNDAEL/ALG/ROUND_0_1/Q
+                         net (fo=1)                   0.560     0.939    crypto_RIJNDAEL/ALG/ROUND_0_1
+    SLICE_X42Y45                                                      r  crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>11/I0
+    SLICE_X42Y45         LUT3                         0.081     1.020 r  crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>11/O
+                         net (fo=128)                 1.106     2.126    crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>1
+    SLICE_X56Y46                                                      r  crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT<98>1/I5
+    SLICE_X56Y46         LUT6                         0.081     2.207 r  crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT<98>1/O
+                         net (fo=5)                   1.229     3.436    crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT[98]
+    DSP48_X3Y17                                                       r  crypto_RIJNDAEL/ALG/Mmult_n0085/A[2]
+    DSP48_X3Y17          DSP48E1                      4.550     7.986 r  crypto_RIJNDAEL/ALG/Mmult_n0085/PCOUT[47]
+                         net (fo=1)                   0.000     7.986    crypto_RIJNDAEL/ALG/Mmult_n0085_PCOUT_to_Mmult_n00851_PCIN_47
+    DSP48_X3Y18                                                       r  crypto_RIJNDAEL/ALG/Mmult_n00851/PCIN[47]
+    DSP48_X3Y18          DSP48E1                      2.007     9.993 r  crypto_RIJNDAEL/ALG/Mmult_n00851/PCOUT[47]
+                         net (fo=1)                   0.000     9.993    crypto_RIJNDAEL/ALG/Mmult_n00851_PCOUT_to_Mmult_n00852_PCIN_47
+    DSP48_X3Y19                                                       r  crypto_RIJNDAEL/ALG/Mmult_n00852/PCIN[47]
+    DSP48_X3Y19          DSP48E1                      1.870    11.863 r  crypto_RIJNDAEL/ALG/Mmult_n00852/P[10]
+                         net (fo=65)                  2.282    14.145    crypto_RIJNDAEL/ALG/n0085<27>1
+    SLICE_X42Y48                                                      r  crypto_RIJNDAEL/ALG/Sh12821_G/I0
+    SLICE_X42Y48         LUT6                         0.081    14.226 r  crypto_RIJNDAEL/ALG/Sh12821_G/O
+                         net (fo=1)                   0.000    14.226    N272
+    SLICE_X42Y48                                                      r  crypto_RIJNDAEL/ALG/Sh12821/I1
+    SLICE_X42Y48         MUXF7                        0.205    14.431 r  crypto_RIJNDAEL/ALG/Sh12821/O
+                         net (fo=4)                   1.222    15.653    crypto_RIJNDAEL/ALG/Sh1282
+    SLICE_X30Y48                                                      r  crypto_RIJNDAEL/ALG/Sh1881/I2
+    SLICE_X30Y48         LUT6                         0.195    15.848 r  crypto_RIJNDAEL/ALG/Sh1881/O
+                         net (fo=1)                   0.358    16.206    crypto_RIJNDAEL/ALG/Sh188
+    SLICE_X30Y48                                                      r  crypto_RIJNDAEL/ALG/Mmux_GND_44_o_GND_44_o_mux_16_OUT11131/I1
+    SLICE_X30Y48         LUT2                         0.081    16.287 r  crypto_RIJNDAEL/ALG/Mmux_GND_44_o_GND_44_o_mux_16_OUT11131/O
+                         net (fo=1)                   0.000    16.287    crypto_RIJNDAEL/ALG/GND_44_o_GND_44_o_mux_41_OUT[60]
+    SLICE_X30Y48                                                      r  crypto_RIJNDAEL/ALG/BI_REG_60/D
+    SLICE_X30Y48         FDC                          0.000    16.287    crypto_RIJNDAEL/ALG/BI_REG_60
+  -------------------------------------------------------------------    -------------------
+
+Slack:                  inf
+  Source:               crypto_RIJNDAEL/ALG/ROUND_0_1/C
+                            (rising edge-triggered flip-flop)
+  Destination:          crypto_RIJNDAEL/ALG/BI_REG_57/D
+  Path Group:           (none)
+  Path Type:            Max at Slow Process Corner
+  Data Path Delay:      16.279ns  (logic 9.530ns (58.542%)  route 6.749ns (41.458%))
+  Logic Levels:         10  (DSP48E1=3 FDC=1 LUT2=1 LUT3=1 LUT6=3 MUXF7=1)
+  Clock Pessimism:      0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y45         FDC                          0.000     0.000 r  crypto_RIJNDAEL/ALG/ROUND_0_1/C
+    SLICE_X43Y45         FDC                          0.379     0.379 r  crypto_RIJNDAEL/ALG/ROUND_0_1/Q
+                         net (fo=1)                   0.560     0.939    crypto_RIJNDAEL/ALG/ROUND_0_1
+    SLICE_X42Y45                                                      r  crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>11/I0
+    SLICE_X42Y45         LUT3                         0.081     1.020 r  crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>11/O
+                         net (fo=128)                 1.106     2.126    crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>1
+    SLICE_X56Y46                                                      r  crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT<98>1/I5
+    SLICE_X56Y46         LUT6                         0.081     2.207 r  crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT<98>1/O
+                         net (fo=5)                   1.229     3.436    crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT[98]
+    DSP48_X3Y17                                                       r  crypto_RIJNDAEL/ALG/Mmult_n0085/A[2]
+    DSP48_X3Y17          DSP48E1                      4.550     7.986 r  crypto_RIJNDAEL/ALG/Mmult_n0085/PCOUT[47]
+                         net (fo=1)                   0.000     7.986    crypto_RIJNDAEL/ALG/Mmult_n0085_PCOUT_to_Mmult_n00851_PCIN_47
+    DSP48_X3Y18                                                       r  crypto_RIJNDAEL/ALG/Mmult_n00851/PCIN[47]
+    DSP48_X3Y18          DSP48E1                      2.007     9.993 r  crypto_RIJNDAEL/ALG/Mmult_n00851/PCOUT[47]
+                         net (fo=1)                   0.000     9.993    crypto_RIJNDAEL/ALG/Mmult_n00851_PCOUT_to_Mmult_n00852_PCIN_47
+    DSP48_X3Y19                                                       r  crypto_RIJNDAEL/ALG/Mmult_n00852/PCIN[47]
+    DSP48_X3Y19          DSP48E1                      1.870    11.863 r  crypto_RIJNDAEL/ALG/Mmult_n00852/P[10]
+                         net (fo=65)                  2.920    14.783    crypto_RIJNDAEL/ALG/n0085<27>1
+    SLICE_X31Y48                                                      r  crypto_RIJNDAEL/ALG/Sh15311_G/I0
+    SLICE_X31Y48         LUT6                         0.081    14.864 r  crypto_RIJNDAEL/ALG/Sh15311_G/O
+                         net (fo=1)                   0.000    14.864    N284
+    SLICE_X31Y48                                                      r  crypto_RIJNDAEL/ALG/Sh15311/I1
+    SLICE_X31Y48         MUXF7                        0.205    15.069 r  crypto_RIJNDAEL/ALG/Sh15311/O
+                         net (fo=4)                   0.576    15.645    crypto_RIJNDAEL/ALG/Sh1531
+    SLICE_X28Y48                                                      r  crypto_RIJNDAEL/ALG/Sh1851/I2
+    SLICE_X28Y48         LUT6                         0.195    15.840 r  crypto_RIJNDAEL/ALG/Sh1851/O
+                         net (fo=1)                   0.358    16.198    crypto_RIJNDAEL/ALG/Sh185
+    SLICE_X28Y48                                                      r  crypto_RIJNDAEL/ALG/Mmux_GND_44_o_GND_44_o_mux_16_OUT11091/I1
+    SLICE_X28Y48         LUT2                         0.081    16.279 r  crypto_RIJNDAEL/ALG/Mmux_GND_44_o_GND_44_o_mux_16_OUT11091/O
+                         net (fo=1)                   0.000    16.279    crypto_RIJNDAEL/ALG/GND_44_o_GND_44_o_mux_41_OUT[57]
+    SLICE_X28Y48                                                      r  crypto_RIJNDAEL/ALG/BI_REG_57/D
+    SLICE_X28Y48         FDC                          0.000    16.279    crypto_RIJNDAEL/ALG/BI_REG_57
+  -------------------------------------------------------------------    -------------------
+
+Slack:                  inf
+  Source:               crypto_RIJNDAEL/ALG/ROUND_0_1/C
+                            (rising edge-triggered flip-flop)
+  Destination:          crypto_RIJNDAEL/ALG/BI_REG_44/D
+  Path Group:           (none)
+  Path Type:            Max at Slow Process Corner
+  Data Path Delay:      16.277ns  (logic 9.532ns (58.561%)  route 6.745ns (41.439%))
+  Logic Levels:         10  (DSP48E1=3 FDC=1 LUT2=1 LUT3=1 LUT6=3 MUXF7=1)
+  Clock Pessimism:      0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y45         FDC                          0.000     0.000 r  crypto_RIJNDAEL/ALG/ROUND_0_1/C
+    SLICE_X43Y45         FDC                          0.379     0.379 r  crypto_RIJNDAEL/ALG/ROUND_0_1/Q
+                         net (fo=1)                   0.560     0.939    crypto_RIJNDAEL/ALG/ROUND_0_1
+    SLICE_X42Y45                                                      r  crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>11/I0
+    SLICE_X42Y45         LUT3                         0.081     1.020 r  crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>11/O
+                         net (fo=128)                 1.106     2.126    crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>1
+    SLICE_X56Y46                                                      r  crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT<98>1/I5
+    SLICE_X56Y46         LUT6                         0.081     2.207 r  crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT<98>1/O
+                         net (fo=5)                   1.229     3.436    crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT[98]
+    DSP48_X3Y17                                                       r  crypto_RIJNDAEL/ALG/Mmult_n0085/A[2]
+    DSP48_X3Y17          DSP48E1                      4.550     7.986 r  crypto_RIJNDAEL/ALG/Mmult_n0085/PCOUT[47]
+                         net (fo=1)                   0.000     7.986    crypto_RIJNDAEL/ALG/Mmult_n0085_PCOUT_to_Mmult_n00851_PCIN_47
+    DSP48_X3Y18                                                       r  crypto_RIJNDAEL/ALG/Mmult_n00851/PCIN[47]
+    DSP48_X3Y18          DSP48E1                      2.007     9.993 r  crypto_RIJNDAEL/ALG/Mmult_n00851/PCOUT[47]
+                         net (fo=1)                   0.000     9.993    crypto_RIJNDAEL/ALG/Mmult_n00851_PCOUT_to_Mmult_n00852_PCIN_47
+    DSP48_X3Y19                                                       r  crypto_RIJNDAEL/ALG/Mmult_n00852/PCIN[47]
+    DSP48_X3Y19          DSP48E1                      1.870    11.863 r  crypto_RIJNDAEL/ALG/Mmult_n00852/P[10]
+                         net (fo=65)                  2.957    14.820    crypto_RIJNDAEL/ALG/n0085<27>1
+    SLICE_X30Y50                                                      r  crypto_RIJNDAEL/ALG/Sh15211_G/I0
+    SLICE_X30Y50         LUT6                         0.081    14.901 r  crypto_RIJNDAEL/ALG/Sh15211_G/O
+                         net (fo=1)                   0.000    14.901    N288
+    SLICE_X30Y50                                                      r  crypto_RIJNDAEL/ALG/Sh15211/I1
+    SLICE_X30Y50         MUXF7                        0.199    15.100 r  crypto_RIJNDAEL/ALG/Sh15211/O
+                         net (fo=4)                   0.551    15.651    crypto_RIJNDAEL/ALG/Sh1521
+    SLICE_X33Y49                                                      r  crypto_RIJNDAEL/ALG/Sh1721/I4
+    SLICE_X33Y49         LUT6                         0.203    15.854 r  crypto_RIJNDAEL/ALG/Sh1721/O
+                         net (fo=1)                   0.342    16.196    crypto_RIJNDAEL/ALG/Sh172
+    SLICE_X33Y49                                                      r  crypto_RIJNDAEL/ALG/Mmux_GND_44_o_GND_44_o_mux_16_OUT1951/I1
+    SLICE_X33Y49         LUT2                         0.081    16.277 r  crypto_RIJNDAEL/ALG/Mmux_GND_44_o_GND_44_o_mux_16_OUT1951/O
+                         net (fo=1)                   0.000    16.277    crypto_RIJNDAEL/ALG/GND_44_o_GND_44_o_mux_41_OUT[44]
+    SLICE_X33Y49                                                      r  crypto_RIJNDAEL/ALG/BI_REG_44/D
+    SLICE_X33Y49         FDC                          0.000    16.277    crypto_RIJNDAEL/ALG/BI_REG_44
+  -------------------------------------------------------------------    -------------------
+
+Slack:                  inf
+  Source:               crypto_RIJNDAEL/ALG/ROUND_0_1/C
+                            (rising edge-triggered flip-flop)
+  Destination:          crypto_RIJNDAEL/ALG/BI_REG_53/D
+  Path Group:           (none)
+  Path Type:            Max at Slow Process Corner
+  Data Path Delay:      16.481ns  (logic 9.532ns (57.836%)  route 6.949ns (42.164%))
+  Logic Levels:         10  (DSP48E1=3 FDC=1 LUT2=1 LUT3=1 LUT6=3 MUXF7=1)
+  Clock Pessimism:      0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y45         FDC                          0.000     0.000 r  crypto_RIJNDAEL/ALG/ROUND_0_1/C
+    SLICE_X43Y45         FDC                          0.379     0.379 r  crypto_RIJNDAEL/ALG/ROUND_0_1/Q
+                         net (fo=1)                   0.560     0.939    crypto_RIJNDAEL/ALG/ROUND_0_1
+    SLICE_X42Y45                                                      r  crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>11/I0
+    SLICE_X42Y45         LUT3                         0.081     1.020 r  crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>11/O
+                         net (fo=128)                 1.106     2.126    crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>1
+    SLICE_X56Y46                                                      r  crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT<98>1/I5
+    SLICE_X56Y46         LUT6                         0.081     2.207 r  crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT<98>1/O
+                         net (fo=5)                   1.229     3.436    crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT[98]
+    DSP48_X3Y17                                                       r  crypto_RIJNDAEL/ALG/Mmult_n0085/A[2]
+    DSP48_X3Y17          DSP48E1                      4.550     7.986 r  crypto_RIJNDAEL/ALG/Mmult_n0085/PCOUT[47]
+                         net (fo=1)                   0.000     7.986    crypto_RIJNDAEL/ALG/Mmult_n0085_PCOUT_to_Mmult_n00851_PCIN_47
+    DSP48_X3Y18                                                       r  crypto_RIJNDAEL/ALG/Mmult_n00851/PCIN[47]
+    DSP48_X3Y18          DSP48E1                      2.007     9.993 r  crypto_RIJNDAEL/ALG/Mmult_n00851/PCOUT[47]
+                         net (fo=1)                   0.000     9.993    crypto_RIJNDAEL/ALG/Mmult_n00851_PCOUT_to_Mmult_n00852_PCIN_47
+    DSP48_X3Y19                                                       r  crypto_RIJNDAEL/ALG/Mmult_n00852/PCIN[47]
+    DSP48_X3Y19          DSP48E1                      1.870    11.863 r  crypto_RIJNDAEL/ALG/Mmult_n00852/P[10]
+                         net (fo=65)                  2.949    14.812    crypto_RIJNDAEL/ALG/n0085<27>1
+    SLICE_X30Y49                                                      r  crypto_RIJNDAEL/ALG/Sh13311_G/I0
+    SLICE_X30Y49         LUT6                         0.081    14.893 r  crypto_RIJNDAEL/ALG/Sh13311_G/O
+                         net (fo=1)                   0.000    14.893    N310
+    SLICE_X30Y49                                                      r  crypto_RIJNDAEL/ALG/Sh13311/I1
+    SLICE_X30Y49         MUXF7                        0.199    15.092 r  crypto_RIJNDAEL/ALG/Sh13311/O
+                         net (fo=4)                   0.763    15.855    crypto_RIJNDAEL/ALG/Sh1331
+    SLICE_X35Y50                                                      r  crypto_RIJNDAEL/ALG/Sh1811/I3
+    SLICE_X35Y50         LUT6                         0.203    16.058 r  crypto_RIJNDAEL/ALG/Sh1811/O
+                         net (fo=1)                   0.342    16.400    crypto_RIJNDAEL/ALG/Sh181
+    SLICE_X35Y50                                                      r  crypto_RIJNDAEL/ALG/Mmux_GND_44_o_GND_44_o_mux_16_OUT11051/I1
+    SLICE_X35Y50         LUT2                         0.081    16.481 r  crypto_RIJNDAEL/ALG/Mmux_GND_44_o_GND_44_o_mux_16_OUT11051/O
+                         net (fo=1)                   0.000    16.481    crypto_RIJNDAEL/ALG/GND_44_o_GND_44_o_mux_41_OUT[53]
+    SLICE_X35Y50                                                      r  crypto_RIJNDAEL/ALG/BI_REG_53/D
+    SLICE_X35Y50         FDC                          0.000    16.481    crypto_RIJNDAEL/ALG/BI_REG_53
+  -------------------------------------------------------------------    -------------------
+
+Slack:                  inf
+  Source:               crypto_RIJNDAEL/ALG/ROUND_0_1/C
+                            (rising edge-triggered flip-flop)
+  Destination:          crypto_RIJNDAEL/ALG/BI_REG_37/D
+  Path Group:           (none)
+  Path Type:            Max at Slow Process Corner
+  Data Path Delay:      16.447ns  (logic 9.532ns (57.956%)  route 6.915ns (42.044%))
+  Logic Levels:         10  (DSP48E1=3 FDC=1 LUT2=1 LUT3=1 LUT6=3 MUXF7=1)
+  Clock Pessimism:      0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y45         FDC                          0.000     0.000 r  crypto_RIJNDAEL/ALG/ROUND_0_1/C
+    SLICE_X43Y45         FDC                          0.379     0.379 r  crypto_RIJNDAEL/ALG/ROUND_0_1/Q
+                         net (fo=1)                   0.560     0.939    crypto_RIJNDAEL/ALG/ROUND_0_1
+    SLICE_X42Y45                                                      r  crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>11/I0
+    SLICE_X42Y45         LUT3                         0.081     1.020 r  crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>11/O
+                         net (fo=128)                 1.106     2.126    crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>1
+    SLICE_X56Y46                                                      r  crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT<98>1/I5
+    SLICE_X56Y46         LUT6                         0.081     2.207 r  crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT<98>1/O
+                         net (fo=5)                   1.229     3.436    crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT[98]
+    DSP48_X3Y17                                                       r  crypto_RIJNDAEL/ALG/Mmult_n0085/A[2]
+    DSP48_X3Y17          DSP48E1                      4.550     7.986 r  crypto_RIJNDAEL/ALG/Mmult_n0085/PCOUT[47]
+                         net (fo=1)                   0.000     7.986    crypto_RIJNDAEL/ALG/Mmult_n0085_PCOUT_to_Mmult_n00851_PCIN_47
+    DSP48_X3Y18                                                       r  crypto_RIJNDAEL/ALG/Mmult_n00851/PCIN[47]
+    DSP48_X3Y18          DSP48E1                      2.007     9.993 r  crypto_RIJNDAEL/ALG/Mmult_n00851/PCOUT[47]
+                         net (fo=1)                   0.000     9.993    crypto_RIJNDAEL/ALG/Mmult_n00851_PCOUT_to_Mmult_n00852_PCIN_47
+    DSP48_X3Y19                                                       r  crypto_RIJNDAEL/ALG/Mmult_n00852/PCIN[47]
+    DSP48_X3Y19          DSP48E1                      1.870    11.863 r  crypto_RIJNDAEL/ALG/Mmult_n00852/P[10]
+                         net (fo=65)                  2.949    14.812    crypto_RIJNDAEL/ALG/n0085<27>1
+    SLICE_X30Y49                                                      r  crypto_RIJNDAEL/ALG/Sh13311_G/I0
+    SLICE_X30Y49         LUT6                         0.081    14.893 r  crypto_RIJNDAEL/ALG/Sh13311_G/O
+                         net (fo=1)                   0.000    14.893    N310
+    SLICE_X30Y49                                                      r  crypto_RIJNDAEL/ALG/Sh13311/I1
+    SLICE_X30Y49         MUXF7                        0.199    15.092 r  crypto_RIJNDAEL/ALG/Sh13311/O
+                         net (fo=4)                   0.729    15.821    crypto_RIJNDAEL/ALG/Sh1331
+    SLICE_X33Y50                                                      r  crypto_RIJNDAEL/ALG/Sh1651/I2
+    SLICE_X33Y50         LUT6                         0.203    16.024 r  crypto_RIJNDAEL/ALG/Sh1651/O
+                         net (fo=1)                   0.342    16.366    crypto_RIJNDAEL/ALG/Sh165
+    SLICE_X33Y50                                                      r  crypto_RIJNDAEL/ALG/Mmux_GND_44_o_GND_44_o_mux_16_OUT1871/I1
+    SLICE_X33Y50         LUT2                         0.081    16.447 r  crypto_RIJNDAEL/ALG/Mmux_GND_44_o_GND_44_o_mux_16_OUT1871/O
+                         net (fo=1)                   0.000    16.447    crypto_RIJNDAEL/ALG/GND_44_o_GND_44_o_mux_41_OUT[37]
+    SLICE_X33Y50                                                      r  crypto_RIJNDAEL/ALG/BI_REG_37/D
+    SLICE_X33Y50         FDC                          0.000    16.447    crypto_RIJNDAEL/ALG/BI_REG_37
+  -------------------------------------------------------------------    -------------------
+
+Slack:                  inf
+  Source:               crypto_RIJNDAEL/ALG/ROUND_0_1/C
+                            (rising edge-triggered flip-flop)
+  Destination:          crypto_RIJNDAEL/ALG/BI_REG_36/D
+  Path Group:           (none)
+  Path Type:            Max at Slow Process Corner
+  Data Path Delay:      16.438ns  (logic 9.530ns (57.975%)  route 6.908ns (42.025%))
+  Logic Levels:         10  (DSP48E1=3 FDC=1 LUT2=1 LUT3=1 LUT6=3 MUXF7=1)
+  Clock Pessimism:      0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y45         FDC                          0.000     0.000 r  crypto_RIJNDAEL/ALG/ROUND_0_1/C
+    SLICE_X43Y45         FDC                          0.379     0.379 r  crypto_RIJNDAEL/ALG/ROUND_0_1/Q
+                         net (fo=1)                   0.560     0.939    crypto_RIJNDAEL/ALG/ROUND_0_1
+    SLICE_X42Y45                                                      r  crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>11/I0
+    SLICE_X42Y45         LUT3                         0.081     1.020 r  crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>11/O
+                         net (fo=128)                 1.106     2.126    crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>1
+    SLICE_X56Y46                                                      r  crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT<98>1/I5
+    SLICE_X56Y46         LUT6                         0.081     2.207 r  crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT<98>1/O
+                         net (fo=5)                   1.229     3.436    crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT[98]
+    DSP48_X3Y17                                                       r  crypto_RIJNDAEL/ALG/Mmult_n0085/A[2]
+    DSP48_X3Y17          DSP48E1                      4.550     7.986 r  crypto_RIJNDAEL/ALG/Mmult_n0085/PCOUT[47]
+                         net (fo=1)                   0.000     7.986    crypto_RIJNDAEL/ALG/Mmult_n0085_PCOUT_to_Mmult_n00851_PCIN_47
+    DSP48_X3Y18                                                       r  crypto_RIJNDAEL/ALG/Mmult_n00851/PCIN[47]
+    DSP48_X3Y18          DSP48E1                      2.007     9.993 r  crypto_RIJNDAEL/ALG/Mmult_n00851/PCOUT[47]
+                         net (fo=1)                   0.000     9.993    crypto_RIJNDAEL/ALG/Mmult_n00851_PCOUT_to_Mmult_n00852_PCIN_47
+    DSP48_X3Y19                                                       r  crypto_RIJNDAEL/ALG/Mmult_n00852/PCIN[47]
+    DSP48_X3Y19          DSP48E1                      1.870    11.863 r  crypto_RIJNDAEL/ALG/Mmult_n00852/P[10]
+                         net (fo=65)                  2.846    14.709    crypto_RIJNDAEL/ALG/n0085<27>1
+    SLICE_X31Y49                                                      r  crypto_RIJNDAEL/ALG/Sh13211_G/I0
+    SLICE_X31Y49         LUT6                         0.081    14.790 r  crypto_RIJNDAEL/ALG/Sh13211_G/O
+                         net (fo=1)                   0.000    14.790    N312
+    SLICE_X31Y49                                                      r  crypto_RIJNDAEL/ALG/Sh13211/I1
+    SLICE_X31Y49         MUXF7                        0.205    14.995 r  crypto_RIJNDAEL/ALG/Sh13211/O
+                         net (fo=4)                   0.825    15.820    crypto_RIJNDAEL/ALG/Sh1321
+    SLICE_X33Y50                                                      r  crypto_RIJNDAEL/ALG/Sh1641/I2
+    SLICE_X33Y50         LUT6                         0.195    16.015 r  crypto_RIJNDAEL/ALG/Sh1641/O
+                         net (fo=1)                   0.342    16.357    crypto_RIJNDAEL/ALG/Sh164
+    SLICE_X33Y50                                                      r  crypto_RIJNDAEL/ALG/Mmux_GND_44_o_GND_44_o_mux_16_OUT1861/I1
+    SLICE_X33Y50         LUT2                         0.081    16.438 r  crypto_RIJNDAEL/ALG/Mmux_GND_44_o_GND_44_o_mux_16_OUT1861/O
+                         net (fo=1)                   0.000    16.438    crypto_RIJNDAEL/ALG/GND_44_o_GND_44_o_mux_41_OUT[36]
+    SLICE_X33Y50                                                      r  crypto_RIJNDAEL/ALG/BI_REG_36/D
+    SLICE_X33Y50         FDC                          0.000    16.438    crypto_RIJNDAEL/ALG/BI_REG_36
+  -------------------------------------------------------------------    -------------------
+
+Slack:                  inf
+  Source:               crypto_RIJNDAEL/ALG/ROUND_0_1/C
+                            (rising edge-triggered flip-flop)
+  Destination:          crypto_RIJNDAEL/ALG/BI_REG_56/D
+  Path Group:           (none)
+  Path Type:            Max at Slow Process Corner
+  Data Path Delay:      16.416ns  (logic 9.532ns (58.065%)  route 6.884ns (41.935%))
+  Logic Levels:         10  (DSP48E1=3 FDC=1 LUT2=1 LUT3=1 LUT6=3 MUXF7=1)
+  Clock Pessimism:      0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y45         FDC                          0.000     0.000 r  crypto_RIJNDAEL/ALG/ROUND_0_1/C
+    SLICE_X43Y45         FDC                          0.379     0.379 r  crypto_RIJNDAEL/ALG/ROUND_0_1/Q
+                         net (fo=1)                   0.560     0.939    crypto_RIJNDAEL/ALG/ROUND_0_1
+    SLICE_X42Y45                                                      r  crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>11/I0
+    SLICE_X42Y45         LUT3                         0.081     1.020 r  crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>11/O
+                         net (fo=128)                 1.106     2.126    crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>1
+    SLICE_X56Y46                                                      r  crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT<98>1/I5
+    SLICE_X56Y46         LUT6                         0.081     2.207 r  crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT<98>1/O
+                         net (fo=5)                   1.229     3.436    crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT[98]
+    DSP48_X3Y17                                                       r  crypto_RIJNDAEL/ALG/Mmult_n0085/A[2]
+    DSP48_X3Y17          DSP48E1                      4.550     7.986 r  crypto_RIJNDAEL/ALG/Mmult_n0085/PCOUT[47]
+                         net (fo=1)                   0.000     7.986    crypto_RIJNDAEL/ALG/Mmult_n0085_PCOUT_to_Mmult_n00851_PCIN_47
+    DSP48_X3Y18                                                       r  crypto_RIJNDAEL/ALG/Mmult_n00851/PCIN[47]
+    DSP48_X3Y18          DSP48E1                      2.007     9.993 r  crypto_RIJNDAEL/ALG/Mmult_n00851/PCOUT[47]
+                         net (fo=1)                   0.000     9.993    crypto_RIJNDAEL/ALG/Mmult_n00851_PCOUT_to_Mmult_n00852_PCIN_47
+    DSP48_X3Y19                                                       r  crypto_RIJNDAEL/ALG/Mmult_n00852/PCIN[47]
+    DSP48_X3Y19          DSP48E1                      1.870    11.863 r  crypto_RIJNDAEL/ALG/Mmult_n00852/P[10]
+                         net (fo=65)                  2.957    14.820    crypto_RIJNDAEL/ALG/n0085<27>1
+    SLICE_X30Y50                                                      r  crypto_RIJNDAEL/ALG/Sh15211_G/I0
+    SLICE_X30Y50         LUT6                         0.081    14.901 r  crypto_RIJNDAEL/ALG/Sh15211_G/O
+                         net (fo=1)                   0.000    14.901    N288
+    SLICE_X30Y50                                                      r  crypto_RIJNDAEL/ALG/Sh15211/I1
+    SLICE_X30Y50         MUXF7                        0.199    15.100 r  crypto_RIJNDAEL/ALG/Sh15211/O
+                         net (fo=4)                   0.690    15.790    crypto_RIJNDAEL/ALG/Sh1521
+    SLICE_X27Y50                                                      r  crypto_RIJNDAEL/ALG/Sh1841/I2
+    SLICE_X27Y50         LUT6                         0.203    15.993 r  crypto_RIJNDAEL/ALG/Sh1841/O
+                         net (fo=1)                   0.342    16.335    crypto_RIJNDAEL/ALG/Sh184
+    SLICE_X27Y50                                                      r  crypto_RIJNDAEL/ALG/Mmux_GND_44_o_GND_44_o_mux_16_OUT11081/I1
+    SLICE_X27Y50         LUT2                         0.081    16.416 r  crypto_RIJNDAEL/ALG/Mmux_GND_44_o_GND_44_o_mux_16_OUT11081/O
+                         net (fo=1)                   0.000    16.416    crypto_RIJNDAEL/ALG/GND_44_o_GND_44_o_mux_41_OUT[56]
+    SLICE_X27Y50                                                      r  crypto_RIJNDAEL/ALG/BI_REG_56/D
+    SLICE_X27Y50         FDC                          0.000    16.416    crypto_RIJNDAEL/ALG/BI_REG_56
+  -------------------------------------------------------------------    -------------------
+
+Slack:                  inf
+  Source:               crypto_RIJNDAEL/ALG/ROUND_0_1/C
+                            (rising edge-triggered flip-flop)
+  Destination:          crypto_RIJNDAEL/ALG/BI_REG_52/D
+  Path Group:           (none)
+  Path Type:            Max at Slow Process Corner
+  Data Path Delay:      16.383ns  (logic 9.530ns (58.170%)  route 6.853ns (41.830%))
+  Logic Levels:         10  (DSP48E1=3 FDC=1 LUT2=1 LUT3=1 LUT6=3 MUXF7=1)
+  Clock Pessimism:      0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y45         FDC                          0.000     0.000 r  crypto_RIJNDAEL/ALG/ROUND_0_1/C
+    SLICE_X43Y45         FDC                          0.379     0.379 r  crypto_RIJNDAEL/ALG/ROUND_0_1/Q
+                         net (fo=1)                   0.560     0.939    crypto_RIJNDAEL/ALG/ROUND_0_1
+    SLICE_X42Y45                                                      r  crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>11/I0
+    SLICE_X42Y45         LUT3                         0.081     1.020 r  crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>11/O
+                         net (fo=128)                 1.106     2.126    crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>1
+    SLICE_X56Y46                                                      r  crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT<98>1/I5
+    SLICE_X56Y46         LUT6                         0.081     2.207 r  crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT<98>1/O
+                         net (fo=5)                   1.229     3.436    crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT[98]
+    DSP48_X3Y17                                                       r  crypto_RIJNDAEL/ALG/Mmult_n0085/A[2]
+    DSP48_X3Y17          DSP48E1                      4.550     7.986 r  crypto_RIJNDAEL/ALG/Mmult_n0085/PCOUT[47]
+                         net (fo=1)                   0.000     7.986    crypto_RIJNDAEL/ALG/Mmult_n0085_PCOUT_to_Mmult_n00851_PCIN_47
+    DSP48_X3Y18                                                       r  crypto_RIJNDAEL/ALG/Mmult_n00851/PCIN[47]
+    DSP48_X3Y18          DSP48E1                      2.007     9.993 r  crypto_RIJNDAEL/ALG/Mmult_n00851/PCOUT[47]
+                         net (fo=1)                   0.000     9.993    crypto_RIJNDAEL/ALG/Mmult_n00851_PCOUT_to_Mmult_n00852_PCIN_47
+    DSP48_X3Y19                                                       r  crypto_RIJNDAEL/ALG/Mmult_n00852/PCIN[47]
+    DSP48_X3Y19          DSP48E1                      1.870    11.863 r  crypto_RIJNDAEL/ALG/Mmult_n00852/P[10]
+                         net (fo=65)                  2.846    14.709    crypto_RIJNDAEL/ALG/n0085<27>1
+    SLICE_X31Y49                                                      r  crypto_RIJNDAEL/ALG/Sh13211_G/I0
+    SLICE_X31Y49         LUT6                         0.081    14.790 r  crypto_RIJNDAEL/ALG/Sh13211_G/O
+                         net (fo=1)                   0.000    14.790    N312
+    SLICE_X31Y49                                                      r  crypto_RIJNDAEL/ALG/Sh13211/I1
+    SLICE_X31Y49         MUXF7                        0.205    14.995 r  crypto_RIJNDAEL/ALG/Sh13211/O
+                         net (fo=4)                   0.770    15.765    crypto_RIJNDAEL/ALG/Sh1321
+    SLICE_X33Y52                                                      r  crypto_RIJNDAEL/ALG/Sh1801/I3
+    SLICE_X33Y52         LUT6                         0.195    15.960 r  crypto_RIJNDAEL/ALG/Sh1801/O
+                         net (fo=1)                   0.342    16.302    crypto_RIJNDAEL/ALG/Sh180
+    SLICE_X33Y52                                                      r  crypto_RIJNDAEL/ALG/Mmux_GND_44_o_GND_44_o_mux_16_OUT11041/I1
+    SLICE_X33Y52         LUT2                         0.081    16.383 r  crypto_RIJNDAEL/ALG/Mmux_GND_44_o_GND_44_o_mux_16_OUT11041/O
+                         net (fo=1)                   0.000    16.383    crypto_RIJNDAEL/ALG/GND_44_o_GND_44_o_mux_41_OUT[52]
+    SLICE_X33Y52                                                      r  crypto_RIJNDAEL/ALG/BI_REG_52/D
+    SLICE_X33Y52         FDC                          0.000    16.383    crypto_RIJNDAEL/ALG/BI_REG_52
+  -------------------------------------------------------------------    -------------------
+
+Slack:                  inf
+  Source:               crypto_RIJNDAEL/ALG/ROUND_0_1/C
+                            (rising edge-triggered flip-flop)
+  Destination:          crypto_RIJNDAEL/ALG/BI_REG_40/D
+  Path Group:           (none)
+  Path Type:            Max at Slow Process Corner
+  Data Path Delay:      16.380ns  (logic 9.530ns (58.181%)  route 6.850ns (41.819%))
+  Logic Levels:         10  (DSP48E1=3 FDC=1 LUT2=1 LUT3=1 LUT6=3 MUXF7=1)
+  Clock Pessimism:      0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y45         FDC                          0.000     0.000 r  crypto_RIJNDAEL/ALG/ROUND_0_1/C
+    SLICE_X43Y45         FDC                          0.379     0.379 r  crypto_RIJNDAEL/ALG/ROUND_0_1/Q
+                         net (fo=1)                   0.560     0.939    crypto_RIJNDAEL/ALG/ROUND_0_1
+    SLICE_X42Y45                                                      r  crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>11/I0
+    SLICE_X42Y45         LUT3                         0.081     1.020 r  crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>11/O
+                         net (fo=128)                 1.106     2.126    crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>1
+    SLICE_X56Y46                                                      r  crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT<98>1/I5
+    SLICE_X56Y46         LUT6                         0.081     2.207 r  crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT<98>1/O
+                         net (fo=5)                   1.229     3.436    crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT[98]
+    DSP48_X3Y17                                                       r  crypto_RIJNDAEL/ALG/Mmult_n0085/A[2]
+    DSP48_X3Y17          DSP48E1                      4.550     7.986 r  crypto_RIJNDAEL/ALG/Mmult_n0085/PCOUT[47]
+                         net (fo=1)                   0.000     7.986    crypto_RIJNDAEL/ALG/Mmult_n0085_PCOUT_to_Mmult_n00851_PCIN_47
+    DSP48_X3Y18                                                       r  crypto_RIJNDAEL/ALG/Mmult_n00851/PCIN[47]
+    DSP48_X3Y18          DSP48E1                      2.007     9.993 r  crypto_RIJNDAEL/ALG/Mmult_n00851/PCOUT[47]
+                         net (fo=1)                   0.000     9.993    crypto_RIJNDAEL/ALG/Mmult_n00851_PCOUT_to_Mmult_n00852_PCIN_47
+    DSP48_X3Y19                                                       r  crypto_RIJNDAEL/ALG/Mmult_n00852/PCIN[47]
+    DSP48_X3Y19          DSP48E1                      1.870    11.863 r  crypto_RIJNDAEL/ALG/Mmult_n00852/P[10]
+                         net (fo=65)                  2.988    14.851    crypto_RIJNDAEL/ALG/n0085<27>1
+    SLICE_X29Y50                                                      r  crypto_RIJNDAEL/ALG/Sh13611_G/I0
+    SLICE_X29Y50         LUT6                         0.081    14.932 r  crypto_RIJNDAEL/ALG/Sh13611_G/O
+                         net (fo=1)                   0.000    14.932    N304
+    SLICE_X29Y50                                                      r  crypto_RIJNDAEL/ALG/Sh13611/I1
+    SLICE_X29Y50         MUXF7                        0.205    15.137 r  crypto_RIJNDAEL/ALG/Sh13611/O
+                         net (fo=4)                   0.625    15.762    crypto_RIJNDAEL/ALG/Sh1361
+    SLICE_X29Y50                                                      r  crypto_RIJNDAEL/ALG/Sh1681/I2
+    SLICE_X29Y50         LUT6                         0.195    15.957 r  crypto_RIJNDAEL/ALG/Sh1681/O
+                         net (fo=1)                   0.342    16.299    crypto_RIJNDAEL/ALG/Sh168
+    SLICE_X29Y50                                                      r  crypto_RIJNDAEL/ALG/Mmux_GND_44_o_GND_44_o_mux_16_OUT1911/I1
+    SLICE_X29Y50         LUT2                         0.081    16.380 r  crypto_RIJNDAEL/ALG/Mmux_GND_44_o_GND_44_o_mux_16_OUT1911/O
+                         net (fo=1)                   0.000    16.380    crypto_RIJNDAEL/ALG/GND_44_o_GND_44_o_mux_41_OUT[40]
+    SLICE_X29Y50                                                      r  crypto_RIJNDAEL/ALG/BI_REG_40/D
+    SLICE_X29Y50         FDC                          0.000    16.380    crypto_RIJNDAEL/ALG/BI_REG_40
+  -------------------------------------------------------------------    -------------------
+
+Slack:                  inf
+  Source:               crypto_RIJNDAEL/ALG/ROUND_0_1/C
+                            (rising edge-triggered flip-flop)
+  Destination:          crypto_RIJNDAEL/ALG/BI_REG_45/D
+  Path Group:           (none)
+  Path Type:            Max at Slow Process Corner
+  Data Path Delay:      16.358ns  (logic 9.530ns (58.259%)  route 6.828ns (41.741%))
+  Logic Levels:         10  (DSP48E1=3 FDC=1 LUT2=1 LUT3=1 LUT6=3 MUXF7=1)
+  Clock Pessimism:      0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y45         FDC                          0.000     0.000 r  crypto_RIJNDAEL/ALG/ROUND_0_1/C
+    SLICE_X43Y45         FDC                          0.379     0.379 r  crypto_RIJNDAEL/ALG/ROUND_0_1/Q
+                         net (fo=1)                   0.560     0.939    crypto_RIJNDAEL/ALG/ROUND_0_1
+    SLICE_X42Y45                                                      r  crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>11/I0
+    SLICE_X42Y45         LUT3                         0.081     1.020 r  crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>11/O
+                         net (fo=128)                 1.106     2.126    crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>1
+    SLICE_X56Y46                                                      r  crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT<98>1/I5
+    SLICE_X56Y46         LUT6                         0.081     2.207 r  crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT<98>1/O
+                         net (fo=5)                   1.229     3.436    crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT[98]
+    DSP48_X3Y17                                                       r  crypto_RIJNDAEL/ALG/Mmult_n0085/A[2]
+    DSP48_X3Y17          DSP48E1                      4.550     7.986 r  crypto_RIJNDAEL/ALG/Mmult_n0085/PCOUT[47]
+                         net (fo=1)                   0.000     7.986    crypto_RIJNDAEL/ALG/Mmult_n0085_PCOUT_to_Mmult_n00851_PCIN_47
+    DSP48_X3Y18                                                       r  crypto_RIJNDAEL/ALG/Mmult_n00851/PCIN[47]
+    DSP48_X3Y18          DSP48E1                      2.007     9.993 r  crypto_RIJNDAEL/ALG/Mmult_n00851/PCOUT[47]
+                         net (fo=1)                   0.000     9.993    crypto_RIJNDAEL/ALG/Mmult_n00851_PCOUT_to_Mmult_n00852_PCIN_47
+    DSP48_X3Y19                                                       r  crypto_RIJNDAEL/ALG/Mmult_n00852/PCIN[47]
+    DSP48_X3Y19          DSP48E1                      1.870    11.863 r  crypto_RIJNDAEL/ALG/Mmult_n00852/P[10]
+                         net (fo=65)                  2.920    14.783    crypto_RIJNDAEL/ALG/n0085<27>1
+    SLICE_X31Y48                                                      r  crypto_RIJNDAEL/ALG/Sh15311_G/I0
+    SLICE_X31Y48         LUT6                         0.081    14.864 r  crypto_RIJNDAEL/ALG/Sh15311_G/O
+                         net (fo=1)                   0.000    14.864    N284
+    SLICE_X31Y48                                                      r  crypto_RIJNDAEL/ALG/Sh15311/I1
+    SLICE_X31Y48         MUXF7                        0.205    15.069 r  crypto_RIJNDAEL/ALG/Sh15311/O
+                         net (fo=4)                   0.653    15.722    crypto_RIJNDAEL/ALG/Sh1531
+    SLICE_X32Y49                                                      r  crypto_RIJNDAEL/ALG/Sh1731/I4
+    SLICE_X32Y49         LUT6                         0.195    15.917 r  crypto_RIJNDAEL/ALG/Sh1731/O
+                         net (fo=1)                   0.360    16.277    crypto_RIJNDAEL/ALG/Sh173
+    SLICE_X32Y49                                                      r  crypto_RIJNDAEL/ALG/Mmux_GND_44_o_GND_44_o_mux_16_OUT1961/I1
+    SLICE_X32Y49         LUT2                         0.081    16.358 r  crypto_RIJNDAEL/ALG/Mmux_GND_44_o_GND_44_o_mux_16_OUT1961/O
+                         net (fo=1)                   0.000    16.358    crypto_RIJNDAEL/ALG/GND_44_o_GND_44_o_mux_41_OUT[45]
+    SLICE_X32Y49                                                      r  crypto_RIJNDAEL/ALG/BI_REG_45/D
+    SLICE_X32Y49         FDC                          0.000    16.358    crypto_RIJNDAEL/ALG/BI_REG_45
+  -------------------------------------------------------------------    -------------------
+
+Slack:                  inf
+  Source:               crypto_RIJNDAEL/ALG/ROUND_0_1/C
+                            (rising edge-triggered flip-flop)
+  Destination:          crypto_RIJNDAEL/ALG/BI_REG_60/D
+  Path Group:           (none)
+  Path Type:            Max at Slow Process Corner
+  Data Path Delay:      16.287ns  (logic 9.530ns (58.513%)  route 6.757ns (41.487%))
+  Logic Levels:         10  (DSP48E1=3 FDC=1 LUT2=1 LUT3=1 LUT6=3 MUXF7=1)
+  Clock Pessimism:      0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y45         FDC                          0.000     0.000 r  crypto_RIJNDAEL/ALG/ROUND_0_1/C
+    SLICE_X43Y45         FDC                          0.379     0.379 r  crypto_RIJNDAEL/ALG/ROUND_0_1/Q
+                         net (fo=1)                   0.560     0.939    crypto_RIJNDAEL/ALG/ROUND_0_1
+    SLICE_X42Y45                                                      r  crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>11/I0
+    SLICE_X42Y45         LUT3                         0.081     1.020 r  crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>11/O
+                         net (fo=128)                 1.106     2.126    crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>1
+    SLICE_X56Y46                                                      r  crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT<98>1/I5
+    SLICE_X56Y46         LUT6                         0.081     2.207 r  crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT<98>1/O
+                         net (fo=5)                   1.229     3.436    crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT[98]
+    DSP48_X3Y17                                                       r  crypto_RIJNDAEL/ALG/Mmult_n0085/A[2]
+    DSP48_X3Y17          DSP48E1                      4.550     7.986 r  crypto_RIJNDAEL/ALG/Mmult_n0085/PCOUT[47]
+                         net (fo=1)                   0.000     7.986    crypto_RIJNDAEL/ALG/Mmult_n0085_PCOUT_to_Mmult_n00851_PCIN_47
+    DSP48_X3Y18                                                       r  crypto_RIJNDAEL/ALG/Mmult_n00851/PCIN[47]
+    DSP48_X3Y18          DSP48E1                      2.007     9.993 r  crypto_RIJNDAEL/ALG/Mmult_n00851/PCOUT[47]
+                         net (fo=1)                   0.000     9.993    crypto_RIJNDAEL/ALG/Mmult_n00851_PCOUT_to_Mmult_n00852_PCIN_47
+    DSP48_X3Y19                                                       r  crypto_RIJNDAEL/ALG/Mmult_n00852/PCIN[47]
+    DSP48_X3Y19          DSP48E1                      1.870    11.863 r  crypto_RIJNDAEL/ALG/Mmult_n00852/P[10]
+                         net (fo=65)                  2.282    14.145    crypto_RIJNDAEL/ALG/n0085<27>1
+    SLICE_X42Y48                                                      r  crypto_RIJNDAEL/ALG/Sh12821_G/I0
+    SLICE_X42Y48         LUT6                         0.081    14.226 r  crypto_RIJNDAEL/ALG/Sh12821_G/O
+                         net (fo=1)                   0.000    14.226    N272
+    SLICE_X42Y48                                                      r  crypto_RIJNDAEL/ALG/Sh12821/I1
+    SLICE_X42Y48         MUXF7                        0.205    14.431 r  crypto_RIJNDAEL/ALG/Sh12821/O
+                         net (fo=4)                   1.222    15.653    crypto_RIJNDAEL/ALG/Sh1282
+    SLICE_X30Y48                                                      r  crypto_RIJNDAEL/ALG/Sh1881/I2
+    SLICE_X30Y48         LUT6                         0.195    15.848 r  crypto_RIJNDAEL/ALG/Sh1881/O
+                         net (fo=1)                   0.358    16.206    crypto_RIJNDAEL/ALG/Sh188
+    SLICE_X30Y48                                                      r  crypto_RIJNDAEL/ALG/Mmux_GND_44_o_GND_44_o_mux_16_OUT11131/I1
+    SLICE_X30Y48         LUT2                         0.081    16.287 r  crypto_RIJNDAEL/ALG/Mmux_GND_44_o_GND_44_o_mux_16_OUT11131/O
+                         net (fo=1)                   0.000    16.287    crypto_RIJNDAEL/ALG/GND_44_o_GND_44_o_mux_41_OUT[60]
+    SLICE_X30Y48                                                      r  crypto_RIJNDAEL/ALG/BI_REG_60/D
+    SLICE_X30Y48         FDC                          0.000    16.287    crypto_RIJNDAEL/ALG/BI_REG_60
+  -------------------------------------------------------------------    -------------------
+
+Slack:                  inf
+  Source:               crypto_RIJNDAEL/ALG/ROUND_0_1/C
+                            (rising edge-triggered flip-flop)
+  Destination:          crypto_RIJNDAEL/ALG/BI_REG_57/D
+  Path Group:           (none)
+  Path Type:            Max at Slow Process Corner
+  Data Path Delay:      16.279ns  (logic 9.530ns (58.542%)  route 6.749ns (41.458%))
+  Logic Levels:         10  (DSP48E1=3 FDC=1 LUT2=1 LUT3=1 LUT6=3 MUXF7=1)
+  Clock Pessimism:      0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y45         FDC                          0.000     0.000 r  crypto_RIJNDAEL/ALG/ROUND_0_1/C
+    SLICE_X43Y45         FDC                          0.379     0.379 r  crypto_RIJNDAEL/ALG/ROUND_0_1/Q
+                         net (fo=1)                   0.560     0.939    crypto_RIJNDAEL/ALG/ROUND_0_1
+    SLICE_X42Y45                                                      r  crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>11/I0
+    SLICE_X42Y45         LUT3                         0.081     1.020 r  crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>11/O
+                         net (fo=128)                 1.106     2.126    crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>1
+    SLICE_X56Y46                                                      r  crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT<98>1/I5
+    SLICE_X56Y46         LUT6                         0.081     2.207 r  crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT<98>1/O
+                         net (fo=5)                   1.229     3.436    crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT[98]
+    DSP48_X3Y17                                                       r  crypto_RIJNDAEL/ALG/Mmult_n0085/A[2]
+    DSP48_X3Y17          DSP48E1                      4.550     7.986 r  crypto_RIJNDAEL/ALG/Mmult_n0085/PCOUT[47]
+                         net (fo=1)                   0.000     7.986    crypto_RIJNDAEL/ALG/Mmult_n0085_PCOUT_to_Mmult_n00851_PCIN_47
+    DSP48_X3Y18                                                       r  crypto_RIJNDAEL/ALG/Mmult_n00851/PCIN[47]
+    DSP48_X3Y18          DSP48E1                      2.007     9.993 r  crypto_RIJNDAEL/ALG/Mmult_n00851/PCOUT[47]
+                         net (fo=1)                   0.000     9.993    crypto_RIJNDAEL/ALG/Mmult_n00851_PCOUT_to_Mmult_n00852_PCIN_47
+    DSP48_X3Y19                                                       r  crypto_RIJNDAEL/ALG/Mmult_n00852/PCIN[47]
+    DSP48_X3Y19          DSP48E1                      1.870    11.863 r  crypto_RIJNDAEL/ALG/Mmult_n00852/P[10]
+                         net (fo=65)                  2.920    14.783    crypto_RIJNDAEL/ALG/n0085<27>1
+    SLICE_X31Y48                                                      r  crypto_RIJNDAEL/ALG/Sh15311_G/I0
+    SLICE_X31Y48         LUT6                         0.081    14.864 r  crypto_RIJNDAEL/ALG/Sh15311_G/O
+                         net (fo=1)                   0.000    14.864    N284
+    SLICE_X31Y48                                                      r  crypto_RIJNDAEL/ALG/Sh15311/I1
+    SLICE_X31Y48         MUXF7                        0.205    15.069 r  crypto_RIJNDAEL/ALG/Sh15311/O
+                         net (fo=4)                   0.576    15.645    crypto_RIJNDAEL/ALG/Sh1531
+    SLICE_X28Y48                                                      r  crypto_RIJNDAEL/ALG/Sh1851/I2
+    SLICE_X28Y48         LUT6                         0.195    15.840 r  crypto_RIJNDAEL/ALG/Sh1851/O
+                         net (fo=1)                   0.358    16.198    crypto_RIJNDAEL/ALG/Sh185
+    SLICE_X28Y48                                                      r  crypto_RIJNDAEL/ALG/Mmux_GND_44_o_GND_44_o_mux_16_OUT11091/I1
+    SLICE_X28Y48         LUT2                         0.081    16.279 r  crypto_RIJNDAEL/ALG/Mmux_GND_44_o_GND_44_o_mux_16_OUT11091/O
+                         net (fo=1)                   0.000    16.279    crypto_RIJNDAEL/ALG/GND_44_o_GND_44_o_mux_41_OUT[57]
+    SLICE_X28Y48                                                      r  crypto_RIJNDAEL/ALG/BI_REG_57/D
+    SLICE_X28Y48         FDC                          0.000    16.279    crypto_RIJNDAEL/ALG/BI_REG_57
+  -------------------------------------------------------------------    -------------------
+
+Slack:                  inf
+  Source:               crypto_RIJNDAEL/ALG/ROUND_0_1/C
+                            (rising edge-triggered flip-flop)
+  Destination:          crypto_RIJNDAEL/ALG/BI_REG_44/D
+  Path Group:           (none)
+  Path Type:            Max at Slow Process Corner
+  Data Path Delay:      16.277ns  (logic 9.532ns (58.561%)  route 6.745ns (41.439%))
+  Logic Levels:         10  (DSP48E1=3 FDC=1 LUT2=1 LUT3=1 LUT6=3 MUXF7=1)
+  Clock Pessimism:      0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+    SLICE_X43Y45         FDC                          0.000     0.000 r  crypto_RIJNDAEL/ALG/ROUND_0_1/C
+    SLICE_X43Y45         FDC                          0.379     0.379 r  crypto_RIJNDAEL/ALG/ROUND_0_1/Q
+                         net (fo=1)                   0.560     0.939    crypto_RIJNDAEL/ALG/ROUND_0_1
+    SLICE_X42Y45                                                      r  crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>11/I0
+    SLICE_X42Y45         LUT3                         0.081     1.020 r  crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>11/O
+                         net (fo=128)                 1.106     2.126    crypto_RIJNDAEL/ALG/GND_44_o_ROUND[4]_equal_12_o<4>1
+    SLICE_X56Y46                                                      r  crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT<98>1/I5
+    SLICE_X56Y46         LUT6                         0.081     2.207 r  crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT<98>1/O
+                         net (fo=5)                   1.229     3.436    crypto_RIJNDAEL/ALG/GND_44_o_ALG_DATA_INT[127]_select_14_OUT[98]
+    DSP48_X3Y17                                                       r  crypto_RIJNDAEL/ALG/Mmult_n0085/A[2]
+    DSP48_X3Y17          DSP48E1                      4.550     7.986 r  crypto_RIJNDAEL/ALG/Mmult_n0085/PCOUT[47]
+                         net (fo=1)                   0.000     7.986    crypto_RIJNDAEL/ALG/Mmult_n0085_PCOUT_to_Mmult_n00851_PCIN_47
+    DSP48_X3Y18                                                       r  crypto_RIJNDAEL/ALG/Mmult_n00851/PCIN[47]
+    DSP48_X3Y18          DSP48E1                      2.007     9.993 r  crypto_RIJNDAEL/ALG/Mmult_n00851/PCOUT[47]
+                         net (fo=1)                   0.000     9.993    crypto_RIJNDAEL/ALG/Mmult_n00851_PCOUT_to_Mmult_n00852_PCIN_47
+    DSP48_X3Y19                                                       r  crypto_RIJNDAEL/ALG/Mmult_n00852/PCIN[47]
+    DSP48_X3Y19          DSP48E1                      1.870    11.863 r  crypto_RIJNDAEL/ALG/Mmult_n00852/P[10]
+                         net (fo=65)                  2.957    14.820    crypto_RIJNDAEL/ALG/n0085<27>1
+    SLICE_X30Y50                                                      r  crypto_RIJNDAEL/ALG/Sh15211_G/I0
+    SLICE_X30Y50         LUT6                         0.081    14.901 r  crypto_RIJNDAEL/ALG/Sh15211_G/O
+                         net (fo=1)                   0.000    14.901    N288
+    SLICE_X30Y50                                                      r  crypto_RIJNDAEL/ALG/Sh15211/I1
+    SLICE_X30Y50         MUXF7                        0.199    15.100 r  crypto_RIJNDAEL/ALG/Sh15211/O
+                         net (fo=4)                   0.551    15.651    crypto_RIJNDAEL/ALG/Sh1521
+    SLICE_X33Y49                                                      r  crypto_RIJNDAEL/ALG/Sh1721/I4
+    SLICE_X33Y49         LUT6                         0.203    15.854 r  crypto_RIJNDAEL/ALG/Sh1721/O
+                         net (fo=1)                   0.342    16.196    crypto_RIJNDAEL/ALG/Sh172
+    SLICE_X33Y49                                                      r  crypto_RIJNDAEL/ALG/Mmux_GND_44_o_GND_44_o_mux_16_OUT1951/I1
+    SLICE_X33Y49         LUT2                         0.081    16.277 r  crypto_RIJNDAEL/ALG/Mmux_GND_44_o_GND_44_o_mux_16_OUT1951/O
+                         net (fo=1)                   0.000    16.277    crypto_RIJNDAEL/ALG/GND_44_o_GND_44_o_mux_41_OUT[44]
+    SLICE_X33Y49                                                      r  crypto_RIJNDAEL/ALG/BI_REG_44/D
+    SLICE_X33Y49         FDC                          0.000    16.277    crypto_RIJNDAEL/ALG/BI_REG_44
+  -------------------------------------------------------------------    -------------------
+
+
+
+
+report_timing: Time (s): 69.595w.  Memory (MB): 563.980p 44.184g
+exit
+stop_gui
+INFO: [PlanAhead-261] Exiting PlanAhead...
+INFO: [Common-83] Releasing license: PlanAhead

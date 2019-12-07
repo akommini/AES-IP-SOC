@@ -1,0 +1,69 @@
+
+****** PlanAhead v13.2
+  **** Build 131561 by hdbuild on Thu Jun 16 17:01:57 PDT 2011
+    ** Copyright 1986-1999, 2001-2011 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common-78] Attempting to get a license: PlanAhead
+INFO: [Common-82] Got a license: PlanAhead
+INFO: [Common-86] Your PlanAhead license expires in -353 day(s)
+INFO: [ArchReader-0] Loading parts and site information from D:\XilinX\13.2\ISE_DS\PlanAhead\parts\arch.xml
+Parsing RTL primitives file [D:\XilinX\13.2\ISE_DS\PlanAhead\parts\xilinx\rtl\prims\rtl_prims.xml]
+Finished parsing RTL primitives file [D:\XilinX\13.2\ISE_DS\PlanAhead\parts\xilinx\rtl\prims\rtl_prims.xml]
+start_gui
+starting gui ...
+source C:/Users/chinna/Desktop/Watermarking/Final/pa.fromNetlist.tcl
+# create_project -name Final -dir "C:/Users/chinna/Desktop/Watermarking/Final/planAhead_run_1" -part xc6vlx130tlff484-1L
+Parsing template File [D:\XilinX\13.2\ISE_DS\ISE\data\projnav\templates\verilog.xml].
+Finished parsing template File [D:\XilinX\13.2\ISE_DS\ISE\data\projnav\templates\verilog.xml].
+Parsing template File [D:\XilinX\13.2\ISE_DS\ISE\data\projnav\templates\vhdl.xml].
+Finished parsing template File [D:\XilinX\13.2\ISE_DS\ISE\data\projnav\templates\vhdl.xml].
+Parsing template File [D:\XilinX\13.2\ISE_DS\ISE\data\projnav\templates\ucf.xml].
+Finished parsing template File [D:\XilinX\13.2\ISE_DS\ISE\data\projnav\templates\ucf.xml].
+create_project: Time (s): 9.109w.  Memory (MB): 372.926p 26.090g
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "C:/Users/chinna/Desktop/Watermarking/Final/WGC_V.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {C:/Users/chinna/Desktop/Watermarking/Final} }
+# set_param project.paUcfFile  "WGC_V.ucf"
+# add_files "WGC_V.ucf" -fileset [get_property constrset [current_run]]
+# open_netlist_design
+INFO: Design is defaulting to active srcset 'sources_1'
+INFO: Design is defaulting to active constrset 'constrs_1'
+INFO: Design is defaulting to constrset part: xc6vlx130tlff484-1L
+Release 13.2 - ngc2edif O.61xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Release 13.2 - ngc2edif O.61xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design WGC_V.ngc ...
+WARNING:NetListWriters:298 - No output is written to WGC_V.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file WGC_V.edif ...
+ngc2edif: Total memory usage is 53812 kilobytes
+
+Parsing EDIF File [.\.Xil-PlanAhead-3636-chinna-PC\ngc2edif\WGC_V.edif]
+Finished Parsing EDIF File [.\.Xil-PlanAhead-3636-chinna-PC\ngc2edif\WGC_V.edif]
+INFO: [Netlist-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [ArchReader-7] Loading clock regions from D:\XilinX\13.2\ISE_DS\PlanAhead\parts/xilinx/virtex6/virtex6l/xc6vlx130tl/ClockRegion.xml
+INFO: [ArchReader-8] Loading clock buffers from D:\XilinX\13.2\ISE_DS\PlanAhead\parts/xilinx/virtex6/virtex6l/xc6vlx130tl/ClockBuffers.xml
+INFO: [ArchReader-9] Loading clock placement rules from D:\XilinX\13.2\ISE_DS\PlanAhead\parts\xilinx\virtex6\ClockPlacerRules.xml
+INFO: [ArchReader-10] Loading clock capable ios from D:\XilinX\13.2\ISE_DS\PlanAhead\parts\xilinx\virtex6\ClockCapableIOBs.xml
+INFO: [ArchReader-13] Loading package pin functions from D:\XilinX\13.2\ISE_DS\PlanAhead\parts\xilinx\virtex6/PinFunctions.xml...
+INFO: [ArchReader-3] Loading package from D:\XilinX\13.2\ISE_DS\PlanAhead\parts/xilinx/virtex6/virtex6l/xc6vlx130tl/ff484/Package.xml
+INFO: [ArchReader-4] Loading io standards from D:\XilinX\13.2\ISE_DS\PlanAhead\./parts/xilinx/virtex6/IOStandards.xml
+INFO: [ArchReader-12] Loading device configuration modes from 
+INFO: [GDRC-0] Loading list of drcs for the architecture : D:\XilinX\13.2\ISE_DS\PlanAhead\./parts/xilinx/virtex6/drc.xml
+Parsing UCF File [C:\Users\chinna\Desktop\Watermarking\Final\WGC_V.ucf]
+Finished Parsing UCF File [C:\Users\chinna\Desktop\Watermarking\Final\WGC_V.ucf]
+INFO: [Project-5] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  BUFGP => BUFGP (IBUFG, BUFG): 1 instances
+
+open_netlist_design: Time (s): 25.392w.  Memory (MB): 500.547p 127.621g
+exit
+stop_gui
+INFO: [PlanAhead-261] Exiting PlanAhead...
+INFO: [Common-83] Releasing license: PlanAhead

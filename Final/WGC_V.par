@@ -1,0 +1,11 @@
+Release 13.2 par O.61xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+CHINNA-PC::  Mon Jan 28 16:05:21 2013
+
+par -w -intstyle ise -ol high -mt off WGC_V_map.ncd WGC_V.ncd WGC_V.pcf 
+
+
+Constraints file: WGC_V.pcf.
+Loading device for application Rf_Device from file '6vlx130t.nph' in environment D:\XilinX\13.2\ISE_DS\ISE\.
+   "WGC_V" is an NCD, version 3.2, device xc6vlx130tl, package ff1156, speed -1l

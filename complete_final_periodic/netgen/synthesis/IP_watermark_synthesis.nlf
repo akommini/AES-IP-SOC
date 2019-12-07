@@ -1,0 +1,20 @@
+Release 13.2 - netgen O.61xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Command Line: netgen -intstyle ise -ar Structure -tm IP_watermark -w -dir
+netgen/synthesis -ofmt vhdl -sim IP_watermark.ngc IP_watermark_synthesis.vhd  
+
+Reading design 'IP_watermark.ngc' ...
+Flattening design ...
+Processing design ... 
+  Preping design's networks ...
+  Preping design's macros ...
+Writing VHDL netlist
+'C:\Users\chinna\Desktop\Watermarking\complete_final_periodic\netgen\synthesis\I
+P_watermark_synthesis.vhd' ...
+INFO:NetListWriters:635 - The generated VHDL netlist contains Xilinx UNISIM
+   simulation primitives and has to be used with UNISIM library for correct
+   compilation and simulation. 
+Number of warnings: 0
+Number of info messages: 1
+Total memory usage is 107784 kilobytes

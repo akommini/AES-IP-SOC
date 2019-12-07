@@ -1,0 +1,8 @@
+INTSTYLE=impact
+INFILE=C:\Users\s\Desktop\Watermarking\extraction_circuit\impact.xsl
+OUTFILE=C:\Users\s\Desktop\Watermarking\extraction_circuit\impact.xsl
+FAMILY=None
+PART=None
+WORKINGDIR=C:\Users\s\Desktop\Watermarking\extraction_circuit
+LICENSE=iMPACT
+USER_INFO=iMPACT

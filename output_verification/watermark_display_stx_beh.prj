@@ -1,0 +1,6 @@
+vhdl isim_temp "../test/total.vhd"
+vhdl isim_temp "../test/LFSR.vhd"
+vhdl isim_temp "../test/ipcore_dir/ipcore.vhd"
+vhdl isim_temp "../test/h_watermark.vhd"
+vhdl isim_temp "watermark_extraction.vhd"
+vhdl isim_temp "watermark_display.vhd"

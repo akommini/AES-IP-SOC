@@ -1,0 +1,32 @@
+#-------------------------------------------------------------------------------
+# PlanAhead v13.2
+# Build 131561 by hdbuild on Thu Jun 16 17:01:57 PDT 2011
+# Current time: 1/28/13 4:21:37 PM
+# Process ID: 4812
+# Platform: Windows
+#
+# This file is an indication that an internal PlanAhead error occurred.
+# This information is useful for debugging. Please open a case with Xilinx
+# Technical Support with this file and a testcase attached.
+#-------------------------------------------------------------------------------
+1/28/13 4:21:37 PM
+java.awt.IllegalComponentStateException: component must be showing on the screen to determine its location
+	at java.awt.Component.getLocationOnScreen_NoTreeLock(Component.java:1943)
+	at java.awt.Component.getLocationOnScreen(Component.java:1917)
+	at javax.swing.JPopupMenu.show(JPopupMenu.java:887)
+	at ui.utils.swing.cM.b(SourceFile:697)
+	at ui.utils.swing.cM.a(SourceFile:692)
+	at ui.views.message.N.aI(SourceFile:112)
+	at ui.utils.swing.bK.actionPerformed(SourceFile:39)
+	at javax.swing.Timer.fireActionPerformed(Timer.java:271)
+	at javax.swing.Timer$DoPostEvent.run(Timer.java:201)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:209)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:597)
+	at ui.frmwork.K.dispatchEvent(SourceFile:73)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:269)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:184)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:174)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:169)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:122)
+

@@ -1,0 +1,1 @@
+vhdtdtfi -lang verilog -prj complete_final_periodic -o C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/aes_cipher_top.vhi -lib work C:/Users/chinna/Desktop/aes_core/trunk/rtl/verilog//aes_cipher_top.v -module aes_cipher_top -template D:/XilinX/13.2/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror 

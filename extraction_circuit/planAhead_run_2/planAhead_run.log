@@ -1,0 +1,64 @@
+
+****** PlanAhead v13.2 (64-bit)
+  **** Build 131561 by hdbuild on Thu Jun 16 17:14:12 PDT 2011
+    ** Copyright 1986-1999, 2001-2011 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common-78] Attempting to get a license: PlanAhead
+INFO: [Common-82] Got a license: PlanAhead
+INFO: [Common-86] Your PlanAhead license expires in -397 day(s)
+INFO: [ArchReader-0] Loading parts and site information from C:\Xilinx\13.2\ISE_DS\PlanAhead\parts\arch.xml
+Parsing RTL primitives file [C:\Xilinx\13.2\ISE_DS\PlanAhead\parts\xilinx\rtl\prims\rtl_prims.xml]
+Finished parsing RTL primitives file [C:\Xilinx\13.2\ISE_DS\PlanAhead\parts\xilinx\rtl\prims\rtl_prims.xml]
+start_gui
+starting gui ...
+source C:/Users/s/Desktop/Watermarking/extraction_circuit/pa.fromNetlist.tcl
+# create_project -name extraction_circuit -dir "C:/Users/s/Desktop/Watermarking/extraction_circuit/planAhead_run_2" -part xc6vlx130tlff1156-1L
+Parsing template File [C:\Xilinx\13.2\ISE_DS\ISE\data\projnav\templates\verilog.xml].
+Finished parsing template File [C:\Xilinx\13.2\ISE_DS\ISE\data\projnav\templates\verilog.xml].
+Parsing template File [C:\Xilinx\13.2\ISE_DS\ISE\data\projnav\templates\vhdl.xml].
+Finished parsing template File [C:\Xilinx\13.2\ISE_DS\ISE\data\projnav\templates\vhdl.xml].
+Parsing template File [C:\Xilinx\13.2\ISE_DS\ISE\data\projnav\templates\ucf.xml].
+Finished parsing template File [C:\Xilinx\13.2\ISE_DS\ISE\data\projnav\templates\ucf.xml].
+create_project: Time (s): 43.181w.  Memory (MB): 471.016p 0.000g
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+set_property: Time (s): 6.334w.  Memory (MB): 471.016p 0.000g
+# set_property edif_top_file "C:/Users/s/Desktop/Watermarking/extraction_circuit/watermark_display.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {C:/Users/s/Desktop/Watermarking/extraction_circuit} }
+# set_param project.paUcfFile  "watermark_display.ucf"
+# add_files "watermark_display.ucf" -fileset [get_property constrset [current_run]]
+# open_netlist_design
+INFO: Design is defaulting to active srcset 'sources_1'
+INFO: Design is defaulting to active constrset 'constrs_1'
+INFO: Design is defaulting to constrset part: xc6vlx130tlff1156-1L
+Release 13.2 - ngc2edif O.61xd (nt64)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design watermark_display.ngc ...
+WARNING:NetListWriters:298 - No output is written to watermark_display.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file watermark_display.edif ...
+ngc2edif: Total memory usage is 69416 kilobytes
+
+Parsing EDIF File [.\.Xil-PlanAhead-1616-sssssss-PC\ngc2edif\watermark_display.edif]
+Finished Parsing EDIF File [.\.Xil-PlanAhead-1616-sssssss-PC\ngc2edif\watermark_display.edif]
+INFO: [Netlist-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist-3] Netlist 'watermark_display' is not ideal for floorplanning, since the cellview 'watermark_display' defined in file 'watermark_display.ngc' contains large number of primitives. Please consider enabling hierarchy in synthesis before floorplan. You can enable hierarchy in XST by setting '-keep_hierarchy=yes' or '-netlist_hierarchy=rebuilt' flags.
+INFO: [ArchReader-7] Loading clock regions from C:\Xilinx\13.2\ISE_DS\PlanAhead\parts/xilinx/virtex6/virtex6l/xc6vlx130tl/ClockRegion.xml
+INFO: [ArchReader-8] Loading clock buffers from C:\Xilinx\13.2\ISE_DS\PlanAhead\parts/xilinx/virtex6/virtex6l/xc6vlx130tl/ClockBuffers.xml
+INFO: [ArchReader-9] Loading clock placement rules from C:\Xilinx\13.2\ISE_DS\PlanAhead\parts\xilinx\virtex6\ClockPlacerRules.xml
+INFO: [ArchReader-10] Loading clock capable ios from C:\Xilinx\13.2\ISE_DS\PlanAhead\parts\xilinx\virtex6\ClockCapableIOBs.xml
+INFO: [ArchReader-13] Loading package pin functions from C:\Xilinx\13.2\ISE_DS\PlanAhead\parts\xilinx\virtex6/PinFunctions.xml...
+INFO: [ArchReader-3] Loading package from C:\Xilinx\13.2\ISE_DS\PlanAhead\parts/xilinx/virtex6/virtex6l/xc6vlx130tl/ff1156/Package.xml
+INFO: [ArchReader-4] Loading io standards from C:\Xilinx\13.2\ISE_DS\PlanAhead\./parts/xilinx/virtex6/IOStandards.xml
+INFO: [ArchReader-12] Loading device configuration modes from 
+INFO: [GDRC-0] Loading list of drcs for the architecture : C:\Xilinx\13.2\ISE_DS\PlanAhead\./parts/xilinx/virtex6/drc.xml
+Parsing UCF File [C:\Users\s\Desktop\Watermarking\extraction_circuit\watermark_display.ucf]
+Finished Parsing UCF File [C:\Users\s\Desktop\Watermarking\extraction_circuit\watermark_display.ucf]
+INFO: [Project-5] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  BUFGP => BUFGP (IBUFG, BUFG): 1 instances
+

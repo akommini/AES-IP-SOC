@@ -1,0 +1,12 @@
+
+
+
+// Instantiate the module
+watermark_extraction instance_name (
+    .output_mark(output_mark), 
+    .clk(clk), 
+    .rst(rst), 
+    .binary_data(binary_data)
+    );
+
+

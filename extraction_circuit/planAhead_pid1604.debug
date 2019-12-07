@@ -1,0 +1,55 @@
+#-------------------------------------------------------------------------------
+# PlanAhead v13.2 (64-bit)
+# Build 131561 by hdbuild on Thu Jun 16 17:14:12 PDT 2011
+# Current time: 3/3/13 5:25:15 PM
+# Process ID: 1604
+# Platform: Windows
+#
+# This file is an indication that an internal PlanAhead error occurred.
+# This information is useful for debugging. Please open a case with Xilinx
+# Technical Support with this file and a testcase attached.
+#-------------------------------------------------------------------------------
+3/3/13 5:25:15 PM
+de.concept.nlview.NlviewException: search: no current page
+	at de.concept.nlview.Nlview.peerCommand(Native Method)
+	at de.concept.nlview.Nlview.command(Nlview.java:783)
+	at ui.views.schematic.c.a(SourceFile:748)
+	at ui.views.schematic.c.a(SourceFile:738)
+	at ui.views.schematic.c.Fh(SourceFile:1349)
+	at ui.views.schematic.c.aH(SourceFile:1273)
+	at ui.views.schematic.c.a(SourceFile:1040)
+	at ui.frmwork.w.e(SourceFile:66)
+	at ui.frmwork.w.d(SourceFile:41)
+	at ui.data.c.b(SourceFile:398)
+	at ui.data.c.r(SourceFile:99)
+	at ui.views.schematic.a.selectionNotify(SourceFile:70)
+	at de.concept.nlview.NlviewProxyListener$proxyEvent.dispatch(NlviewProxyListener.java:142)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:597)
+	at ui.frmwork.K.dispatchEvent(SourceFile:73)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:269)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:184)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:174)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:169)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:122)
+
+3/3/13 5:25:15 PM
+de.concept.nlview.NlviewException: search: no current page
+	at de.concept.nlview.Nlview.peerCommand(Native Method)
+	at de.concept.nlview.Nlview.command(Nlview.java:783)
+	at ui.views.schematic.c.a(SourceFile:748)
+	at ui.views.schematic.c.a(SourceFile:738)
+	at ui.views.schematic.c.Fh(SourceFile:1349)
+	at ui.views.schematic.c.aH(SourceFile:1273)
+	at ui.views.schematic.al.aH(SourceFile:2269)
+	at ui.views.schematic.a.selectionNotify(SourceFile:74)
+	at de.concept.nlview.NlviewProxyListener$proxyEvent.dispatch(NlviewProxyListener.java:142)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:597)
+	at ui.frmwork.K.dispatchEvent(SourceFile:73)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:269)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:184)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:174)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:169)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:161)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:122)
+

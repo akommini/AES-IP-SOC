@@ -1,0 +1,38 @@
+#-----------------------------------------------------------
+# PlanAhead v13.2
+# Build 131561 by hdbuild on Thu Jun 16 17:01:57 PDT 2011
+# Start of session at: Mon Jan 28 16:07:34 2013
+# Process ID: 4812
+# Log file: C:\Users\chinna\Desktop\Watermarking\Final\planAhead_run_1\planAhead.log
+# Journal file: C:\Users\chinna\Desktop\Watermarking\Final\planAhead_run_1\planAhead.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:\Users\chinna\Desktop\Watermarking\Final\planAhead_run_1\Final.ppr}
+open_project C:/Users/chinna/Desktop/Watermarking/Final/planAhead_run_1/Final.ppr
+open_project C:/Users/chinna/Desktop/Watermarking/Final/planAhead_run_1/Final.ppr
+create_project project_1 C:/Users/chinna/project_1 -part xc7k70tlfbg484-2L
+add_files -norecurse -scan_for_includes C:/Users/chinna/Desktop/Watermarking/Final/hwatermark.vhd
+import_files -force -norecurse
+import_ip -file C:/Users/chinna/Desktop/Watermarking/Final/cordic_v4_0.xco -name cordic_v4_0
+import_files -fileset constrs_1 -force -norecurse {C:/Users/chinna/Desktop/Watermarking/Final/WGC_V.ucf C:/Users/chinna/Desktop/Watermarking/Final/hwatermark.ucf}
+set_property target_constrs_file C:/Users/chinna/project_1/project_1.srcs/constrs_1/imports/Final/WGC_V.ucf [current_fileset -constrset]
+set_property top hwatermark [current_fileset]
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+reset_run synth_1
+set_property part xc6vlx130tlff1156-1L [get_runs synth_1]
+launch_runs synth_1
+wait_on_run synth_1
+set_property part xc6vlx130tlff1156-1L [get_runs impl_1]
+launch_runs impl_1
+wait_on_run impl_1
+reset_run synth_1
+launch_runs synth_1
+wait_on_run synth_1
+launch_runs impl_1
+wait_on_run impl_1
+reset_run impl_1
+launch_runs impl_1
+wait_on_run impl_1

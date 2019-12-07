@@ -1,0 +1,275 @@
+#-----------------------------------------------------------
+# PlanAhead v13.2
+# Build 131561 by hdbuild on Thu Jun 16 17:01:57 PDT 2011
+# Start of session at: Mon Jan 28 16:07:34 2013
+# Process ID: 4812
+# Log file: C:\Users\chinna\Desktop\Watermarking\Final\planAhead_run_1\planAhead.log
+# Journal file: C:\Users\chinna\Desktop\Watermarking\Final\planAhead_run_1\planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common-78] Attempting to get a license: PlanAhead
+INFO: [Common-82] Got a license: PlanAhead
+INFO: [Common-86] Your PlanAhead license expires in -363 day(s)
+INFO: [ArchReader-0] Loading parts and site information from D:\XilinX\13.2\ISE_DS\PlanAhead\parts\arch.xml
+Parsing RTL primitives file [D:\XilinX\13.2\ISE_DS\PlanAhead\parts\xilinx\rtl\prims\rtl_prims.xml]
+Finished parsing RTL primitives file [D:\XilinX\13.2\ISE_DS\PlanAhead\parts\xilinx\rtl\prims\rtl_prims.xml]
+start_gui
+open_project {C:\Users\chinna\Desktop\Watermarking\Final\planAhead_run_1\Final.ppr}
+ERROR: [Common-48] File not found: C:\Users\chinna\Desktop\Watermarking\Final\planAhead_run_1\Final.data\sources_1\fileset.xml
+ERROR: [Common-48] File not found: C:\Users\chinna\Desktop\Watermarking\Final\planAhead_run_1\Final.data\constrs_1\fileset.xml
+CRITICAL WARNING: [PlanAhead-108] Failed to load run data. Making project read-only to protect unopened run data.
+INFO: [PlanAhead-109] Use 'File | Save Project As...' to create a new, writeable copy of this project.
+ERROR: [Common-39] 'open_project' failed due to earlier errors.
+ERROR: [Common-39] 'open_project' failed due to earlier errors.
+open_project C:/Users/chinna/Desktop/Watermarking/Final/planAhead_run_1/Final.ppr
+ERROR: [Common-48] File not found: C:\Users\chinna\Desktop\Watermarking\Final\planAhead_run_1\Final.data\sources_1\fileset.xml
+ERROR: [Common-48] File not found: C:\Users\chinna\Desktop\Watermarking\Final\planAhead_run_1\Final.data\constrs_1\fileset.xml
+CRITICAL WARNING: [PlanAhead-108] Failed to load run data. Making project read-only to protect unopened run data.
+INFO: [PlanAhead-109] Use 'File | Save Project As...' to create a new, writeable copy of this project.
+ERROR: [Common-39] 'open_project' failed due to earlier errors.
+open_project C:/Users/chinna/Desktop/Watermarking/Final/planAhead_run_1/Final.ppr
+ERROR: [Common-48] File not found: C:\Users\chinna\Desktop\Watermarking\Final\planAhead_run_1\Final.data\sources_1\fileset.xml
+ERROR: [Common-48] File not found: C:\Users\chinna\Desktop\Watermarking\Final\planAhead_run_1\Final.data\constrs_1\fileset.xml
+CRITICAL WARNING: [PlanAhead-108] Failed to load run data. Making project read-only to protect unopened run data.
+INFO: [PlanAhead-109] Use 'File | Save Project As...' to create a new, writeable copy of this project.
+ERROR: [Common-39] 'open_project' failed due to earlier errors.
+create_project project_1 C:/Users/chinna/project_1 -part xc7k70tlfbg484-2L
+Parsing template File [D:\XilinX\13.2\ISE_DS\ISE\data\projnav\templates\verilog.xml].
+Finished parsing template File [D:\XilinX\13.2\ISE_DS\ISE\data\projnav\templates\verilog.xml].
+Parsing template File [D:\XilinX\13.2\ISE_DS\ISE\data\projnav\templates\vhdl.xml].
+Finished parsing template File [D:\XilinX\13.2\ISE_DS\ISE\data\projnav\templates\vhdl.xml].
+Parsing template File [D:\XilinX\13.2\ISE_DS\ISE\data\projnav\templates\ucf.xml].
+Finished parsing template File [D:\XilinX\13.2\ISE_DS\ISE\data\projnav\templates\ucf.xml].
+add_files -norecurse -scan_for_includes C:/Users/chinna/Desktop/Watermarking/Final/hwatermark.vhd
+import_files -force -norecurse
+INFO: [Designutils-348] Importing the appropriate files for fileset: 'sources_1'
+import_ip -file C:/Users/chinna/Desktop/Watermarking/Final/cordic_v4_0.xco -name cordic_v4_0
+INFO: [IP-0] Loading IP catalog from 'D:\XilinX\13.2\ISE_DS\ISE\data\coregen\pa_cg_catalog.xml'
+WARNING:sim - The IP CORDIC 4.0 does not exist within the repository, and cannot
+   be recustomized or regenerated. It is not available in CoreGen 13.2, and may
+   have been removed or replaced. To generate CORDIC 4.0 please use a previous
+   version of ISE in which this IP is available, or add the user repository
+   which contains this IP.
+CoreGen has not been configured with any user repositories.
+CoreGen has been configured with the following Xilinx repositories:
+ - 'D:\XilinX\13.2\ISE_DS\ISE\coregen\' [reloaded]
+INFO:sim - Generating component instance 'cordic_v4_0' of
+   'xilinx.com:ip:cordic:4.0' from
+   'D:\XilinX\13.2\ISE_DS\ISE\coregen\ip\xilinx\dsp\com\xilinx\ip\cordic_v4_0\co
+   mponent.xml'.
+Applying current project options...
+Finished applying current project options.
+Resolving generics for 'cordic_v4_0'...
+WARNING:sim - A core named 'cordic_v4_0' already exists in the project. Output
+   products for this core may be overwritten.
+Applying external generics to 'cordic_v4_0'...
+Writing VHO instantiation template for 'cordic_v4_0'...
+Generating metadata file...
+Moving files to output directory...
+Finished moving files to output directory
+Wrote CGP file for project 'coregen'.
+import_ip: Time (s): 62.991w.  Memory (MB): 426.309p 1.438g
+import_files -fileset constrs_1 -force -norecurse {C:/Users/chinna/Desktop/Watermarking/Final/WGC_V.ucf C:/Users/chinna/Desktop/Watermarking/Final/hwatermark.ucf}
+set_property target_constrs_file C:/Users/chinna/project_1/project_1.srcs/constrs_1/imports/Final/WGC_V.ucf [current_fileset -constrset]
+INFO: [HDL-1061] Parsing VHDL file "C:\Users\chinna\project_1\project_1.srcs\sources_1\imports\Final\hwatermark.vhd" into library work [C:\Users\chinna\project_1\project_1.srcs\sources_1\imports\Final\hwatermark.vhd:1]
+set_property top hwatermark [current_fileset]
+launch_runs synth_1
+INFO: [IP-1] Generating IP 'C:\Users\chinna\project_1\project_1.srcs\sources_1\ip\cordic_v4_0_0\cordic_v4_0.xco'
+CoreGen has not been configured with any user repositories.
+CoreGen has been configured with the following Xilinx repositories:
+ - 'D:\XilinX\13.2\ISE_DS\ISE\coregen\' [reloaded]
+INFO:sim - Generating component instance 'cordic_v4_0' of
+   'xilinx.com:ip:cordic:4.0' from
+   'D:\XilinX\13.2\ISE_DS\ISE\coregen\ip\xilinx\dsp\com\xilinx\ip\cordic_v4_0\co
+   mponent.xml'.
+Applying current project options...
+Finished applying current project options.
+Resolving generics for 'cordic_v4_0'...
+WARNING:sim - A core named 'cordic_v4_0' already exists in the project. Output
+   products for this core may be overwritten.
+Applying external generics to 'cordic_v4_0'...
+Delivering associated files for 'cordic_v4_0'...
+Generating implementation netlist for 'cordic_v4_0'...
+INFO:sim - Pre-processing HDL files for 'cordic_v4_0'...
+Running synthesis for 'cordic_v4_0'
+Writing VHO instantiation template for 'cordic_v4_0'...
+Writing VHDL behavioral simulation model for 'cordic_v4_0'...
+Delivered 2 files into directory
+C:/Users/chinna/project_1/project_1.srcs/sources_1/ip/cordic_v4_0_0/tmp/_cg/cord
+ic_v4_0
+Generating ASY schematic symbol...
+Generating metadata file...
+Generating ISE project...
+WARNING:coreutil - ProjectMgmt - The file
+   "C:/Users/chinna/project_1/project_1.srcs/sources_1/ip/cordic_v4_0_0/tmp/_cg/
+      cordic_v4_0.ngc" device information, 7k70tlfbg484-2l, does not match the
+      current project device, xc7k70tlfbg484-2L.
+Generating README file...
+Generating FLIST file...
+INFO:sim - Finished FLIST file generation.
+Moving files to output directory...
+Finished moving files to output directory
+Saved CGP file for project 'coregen'.
+[Mon Jan 28 16:13:47 2013] Launched synth_1...
+Run output will be captured here: C:/Users/chinna/project_1/project_1.runs/synth_1/runme.log
+launch_runs: Time (s): 117.218w.  Memory (MB): 436.262p 6.758g
+launch_runs impl_1
+Release 13.2 - ngc2edif O.61xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Release 13.2 - ngc2edif O.61xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design hwatermark.ngc ...
+WARNING:NetListWriters:298 - No output is written to hwatermark.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file hwatermark.edif ...
+ngc2edif: Total memory usage is 53684 kilobytes
+
+Parsing EDIF File [.\.Xil-PlanAhead-4812-chinna-PC\ngc2edif\hwatermark.edif]
+Finished Parsing EDIF File [.\.Xil-PlanAhead-4812-chinna-PC\ngc2edif\hwatermark.edif]
+WARNING: [EDIF-96] Could not resolve non-primitive black box cell 'headed_watermak' defined in file 'hwatermark.ngc' instantiated as 'DUT'.
+WARNING: [EDIF-96] Could not resolve non-primitive black box cell 'headed_watermak_1' defined in file 'hwatermark.ngc' instantiated as 'DUT_1'.
+WARNING: [EDIF-96] Could not resolve non-primitive black box cell 'headed_watermak_2' defined in file 'hwatermark.ngc' instantiated as 'DUT_2'.
+WARNING: [EDIF-96] Could not resolve non-primitive black box cell 'headed_watermak_3' defined in file 'hwatermark.ngc' instantiated as 'DUT_3'.
+INFO: [ArchReader-7] Loading clock regions from D:\XilinX\13.2\ISE_DS\PlanAhead\parts/xilinx/kintex7/kintex7l/xc7k70tl/ClockRegion.xml
+INFO: [ArchReader-8] Loading clock buffers from D:\XilinX\13.2\ISE_DS\PlanAhead\parts/xilinx/kintex7/kintex7l/xc7k70tl/ClockBuffers.xml
+INFO: [ArchReader-9] Loading clock placement rules from D:\XilinX\13.2\ISE_DS\PlanAhead\parts\xilinx\kintex7\ClockPlacerRules.xml
+INFO: [ArchReader-13] Loading package pin functions from D:\XilinX\13.2\ISE_DS\PlanAhead\parts\xilinx\kintex7/PinFunctions.xml...
+INFO: [ArchReader-3] Loading package from D:\XilinX\13.2\ISE_DS\PlanAhead\parts/xilinx/kintex7/kintex7l/xc7k70tl/fbg484/Package.xml
+INFO: [ArchReader-4] Loading io standards from D:\XilinX\13.2\ISE_DS\PlanAhead\./parts/xilinx/kintex7/IOStandards.xml
+INFO: [ArchReader-12] Loading device configuration modes from 
+INFO: [GDRC-0] Loading list of drcs for the architecture : D:\XilinX\13.2\ISE_DS\PlanAhead\./parts/xilinx/kintex7/drc.xml
+Parsing UCF File [C:\Users\chinna\project_1\project_1.srcs\constrs_1\imports\Final\WGC_V.ucf]
+Finished Parsing UCF File [C:\Users\chinna\project_1\project_1.srcs\constrs_1\imports\Final\WGC_V.ucf]
+Parsing UCF File [C:\Users\chinna\project_1\project_1.srcs\constrs_1\imports\Final\hwatermark.ucf]
+Finished Parsing UCF File [C:\Users\chinna\project_1\project_1.srcs\constrs_1\imports\Final\hwatermark.ucf]
+[Mon Jan 28 16:14:22 2013] Launched impl_1...
+Run output will be captured here: C:/Users/chinna/project_1/project_1.runs/impl_1/runme.log
+launch_runs: Time (s): 16.949w.  Memory (MB): 530.023p 92.867g
+reset_run synth_1
+WARNING: [PlanAhead-92] Changing the part can invalidate the IP's. IP's might need to be reset and regenerated to work with the new part
+set_property part xc6vlx130tlff1156-1L [get_runs synth_1]
+launch_runs synth_1
+INFO: [IP-2] Not generating up to date IP 'C:\Users\chinna\project_1\project_1.srcs\sources_1\ip\cordic_v4_0_0\cordic_v4_0.xco'
+[Mon Jan 28 16:16:42 2013] Launched synth_1...
+Run output will be captured here: C:/Users/chinna/project_1/project_1.runs/synth_1/runme.log
+WARNING: [PlanAhead-92] Changing the part can invalidate the IP's. IP's might need to be reset and regenerated to work with the new part
+set_property part xc6vlx130tlff1156-1L [get_runs impl_1]
+launch_runs impl_1
+Release 13.2 - ngc2edif O.61xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Release 13.2 - ngc2edif O.61xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design hwatermark.ngc ...
+WARNING:NetListWriters:298 - No output is written to hwatermark.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file hwatermark.edif ...
+ngc2edif: Total memory usage is 53428 kilobytes
+
+Parsing EDIF File [.\.Xil-PlanAhead-4812-chinna-PC\ngc2edif\hwatermark.edif]
+Finished Parsing EDIF File [.\.Xil-PlanAhead-4812-chinna-PC\ngc2edif\hwatermark.edif]
+WARNING: [EDIF-96] Could not resolve non-primitive black box cell 'headed_watermak' defined in file 'hwatermark.ngc' instantiated as 'DUT'.
+WARNING: [EDIF-96] Could not resolve non-primitive black box cell 'headed_watermak_1' defined in file 'hwatermark.ngc' instantiated as 'DUT_1'.
+WARNING: [EDIF-96] Could not resolve non-primitive black box cell 'headed_watermak_2' defined in file 'hwatermark.ngc' instantiated as 'DUT_2'.
+WARNING: [EDIF-96] Could not resolve non-primitive black box cell 'headed_watermak_3' defined in file 'hwatermark.ngc' instantiated as 'DUT_3'.
+INFO: [ArchReader-7] Loading clock regions from D:\XilinX\13.2\ISE_DS\PlanAhead\parts/xilinx/virtex6/virtex6l/xc6vlx130tl/ClockRegion.xml
+INFO: [ArchReader-8] Loading clock buffers from D:\XilinX\13.2\ISE_DS\PlanAhead\parts/xilinx/virtex6/virtex6l/xc6vlx130tl/ClockBuffers.xml
+INFO: [ArchReader-9] Loading clock placement rules from D:\XilinX\13.2\ISE_DS\PlanAhead\parts\xilinx\virtex6\ClockPlacerRules.xml
+INFO: [ArchReader-10] Loading clock capable ios from D:\XilinX\13.2\ISE_DS\PlanAhead\parts\xilinx\virtex6\ClockCapableIOBs.xml
+INFO: [ArchReader-13] Loading package pin functions from D:\XilinX\13.2\ISE_DS\PlanAhead\parts\xilinx\virtex6/PinFunctions.xml...
+INFO: [ArchReader-3] Loading package from D:\XilinX\13.2\ISE_DS\PlanAhead\parts/xilinx/virtex6/virtex6l/xc6vlx130tl/ff1156/Package.xml
+INFO: [ArchReader-4] Loading io standards from D:\XilinX\13.2\ISE_DS\PlanAhead\./parts/xilinx/virtex6/IOStandards.xml
+INFO: [ArchReader-12] Loading device configuration modes from 
+INFO: [GDRC-0] Loading list of drcs for the architecture : D:\XilinX\13.2\ISE_DS\PlanAhead\./parts/xilinx/virtex6/drc.xml
+Parsing UCF File [C:\Users\chinna\project_1\project_1.srcs\constrs_1\imports\Final\WGC_V.ucf]
+Finished Parsing UCF File [C:\Users\chinna\project_1\project_1.srcs\constrs_1\imports\Final\WGC_V.ucf]
+Parsing UCF File [C:\Users\chinna\project_1\project_1.srcs\constrs_1\imports\Final\hwatermark.ucf]
+Finished Parsing UCF File [C:\Users\chinna\project_1\project_1.srcs\constrs_1\imports\Final\hwatermark.ucf]
+[Mon Jan 28 16:17:06 2013] Launched impl_1...
+Run output will be captured here: C:/Users/chinna/project_1/project_1.runs/impl_1/runme.log
+launch_runs: Time (s): 12.788w.  Memory (MB): 533.020p 2.996g
+reset_run synth_1
+launch_runs synth_1
+INFO: [IP-2] Not generating up to date IP 'C:\Users\chinna\project_1\project_1.srcs\sources_1\ip\cordic_v4_0_0\cordic_v4_0.xco'
+[Mon Jan 28 16:19:27 2013] Launched synth_1...
+Run output will be captured here: C:/Users/chinna/project_1/project_1.runs/synth_1/runme.log
+launch_runs impl_1
+Release 13.2 - ngc2edif O.61xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Release 13.2 - ngc2edif O.61xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design hwatermark.ngc ...
+WARNING:NetListWriters:298 - No output is written to hwatermark.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file hwatermark.edif ...
+ngc2edif: Total memory usage is 53748 kilobytes
+
+Parsing EDIF File [.\.Xil-PlanAhead-4812-chinna-PC\ngc2edif\hwatermark.edif]
+Finished Parsing EDIF File [.\.Xil-PlanAhead-4812-chinna-PC\ngc2edif\hwatermark.edif]
+WARNING: [EDIF-96] Could not resolve non-primitive black box cell 'headed_watermak' defined in file 'hwatermark.ngc' instantiated as 'DUT'.
+WARNING: [EDIF-96] Could not resolve non-primitive black box cell 'headed_watermak_1' defined in file 'hwatermark.ngc' instantiated as 'DUT_1'.
+WARNING: [EDIF-96] Could not resolve non-primitive black box cell 'headed_watermak_2' defined in file 'hwatermark.ngc' instantiated as 'DUT_2'.
+WARNING: [EDIF-96] Could not resolve non-primitive black box cell 'headed_watermak_3' defined in file 'hwatermark.ngc' instantiated as 'DUT_3'.
+INFO: [ArchReader-7] Loading clock regions from D:\XilinX\13.2\ISE_DS\PlanAhead\parts/xilinx/virtex6/virtex6l/xc6vlx130tl/ClockRegion.xml
+INFO: [ArchReader-8] Loading clock buffers from D:\XilinX\13.2\ISE_DS\PlanAhead\parts/xilinx/virtex6/virtex6l/xc6vlx130tl/ClockBuffers.xml
+INFO: [ArchReader-9] Loading clock placement rules from D:\XilinX\13.2\ISE_DS\PlanAhead\parts\xilinx\virtex6\ClockPlacerRules.xml
+INFO: [ArchReader-10] Loading clock capable ios from D:\XilinX\13.2\ISE_DS\PlanAhead\parts\xilinx\virtex6\ClockCapableIOBs.xml
+INFO: [ArchReader-13] Loading package pin functions from D:\XilinX\13.2\ISE_DS\PlanAhead\parts\xilinx\virtex6/PinFunctions.xml...
+INFO: [ArchReader-3] Loading package from D:\XilinX\13.2\ISE_DS\PlanAhead\parts/xilinx/virtex6/virtex6l/xc6vlx130tl/ff1156/Package.xml
+INFO: [ArchReader-4] Loading io standards from D:\XilinX\13.2\ISE_DS\PlanAhead\./parts/xilinx/virtex6/IOStandards.xml
+INFO: [GDRC-0] Loading list of drcs for the architecture : D:\XilinX\13.2\ISE_DS\PlanAhead\./parts/xilinx/virtex6/drc.xml
+Parsing UCF File [C:\Users\chinna\project_1\project_1.srcs\constrs_1\imports\Final\WGC_V.ucf]
+Finished Parsing UCF File [C:\Users\chinna\project_1\project_1.srcs\constrs_1\imports\Final\WGC_V.ucf]
+Parsing UCF File [C:\Users\chinna\project_1\project_1.srcs\constrs_1\imports\Final\hwatermark.ucf]
+Finished Parsing UCF File [C:\Users\chinna\project_1\project_1.srcs\constrs_1\imports\Final\hwatermark.ucf]
+[Mon Jan 28 16:20:23 2013] Launched impl_1...
+Run output will be captured here: C:/Users/chinna/project_1/project_1.runs/impl_1/runme.log
+launch_runs: Time (s): 10.467w.  Memory (MB): 533.020p 0.000g
+reset_run impl_1
+launch_runs impl_1
+Release 13.2 - ngc2edif O.61xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+
+Release 13.2 - ngc2edif O.61xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design hwatermark.ngc ...
+WARNING:NetListWriters:298 - No output is written to hwatermark.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file hwatermark.edif ...
+ngc2edif: Total memory usage is 54260 kilobytes
+
+Parsing EDIF File [.\.Xil-PlanAhead-4812-chinna-PC\ngc2edif\hwatermark.edif]
+Finished Parsing EDIF File [.\.Xil-PlanAhead-4812-chinna-PC\ngc2edif\hwatermark.edif]
+WARNING: [EDIF-96] Could not resolve non-primitive black box cell 'headed_watermak' defined in file 'hwatermark.ngc' instantiated as 'DUT'.
+WARNING: [EDIF-96] Could not resolve non-primitive black box cell 'headed_watermak_1' defined in file 'hwatermark.ngc' instantiated as 'DUT_1'.
+WARNING: [EDIF-96] Could not resolve non-primitive black box cell 'headed_watermak_2' defined in file 'hwatermark.ngc' instantiated as 'DUT_2'.
+WARNING: [EDIF-96] Could not resolve non-primitive black box cell 'headed_watermak_3' defined in file 'hwatermark.ngc' instantiated as 'DUT_3'.
+INFO: [ArchReader-7] Loading clock regions from D:\XilinX\13.2\ISE_DS\PlanAhead\parts/xilinx/virtex6/virtex6l/xc6vlx130tl/ClockRegion.xml
+INFO: [ArchReader-8] Loading clock buffers from D:\XilinX\13.2\ISE_DS\PlanAhead\parts/xilinx/virtex6/virtex6l/xc6vlx130tl/ClockBuffers.xml
+INFO: [ArchReader-9] Loading clock placement rules from D:\XilinX\13.2\ISE_DS\PlanAhead\parts\xilinx\virtex6\ClockPlacerRules.xml
+INFO: [ArchReader-10] Loading clock capable ios from D:\XilinX\13.2\ISE_DS\PlanAhead\parts\xilinx\virtex6\ClockCapableIOBs.xml
+INFO: [ArchReader-13] Loading package pin functions from D:\XilinX\13.2\ISE_DS\PlanAhead\parts\xilinx\virtex6/PinFunctions.xml...
+INFO: [ArchReader-3] Loading package from D:\XilinX\13.2\ISE_DS\PlanAhead\parts/xilinx/virtex6/virtex6l/xc6vlx130tl/ff1156/Package.xml
+INFO: [ArchReader-4] Loading io standards from D:\XilinX\13.2\ISE_DS\PlanAhead\./parts/xilinx/virtex6/IOStandards.xml
+INFO: [GDRC-0] Loading list of drcs for the architecture : D:\XilinX\13.2\ISE_DS\PlanAhead\./parts/xilinx/virtex6/drc.xml
+Parsing UCF File [C:\Users\chinna\project_1\project_1.srcs\constrs_1\imports\Final\WGC_V.ucf]
+Finished Parsing UCF File [C:\Users\chinna\project_1\project_1.srcs\constrs_1\imports\Final\WGC_V.ucf]
+Parsing UCF File [C:\Users\chinna\project_1\project_1.srcs\constrs_1\imports\Final\hwatermark.ucf]
+Finished Parsing UCF File [C:\Users\chinna\project_1\project_1.srcs\constrs_1\imports\Final\hwatermark.ucf]
+[Mon Jan 28 16:21:13 2013] Launched impl_1...
+Run output will be captured here: C:/Users/chinna/project_1/project_1.runs/impl_1/runme.log
+launch_runs: Time (s): 10.625w.  Memory (MB): 533.020p 0.000g
+ERROR: [PlanAhead-106] *** Exception: java.awt.IllegalComponentStateException: component must be showing on the screen to determine its location (See C:\Users\chinna\Desktop\Watermarking\Final\planAhead_run_1\planAhead_pid4812.debug)

@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/Final/LFSR.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/Final/LFSR.syr" 
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/Final/LFSR.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/Final/LFSR.syr" 
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/Final/LFSR.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/Final/LFSR.syr" 

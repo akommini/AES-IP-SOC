@@ -1,0 +1,63 @@
+#-----------------------------------------------------------
+# PlanAhead v13.2 (64-bit)
+# Build 131561 by hdbuild on Thu Jun 16 17:14:12 PDT 2011
+# Start of session at: Sun Mar 03 17:13:30 2013
+# Process ID: 4104
+# Log file: C:/Users/s/Desktop/Watermarking/extraction_circuit/planAhead_run_3/planAhead.log
+# Journal file: C:/Users/s/Desktop/Watermarking/extraction_circuit/planAhead_run_3/planAhead.jou
+#-----------------------------------------------------------
+INFO: [Common-78] Attempting to get a license: PlanAhead
+INFO: [Common-82] Got a license: PlanAhead
+INFO: [Common-86] Your PlanAhead license expires in -397 day(s)
+INFO: [ArchReader-0] Loading parts and site information from C:\Xilinx\13.2\ISE_DS\PlanAhead\parts\arch.xml
+Parsing RTL primitives file [C:\Xilinx\13.2\ISE_DS\PlanAhead\parts\xilinx\rtl\prims\rtl_prims.xml]
+Finished parsing RTL primitives file [C:\Xilinx\13.2\ISE_DS\PlanAhead\parts\xilinx\rtl\prims\rtl_prims.xml]
+start_gui
+source C:/Users/s/Desktop/Watermarking/extraction_circuit/pa.fromHdl.tcl
+# create_project -name extraction_circuit -dir "C:/Users/s/Desktop/Watermarking/extraction_circuit/planAhead_run_3" -part xc6vlx130tlff1156-1L
+Parsing template File [C:\Xilinx\13.2\ISE_DS\ISE\data\projnav\templates\verilog.xml].
+Finished parsing template File [C:\Xilinx\13.2\ISE_DS\ISE\data\projnav\templates\verilog.xml].
+Parsing template File [C:\Xilinx\13.2\ISE_DS\ISE\data\projnav\templates\vhdl.xml].
+Finished parsing template File [C:\Xilinx\13.2\ISE_DS\ISE\data\projnav\templates\vhdl.xml].
+Parsing template File [C:\Xilinx\13.2\ISE_DS\ISE\data\projnav\templates\ucf.xml].
+Finished parsing template File [C:\Xilinx\13.2\ISE_DS\ISE\data\projnav\templates\ucf.xml].
+create_project: Time (s): 20.764w.  Memory (MB): 399.211p 72.461g
+# set_param project.pinAheadLayout yes
+# set srcset [get_property srcset [current_run -impl]]
+# set_property top watermark_display $srcset
+# set_param project.paUcfFile  "watermark_display.ucf"
+# set hdlfile [add_files [list {../output_verification/watermark_extraction.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# set hdlfile [add_files [list {../output_verification/watermark_display.vhd}]]
+# set_property file_type VHDL $hdlfile
+# set_property library work $hdlfile
+# add_files "watermark_display.ucf" -fileset [get_property constrset [current_run]]
+# open_rtl_design -part xc6vlx130tlff1156-1L
+INFO: [PlanAhead-58] Using Verific elaboration
+Parsing VHDL file "C:\Xilinx\13.2\ISE_DS\PlanAhead\parts\xilinx\rtl\lib\synplify\synattr.vhd" into library synplify
+Parsing package <attributes>.
+Parsing VHDL file "C:\Xilinx\13.2\ISE_DS\PlanAhead\parts\xilinx\rtl\lib\synplify\synattr.vhd" into library synplify
+Parsing package <attributes>.
+Parsing VHDL file "C:\Users\s\Desktop\Watermarking\output_verification\watermark_extraction.vhd" into library work
+Parsing entity <watermark_extraction>.
+Parsing architecture <Behavioral> of entity <watermark_extraction>.
+Parsing VHDL file "C:\Users\s\Desktop\Watermarking\output_verification\watermark_display.vhd" into library work
+Parsing entity <watermark_display>.
+Parsing architecture <Behavioral> of entity <watermark_display>.
+WARNING: [HDL-746] Range is empty (null range) [/build/xfndry/O.61xb/env/TOS/Verific/verific/vhdl_packages/numeric_std.vhd:878]
+WARNING: [HDL-746] Range is empty (null range) [/build/xfndry/O.61xb/env/TOS/Verific/verific/vhdl_packages/numeric_std.vhd:879]
+Removing all analyzed parse trees
+INFO: [ArchReader-7] Loading clock regions from C:\Xilinx\13.2\ISE_DS\PlanAhead\parts/xilinx/virtex6/virtex6l/xc6vlx130tl/ClockRegion.xml
+INFO: [ArchReader-8] Loading clock buffers from C:\Xilinx\13.2\ISE_DS\PlanAhead\parts/xilinx/virtex6/virtex6l/xc6vlx130tl/ClockBuffers.xml
+INFO: [ArchReader-9] Loading clock placement rules from C:\Xilinx\13.2\ISE_DS\PlanAhead\parts\xilinx\virtex6\ClockPlacerRules.xml
+INFO: [ArchReader-10] Loading clock capable ios from C:\Xilinx\13.2\ISE_DS\PlanAhead\parts\xilinx\virtex6\ClockCapableIOBs.xml
+INFO: [ArchReader-13] Loading package pin functions from C:\Xilinx\13.2\ISE_DS\PlanAhead\parts\xilinx\virtex6/PinFunctions.xml...
+INFO: [ArchReader-3] Loading package from C:\Xilinx\13.2\ISE_DS\PlanAhead\parts/xilinx/virtex6/virtex6l/xc6vlx130tl/ff1156/Package.xml
+INFO: [ArchReader-4] Loading io standards from C:\Xilinx\13.2\ISE_DS\PlanAhead\./parts/xilinx/virtex6/IOStandards.xml
+INFO: [ArchReader-12] Loading device configuration modes from 
+INFO: [GDRC-0] Loading list of drcs for the architecture : C:\Xilinx\13.2\ISE_DS\PlanAhead\./parts/xilinx/virtex6/drc.xml
+Parsing UCF File [C:\Users\s\Desktop\Watermarking\extraction_circuit\watermark_display.ucf]
+Finished Parsing UCF File [C:\Users\s\Desktop\Watermarking\extraction_circuit\watermark_display.ucf]
+INFO: [Project-5] Unisim Transformation Summary:
+No Unisim elements were transformed.

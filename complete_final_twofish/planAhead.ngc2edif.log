@@ -1,0 +1,339 @@
+Release 13.2 - ngc2edif O.61xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design IP_watermarking_twofish.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   IP_watermarking_twofish.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/GND_45_o_GND_45_o_xor_318_OUT<3 : 1> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/GND_45_o_GND_45_o_xor_325_OUT<3 : 1> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/GND_45_o_GND_45_o_xor_632_OUT<3 : 1> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/GND_45_o_GND_45_o_xor_639_OUT<3 : 1> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[31]_D_REG[31]_xor_454_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[31]_D_REG[31]_xor_444_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[31]_D_REG[31]_xor_434_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[63]_D_REG[63]_xor_140_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[63]_D_REG[63]_xor_130_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[63]_D_REG[63]_xor_120_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[31]_D_REG[31]_xor_546_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[31]_D_REG[31]_xor_526_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[63]_D_REG[63]_xor_232_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[63]_D_REG[63]_xor_212_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[31]_D_REG[31]_xor_485_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[31]_D_REG[31]_xor_475_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[63]_D_REG[63]_xor_171_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[63]_D_REG[63]_xor_161_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[31]_PWR_26_o_wide_mux_451_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[31]_PWR_26_o_wide_mux_441_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[31]_PWR_26_o_wide_mux_431_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[63]_PWR_26_o_wide_mux_127_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[63]_PWR_26_o_wide_mux_117_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[31]_PWR_26_o_wide_mux_543_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[31]_PWR_26_o_wide_mux_523_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[63]_PWR_26_o_wide_mux_229_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[63]_PWR_26_o_wide_mux_209_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[31]_PWR_26_o_wide_mux_482_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[31]_PWR_26_o_wide_mux_472_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[63]_PWR_26_o_wide_mux_168_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[63]_PWR_26_o_wide_mux_158_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[63]_PWR_26_o_wide_mux_91_OUT<2 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[31]_D_REG[31]_mux_374_OUT<7 : 3> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/ALG/D_REG[63]_D_REG[63]_mux_60_OUT<7 : 3> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_576_OUT<3 : 1> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_300_OUT<5 : 2> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_257_OUT<5 : 2> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_602_OUT<7 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_578_OUT<7 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_531_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_521_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_511_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_501_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_490_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_480_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_470_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_460_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_221_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_211_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_201_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_191_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_180_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_170_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_160_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_150_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_PWR_28_o_wide_mux_528_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_PWR_28_o_wide_mux_518_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_PWR_28_o_wide_mux_508_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_PWR_28_o_wide_mux_498_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_PWR_28_o_wide_mux_487_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_PWR_28_o_wide_mux_477_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_PWR_28_o_wide_mux_467_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_PWR_28_o_wide_mux_457_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_PWR_28_o_wide_mux_218_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_PWR_28_o_wide_mux_208_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_PWR_28_o_wide_mux_198_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_PWR_28_o_wide_mux_188_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_PWR_28_o_wide_mux_177_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_PWR_28_o_wide_mux_167_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_PWR_28_o_wide_mux_157_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_PWR_28_o_wide_mux_147_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_514_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_494_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_473_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_463_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_204_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_184_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_163_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GND_46_o_GND_46_o_xor_153_OUT<3 : 0> on block
+   IP_watermarking_twofish is not reconstructed, because there are some missing
+   bus signals.
+  finished :Prep
+Writing EDIF netlist file IP_watermarking_twofish.edif ...
+ngc2edif: Total memory usage is 57908 kilobytes
+
+Release 13.2 - ngc2edif O.61xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design ip_core.ngc ...
+WARNING:NetListWriters:298 - No output is written to ip_core.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file ip_core.edif ...
+ngc2edif: Total memory usage is 54772 kilobytes
+

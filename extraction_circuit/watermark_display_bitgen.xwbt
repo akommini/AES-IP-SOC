@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\s\Desktop\Watermarking\extraction_circuit\watermark_display.ncd
+OUTFILE=C:\Users\s\Desktop\Watermarking\extraction_circuit\watermark_display.bit
+FAMILY=Virtex6 Lower Power
+PART=xc6vlx130tl-1lff1156
+WORKINGDIR=C:\Users\s\Desktop\Watermarking\extraction_circuit
+LICENSE=ISE
+USER_INFO=__0_0_0

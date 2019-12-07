@@ -1,0 +1,44 @@
+Release 13.2 - ngc2edif O.61xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design IP_watermarking_serpent.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   IP_watermarking_serpent.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus crypto_RIJNDAEL/ALG/_n0384<61 : 0> on
+   block IP_watermarking_serpent is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus crypto_RIJNDAEL/KEYSCH/_n0983<62 : 0> on
+   block IP_watermarking_serpent is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus crypto_RIJNDAEL/KEYSCH/_n0974<63 : 3> on
+   block IP_watermarking_serpent is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GEN_NEXT_KEYS/w[-1][0]_GND_46_o_xor_73_OUT<31 : 0> on
+   block IP_watermarking_serpent is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GEN_NEXT_KEYS/w[-1][0]_GND_46_o_xor_91_OUT<29 : 2> on
+   block IP_watermarking_serpent is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/GEN_NEXT_KEYS/w[-1][0]_GND_46_o_xor_85_OUT<18 : 2> on
+   block IP_watermarking_serpent is not reconstructed, because there are some
+   missing bus signals.
+  finished :Prep
+Writing EDIF netlist file IP_watermarking_serpent.edif ...
+ngc2edif: Total memory usage is 61620 kilobytes
+
+Release 13.2 - ngc2edif O.61xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design multiplier.ngc ...
+WARNING:NetListWriters:298 - No output is written to multiplier.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file multiplier.edif ...
+ngc2edif: Total memory usage is 53812 kilobytes
+

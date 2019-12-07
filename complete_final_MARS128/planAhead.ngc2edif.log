@@ -1,0 +1,39 @@
+Release 13.2 - ngc2edif O.61xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design IP_watermarking_MARS128.ngc ...
+WARNING:NetListWriters:298 - No output is written to
+   IP_watermarking_MARS128.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/T[3][31]_GND_46_o_xor_88_OUT[31 : 0] on block
+   IP_watermarking_MARS128 is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/T[2][31]_GND_46_o_xor_84_OUT[29 : 0] on block
+   IP_watermarking_MARS128 is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/T[1][31]_GND_46_o_xor_80_OUT[31 : 0] on block
+   IP_watermarking_MARS128 is not reconstructed, because there are some missing
+   bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   crypto_RIJNDAEL/KEYSCH/T[0][31]_GND_46_o_xor_76_OUT[31 : 0] on block
+   IP_watermarking_MARS128 is not reconstructed, because there are some missing
+   bus signals.
+  finished :Prep
+Writing EDIF netlist file IP_watermarking_MARS128.edif ...
+ngc2edif: Total memory usage is 75700 kilobytes
+
+Release 13.2 - ngc2edif O.61xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+Reading design multiplier.ngc ...
+WARNING:NetListWriters:298 - No output is written to multiplier.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+  finished :Prep
+Writing EDIF netlist file multiplier.edif ...
+ngc2edif: Total memory usage is 53812 kilobytes
+

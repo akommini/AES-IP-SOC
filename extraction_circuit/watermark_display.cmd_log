@@ -1,0 +1,17 @@
+xst -intstyle ise -ifn "C:/Users/s/Desktop/Watermarking/extraction_circuit/watermark_display.xst" -ofn "C:/Users/s/Desktop/Watermarking/extraction_circuit/watermark_display.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc watermark_display.ucf -p xc6vlx130tl-ff1156-1L watermark_display.ngc watermark_display.ngd  
+map -intstyle ise -p xc6vlx130tl-ff1156-1L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o watermark_display_map.ncd watermark_display.ngd watermark_display.pcf 
+trce -intstyle ise -v 3 -s 1L -n 3 -fastpaths -xml watermark_display_preroute.twx watermark_display_map.ncd -o watermark_display_preroute.twr watermark_display.pcf -ucf watermark_display.ucf 
+netgen -intstyle ise -s 1L  -pcf watermark_display.pcf -sdf_anno true -sdf_path "netgen/map" -insert_glbl true -w -dir netgen/map -ofmt verilog -sim watermark_display_map.ncd watermark_display_map.v 
+par -w -intstyle ise -ol high -mt off watermark_display_map.ncd watermark_display.ncd watermark_display.pcf 
+trce -intstyle ise -v 3 -s 1L -n 3 -fastpaths -xml watermark_display.twx watermark_display.ncd -o watermark_display.twr watermark_display.pcf -ucf watermark_display.ucf 
+bitgen -intstyle ise -f watermark_display.ut watermark_display.ncd 
+ibiswriter -intstyle ise -truncate 20 watermark_display.ncd watermark_display.ibs 
+pin2ucf -o watermark_display_locked.ucf watermark_display.ncd 
+xst -intstyle ise -ifn "C:/Users/s/Desktop/Watermarking/extraction_circuit/watermark_display.xst" -ofn "C:/Users/s/Desktop/Watermarking/extraction_circuit/watermark_display.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc watermark_display.ucf -p xc6vlx75tl-ff484-1L watermark_display.ngc watermark_display.ngd  
+map -intstyle ise -p xc6vlx75tl-ff484-1L -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o watermark_display_map.ncd watermark_display.ngd watermark_display.pcf 
+par -w -intstyle ise -ol high -mt off watermark_display_map.ncd watermark_display.ncd watermark_display.pcf 
+trce -intstyle ise -v 3 -s 1L -n 3 -fastpaths -xml watermark_display.twx watermark_display.ncd -o watermark_display.twr watermark_display.pcf -ucf watermark_display.ucf 
+trce -intstyle ise -v 3 -s 1L -n 3 -fastpaths -xml watermark_display_preroute.twx watermark_display_map.ncd -o watermark_display_preroute.twr watermark_display.pcf -ucf watermark_display.ucf 
+netgen -intstyle ise -s 1L  -pcf watermark_display.pcf -sdf_anno true -sdf_path "netgen/map" -insert_glbl true -w -dir netgen/map -ofmt verilog -sim watermark_display_map.ncd watermark_display_map.v 

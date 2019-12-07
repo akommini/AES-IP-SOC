@@ -1,0 +1,45 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "secureip" -o "C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/IP_watermark_isim_beh.exe" -prj "C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/IP_watermark_beh.prj" "work.IP_watermark" 
+ISim O.61xd (signature 0x6dd86d03)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Parsing VHDL file "C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/../test/ipcore_dir/ipcore.vhd" into library work
+Parsing VHDL file "C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/../../AES algorigtms/RIJNDAEL128/vhdl/rijndael_pkg.vhdl" into library work
+Parsing VHDL file "C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/../../AES algorigtms/RIJNDAEL128/vhdl/key_sched_iterative.vhdl" into library work
+Parsing VHDL file "C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/../../AES algorigtms/RIJNDAEL128/vhdl/interface.vhdl" into library work
+Parsing VHDL file "C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/../../AES algorigtms/RIJNDAEL128/vhdl/controller_iter.vhdl" into library work
+Parsing VHDL file "C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/../../AES algorigtms/RIJNDAEL128/vhdl/alg_iterative.vhdl" into library work
+Parsing VHDL file "C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/../test/total.vhd" into library work
+Parsing VHDL file "C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/../test/LFSR.vhd" into library work
+Parsing VHDL file "C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/../../AES algorigtms/RIJNDAEL128/vhdl/RIJNDAEL_Top_Iterative.vhdl" into library work
+Parsing VHDL file "C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/../test/h_watermark.vhd" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 100788 KB
+Fuse CPU Usage: 406 ms
+Compiling package standard
+Compiling package std_logic_1164
+Compiling package numeric_std
+Compiling package std_logic_arith
+Compiling package std_logic_unsigned
+Compiling package rijndael_pack
+Compiling architecture behavioral of entity WGC [wgc_default]
+Compiling architecture behavioral of entity LFSR [lfsr_default]
+Compiling package std_logic_signed
+Compiling package textio
+Compiling package bip_utils_pkg_v2_0
+Compiling package mult_gen_pkg_v11_2
+Compiling architecture behavioral of entity mult_gen_v11_2 [\mult_gen_v11_2(0,0,"virtex6l",1...]
+Compiling architecture ipcore_a of entity ipcore [ipcore_default]
+Compiling architecture control_iter_rtl of entity CONTROL_ITER [control_iter_default]
+Compiling architecture alg_iterative_rtl of entity ALG_ITERATIVE [alg_iterative_default]
+Compiling architecture key_schedule_iterative_rtl of entity KEY_SCHEDULE_ITERATIVE [key_schedule_iterative_default]
+Compiling architecture interface_rtl of entity INTERFACE [interface_default]
+Compiling architecture structural of entity RIJNDAEL_TOP_ITER [rijndael_top_iter_default]
+Compiling architecture behavioral of entity ip_watermark
+Time Resolution for simulation is 1ps.
+Waiting for 15 sub-compilation(s) to finish...
+Compiled 29 VHDL Units
+Built simulation executable C:/Users/chinna/Desktop/Watermarking/complete_final_periodic/IP_watermark_isim_beh.exe
+Fuse Memory Usage: 131552 KB
+Fuse CPU Usage: 1202 ms

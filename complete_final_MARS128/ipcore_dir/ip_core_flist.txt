@@ -1,0 +1,14 @@
+# Output products list for <ip_core>
+ip_core.asy
+ip_core.gise
+ip_core.ngc
+ip_core.sym
+ip_core.vhd
+ip_core.vho
+ip_core.xco
+ip_core.xise
+ip_core\doc\mult_gen_ds255.pdf
+ip_core\doc\mult_gen_v11_2_vinfo.html
+ip_core_flist.txt
+ip_core_readme.txt
+ip_core_xmdf.tcl

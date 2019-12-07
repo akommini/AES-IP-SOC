@@ -1,0 +1,30 @@
+Command line:
+   LFSR_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  55608
+
+Sun Feb 03 15:29:14 2013
+
+
+ Elaboration Time: 0.09375 sec
+
+ Current Memory Usage: 503.251 Meg
+
+ Total Signals          : 11
+ Total Nets             : 13
+ Total Signal Drivers   : 9
+ Total Blocks           : 2
+ Total Primitive Blocks : 2
+ Total Processes        : 1
+ Total Traceable Variables  : 8
+ Total Scalar Nets and Variables : 373
+In process LFSR.vhd:43 
+ FATAL ERROR:ISim: This application has discovered an exceptional condition from which it cannot recover. Process will terminate. To search for possible resolutions to this issue, refer to the Xilinx answer database by going to http://www.xilinx.com/support/answers/index.htm and search with keywords 'ISim' and 'FATAL ERROR'. For technical support on this issue, please open a WebCase with this project attached at http://www.xilinx.com/support.
+
+ Total Simulation Time: 13.9375 sec
+
+ Current Memory Usage: 1190.03 Meg
+
+Sun Feb 03 15:38:04 2013
+

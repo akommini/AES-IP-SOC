@@ -1,0 +1,5 @@
+Exception at PC 0x710DAC5A
+Attemped to write at address 0x00000000
+Printing stacktrace...
+
+Done

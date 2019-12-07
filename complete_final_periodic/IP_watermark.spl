@@ -1,0 +1,12 @@
+[Inputs]
+clk
+rst
+test_mode
+clk_en
+=x[17:0]=
+=Y[17:0]=
+[Outputs]
+DONE
+=watermark_output[127:0]=
+=output_dev[35:0]=
+[BiDir]

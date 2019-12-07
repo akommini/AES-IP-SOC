@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/chinna/Desktop/Watermarking/AES/aes_cipher_top_isim_beh.exe" -prj "C:/Users/chinna/Desktop/Watermarking/AES/aes_cipher_top_beh.prj" "work.aes_cipher_top" "work.glbl" 

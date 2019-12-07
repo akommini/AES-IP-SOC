@@ -1,0 +1,28 @@
+Command line:
+   aes_cipher_top_isim_beh.exe
+     -simmode  gui
+     -simrunnum  0
+     -socket  50535
+
+Sat Apr 27 23:26:51 2013
+
+
+ Elaboration Time: 0.09375 sec
+
+ Current Memory Usage: 503.366 Meg
+
+ Total Signals          : 118
+ Total Nets             : 1268
+ Total Signal Drivers   : 98
+ Total Blocks           : 27
+ Total Primitive Blocks : 24
+ Total Processes        : 149
+ Total Traceable Variables  : 75
+ Total Scalar Nets and Variables : 2210
+
+ Total Simulation Time: 9.6875 sec
+
+ Current Memory Usage: 504.414 Meg
+
+Sat Apr 27 23:29:32 2013
+

@@ -1,0 +1,25 @@
+Running: fuse.exe -relaunch -intstyle "ise" -incremental -lib "unisims_ver" -lib "unimacro_ver" -lib "xilinxcorelib_ver" -o "C:/Users/chinna/Desktop/Watermarking/AES/aes_cipher_top_isim_beh.exe" -prj "C:/Users/chinna/Desktop/Watermarking/AES/aes_cipher_top_beh.prj" "work.aes_cipher_top" "work.glbl" 
+ISim O.61xd (signature 0x6dd86d03)
+Number of CPUs detected in this system: 2
+Turning on mult-threading, number of parallel sub-compilation jobs: 4 
+Determining compilation order of HDL files
+Analyzing Verilog file \"C:/Users/chinna/Desktop/Watermarking/AES/../../aes_core/trunk/rtl/verilog/aes_sbox.v\" into library work
+Analyzing Verilog file \"C:/Users/chinna/Desktop/Watermarking/AES/../../aes_core/trunk/rtl/verilog/aes_rcon.v\" into library work
+Analyzing Verilog file \"C:/Users/chinna/Desktop/Watermarking/AES/../../aes_core/trunk/rtl/verilog/aes_key_expand_128.v\" into library work
+Analyzing Verilog file \"C:/Users/chinna/Desktop/Watermarking/AES/../../aes_core/trunk/rtl/verilog/aes_cipher_top.v\" into library work
+Analyzing Verilog file \"D:/XilinX/13.2/ISE_DS/ISE//verilog/src/glbl.v\" into library work
+Starting static elaboration
+Completed static elaboration
+Fuse Memory Usage: 98356 KB
+Fuse CPU Usage: 234 ms
+Compiling module aes_sbox
+Compiling module aes_rcon
+Compiling module aes_key_expand_128
+Compiling module aes_cipher_top
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 2 sub-compilation(s) to finish...
+Compiled 5 Verilog Units
+Built simulation executable C:/Users/chinna/Desktop/Watermarking/AES/aes_cipher_top_isim_beh.exe
+Fuse Memory Usage: 102944 KB
+Fuse CPU Usage: 374 ms

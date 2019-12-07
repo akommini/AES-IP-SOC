@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/AES/aes_cipher_top.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/AES/aes_cipher_top.syr" 
+xst -intstyle ise -ifn "C:/Users/chinna/Desktop/Watermarking/AES/aes_cipher_top.xst" -ofn "C:/Users/chinna/Desktop/Watermarking/AES/aes_cipher_top.syr" 
+vhdtdtfi -lang verilog -prj AES -o C:/Users/chinna/Desktop/Watermarking/AES/aes_cipher_top.vhi -lib work C:/Users/chinna/Desktop/aes_core/trunk/rtl/verilog//aes_cipher_top.v -module aes_cipher_top -template D:/XilinX/13.2/ISE_DS/ISE//data/vhdlinst.tft -deleteonerror 

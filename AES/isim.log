@@ -1,0 +1,65 @@
+ISim log file
+Running: C:\Users\chinna\Desktop\Watermarking\AES\aes_cipher_top_isim_beh.exe -intstyle ise -gui -tclbatch isim.cmd -wdb C:/Users/chinna/Desktop/Watermarking/AES/aes_cipher_top_isim_beh.wdb 
+ISim O.61xd (signature 0x6dd86d03)
+----------------------------------------------------------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
+
+
+----------------------------------------------------------------------
+This is a Full version of ISim.
+Time resolution is 1 ps
+# onerror resume
+# wave add /
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# isim force add /aes_cipher_top/clk 1 -radix bin -value 0 -radix bin -time 50 ps -repeat 100 ps -cancel 10 us
+# isim force add /aes_cipher_top/clk 1 -radix bin -value 0 -radix bin -time 50 ps -repeat 100 ps -cancel 10 us
+# isim force add /aes_cipher_top/rst 1 -radix bin
+# isim force add /aes_cipher_top/rst 1 -radix bin
+# isim force add /aes_cipher_top/ld 1 -radix bin
+# isim force add /aes_cipher_top/ld 1 -radix bin
+# isim force add /aes_cipher_top/key 0123456789012345 -radix hex
+# isim force add /aes_cipher_top/key 0123456789012345 -radix hex
+# isim force add /aes_cipher_top/text_in 12345689564646464564565644444441 -radix hex
+# isim force add /aes_cipher_top/text_in 12345689564646464564565644444441 -radix hex
+# run all
+# isim force add /aes_cipher_top/text_in 1234567890123456 -radix ascii
+/aes_cipher_top/text_in: The value 1234567890123456 is bigger than the identifier size in this context.
+# isim force add /aes_cipher_top/text_in 1234567890123456 -radix ascii
+/aes_cipher_top/text_in: The value 1234567890123456 is bigger than the identifier size in this context.
+# isim force add /aes_cipher_top/key 0123456789012345 -radix ascii
+/aes_cipher_top/key: The value 0123456789012345 is bigger than the identifier size in this context.
+# isim force add /aes_cipher_top/key 0123456789012345 -radix ascii
+/aes_cipher_top/key: The value 0123456789012345 is bigger than the identifier size in this context.
+# isim force add /aes_cipher_top/clk 1 -radix bin -value 0 -radix bin -time 50 ps -repeat 100 ps -cancel 1 us
+# isim force add /aes_cipher_top/clk 1 -radix bin -value 0 -radix bin -time 50 ps -repeat 100 ps -cancel 1 us
+# run all
+# run all
+ISim O.61xd (signature 0x6dd86d03)
+----------------------------------------------------------------------
+WARNING:Security:42 - Your software subscription period has lapsed. Your current version of Xilinx tools will continue to function, but you no longer qualify for Xilinx software updates or new releases.
+
+
+----------------------------------------------------------------------
+This is a Full version of ISim.
+# run 1000 ns
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+# isim force add /aes_cipher_top/clk 1 -radix bin -value 0 -radix bin -time 50 ps -repeat 100 ps -cancel 100 us
+# isim force add /aes_cipher_top/clk 1 -radix bin -value 0 -radix bin -time 50 ps -repeat 100 ps -cancel 100 us
+# isim force add /aes_cipher_top/rst 1 -radix bin
+# isim force add /aes_cipher_top/rst 0 -radix bin
+# isim force add /aes_cipher_top/rst 0 -radix bin
+# isim force add /aes_cipher_top/ld 1 -radix bin
+# isim force add /aes_cipher_top/ld 1 -radix bin
+# isim force add /aes_cipher_top/key 1234567890123456 -radix ascii
+/aes_cipher_top/key: The value 1234567890123456 is bigger than the identifier size in this context.
+# isim force add /aes_cipher_top/key 1234567890123456 -radix ascii
+/aes_cipher_top/key: The value 1234567890123456 is bigger than the identifier size in this context.
+# isim force add /aes_cipher_top/text_in 0123456789012345 -radix ascii
+/aes_cipher_top/text_in: The value 0123456789012345 is bigger than the identifier size in this context.
+# isim force add /aes_cipher_top/text_in 0123456789012345 -radix ascii
+/aes_cipher_top/text_in: The value 0123456789012345 is bigger than the identifier size in this context.
+# run all
+Stopped at time : 51080400 ps : File "C:/Users/chinna/Desktop/aes_core/trunk/rtl/verilog/aes_cipher_top.v" Line 104

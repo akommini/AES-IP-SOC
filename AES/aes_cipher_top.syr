@@ -1,0 +1,981 @@
+Release 13.2 - xst O.61xd (nt)
+Copyright (c) 1995-2011 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Reading design: aes_cipher_top.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "aes_cipher_top.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "aes_cipher_top"
+Output Format                      : NGC
+Target Device                      : xc3s100e-5-vq100
+
+---- Source Options
+Top Module Name                    : aes_cipher_top
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "../../aes_core/trunk/rtl/verilog/aes_sbox.v" in library work
+Compiling verilog include file "../../aes_core/trunk/rtl/verilog/timescale.v"
+Compiling verilog file "../../aes_core/trunk/rtl/verilog/aes_rcon.v" in library work
+Compiling verilog include file "../../aes_core/trunk/rtl/verilog/timescale.v"
+Module <aes_sbox> compiled
+Compiling verilog file "../../aes_core/trunk/rtl/verilog/aes_key_expand_128.v" in library work
+Compiling verilog include file "../../aes_core/trunk/rtl/verilog/timescale.v"
+Module <aes_rcon> compiled
+Compiling verilog file "../../aes_core/trunk/rtl/verilog/aes_cipher_top.v" in library work
+Compiling verilog include file "../../aes_core/trunk/rtl/verilog/timescale.v"
+Module <aes_key_expand_128> compiled
+Module <aes_cipher_top> compiled
+No errors in compilation
+Analysis of file <"aes_cipher_top.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <aes_cipher_top> in library <work>.
+
+Analyzing hierarchy for module <aes_key_expand_128> in library <work>.
+
+Analyzing hierarchy for module <aes_sbox> in library <work>.
+
+Analyzing hierarchy for module <aes_rcon> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <aes_cipher_top>.
+WARNING:Xst:916 - "../../aes_core/trunk/rtl/verilog/aes_cipher_top.v" line 104: Delay is ignored for synthesis.
+WARNING:Xst:916 - "../../aes_core/trunk/rtl/verilog/aes_cipher_top.v" line 106: Delay is ignored for synthesis.
+WARNING:Xst:916 - "../../aes_core/trunk/rtl/verilog/aes_cipher_top.v" line 108: Delay is ignored for synthesis.
+WARNING:Xst:916 - "../../aes_core/trunk/rtl/verilog/aes_cipher_top.v" line 110: Delay is ignored for synthesis.
+WARNING:Xst:916 - "../../aes_core/trunk/rtl/verilog/aes_cipher_top.v" line 111: Delay is ignored for synthesis.
+WARNING:Xst:915 - Message (916) is reported only 5 times for each module.
+	Calling function <mix_col>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <mix_col>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <mix_col>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <mix_col>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+	Calling function <xtime>.
+Module <aes_cipher_top> is correct for synthesis.
+ 
+Analyzing module <aes_key_expand_128> in library <work>.
+WARNING:Xst:916 - "../../aes_core/trunk/rtl/verilog/aes_key_expand_128.v" line 73: Delay is ignored for synthesis.
+WARNING:Xst:916 - "../../aes_core/trunk/rtl/verilog/aes_key_expand_128.v" line 74: Delay is ignored for synthesis.
+WARNING:Xst:916 - "../../aes_core/trunk/rtl/verilog/aes_key_expand_128.v" line 75: Delay is ignored for synthesis.
+WARNING:Xst:916 - "../../aes_core/trunk/rtl/verilog/aes_key_expand_128.v" line 76: Delay is ignored for synthesis.
+Module <aes_key_expand_128> is correct for synthesis.
+ 
+Analyzing module <aes_rcon> in library <work>.
+WARNING:Xst:916 - "../../aes_core/trunk/rtl/verilog/aes_rcon.v" line 68: Delay is ignored for synthesis.
+WARNING:Xst:916 - "../../aes_core/trunk/rtl/verilog/aes_rcon.v" line 69: Delay is ignored for synthesis.
+	Calling function <frcon>.
+"../../aes_core/trunk/rtl/verilog/aes_rcon.v" line 78: Found Parallel Case directive in module <aes_rcon>.
+WARNING:Xst:916 - "../../aes_core/trunk/rtl/verilog/aes_rcon.v" line 73: Delay is ignored for synthesis.
+WARNING:Xst:916 - "../../aes_core/trunk/rtl/verilog/aes_rcon.v" line 74: Delay is ignored for synthesis.
+Module <aes_rcon> is correct for synthesis.
+ 
+Analyzing module <aes_sbox> in library <work>.
+"../../aes_core/trunk/rtl/verilog/aes_sbox.v" line 65: Found FullParallel Case directive in module <aes_sbox>.
+Module <aes_sbox> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <aes_sbox>.
+    Related source file is "../../aes_core/trunk/rtl/verilog/aes_sbox.v".
+    Found 256x8-bit ROM for signal <d>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <aes_sbox> synthesized.
+
+
+Synthesizing Unit <aes_rcon>.
+    Related source file is "../../aes_core/trunk/rtl/verilog/aes_rcon.v".
+    Found 16x32-bit ROM for signal <frcon/1/frcon>.
+    Found 32-bit register for signal <out>.
+    Found 4-bit up counter for signal <rcnt>.
+    Found 4-bit adder for signal <rcnt_next>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   1 Counter(s).
+	inferred  32 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <aes_rcon> synthesized.
+
+
+Synthesizing Unit <aes_key_expand_128>.
+    Related source file is "../../aes_core/trunk/rtl/verilog/aes_key_expand_128.v".
+    Found 128-bit register for signal <w>.
+    Found 32-bit xor3 for signal <w_0$xor0000> created at line 73.
+    Found 32-bit xor2 for signal <w_1$xor0000> created at line 74.
+    Found 32-bit xor2 for signal <w_2$xor0000> created at line 75.
+    Found 32-bit xor2 for signal <w_3$xor0000> created at line 76.
+    Summary:
+	inferred 128 D-type flip-flop(s).
+	inferred  32 Xor(s).
+Unit <aes_key_expand_128> synthesized.
+
+
+Synthesizing Unit <aes_cipher_top>.
+    Related source file is "../../aes_core/trunk/rtl/verilog/aes_cipher_top.v".
+    Found 1-bit register for signal <done>.
+    Found 128-bit register for signal <text_out>.
+    Found 4-bit down counter for signal <dcnt>.
+    Found 1-bit register for signal <ld_r>.
+    Found 32-bit xor4 for signal <mix_col/1/mix_col>.
+    Found 32-bit xor4 for signal <mix_col/2/mix_col>.
+    Found 32-bit xor4 for signal <mix_col/3/mix_col>.
+    Found 32-bit xor4 for signal <mix_col/4/mix_col>.
+    Found 1-bit xor2 for signal <mix_col_10$xor0000> created at line 211.
+    Found 1-bit xor2 for signal <mix_col_10$xor0001> created at line 211.
+    Found 1-bit xor2 for signal <mix_col_10$xor0002> created at line 211.
+    Found 1-bit xor2 for signal <mix_col_10$xor0003> created at line 211.
+    Found 1-bit xor2 for signal <mix_col_11$xor0000> created at line 211.
+    Found 1-bit xor2 for signal <mix_col_11$xor0001> created at line 211.
+    Found 1-bit xor2 for signal <mix_col_11$xor0002> created at line 211.
+    Found 1-bit xor2 for signal <mix_col_11$xor0003> created at line 211.
+    Found 1-bit xor2 for signal <mix_col_12$xor0000> created at line 211.
+    Found 1-bit xor2 for signal <mix_col_12$xor0001> created at line 211.
+    Found 1-bit xor2 for signal <mix_col_12$xor0002> created at line 211.
+    Found 1-bit xor2 for signal <mix_col_12$xor0003> created at line 211.
+    Found 1-bit xor2 for signal <mix_col_13$xor0000> created at line 211.
+    Found 1-bit xor2 for signal <mix_col_13$xor0001> created at line 211.
+    Found 1-bit xor2 for signal <mix_col_13$xor0002> created at line 211.
+    Found 1-bit xor2 for signal <mix_col_13$xor0003> created at line 211.
+    Found 1-bit xor2 for signal <mix_col_14$xor0000> created at line 211.
+    Found 1-bit xor2 for signal <mix_col_14$xor0001> created at line 211.
+    Found 1-bit xor2 for signal <mix_col_14$xor0002> created at line 211.
+    Found 1-bit xor2 for signal <mix_col_14$xor0003> created at line 211.
+    Found 1-bit xor2 for signal <mix_col_15$xor0000> created at line 211.
+    Found 1-bit xor2 for signal <mix_col_15$xor0001> created at line 211.
+    Found 1-bit xor2 for signal <mix_col_15$xor0002> created at line 211.
+    Found 1-bit xor2 for signal <mix_col_15$xor0003> created at line 211.
+    Found 1-bit xor2 for signal <mix_col_24$xor0000> created at line 209.
+    Found 1-bit xor2 for signal <mix_col_24$xor0001> created at line 209.
+    Found 1-bit xor2 for signal <mix_col_24$xor0002> created at line 209.
+    Found 1-bit xor2 for signal <mix_col_24$xor0003> created at line 209.
+    Found 1-bit xor2 for signal <mix_col_25$xor0000> created at line 209.
+    Found 1-bit xor2 for signal <mix_col_25$xor0001> created at line 209.
+    Found 1-bit xor2 for signal <mix_col_25$xor0002> created at line 209.
+    Found 1-bit xor2 for signal <mix_col_25$xor0003> created at line 209.
+    Found 1-bit xor2 for signal <mix_col_26$xor0000> created at line 209.
+    Found 1-bit xor2 for signal <mix_col_26$xor0001> created at line 209.
+    Found 1-bit xor2 for signal <mix_col_26$xor0002> created at line 209.
+    Found 1-bit xor2 for signal <mix_col_26$xor0003> created at line 209.
+    Found 1-bit xor2 for signal <mix_col_27$xor0000> created at line 209.
+    Found 1-bit xor2 for signal <mix_col_27$xor0001> created at line 209.
+    Found 1-bit xor2 for signal <mix_col_27$xor0002> created at line 209.
+    Found 1-bit xor2 for signal <mix_col_27$xor0003> created at line 209.
+    Found 1-bit xor2 for signal <mix_col_28$xor0000> created at line 209.
+    Found 1-bit xor2 for signal <mix_col_28$xor0001> created at line 209.
+    Found 1-bit xor2 for signal <mix_col_28$xor0002> created at line 209.
+    Found 1-bit xor2 for signal <mix_col_28$xor0003> created at line 209.
+    Found 1-bit xor2 for signal <mix_col_29$xor0000> created at line 209.
+    Found 1-bit xor2 for signal <mix_col_29$xor0001> created at line 209.
+    Found 1-bit xor2 for signal <mix_col_29$xor0002> created at line 209.
+    Found 1-bit xor2 for signal <mix_col_29$xor0003> created at line 209.
+    Found 1-bit xor2 for signal <mix_col_30$xor0000> created at line 209.
+    Found 1-bit xor2 for signal <mix_col_30$xor0001> created at line 209.
+    Found 1-bit xor2 for signal <mix_col_30$xor0002> created at line 209.
+    Found 1-bit xor2 for signal <mix_col_30$xor0003> created at line 209.
+    Found 1-bit xor2 for signal <mix_col_31$xor0000> created at line 209.
+    Found 1-bit xor2 for signal <mix_col_31$xor0001> created at line 209.
+    Found 1-bit xor2 for signal <mix_col_31$xor0002> created at line 209.
+    Found 1-bit xor2 for signal <mix_col_31$xor0003> created at line 209.
+    Found 1-bit xor2 for signal <mix_col_8$xor0000> created at line 211.
+    Found 1-bit xor2 for signal <mix_col_8$xor0001> created at line 211.
+    Found 1-bit xor2 for signal <mix_col_8$xor0002> created at line 211.
+    Found 1-bit xor2 for signal <mix_col_8$xor0003> created at line 211.
+    Found 1-bit xor2 for signal <mix_col_9$xor0000> created at line 211.
+    Found 1-bit xor2 for signal <mix_col_9$xor0001> created at line 211.
+    Found 1-bit xor2 for signal <mix_col_9$xor0002> created at line 211.
+    Found 1-bit xor2 for signal <mix_col_9$xor0003> created at line 211.
+    Found 8-bit register for signal <sa00>.
+    Found 8-bit xor2 for signal <sa00$xor0000> created at line 134.
+    Found 8-bit xor2 for signal <sa00_next>.
+    Found 8-bit register for signal <sa01>.
+    Found 8-bit xor2 for signal <sa01$xor0000> created at line 130.
+    Found 8-bit xor2 for signal <sa01_next>.
+    Found 8-bit register for signal <sa02>.
+    Found 8-bit xor2 for signal <sa02$xor0000> created at line 126.
+    Found 8-bit xor2 for signal <sa02_next>.
+    Found 8-bit register for signal <sa03>.
+    Found 8-bit xor2 for signal <sa03$xor0000> created at line 122.
+    Found 8-bit xor2 for signal <sa03_next>.
+    Found 8-bit register for signal <sa10>.
+    Found 8-bit xor2 for signal <sa10$xor0000> created at line 133.
+    Found 8-bit xor2 for signal <sa10_next>.
+    Found 8-bit register for signal <sa11>.
+    Found 8-bit xor2 for signal <sa11$xor0000> created at line 129.
+    Found 8-bit xor2 for signal <sa11_next>.
+    Found 8-bit register for signal <sa12>.
+    Found 8-bit xor2 for signal <sa12$xor0000> created at line 125.
+    Found 8-bit xor2 for signal <sa12_next>.
+    Found 8-bit register for signal <sa13>.
+    Found 8-bit xor2 for signal <sa13$xor0000> created at line 121.
+    Found 8-bit xor2 for signal <sa13_next>.
+    Found 8-bit register for signal <sa20>.
+    Found 8-bit xor2 for signal <sa20$xor0000> created at line 132.
+    Found 8-bit xor2 for signal <sa20_next>.
+    Found 8-bit register for signal <sa21>.
+    Found 8-bit xor2 for signal <sa21$xor0000> created at line 128.
+    Found 8-bit xor2 for signal <sa21_next>.
+    Found 8-bit register for signal <sa22>.
+    Found 8-bit xor2 for signal <sa22$xor0000> created at line 124.
+    Found 8-bit xor2 for signal <sa22_next>.
+    Found 8-bit register for signal <sa23>.
+    Found 8-bit xor2 for signal <sa23$xor0000> created at line 120.
+    Found 8-bit xor2 for signal <sa23_next>.
+    Found 8-bit register for signal <sa30>.
+    Found 8-bit xor2 for signal <sa30$xor0000> created at line 131.
+    Found 8-bit xor2 for signal <sa30_next>.
+    Found 8-bit register for signal <sa31>.
+    Found 8-bit xor2 for signal <sa31$xor0000> created at line 127.
+    Found 8-bit xor2 for signal <sa31_next>.
+    Found 8-bit register for signal <sa32>.
+    Found 8-bit xor2 for signal <sa32$xor0000> created at line 123.
+    Found 8-bit xor2 for signal <sa32_next>.
+    Found 8-bit register for signal <sa33>.
+    Found 8-bit xor2 for signal <sa33$xor0000> created at line 119.
+    Found 8-bit xor2 for signal <sa33_next>.
+    Found 128-bit register for signal <text_in_r>.
+    Found 1-bit xor2 for signal <text_out_0$xor0000> created at line 198.
+    Found 1-bit xor2 for signal <text_out_1$xor0000> created at line 198.
+    Found 1-bit xor2 for signal <text_out_10$xor0000> created at line 194.
+    Found 1-bit xor2 for signal <text_out_100$xor0000> created at line 195.
+    Found 1-bit xor2 for signal <text_out_101$xor0000> created at line 195.
+    Found 1-bit xor2 for signal <text_out_102$xor0000> created at line 195.
+    Found 1-bit xor2 for signal <text_out_103$xor0000> created at line 195.
+    Found 1-bit xor2 for signal <text_out_104$xor0000> created at line 191.
+    Found 1-bit xor2 for signal <text_out_105$xor0000> created at line 191.
+    Found 1-bit xor2 for signal <text_out_106$xor0000> created at line 191.
+    Found 1-bit xor2 for signal <text_out_107$xor0000> created at line 191.
+    Found 1-bit xor2 for signal <text_out_108$xor0000> created at line 191.
+    Found 1-bit xor2 for signal <text_out_109$xor0000> created at line 191.
+    Found 1-bit xor2 for signal <text_out_11$xor0000> created at line 194.
+    Found 1-bit xor2 for signal <text_out_110$xor0000> created at line 191.
+    Found 1-bit xor2 for signal <text_out_111$xor0000> created at line 191.
+    Found 1-bit xor2 for signal <text_out_112$xor0000> created at line 187.
+    Found 1-bit xor2 for signal <text_out_113$xor0000> created at line 187.
+    Found 1-bit xor2 for signal <text_out_114$xor0000> created at line 187.
+    Found 1-bit xor2 for signal <text_out_115$xor0000> created at line 187.
+    Found 1-bit xor2 for signal <text_out_116$xor0000> created at line 187.
+    Found 1-bit xor2 for signal <text_out_117$xor0000> created at line 187.
+    Found 1-bit xor2 for signal <text_out_118$xor0000> created at line 187.
+    Found 1-bit xor2 for signal <text_out_119$xor0000> created at line 187.
+    Found 1-bit xor2 for signal <text_out_12$xor0000> created at line 194.
+    Found 1-bit xor2 for signal <text_out_120$xor0000> created at line 183.
+    Found 1-bit xor2 for signal <text_out_121$xor0000> created at line 183.
+    Found 1-bit xor2 for signal <text_out_122$xor0000> created at line 183.
+    Found 1-bit xor2 for signal <text_out_123$xor0000> created at line 183.
+    Found 1-bit xor2 for signal <text_out_124$xor0000> created at line 183.
+    Found 1-bit xor2 for signal <text_out_125$xor0000> created at line 183.
+    Found 1-bit xor2 for signal <text_out_126$xor0000> created at line 183.
+    Found 1-bit xor2 for signal <text_out_127$xor0000> created at line 183.
+    Found 1-bit xor2 for signal <text_out_13$xor0000> created at line 194.
+    Found 1-bit xor2 for signal <text_out_14$xor0000> created at line 194.
+    Found 1-bit xor2 for signal <text_out_15$xor0000> created at line 194.
+    Found 1-bit xor2 for signal <text_out_16$xor0000> created at line 190.
+    Found 1-bit xor2 for signal <text_out_17$xor0000> created at line 190.
+    Found 1-bit xor2 for signal <text_out_18$xor0000> created at line 190.
+    Found 1-bit xor2 for signal <text_out_19$xor0000> created at line 190.
+    Found 1-bit xor2 for signal <text_out_2$xor0000> created at line 198.
+    Found 1-bit xor2 for signal <text_out_20$xor0000> created at line 190.
+    Found 1-bit xor2 for signal <text_out_21$xor0000> created at line 190.
+    Found 1-bit xor2 for signal <text_out_22$xor0000> created at line 190.
+    Found 1-bit xor2 for signal <text_out_23$xor0000> created at line 190.
+    Found 1-bit xor2 for signal <text_out_24$xor0000> created at line 186.
+    Found 1-bit xor2 for signal <text_out_25$xor0000> created at line 186.
+    Found 1-bit xor2 for signal <text_out_26$xor0000> created at line 186.
+    Found 1-bit xor2 for signal <text_out_27$xor0000> created at line 186.
+    Found 1-bit xor2 for signal <text_out_28$xor0000> created at line 186.
+    Found 1-bit xor2 for signal <text_out_29$xor0000> created at line 186.
+    Found 1-bit xor2 for signal <text_out_3$xor0000> created at line 198.
+    Found 1-bit xor2 for signal <text_out_30$xor0000> created at line 186.
+    Found 1-bit xor2 for signal <text_out_31$xor0000> created at line 186.
+    Found 1-bit xor2 for signal <text_out_32$xor0000> created at line 197.
+    Found 1-bit xor2 for signal <text_out_33$xor0000> created at line 197.
+    Found 1-bit xor2 for signal <text_out_34$xor0000> created at line 197.
+    Found 1-bit xor2 for signal <text_out_35$xor0000> created at line 197.
+    Found 1-bit xor2 for signal <text_out_36$xor0000> created at line 197.
+    Found 1-bit xor2 for signal <text_out_37$xor0000> created at line 197.
+    Found 1-bit xor2 for signal <text_out_38$xor0000> created at line 197.
+    Found 1-bit xor2 for signal <text_out_39$xor0000> created at line 197.
+    Found 1-bit xor2 for signal <text_out_4$xor0000> created at line 198.
+    Found 1-bit xor2 for signal <text_out_40$xor0000> created at line 193.
+    Found 1-bit xor2 for signal <text_out_41$xor0000> created at line 193.
+    Found 1-bit xor2 for signal <text_out_42$xor0000> created at line 193.
+    Found 1-bit xor2 for signal <text_out_43$xor0000> created at line 193.
+    Found 1-bit xor2 for signal <text_out_44$xor0000> created at line 193.
+    Found 1-bit xor2 for signal <text_out_45$xor0000> created at line 193.
+    Found 1-bit xor2 for signal <text_out_46$xor0000> created at line 193.
+    Found 1-bit xor2 for signal <text_out_47$xor0000> created at line 193.
+    Found 1-bit xor2 for signal <text_out_48$xor0000> created at line 189.
+    Found 1-bit xor2 for signal <text_out_49$xor0000> created at line 189.
+    Found 1-bit xor2 for signal <text_out_5$xor0000> created at line 198.
+    Found 1-bit xor2 for signal <text_out_50$xor0000> created at line 189.
+    Found 1-bit xor2 for signal <text_out_51$xor0000> created at line 189.
+    Found 1-bit xor2 for signal <text_out_52$xor0000> created at line 189.
+    Found 1-bit xor2 for signal <text_out_53$xor0000> created at line 189.
+    Found 1-bit xor2 for signal <text_out_54$xor0000> created at line 189.
+    Found 1-bit xor2 for signal <text_out_55$xor0000> created at line 189.
+    Found 1-bit xor2 for signal <text_out_56$xor0000> created at line 185.
+    Found 1-bit xor2 for signal <text_out_57$xor0000> created at line 185.
+    Found 1-bit xor2 for signal <text_out_58$xor0000> created at line 185.
+    Found 1-bit xor2 for signal <text_out_59$xor0000> created at line 185.
+    Found 1-bit xor2 for signal <text_out_6$xor0000> created at line 198.
+    Found 1-bit xor2 for signal <text_out_60$xor0000> created at line 185.
+    Found 1-bit xor2 for signal <text_out_61$xor0000> created at line 185.
+    Found 1-bit xor2 for signal <text_out_62$xor0000> created at line 185.
+    Found 1-bit xor2 for signal <text_out_63$xor0000> created at line 185.
+    Found 1-bit xor2 for signal <text_out_64$xor0000> created at line 196.
+    Found 1-bit xor2 for signal <text_out_65$xor0000> created at line 196.
+    Found 1-bit xor2 for signal <text_out_66$xor0000> created at line 196.
+    Found 1-bit xor2 for signal <text_out_67$xor0000> created at line 196.
+    Found 1-bit xor2 for signal <text_out_68$xor0000> created at line 196.
+    Found 1-bit xor2 for signal <text_out_69$xor0000> created at line 196.
+    Found 1-bit xor2 for signal <text_out_7$xor0000> created at line 198.
+    Found 1-bit xor2 for signal <text_out_70$xor0000> created at line 196.
+    Found 1-bit xor2 for signal <text_out_71$xor0000> created at line 196.
+    Found 1-bit xor2 for signal <text_out_72$xor0000> created at line 192.
+    Found 1-bit xor2 for signal <text_out_73$xor0000> created at line 192.
+    Found 1-bit xor2 for signal <text_out_74$xor0000> created at line 192.
+    Found 1-bit xor2 for signal <text_out_75$xor0000> created at line 192.
+    Found 1-bit xor2 for signal <text_out_76$xor0000> created at line 192.
+    Found 1-bit xor2 for signal <text_out_77$xor0000> created at line 192.
+    Found 1-bit xor2 for signal <text_out_78$xor0000> created at line 192.
+    Found 1-bit xor2 for signal <text_out_79$xor0000> created at line 192.
+    Found 1-bit xor2 for signal <text_out_8$xor0000> created at line 194.
+    Found 1-bit xor2 for signal <text_out_80$xor0000> created at line 188.
+    Found 1-bit xor2 for signal <text_out_81$xor0000> created at line 188.
+    Found 1-bit xor2 for signal <text_out_82$xor0000> created at line 188.
+    Found 1-bit xor2 for signal <text_out_83$xor0000> created at line 188.
+    Found 1-bit xor2 for signal <text_out_84$xor0000> created at line 188.
+    Found 1-bit xor2 for signal <text_out_85$xor0000> created at line 188.
+    Found 1-bit xor2 for signal <text_out_86$xor0000> created at line 188.
+    Found 1-bit xor2 for signal <text_out_87$xor0000> created at line 188.
+    Found 1-bit xor2 for signal <text_out_88$xor0000> created at line 184.
+    Found 1-bit xor2 for signal <text_out_89$xor0000> created at line 184.
+    Found 1-bit xor2 for signal <text_out_9$xor0000> created at line 194.
+    Found 1-bit xor2 for signal <text_out_90$xor0000> created at line 184.
+    Found 1-bit xor2 for signal <text_out_91$xor0000> created at line 184.
+    Found 1-bit xor2 for signal <text_out_92$xor0000> created at line 184.
+    Found 1-bit xor2 for signal <text_out_93$xor0000> created at line 184.
+    Found 1-bit xor2 for signal <text_out_94$xor0000> created at line 184.
+    Found 1-bit xor2 for signal <text_out_95$xor0000> created at line 184.
+    Found 1-bit xor2 for signal <text_out_96$xor0000> created at line 195.
+    Found 1-bit xor2 for signal <text_out_97$xor0000> created at line 195.
+    Found 1-bit xor2 for signal <text_out_98$xor0000> created at line 195.
+    Found 1-bit xor2 for signal <text_out_99$xor0000> created at line 195.
+    Found 1-bit xor2 for signal <xtime$xor0000> created at line 217.
+    Found 1-bit xor2 for signal <xtime$xor0001> created at line 217.
+    Found 1-bit xor2 for signal <xtime$xor0002> created at line 217.
+    Found 1-bit xor2 for signal <xtime$xor0003> created at line 217.
+    Found 1-bit xor2 for signal <xtime$xor0004> created at line 217.
+    Found 1-bit xor2 for signal <xtime$xor0005> created at line 217.
+    Found 1-bit xor2 for signal <xtime$xor0006> created at line 217.
+    Found 1-bit xor2 for signal <xtime$xor0007> created at line 217.
+    Found 1-bit xor2 for signal <xtime$xor0008> created at line 217.
+    Found 1-bit xor2 for signal <xtime$xor0009> created at line 217.
+    Found 1-bit xor2 for signal <xtime$xor0010> created at line 217.
+    Found 1-bit xor2 for signal <xtime$xor0011> created at line 217.
+    Found 1-bit xor2 for signal <xtime$xor0012> created at line 217.
+    Found 1-bit xor2 for signal <xtime$xor0013> created at line 217.
+    Found 1-bit xor2 for signal <xtime$xor0014> created at line 217.
+    Found 1-bit xor2 for signal <xtime$xor0015> created at line 217.
+    Found 1-bit xor2 for signal <xtime$xor0016> created at line 217.
+    Found 1-bit xor2 for signal <xtime$xor0017> created at line 217.
+    Found 1-bit xor2 for signal <xtime$xor0018> created at line 217.
+    Found 1-bit xor2 for signal <xtime$xor0019> created at line 217.
+    Found 1-bit xor2 for signal <xtime$xor0020> created at line 217.
+    Found 1-bit xor2 for signal <xtime$xor0021> created at line 217.
+    Found 1-bit xor2 for signal <xtime$xor0022> created at line 217.
+    Found 1-bit xor2 for signal <xtime$xor0023> created at line 217.
+    Found 1-bit xor2 for signal <xtime$xor0024> created at line 217.
+    Found 1-bit xor2 for signal <xtime$xor0025> created at line 217.
+    Found 1-bit xor2 for signal <xtime$xor0026> created at line 217.
+    Found 1-bit xor2 for signal <xtime$xor0027> created at line 217.
+    Found 1-bit xor2 for signal <xtime$xor0028> created at line 217.
+    Found 1-bit xor2 for signal <xtime$xor0029> created at line 217.
+    Found 1-bit xor2 for signal <xtime$xor0030> created at line 217.
+    Found 1-bit xor2 for signal <xtime$xor0031> created at line 217.
+    Found 1-bit xor2 for signal <xtime$xor0032> created at line 217.
+    Found 1-bit xor2 for signal <xtime$xor0033> created at line 217.
+    Found 1-bit xor2 for signal <xtime$xor0034> created at line 217.
+    Found 1-bit xor2 for signal <xtime$xor0035> created at line 217.
+    Found 1-bit xor2 for signal <xtime$xor0036> created at line 217.
+    Found 1-bit xor2 for signal <xtime$xor0037> created at line 217.
+    Found 1-bit xor2 for signal <xtime$xor0038> created at line 217.
+    Found 1-bit xor2 for signal <xtime$xor0039> created at line 217.
+    Found 1-bit xor2 for signal <xtime$xor0040> created at line 217.
+    Found 1-bit xor2 for signal <xtime$xor0041> created at line 217.
+    Found 1-bit xor2 for signal <xtime$xor0042> created at line 217.
+    Found 1-bit xor2 for signal <xtime$xor0043> created at line 217.
+    Found 1-bit xor2 for signal <xtime$xor0044> created at line 217.
+    Found 1-bit xor2 for signal <xtime$xor0045> created at line 217.
+    Found 1-bit xor2 for signal <xtime$xor0046> created at line 217.
+    Found 1-bit xor2 for signal <xtime$xor0047> created at line 217.
+    Summary:
+	inferred   1 Counter(s).
+	inferred 386 D-type flip-flop(s).
+	inferred 128 Xor(s).
+Unit <aes_cipher_top> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 21
+ 16x32-bit ROM                                         : 1
+ 256x8-bit ROM                                         : 20
+# Adders/Subtractors                                   : 1
+ 4-bit adder                                           : 1
+# Counters                                             : 2
+ 4-bit down counter                                    : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 152
+ 1-bit register                                        : 130
+ 128-bit register                                      : 1
+ 32-bit register                                       : 5
+ 8-bit register                                        : 16
+# Xors                                                 : 404
+ 1-bit xor2                                            : 240
+ 1-bit xor4                                            : 128
+ 32-bit xor2                                           : 3
+ 32-bit xor3                                           : 1
+ 8-bit xor2                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <aes_cipher_top>.
+INFO:Xst:3044 - The ROM <us33/Mrom_d> will be implemented as a read-only BLOCK RAM, absorbing the register: <sa33>.
+INFO:Xst:3044 - The ROM <us32/Mrom_d> will be implemented as a read-only BLOCK RAM, absorbing the register: <sa32>.
+INFO:Xst:3044 - The ROM <us31/Mrom_d> will be implemented as a read-only BLOCK RAM, absorbing the register: <sa31>.
+INFO:Xst:3044 - The ROM <us30/Mrom_d> will be implemented as a read-only BLOCK RAM, absorbing the register: <sa30>.
+INFO:Xst:3045 - The ROM description <us23/Mrom_d> will be implemented on LUTs because the limited number of device block RAMs. If you want to be implemented as block RAM, please select a larger device.
+INFO:Xst:3045 - The ROM description <us22/Mrom_d> will be implemented on LUTs because the limited number of device block RAMs. If you want to be implemented as block RAM, please select a larger device.
+INFO:Xst:3045 - The ROM description <us21/Mrom_d> will be implemented on LUTs because the limited number of device block RAMs. If you want to be implemented as block RAM, please select a larger device.
+INFO:Xst:3045 - The ROM description <us20/Mrom_d> will be implemented on LUTs because the limited number of device block RAMs. If you want to be implemented as block RAM, please select a larger device.
+INFO:Xst:3045 - The ROM description <us13/Mrom_d> will be implemented on LUTs because the limited number of device block RAMs. If you want to be implemented as block RAM, please select a larger device.
+INFO:Xst:3045 - The ROM description <us12/Mrom_d> will be implemented on LUTs because the limited number of device block RAMs. If you want to be implemented as block RAM, please select a larger device.
+INFO:Xst:3045 - The ROM description <us11/Mrom_d> will be implemented on LUTs because the limited number of device block RAMs. If you want to be implemented as block RAM, please select a larger device.
+INFO:Xst:3045 - The ROM description <us10/Mrom_d> will be implemented on LUTs because the limited number of device block RAMs. If you want to be implemented as block RAM, please select a larger device.
+INFO:Xst:3045 - The ROM description <us03/Mrom_d> will be implemented on LUTs because the limited number of device block RAMs. If you want to be implemented as block RAM, please select a larger device.
+INFO:Xst:3045 - The ROM description <us02/Mrom_d> will be implemented on LUTs because the limited number of device block RAMs. If you want to be implemented as block RAM, please select a larger device.
+INFO:Xst:3045 - The ROM description <us01/Mrom_d> will be implemented on LUTs because the limited number of device block RAMs. If you want to be implemented as block RAM, please select a larger device.
+INFO:Xst:3045 - The ROM description <us00/Mrom_d> will be implemented on LUTs because the limited number of device block RAMs. If you want to be implemented as block RAM, please select a larger device.
+INFO:Xst:3225 - The RAM <us33/Mrom_d> will be implemented as BLOCK RAM
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to internal node          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <sa33_sub>      |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3225 - The RAM <us32/Mrom_d> will be implemented as BLOCK RAM
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to internal node          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <sa32_sub>      |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3225 - The RAM <us31/Mrom_d> will be implemented as BLOCK RAM
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to internal node          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <sa31_sub>      |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3225 - The RAM <us30/Mrom_d> will be implemented as BLOCK RAM
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 256-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <clk>           | rise     |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to internal node          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to signal <sa30_sub>      |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <aes_cipher_top> synthesized (advanced).
+
+Synthesizing (advanced) Unit <aes_key_expand_128>.
+INFO:Xst:3045 - The ROM description <u3/Mrom_d> will be implemented on LUTs because the limited number of device block RAMs. If you want to be implemented as block RAM, please select a larger device.
+INFO:Xst:3045 - The ROM description <u1/Mrom_d> will be implemented on LUTs because the limited number of device block RAMs. If you want to be implemented as block RAM, please select a larger device.
+INFO:Xst:3045 - The ROM description <u2/Mrom_d> will be implemented on LUTs because the limited number of device block RAMs. If you want to be implemented as block RAM, please select a larger device.
+INFO:Xst:3045 - The ROM description <u0/Mrom_d> will be implemented on LUTs because the limited number of device block RAMs. If you want to be implemented as block RAM, please select a larger device.
+Unit <aes_key_expand_128> synthesized (advanced).
+
+Synthesizing (advanced) Unit <aes_rcon>.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_frcon_1_frcon> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+Unit <aes_rcon> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 4
+ 256x8-bit single-port block RAM                       : 4
+# ROMs                                                 : 17
+ 16x32-bit ROM                                         : 1
+ 256x8-bit ROM                                         : 16
+# Adders/Subtractors                                   : 1
+ 4-bit adder                                           : 1
+# Counters                                             : 2
+ 4-bit down counter                                    : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 514
+ Flip-Flops                                            : 514
+# Xors                                                 : 404
+ 1-bit xor2                                            : 240
+ 1-bit xor4                                            : 128
+ 32-bit xor2                                           : 3
+ 32-bit xor3                                           : 1
+ 8-bit xor2                                            : 32
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:2697 - Unit <aes_cipher_top> : the RAMs <us33/Mrom_d>, <us32/Mrom_d> are packed into the single block RAM <us33/Mrom_d1>
+INFO:Xst:2697 - Unit <aes_cipher_top> : the RAMs <us31/Mrom_d>, <us30/Mrom_d> are packed into the single block RAM <us31/Mrom_d1>
+WARNING:Xst:1710 - FF/Latch <out_23> (without init value) has a constant value of 0 in block <aes_rcon>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_22> (without init value) has a constant value of 0 in block <aes_rcon>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_21> (without init value) has a constant value of 0 in block <aes_rcon>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_20> (without init value) has a constant value of 0 in block <aes_rcon>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_19> (without init value) has a constant value of 0 in block <aes_rcon>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_18> (without init value) has a constant value of 0 in block <aes_rcon>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_17> (without init value) has a constant value of 0 in block <aes_rcon>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_16> (without init value) has a constant value of 0 in block <aes_rcon>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_15> (without init value) has a constant value of 0 in block <aes_rcon>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_14> (without init value) has a constant value of 0 in block <aes_rcon>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_13> (without init value) has a constant value of 0 in block <aes_rcon>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_12> (without init value) has a constant value of 0 in block <aes_rcon>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_11> (without init value) has a constant value of 0 in block <aes_rcon>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_10> (without init value) has a constant value of 0 in block <aes_rcon>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_9> (without init value) has a constant value of 0 in block <aes_rcon>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_8> (without init value) has a constant value of 0 in block <aes_rcon>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_7> (without init value) has a constant value of 0 in block <aes_rcon>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_6> (without init value) has a constant value of 0 in block <aes_rcon>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_5> (without init value) has a constant value of 0 in block <aes_rcon>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_4> (without init value) has a constant value of 0 in block <aes_rcon>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_3> (without init value) has a constant value of 0 in block <aes_rcon>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_2> (without init value) has a constant value of 0 in block <aes_rcon>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_1> (without init value) has a constant value of 0 in block <aes_rcon>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <out_0> (without init value) has a constant value of 0 in block <aes_rcon>. This FF/Latch will be trimmed during the optimization process.
+
+Optimizing unit <aes_cipher_top> ...
+
+Optimizing unit <aes_rcon> ...
+
+Optimizing unit <aes_key_expand_128> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block aes_cipher_top, actual ratio is 155.
+Optimizing block <aes_cipher_top> to meet ratio 100 (+ 5) of 960 slices :
+WARNING:Xst:2254 - Area constraint could not be met for block <aes_cipher_top>, final ratio is 151.
+FlipFlop sa00_0 has been replicated 3 time(s)
+FlipFlop sa00_1 has been replicated 5 time(s)
+FlipFlop sa00_2 has been replicated 2 time(s)
+FlipFlop sa00_3 has been replicated 2 time(s)
+FlipFlop sa01_2 has been replicated 5 time(s)
+FlipFlop sa02_0 has been replicated 6 time(s)
+FlipFlop sa03_0 has been replicated 4 time(s)
+FlipFlop sa03_1 has been replicated 6 time(s)
+FlipFlop sa03_2 has been replicated 4 time(s)
+FlipFlop sa03_3 has been replicated 3 time(s)
+FlipFlop sa10_0 has been replicated 5 time(s)
+FlipFlop sa10_1 has been replicated 5 time(s)
+FlipFlop sa10_2 has been replicated 5 time(s)
+FlipFlop sa10_3 has been replicated 5 time(s)
+FlipFlop sa11_0 has been replicated 4 time(s)
+FlipFlop sa11_2 has been replicated 5 time(s)
+FlipFlop sa12_0 has been replicated 6 time(s)
+FlipFlop sa12_1 has been replicated 6 time(s)
+FlipFlop sa12_2 has been replicated 6 time(s)
+FlipFlop sa12_3 has been replicated 6 time(s)
+FlipFlop sa13_2 has been replicated 6 time(s)
+FlipFlop sa20_0 has been replicated 4 time(s)
+FlipFlop sa20_1 has been replicated 6 time(s)
+FlipFlop sa20_2 has been replicated 5 time(s)
+FlipFlop sa20_3 has been replicated 4 time(s)
+FlipFlop sa21_0 has been replicated 5 time(s)
+FlipFlop sa21_1 has been replicated 5 time(s)
+FlipFlop sa21_2 has been replicated 5 time(s)
+FlipFlop sa21_3 has been replicated 5 time(s)
+FlipFlop sa22_0 has been replicated 5 time(s)
+FlipFlop sa22_1 has been replicated 4 time(s)
+FlipFlop sa22_2 has been replicated 5 time(s)
+FlipFlop sa22_3 has been replicated 5 time(s)
+FlipFlop sa23_0 has been replicated 5 time(s)
+FlipFlop sa23_1 has been replicated 5 time(s)
+FlipFlop sa23_2 has been replicated 3 time(s)
+FlipFlop sa23_3 has been replicated 3 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 671
+ Flip-Flops                                            : 671
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : aes_cipher_top.ngr
+Top Level Output File Name         : aes_cipher_top
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 388
+
+Cell Usage :
+# BELS                             : 5013
+#      GND                         : 1
+#      INV                         : 3
+#      LUT2                        : 196
+#      LUT2_D                      : 9
+#      LUT2_L                      : 35
+#      LUT3                        : 102
+#      LUT3_D                      : 22
+#      LUT4                        : 2555
+#      LUT4_D                      : 8
+#      LUT4_L                      : 65
+#      MUXF5                       : 1120
+#      MUXF6                       : 512
+#      MUXF7                       : 256
+#      MUXF8                       : 128
+#      VCC                         : 1
+# FlipFlops/Latches                : 671
+#      FD                          : 519
+#      FDE                         : 128
+#      FDR                         : 8
+#      FDRE                        : 1
+#      FDRSE                       : 3
+#      FDS                         : 12
+# RAMS                             : 2
+#      RAMB16_S9_S9                : 2
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 387
+#      IBUF                        : 258
+#      OBUF                        : 129
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100evq100-5 
+
+ Number of Slices:                     1608  out of    960   167% (*) 
+ Number of Slice Flip Flops:            671  out of   1920    34%  
+ Number of 4 input LUTs:               2995  out of   1920   155% (*) 
+ Number of IOs:                         388
+ Number of bonded IOBs:                 388  out of     66   587% (*) 
+ Number of BRAMs:                         2  out of      4    50%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+WARNING:Xst:1336 -  (*) More than 100% of Device resources are used
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 673   |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -5
+
+   Minimum period: 7.046ns (Maximum Frequency: 141.918MHz)
+   Minimum input arrival time before clock: 5.305ns
+   Maximum output required time after clock: 4.040ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 7.046ns (frequency: 141.918MHz)
+  Total number of paths / destination ports: 130556 / 585
+-------------------------------------------------------------------------
+Delay:               7.046ns (Levels of Logic = 7)
+  Source:            sa00_3_2 (FF)
+  Destination:       us31/Mrom_d1 (RAM)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: sa00_3_2 to us31/Mrom_d1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q              30   0.514   1.075  sa00_3_2 (sa00_3_2)
+     LUT4:I3->O            1   0.612   0.000  us00/Mrom_d149 (us00/Mrom_d149)
+     MUXF5:I1->O           1   0.278   0.000  us00/Mrom_d14_f5_3 (us00/Mrom_d14_f54)
+     MUXF6:I1->O           1   0.451   0.000  us00/Mrom_d14_f6_1 (us00/Mrom_d14_f62)
+     MUXF7:I1->O           1   0.451   0.000  us00/Mrom_d14_f7_0 (us00/Mrom_d14_f71)
+     MUXF8:I0->O          14   0.451   0.850  us00/Mrom_d14_f8 (sa00_sub<7>)
+     MUXF5:S->O            1   0.641   0.426  sa30_mux0000<103>217_SW0 (N205)
+     LUT4:I1->O            1   0.612   0.357  sa30_mux0000<103>247 (sa30_mux0000<103>)
+     RAMB16_S9_S9:ADDRB7        0.328          us31/Mrom_d1
+    ----------------------------------------
+    Total                      7.046ns (4.338ns logic, 2.708ns route)
+                                       (61.6% logic, 38.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 549 / 416
+-------------------------------------------------------------------------
+Offset:              5.305ns (Levels of Logic = 3)
+  Source:            ld (PAD)
+  Destination:       u0/r0/out_26 (FF)
+  Destination Clock: clk rising
+
+  Data Path: ld to u0/r0/out_26
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O           279   1.106   1.208  ld_IBUF (ld_IBUF)
+     LUT3:I1->O            3   0.612   0.520  u0/r0/frcon_1_frcon<26>21 (u0/r0/N6)
+     LUT3:I1->O            3   0.612   0.451  u0/r0/frcon_1_frcon<26>31 (u0/r0/N7)
+     FDS:S                     0.795          u0/r0/out_26
+    ----------------------------------------
+    Total                      5.305ns (3.125ns logic, 2.180ns route)
+                                       (58.9% logic, 41.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 129 / 129
+-------------------------------------------------------------------------
+Offset:              4.040ns (Levels of Logic = 1)
+  Source:            done (FF)
+  Destination:       done (PAD)
+  Source Clock:      clk rising
+
+  Data Path: done to done
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              1   0.514   0.357  done (done_OBUF)
+     OBUF:I->O                 3.169          done_OBUF (done)
+    ----------------------------------------
+    Total                      4.040ns (3.683ns logic, 0.357ns route)
+                                       (91.2% logic, 8.8% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 47.00 secs
+Total CPU time to Xst completion: 47.06 secs
+ 
+--> 
+
+Total memory usage is 254260 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   40 (   0 filtered)
+Number of infos    :   27 (   0 filtered)
+

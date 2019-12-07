@@ -1,0 +1,5 @@
+verilog work "../../aes_core/trunk/rtl/verilog/aes_sbox.v"
+verilog work "../../aes_core/trunk/rtl/verilog/aes_rcon.v"
+verilog work "../../aes_core/trunk/rtl/verilog/aes_key_expand_128.v"
+verilog work "../../aes_core/trunk/rtl/verilog/aes_cipher_top.v"
+verilog work "D:/XilinX/13.2/ISE_DS/ISE//verilog/src/glbl.v"
